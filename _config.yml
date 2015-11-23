@@ -1,0 +1,8 @@
+# Site settings
+title: 合生基因
+url: ""
+baseurl: ""
+
+# Build settings
+exclude: [README.md]
+markdown: kramdown
