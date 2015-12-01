@@ -1,0 +1,15 @@
+ $purple-color: rgb(81,52,102);
+/**
+ * Site footer
+ */
+.site-footer {
+  background-color: $purple-color;
+  font-size: 0.8em;
+  color: #b9b9b9;
+  .title-style{
+    color: #efefef;
+  }
+  .text-style {
+    text-indent: 2em;
+  }
+ }
