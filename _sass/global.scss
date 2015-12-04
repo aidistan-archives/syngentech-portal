@@ -1,5 +1,23 @@
-.article{
+.article {
   p {
     text-indent: 2em;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+}
+/**
+ * Site blog
+ */
+.am-pagination {
+  .am-active {
+    a {
+      background-color: rgb(81,52,102);
+      border-color: rgb(81,52,102);
+    }
+    a:hover {
+      background-color: #4d3261;
+      border-color: #4d3261;
+    }
   }
 }

@@ -40,7 +40,23 @@
     padding: 10px;
   }
   .admin-sidebar-sub a:hover {
-    background-color: rgba(0,0,0,0.1);}
+    background-color: rgba(0,0,0,0.3);
+  }
+  .color-style a:hover {
+    background-color: rgba(81,52,101,0.3);
+  }
+}
+.list{
+  position: relative;
+  .list-content{
+    width:300px;
+    background-color: rgba(81,52,102,0.6);
+    position:absolute;
+    left:100%;
+    top:-40%;
+    border-color:rgba(81,52,102,0.7);
+    display: none;
+  }
 }
 
 /**

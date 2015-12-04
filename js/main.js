@@ -7,6 +7,13 @@
 		  $(this).children("ul").hide();
     });
 
+    //三级菜单的显示与隐藏
+    $('.list').has('ul').mouseover(function (){
+      $(this).children("ul").show();
+    }).mouseout(function (){
+      $(this).children("ul").hide();
+    });
+
    //关闭侧边栏
     var id = '#offcanvasId';
     var $myOc = $(id);
