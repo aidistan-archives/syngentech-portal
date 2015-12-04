@@ -1,3 +1,4 @@
+p {font-size: 1em;}
 .article {
   p {
     text-indent: 2em;
@@ -22,5 +23,13 @@
       background-color: #4d3261;
       border-color: #4d3261;
     }
+  }
+}
+/**
+ * Site serve
+ */
+.animate {
+  a {
+    color: #333;
   }
 }
