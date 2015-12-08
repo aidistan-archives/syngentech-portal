@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+%p {{ post.title }}
+%p {{ post.url }}
+%img{src: "{{post.image}}" }
+{% endfor %}

@@ -1,8 +1,22 @@
-# Site settings
-title: 合生基因
-url: ""
-baseurl: ""
-
-# Build settings
+# Handling Reading
 exclude: [README.md]
+
+# Conversion
 markdown: kramdown
+
+# Serving
+url: ""
+
+# Outputting
+permalink: /blog/:year/:month/:day/:title/
+defaults:
+  -
+    scope:
+      path: service/product
+    values:
+      layout: service
+  -
+    scope:
+      path: service/solution
+    values:
+      layout: service

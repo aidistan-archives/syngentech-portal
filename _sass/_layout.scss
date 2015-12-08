@@ -1,12 +1,13 @@
- $purple-color: rgb(81,52,102);
- /**
-  * Site header
-  */
-  .am-topbar-inverse {
-    font-size:0.9em;
-    background-color: $purple-color;
-    border-color: #4d3261;
-  }
+$purple-color: rgb(81,52,102);
+
+/**
+ * Site header
+ */
+.am-topbar-inverse {
+  font-size:0.9em;
+  background-color: $purple-color;
+  border-color: #4d3261;
+}
 .am-topbar {
   .am-text-ir {
     display: block;
@@ -17,15 +18,12 @@
     -webkit-background-size: 36px 36px;
     background-size: 36px 36px;
   }
-  .am-dropdown-content:after {
-    border-bottom-color: rgba(81,52,102,0.9);
-  }
-  .am-dropdown-content:before {
-    border-bottom-color: rgba(81,52,102,0.9);
-  }
+  .am-dropdown-content:after  { border-bottom-color: rgba(81,52,102,0.9); }
+  .am-dropdown-content:before { border-bottom-color: rgba(81,52,102,0.9); }
   .am-dropdown-content {
+    position:absolute;
+    top: 80%;
     background-color: rgba(81,52,102,0.6);
-    position:absolute; top: 80%;
     border-color:rgba(81,52,102,0.7);
     a {
       display: block;
