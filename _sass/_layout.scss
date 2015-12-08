@@ -41,9 +41,8 @@ $purple-color: rgb(81,52,102);
   a {
     color: #333;
   }
-  .am-panel{
-    padding: 10px;
-  }
+  .border-style-one { border-left: 6px solid rgba(0,0,0,0.5); }
+  .border-style-two { border-left: 6px solid rgba(81,52,102,0.9); }
   .admin-sidebar-sub a:hover {
     background-color: rgba(0,0,0,0.3);
   }
