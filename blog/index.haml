@@ -2,7 +2,8 @@
 layout: default
 ---
 {% for post in site.posts %}
-%p {{ post.title }}
-%p {{ post.url }}
-%img{src: "{{post.image}}" }
+.am-container
+  %p {{ post.title }}
+  %p {{ post.url }}
+  %img.am-img-responsive.am-margin-bottom-lg{src: "{{post.image}}" }
 {% endfor %}
