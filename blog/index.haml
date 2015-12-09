@@ -3,7 +3,9 @@ layout: default
 ---
 {% for post in site.posts %}
 .am-container
-  %p {{ post.title }}
-  %p {{ post.url }}
-  %img.am-img-responsive.am-margin-bottom-lg{src: "{{post.image}}" }
+  %h1.am-margin-top-lg {{ post.title }}
+  %small
+    %a.am-margin-bottom{href: "{{ post.url }}" } {{ post.url }}
+  %a{href: "{{ post.url }}" }
+    %img.am-img-responsive.am-margin-bottom-lg{src: "{{post.image}}" }
 {% endfor %}
