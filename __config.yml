@@ -10,18 +10,7 @@ url:
   assets:
   blog:
   service:
-  biogeek: 
+  biogeek:
 
 # Outputting
 permalink: /blog/:year/:month/:day/:title/
-defaults:
-  -
-    scope:
-      path: service/product
-    values:
-      layout: service
-  -
-    scope:
-      path: service/solution
-    values:
-      layout: service

@@ -1,7 +1,7 @@
 <header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
   <div class="am-container">
     <h1 class="am-topbar-brand">
-      <a href="#" class="am-text-ir">logo</a>
+      <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.url.assets }});">logo</a>
     </h1>
 
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-default am-show-sm-only" data-am-offcanvas="{target: '#offcanvas'}">
@@ -11,24 +11,24 @@
 
     <div class="am-collapse am-topbar-collapse">
       <ul class="am-nav am-nav-pills am-topbar-nav">
-        <li class="am-dropdown"><a href="/index.html">&nbsp;首页&nbsp;</a></li>
-        <li class="am-dropdown"><a href="www.syngentech.com.cn">基因山</a></li>
+        <li><a href="{{ '/' | prepend: site.url.root }}"><span class="am-padding-horizontal-sm">首页</span></a></li>
+        <li><a href="http://www.geshare.com.cn">基因山</a></li>
         <li class="am-dropdown">
-          <a href="www.syngentech.com.cn" class="am-dropdown-toggle">BioGeek</a>
+          <a href="{{ site.url.biogeek }}" class="am-dropdown-toggle">BioGeek</a>
           <ul class="am-dropdown-content">
-            <li><a href="www.syngentech.com.cn">分子克隆</a></li>
-            <li><a href="www.syngentech.com.cn">细胞培养</a></li>
-            <li><a href="www.syngentech.com.cn">NGS</a></li>
-            <li><a href="www.syngentech.com.cn">蛋白表达</a></li>
+            <li><a href="#">分子克隆</a></li>
+            <li><a href="#">细胞培养</a></li>
+            <li><a href="#">NGS</a></li>
+            <li><a href="#">蛋白表达</a></li>
           </ul>
         </li>
         <li class="am-dropdown">
-          <a href="/service/index.html" class="am-dropdown-toggle">合生基因</a>
+          <a href="{{ site.url.service }}" class="am-dropdown-toggle">合生基因</a>
           <ul class="am-dropdown-content">
             <li class="list">
-              <a href="/service/solution/solution">解决方案</a>
+              <a href="{{ '/solution' | prepend: site.url.service }}">解决方案</a>
               <ul class="list-content am-nav">
-                <li><a href="/service/solution/knockdown">基因敲除</a></li>
+                <li><a href="{{ '/solution/knockdown' | prepend: site.url.service }}">基因敲除</a></li>
                 <li><a href="/service/solution/LncRNAknockdown">LncRNA敲除</a></li>
                 <li><a href="/service/solution/nonsite-specificintegration">非定点基因整合</a></li>
                 <li><a href="/service/solution/knockin">基因敲入</a></li>
@@ -39,9 +39,9 @@
               </ul>
             </li>
             <li class="list">
-              <a href="/service/product/product">服务与产品</a>
+              <a href="{{ '/product' | prepend: site.url.service }}">服务产品</a>
               <ul class="list-content am-nav">
-                <li><a href="/service/product/CRISPRdesign">CRISPR/Cas9 载体设计与构建</a></li>
+                <li><a href="{{ '/product/CRISPRdesign' | prepend: site.url.service }}">CRISPR/Cas9 载体设计与构建</a></li>
                 <li><a href="/service/product/CRISPRconstruction">CRISPR/Cas9 快速构建试剂盒</a></li>
                 <li><a href="/service/product/CRISPRactivity">CRISPR/Cas9 活性检测</a></li>
                 <li><a href="/service/product/gRNAlibrary">gRNA文库构建</a></li>
@@ -53,19 +53,19 @@
                 <li><a href="/service/product/transgenicmice">基因工程鼠</a></li>
                 <li><a href="/service/product/genesynthesis">基因合成</a></li>
                 <li><a href="/service/product/synbioserve">合成生物学技术服务外包</a></li>
-          </ul>
+              </ul>
             </li>
           </ul>
         </li>
-        <li class="am-dropdown am-disabled"><a href="www.syngentech.com.cn">合生健康</a></li>
-        <li class="am-dropdown"><a href="/blog/index.html">&nbsp;博客&nbsp;</a></li>
+        <li><a href="javascript:;">合生健康</a></li>
+        <li><a href="{{ site.url.blog }}"><span class="am-padding-horizontal-sm">博客</span></a></li>
         <li class="am-dropdown">
-          <a href="#" class="am-dropdown-toggle">关于我们</a>
+          <a href="javascript:;" class="am-dropdown-toggle">关于我们</a>
           <ul class="am-dropdown-content">
-            <li><a href="/Introduction">企业简介</a></li>
-            <li><a href="/recruit">招贤纳士</a></li>
-            <li><a href="/Cooperation">工业合作/代理加盟</a></li>
-            <li><a href="/connection">联系我们</a></li>
+            <li><a href="{{ '/about' | prepend: site.url.root }}">企业简介</a></li>
+            <li><a href="{{ '/hire' | prepend: site.url.root }}">招贤纳士</a></li>
+            <li><a href="{{ '/cooperate' | prepend: site.url.root }}">工业合作/代理加盟</a></li>
+            <li><a href="{{ '/contact' | prepend: site.url.root }}">联系我们</a></li>
           </ul>
         </li>
       </ul>
@@ -73,7 +73,7 @@
   </div>
 </header>
 
-<!--点击button后的内容-->
+<!--Offcanvas shown on small screens -->
 <div id="offcanvas" class="am-offcanvas">
   <div class="am-offcanvas-bar">
     <div class="am-offcanvas-content">

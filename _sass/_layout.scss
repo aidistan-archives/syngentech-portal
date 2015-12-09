@@ -1,11 +1,11 @@
-$purple-color: rgb(81,52,102);
+$purple: rgb(81,52,102);
 
 /**
  * Site header
  */
 .am-topbar-inverse {
   font-size:0.9em;
-  background-color: $purple-color;
+  background-color: $purple;
   border-color: #4d3261;
 }
 .am-topbar {
@@ -14,7 +14,7 @@ $purple-color: rgb(81,52,102);
     margin-right: 10px;
     height: 50px;
     width: 36px;
-    background: url(/images/logo-white.png) no-repeat left center;
+    background: no-repeat left center;
     -webkit-background-size: 36px 36px;
     background-size: 36px 36px;
   }
@@ -67,7 +67,7 @@ $purple-color: rgb(81,52,102);
  * Site footer
  */
 .site-footer {
-  background-color: $purple-color;
+  background-color: $purple;
   font-size: 0.75em;
   color: #b9b9b9;
   .title-style{
