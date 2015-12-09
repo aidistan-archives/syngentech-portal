@@ -5,7 +5,12 @@ exclude: [README.md]
 markdown: kramdown
 
 # Serving
-url: ""
+url:
+  root:
+  assets:
+  blog:
+  service:
+  biogeek: 
 
 # Outputting
 permalink: /blog/:year/:month/:day/:title/
