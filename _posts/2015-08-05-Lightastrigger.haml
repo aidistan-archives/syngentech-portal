@@ -8,7 +8,7 @@ tags:
   .article
     %br
     %a{href: '/blog-child5.html'}
-      %img.am-img-responsive{src: '/images/blog5.jpg'}
+      %img.am-img-responsive{src: '{{ "/images/blog5.jpg" | prepend: site.url.assets }}'}
     %a{href: '/blog-child5.html'}
       %h1 像开关灯一样控制基因编辑？光活化的CRISPR-Cas9系统
     %small

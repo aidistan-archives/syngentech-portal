@@ -1,10 +1,10 @@
 ---
 layout: service
-img: '/images/product-8.7.jpg'
+img: '{{ "/images/product-8.7.jpg" | prepend: site.url.assets }}'
 ---
 
 %h1.am-margin-top-xl 细胞系工程改造服务
-%img.am-img-responsive{src: '/images/product-8.1.jpg'}
+%img.am-img-responsive{src: '{{ "/images/product-8.1.jpg" | prepend: site.url.assets }}'}
 %p 工程化改造的细胞系已成为现代生物学在基因功能研究、肿瘤治疗和生物制药等领域重要的研究材料,合生基因基于慢病毒包装技术及 CRISPR/Cas9 靶向基因编辑技术,推出了细胞系工程改造定制服务,服务内容包括基于 CRISPR/Cas9 的基因敲除细胞系、定点基因敲入细胞系和慢病毒介导的非定点敲入细胞系。
 %hr
 %h2 1. 基因敲除细胞系、定点基因敲入细胞系
@@ -13,18 +13,18 @@ img: '/images/product-8.7.jpg'
   %p.text-style
   1）基因敲除：如果想使某个基因的功能丧失，可以在这个基因上产生DSB，NHEJ修复的过程中往往会产生DNA的插入或删除（indel），造成移码突变，从而实现基因敲除。
   %div{align: 'center'}
-    %img.am-img-responsive{src: '/images/product-8.2.jpg', width: '437', height: '309'}
-  %img.am-img-responsive{src: '/images/product-8.3.png'}
+    %img.am-img-responsive{src: '{{ "/images/product-8.2.jpg" | prepend: site.url.assets }}', width: '437', height: '309'}
+  %img.am-img-responsive{src: '{{ "/images/product-8.3.png" | prepend: site.url.assets }}'}
   2）定点基因敲入：如果想把某个特异的突变引入到基因组上，需要通过同源重组来实现，这时候要提供一个含有特异突变同源模版。正常情况下同源重组效率非常低，而在这个位点产生DSB会极大的提高重组效率，从而实现特异突变的引入。
   %div{align: 'center'}
-    %img.am-img-responsive{src: '/images/product-8.4.jpg', width: '502', height: '379'}
-  %img.am-img-responsive{src: '/images/product-8.5.png'}
+    %img.am-img-responsive{src: '{{ "/images/product-8.4.jpg" | prepend: site.url.assets }}', width: '502', height: '379'}
+  %img.am-img-responsive{src: '{{ "/images/product-8.5.png" | prepend: site.url.assets }}'}
 %p.text-style 合生基因为您提供基于CRISPR/Cas9技术的基因敲入、定点基因敲入的细胞系工程改造服务。
 %h2 2. 非定点敲入细胞系
 %p.text-style 慢病毒（Lentivirus）载体是以HIV-1（人类免疫缺陷I型病毒）为基础发展起来的基因治疗载体。慢病毒作为逆转录病毒的一种，具有逆转录病毒的基本结构和特性：整合入宿主细胞基因组，长期表达，可用于转基因动物制备；但也有不同于逆转录病毒的组份和特性：比逆转录病毒具有更高的滴度，不仅可以感染分裂期细胞，更重要的，还能感染非分裂期的细胞。利用慢病毒载体，可以研究启动子的调控、过表达特定基因或沉默特定基因。
 %h3 服务流程：
 %div{align: 'center'}
-  %img.am-img-responsive{src: '/images/product-8.6.png', width: '713', height: '183'}
+  %img.am-img-responsive{src: '{{ "/images/product-8.6.png" | prepend: site.url.assets }}', width: '713', height: '183'}
 %p.text-style
   请您下载并按要求填写《细胞系工程改造信息调研表》。填写完毕后发送至
   %a{href: 'mailto:info@syngentech.com.cn'} info@syngentech.com.cn

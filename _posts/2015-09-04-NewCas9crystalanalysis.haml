@@ -8,7 +8,7 @@ tags:
   .article
     %br
     %a{href: '/blog-child3.html'}
-      %img.am-img-responsive{src: '/images/blog3.jpg'}
+      %img.am-img-responsive{src: '{{ "/images/blog3.jpg" | prepend: site.url.assets }}'}
     %a{href: '/blog-child3.html'}
       %h1 新型Cas9晶体结构得到解析
     %small

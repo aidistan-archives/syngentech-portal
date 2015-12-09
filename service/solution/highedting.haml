@@ -1,20 +1,20 @@
 ---
 layout: service
-img: '/images/solution-8.5.jpg'
+img: '{{ "/images/solution-8.5.jpg" | prepend: site.url.assets }}'
 ---
 
 %h1.am-margin-top-xl 高通量基因编辑
-%img.am-img-responsive{src: '/images/solution-8.1.jpg'}
+%img.am-img-responsive{src: '{{ "/images/solution-8.1.jpg" | prepend: site.url.assets }}'}
 %h2 概述
 %p.text-style 得益于高通量测序技术和生物信息学的发展，研究人员已经可以在较短时间内完成整个基因组测序工作。然而，如何快速高效的实现基因功能研究，仍然面临很大的挑战。传统基因功能的筛查方法主要通过RNA干扰技术（RNAi）在后转录水平实现基因表达的敲低。近期，已有报道利用在链球菌中发现的CRISPR/Cas9 系统成功实现了哺乳动物基因组的定点编辑。CRISPR/Cas9系统是一种由RNA引导Cas9蛋白对靶基因进行修饰的技术。将该系统中的Cas9酶或经遗传修饰的Cas9酶与基因组规模的gRNA文库相结合，可实现全基因组的基因敲除或基因转录调节，用于各种高通量筛选。例如在正向筛选中，可以用来筛选哪些基因的突变引起细胞对药物、毒素、病原体等产生耐受性。一个最简单的例子是，当细胞转入Cas9-gRNA文库后，加入炭疽毒素处理，存活下来的细胞即是基因突变引起对炭疽毒素的耐药性，利用高通量测序分析毒素处理前后gRNA丰度变化，即可确定发生突变的基因。在负向筛选中，该系统可用于确定哪些基因对不同的处理方式更为敏感。一个最简单的例子是，当细胞转入Cas9-gRNA文库后，比较存活时间不同的细胞中gRNA丰度，存活时间短的细胞中，由gRNA-Cas9引起突变的基因很可能是与细胞增殖相关。负向筛选一个很重要的用途是用来确定不同状态的癌细胞中存在哪些致癌基因的突变，这些突变的基因很可能成为癌症治疗的靶点。CRISPR/Cas9技术使基因编辑变得更为便捷并且高效。与高通量测序相结合，不但可以使研究者快速高效地得到一些实验结果，也拓宽了这一技术的应用范围。例如，在药物开发中可用于快速发现药物的靶标并进行有效、直观的验证。这对探究药物的药理、毒理或细胞的抗药机理提供了巨大帮助。再如，美国科学家等利用这一技术在非小细胞肺癌（NSCLC）小鼠模型的细胞中，系统地敲除整个基因组的所有基因，随后将这些细胞移植到小鼠体内，发现用这一基因敲除文库处理的一些细胞形成了高转移性肿瘤，筛查出一些与肿瘤进化和转移相关的基因，该方法将为在其他细胞类型和疾病中从事类似的研究铺平道路。因此，对于那些我们不了解发生机制或信号转导机制的疾病，我们可以通过CRISPR/Cas9系统进行高通量基因敲除筛选，探究影响疾病发生的关键部件及可能的发生机制，发现新的具有潜力的药物靶点。
 %hr
 &h2 技术原理
 %p.text-style 预测靶标基因并设计gRNA序列后利用芯片合成方法合成gRNA序列。构建gRNA文库，利用慢病毒载体将所有gRNA转入目的细胞中（低的MOI值）。通过相应处理（如加药处理），利用高通量测序技术检测处理前后细胞中gRNA丰度变化，推断基因功能与细胞表型之间的对应关系。
 %div{align: 'center'}
-  %img.am-img-responsive{src: '/images/solution-8.2.jpg', width: '504', height: '844'}
+  %img.am-img-responsive{src: '{{ "/images/solution-8.2.jpg" | prepend: site.url.assets }}', width: '504', height: '844'}
 %hr
 %h2 解决方案
 %p.text-style 合生基因可根据客户需求构建shRNA文库和gRNA文库，包括特定细胞的全基因组基因沉默、基因敲除、基因转录激活和转录抑制文库；同时提供利用shRNA文库或gRNA文库进行高通量基因编辑，以及利用高通量基因编辑技术进行与疾病相关的药物靶基因筛查服务。合生基因拥有一支具有丰富经验的CRISPR基因编辑经验的技术团队，可以为客户提供全方位的基因功能研究解决方案。
 %div{align: 'center'}
-  %img.am-img-responsive.am-margin-bottom-xl{src: '/images/solution-8.3.jpg', width: '720', height: '188'}
-  %img.am-img-responsive{src: '/images/solution-8.4.jpg', width: '720', height: '867'}
+  %img.am-img-responsive.am-margin-bottom-xl{src: '{{ "/images/solution-8.3.jpg" | prepend: site.url.assets }}', width: '720', height: '188'}
+  %img.am-img-responsive{src: '{{ "/images/solution-8.4.jpg" | prepend: site.url.assets }}', width: '720', height: '867'}

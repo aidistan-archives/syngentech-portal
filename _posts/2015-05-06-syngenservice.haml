@@ -6,7 +6,7 @@ image: /images/blog12.jpg
   .article
     %br
     %a{href: '/blog-child12.html'}
-      %img.am-img-responsive{src: '/images/blog12.jpg'}
+      %img.am-img-responsive{src: '{{ "/images/blog12.jpg" | prepend: site.url.assets }}'}
     %a{href: '/blog-child12.html'}
       %h1 合生基因-合成生物学专家/未来生物技术服务提供者
     %small

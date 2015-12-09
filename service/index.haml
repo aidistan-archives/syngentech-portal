@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-%img.am-img-responsive{src: '/images/index1.1.jpg'}
+%img.am-img-responsive{src: '{{ "/images/index1.1.jpg" | prepend: site.url.assets }}'}
 .am-container
   %br
   %h1.am-text-center 基因组编辑解决方案
@@ -10,28 +10,28 @@ layout: default
   .am-avg-sm-2.am-avg-md-2.am-avg-lg-4.am-thumbnails.animate
     %li
       %a{href: '/solution-1.html'}
-        %img.am-thumbnail{src: '/images/index-1.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-1.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-2.html'}
-        %img.am-thumbnail{src: '/images/index-2.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-2.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-3.html'}
-        %img.am-thumbnail{src: '/images/index-3.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-3.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-4.html'}
-        %img.am-thumbnail{src: '/images/index-4.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-4.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-5.html'}
-        %img.am-thumbnail{src: '/images/index-5.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-5.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-6.html'}
-        %img.am-thumbnail{src: '/images/index-6.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-6.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-7.html'}
-        %img.am-thumbnail{src: '/images/index-7.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-7.jpg" | prepend: site.url.assets }}'}
     %li
       %a{href: '/solution-8.html'}
-        %img.am-thumbnail{src: '/images/index-8.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index-8.jpg" | prepend: site.url.assets }}'}
   %h1.am-text-center 革命性靶向基因组编辑技术应用专家
   %hr
   %p.am-text-center 利用经合生基因优化和改造的CRISPR/Cas9系统、RNAi系统实现您预期的基因编辑需求
@@ -39,9 +39,9 @@ layout: default
   #demo-slider-0.am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false, controlNav: false}'}
     %ul.am-slides
       %li
-        %img{src: '/images/index-9.jpg'}
+        %img{src: '{{ "/images/index-9.jpg" | prepend: site.url.assets }}'}
       %li
-        %img{src: '/images/index-10.jpg'}
+        %img{src: '{{ "/images/index-10.jpg" | prepend: site.url.assets }}'}
   %br
   %h1.am-text-center 全方位基因组编辑服务与产品
   %hr
@@ -50,7 +50,7 @@ layout: default
   .am-g.animate.am-text-center
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-1.html'}
-        %img{src: '/images/index-11.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-11.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-1.html'}
           CRISPR/CAS9
@@ -59,7 +59,7 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-2.html'}
-        %img{src: '/images/index-12.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-12.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-2.html'}
           CRISPR/CAS9
@@ -68,7 +68,7 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-3.html'}
-        %img{src: '/images/index-13.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-13.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-3.html'}
           CRISPR/CAS9
@@ -77,7 +77,7 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-4.html'}
-        %img{src: '/images/index-14.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-14.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-4.html'}
           gRNA
@@ -86,7 +86,7 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-5.html'}
-        %img{src: '/images/index-15.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-15.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-5.html'}
           &nbsp;&nbsp;&nbsp;RNAi
@@ -95,7 +95,7 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-6.html'}
-        %img{src: '/images/index-16.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-16.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-6.html'}
           RNAi Sponge
@@ -104,42 +104,42 @@ layout: default
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-7.html'}
-        %img{src: '/images/index-17.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-17.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-7.html'}
           RNAi文库构建
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-8.html'}
-        %img{src: '/images/index-18.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-18.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-8.html'}
           细胞系工程改造
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-9.html'}
-        %img{src: '/images/index-19.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-19.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-9.html'}
           慢病毒包装
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-10.html'}
-        %img{src: '/images/index-20.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-20.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-10.html'}
           基因工程鼠
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-11.html'}
-        %img{src: '/images/index-21.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-21.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-11.html'}
           基因合成
         %br
     .am-u-sm-6.am-u-md-6.am-u-lg-2
       %a{href: '/product-12.html'}
-        %img{src: '/images/index-22.jpg', width: '84', height: '84'}
+        %img{src: '{{ "/images/index-22.jpg" | prepend: site.url.assets }}', width: '84', height: '84'}
       %p
         %a{href: '/product-12.html'}
           合成生物学
@@ -154,8 +154,8 @@ layout: default
   #demo-slider-0.am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false, controlNav: false}'}
     %ul.am-slides
       %li
-        %img{src: '/images/index-23.jpg'}
+        %img{src: '{{ "/images/index-23.jpg" | prepend: site.url.assets }}'}
       %li
-        %img{src: '/images/index-24.jpg'}
+        %img{src: '{{ "/images/index-24.jpg" | prepend: site.url.assets }}'}
   %br
-%img.am-img-responsive{src: '/images/index-25.jpg'}
+%img.am-img-responsive{src: '{{ "/images/index-25.jpg" | prepend: site.url.assets }}'}

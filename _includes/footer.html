@@ -4,7 +4,7 @@
       <br></br>
       <aside class="am-u-sm-12 am-u-md-2 am-u-lg-2">
         <h3 class="title-style">微信号</h3>
-        <img class="am-img-responsive am-margin-top-lg" src="/images/index26.jpg">
+        <img class="am-img-responsive am-margin-top-lg" src='{{ "/images/index26.jpg" | prepend: site.url.assets }}'>
         <br></br>
       </aside>
       <aside class="am-u-sm-12 am-u-md-3 am-u-lg-3">
@@ -33,4 +33,4 @@
 </footer>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.amazeui.org/amazeui/2.4.2/js/amazeui.js"></script>
-<script src="/js/main.js"></script>
+<script src="{{ '/javascripts/main.js' | prepend: site.url.assets }}"></script>

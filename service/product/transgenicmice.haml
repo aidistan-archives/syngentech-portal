@@ -1,13 +1,13 @@
 ---
 layout: service
-img: '/images/product-10.3.jpg'
+img: '{{ "/images/product-10.3.jpg" | prepend: site.url.assets }}'
 ---
 
 %h1.am-margin-top-xl 基因工程鼠
-%img.am-img-responsive{src: '/images/product-10.1.jpg'}
+%img.am-img-responsive{src: '{{ "/images/product-10.1.jpg" | prepend: site.url.assets }}'}
 %p.text-style 合生基因依托由“快速基因打靶载体构建技术”、“稳定传代小鼠胚胎干细胞”、“精确显微注射系统” 组成的基因敲除小鼠开发与服务平台, 和以CRISPR/Cas9技术为核心组建的基因敲除/基因敲入模式动物开发与服务平台，为广大科研用户提供稳定的、高效的、个性化的基因工程鼠定制服务。
 %h2 我们提供
-%img.am-img-responsive{src: '/images/product-10.2.jpg'}
+%img.am-img-responsive{src: '{{ "/images/product-10.2.jpg" | prepend: site.url.assets }}'}
 %hr
 %h2 我们的优势
 %ul

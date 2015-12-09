@@ -4,27 +4,27 @@ layout: default
 .am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false}'}
   %ul.am-slides
     %li
-      %img{src: 'images/index1.jpg'}
+      %img{src: '{{ "/images/index1.jpg" | prepend: site.url.assets }}'}
     %li
-      %img{src: 'images/index2.jpg'}
+      %img{src: '{{ "/images/index2.jpg" | prepend: site.url.assets }}'}
     %li
-      %img{src: 'images/index3.jpg'}
+      %img{src: '{{ "/images/index3.jpg" | prepend: site.url.assets }}'}
     %li
-      %img{src: 'images/index4.jpg'}
+      %img{src: '{{ "/images/index4.jpg" | prepend: site.url.assets }}'}
 %ul.am-margin-top-lg.am-gallery.am-avg-sm-1.am-avg-md-2.am-avg-lg-4.am-gallery-default{'data-am-gallery' => '{pureview:true}', 'data-am-widget' => 'gallery'}
   %li
     .am-gallery-item
       %a{href: ''}
-        %img.am-thumbnail{src: 'images/index5.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index5.jpg" | prepend: site.url.assets }}'}
   %li
     .am-gallery-item
       %a{href: ''}
-        %img.am-thumbnail{src: 'images/index6.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index6.jpg" | prepend: site.url.assets }}'}
   %li
     .am-gallery-item
       %a{href: ''}
-        %img.am-thumbnail{src: 'images/index7.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index7.jpg" | prepend: site.url.assets }}'}
   %li
     .am-gallery-item
       %a{href: ''}
-        %img.am-thumbnail{src: 'images/index8.jpg'}
+        %img.am-thumbnail{src: '{{ "/images/index8.jpg" | prepend: site.url.assets }}'}
