@@ -1,4 +1,6 @@
 $purple: rgb(81,52,102);
+$white: #fff;
+$black: #000;
 
 /**
  * Site header
@@ -6,7 +8,7 @@ $purple: rgb(81,52,102);
 .am-topbar-inverse {
   font-size:0.9em;
   background-color: $purple;
-  border-color: #4d3261;
+  border-color: $purple;
 }
 .am-topbar {
   .am-text-ir {
@@ -18,47 +20,47 @@ $purple: rgb(81,52,102);
     -webkit-background-size: 36px 36px;
     background-size: 36px 36px;
   }
-  .am-dropdown-content:after  { border-bottom-color: rgba(81,52,102,0.9); }
-  .am-dropdown-content:before { border-bottom-color: rgba(81,52,102,0.9); }
+  .am-dropdown-content:after  { border-bottom-color: rgba($purple,0.9); }
+  .am-dropdown-content:before { border-bottom-color: rgba($purple,0.9); }
   .am-dropdown-content {
     position:absolute;
     top: 80%;
-    background-color: rgba(81,52,102,0.6);
-    border-color:rgba(81,52,102,0.7);
+    background-color: rgba($purple,0.6);
+    border-color:rgba($purple,0.7);
     a {
       display: block;
       padding: 6px 20px;
       font-weight: 400;
-      color: #efefef;
+      color: darken($white, 15%);
     }
     a:hover {
-      background-color: rgba(81,52,102,0.9);
-      color: #fff;
+      background-color: rgba($purple,0.9);
+      color: $white;
     }
   }
 }
 .am-offcanvas-content {
   a {
-    color: #333;
+    color: lighten($black,20%);
   }
-  .border-style-one { border-left: 6px solid rgba(0,0,0,0.5); }
-  .border-style-two { border-left: 6px solid rgba(81,52,102,0.9); }
+  .border-style-one { border-left: 6px solid rgba($black,0.5); }
+  .border-style-two { border-left: 6px solid rgba($purple,0.9); }
   .admin-sidebar-sub a:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba($black,0.3);
   }
   .color-style a:hover {
-    background-color: rgba(81,52,101,0.3);
+    background-color: rgba($purple,0.3);
   }
 }
 .list{
   position: relative;
   .list-content{
     width:300px;
-    background-color: rgba(81,52,102,0.6);
+    background-color: rgba($purple,0.6);
     position:absolute;
     left:100%;
     top:-40%;
-    border-color:rgba(81,52,102,0.7);
+    border-color:rgba($purple,0.7);
     display: none;
   }
 }
@@ -69,11 +71,20 @@ $purple: rgb(81,52,102);
 .site-footer {
   background-color: $purple;
   font-size: 0.75em;
-  color: #b9b9b9;
+  color: darken($white,25%);
   .title-style{
-    color: #efefef;
+    color: darken($white,15%);
   }
   .text-style {
     text-indent: 2em;
   }
  }
+
+ /**
+  * Site service.index
+  */
+.animate {
+  a {
+    color: #333;
+  }
+}
