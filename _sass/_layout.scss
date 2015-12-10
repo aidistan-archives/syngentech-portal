@@ -3,22 +3,23 @@ $white: #fff;
 $black: #000;
 
 /**
- * Site header
+ * Global header
  */
+
 .am-topbar-inverse {
   font-size:0.9em;
   background-color: $purple;
   border-color: $purple;
 }
+
 .am-topbar {
   .am-text-ir {
     display: block;
-    margin-right: 10px;
-    height: 50px;
+    margin: 7px;
+    height: 36px;
     width: 36px;
     background: no-repeat left center;
-    -webkit-background-size: 40px 36px;
-    background-size: 40px 36px;
+    background-size: 36px 36px;
   }
   .am-dropdown-content:after  { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content:before { border-bottom-color: rgba($purple, 0.9); }
@@ -59,24 +60,21 @@ $black: #000;
 }
 
 /**
- * Site footer
+ * Global footer
  */
+
 .site-footer {
   background-color: $purple;
   font-size: 0.75em;
   color: darken($white, 25%);
 
-  .title-style{
-    color: darken($white, 15%);
-  }
-  .text-style {
-    text-indent: 2em;
-  }
- }
+  h3 { color: darken($white, 15%); }
+}
 
- /**
-  * Site service.index
-  */
-.animate {
-  a { color: #333; }
+/**
+ * Layout specific
+ */
+
+#service {
+  p { text-indent: 2em; }
 }
