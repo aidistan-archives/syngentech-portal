@@ -1,5 +1,6 @@
 ---
 layout: default
+title: index
 ---
 .am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false}'}
   %ul.am-slides
@@ -11,20 +12,16 @@ layout: default
       %img{src: '{{ "/images/index3.jpg" | prepend: site.url.assets }}'}
     %li
       %img{src: '{{ "/images/index4.jpg" | prepend: site.url.assets }}'}
-%ul.am-margin-top-lg.am-gallery.am-avg-sm-1.am-avg-md-2.am-avg-lg-4.am-gallery-default{'data-am-gallery' => '{pureview:true}', 'data-am-widget' => 'gallery'}
-  %li
-    .am-gallery-item
-      %a{href: ''}
-        %img.am-thumbnail{src: '{{ "/images/index5.jpg" | prepend: site.url.assets }}'}
-  %li
-    .am-gallery-item
-      %a{href: ''}
-        %img.am-thumbnail{src: '{{ "/images/index6.jpg" | prepend: site.url.assets }}'}
-  %li
-    .am-gallery-item
-      %a{href: ''}
-        %img.am-thumbnail{src: '{{ "/images/index7.jpg" | prepend: site.url.assets }}'}
-  %li
-    .am-gallery-item
-      %a{href: ''}
-        %img.am-thumbnail{src: '{{ "/images/index8.jpg" | prepend: site.url.assets }}'}
+.am-g.am-margin-top-xl
+  .am-u-sm-12.am-u-md-6.am-u-lg-3
+    %a{href: 'http://www.geshare.com.cn'}
+      %img.am-thumbnail{src: '{{ "/images/index5.jpg" | prepend: site.url.assets }}'}
+  .am-u-sm-12.am-u-md-6.am-u-lg-3
+    %a{href: '{{ site.url.biogeek }}'}
+      %img.am-thumbnail{src: '{{ "/images/index6.jpg" | prepend: site.url.assets }}'}
+  .am-u-sm-12.am-u-md-6.am-u-lg-3
+    %a{href: '{{ site.url.service }}'}
+      %img.am-thumbnail{src: '{{ "/images/index7.jpg" | prepend: site.url.assets }}'}
+  .am-u-sm-12.am-u-md-6.am-u-lg-3
+    %a{href: ''}
+      %img.am-thumbnail{src: '{{ "/images/index8.jpg" | prepend: site.url.assets }}'}
