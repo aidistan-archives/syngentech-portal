@@ -5,15 +5,14 @@ image: /images/blog7.jpg
 .am-container
   .article
     %br
-    %a{href: '/blog-child7.html'}
+    %a{href: '{{ "/2015/07/01/2015-TBIIP" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog7.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child7.html'}
+    %a{href: '{{ "/2015/07/01/2015-TBIIP" | prepend: site.url.blog }}'}
       %h1 生物信息学与智能信息处理2015学术年会
     %small
       Posted on
-      %a{href: '/blog-child7.html'} 2015年7月1日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/07/01/2015-TBIIP" | prepend: site.url.blog }}'} 2015年7月1日
+      by Luyang Li
     %p 由中国人工智能学会主办，中国人工智能学会生物信息学与人工生命专业委员会和厦门大学承办的生物信息学与智能信息处理2015学术年会，于2015年6月17日至19日在厦门成功举行。北京市合生基因科技有限公司如邀参加展会，展示了为生物行业量身打造信息化解决方案、巩固了已有合作关系，还发掘了大批潜在客户，为开拓市场奠定了基础。
     %div{align: 'center'}
       %img.am-img-responsive{src: '{{ "/images/blog-child7.1.jpg" | prepend: site.url.assets }}', width: '747', height: '512'}
@@ -24,14 +23,10 @@ image: /images/blog7.jpg
     %div{align: 'center'}
       %img.am-img-responsive{src: '{{ "/images/blog-child7.3.jpg" | prepend: site.url.assets }}', width: '750', height: '514'}
     %br
-    %small
-      Posted in
-      %a{href: '/category1.html'} 公司资讯
-      %a{href: '/category2.html'} 行业动态
     %hr
     %br
     %ul.am-pagination
       %li.am-pagination-prev
-        %a{href: '/blog-child6.html'} &laquo; 2015第...
+        %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}'} &laquo; 2015第...
       %li.am-pagination-next
-        %a{href: '/blog-child8.html'} 第二届全国... &raquo;
+        %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}'} 第二届全国... &raquo;

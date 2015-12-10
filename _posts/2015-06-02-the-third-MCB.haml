@@ -10,15 +10,14 @@ tags:
 .am-container
   .article
     %br
-    %a{href: '/blog-child9.html'}
+    %a{href: '{{ "/2015/06/02/the-third-MCB" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog9.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child9.html'}
+    %a{href: '{{ "/2015/06/02/the-third-MCB" | prepend: site.url.blog }}'}
       %h1 第三届数学、计算机与生命科学交叉研究青年学者论坛在京举行
     %small
       Posted on
-      %a{href: '/blog-child9.html'} 2015年6月2日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/06/02/the-third-MCB" | prepend: site.url.blog }}'} 2015年6月2日
+      by Luyang Li
     %p
       2015年5月16-17日
       %a{href: 'http://yf2015.csp.escience.cn/dct/page/70015'} 第三届数学、计算机与生命科学交叉研究青年学者论坛
@@ -26,19 +25,10 @@ tags:
     %p 数学、计算机与生命科学交叉研究青年学者论坛旨在加强从事 “数学、计算机与生命科学交叉研究”青年学者之间的联系，交流生命科学与计算生物学研究领域的最新成果，了解计算生物学国际发展动态和研究热点，促进我国数学、计算机与生命科学交叉研究与应用实践的更好发展。会议以国内在“数学、计算机与生命科学交叉研究”取得突出成果的青年科学家的学术报告为主，并邀请了领域内的知名专家做特邀报告。报告的主题涵盖计算生物学和计算基因组学、新一代测序数据分析与应用、癌症基因组学、表观基因组学、元基因组学、蛋白质组学以及系统生物学等研究领域。
     %img.am-img-responsive{src: '{{ "/images/blog-child9.1.jpg" | prepend: site.url.assets }}'}
     %p 北京合生基因科技有限公司作为赞助商参与此次大会，展台吸引了大批与会专家学者驻足交流。
-    %small
-      Posted in
-      %a{href: '/category1.html'} 公司资讯
-      %a{href: '/category2.html'} 行业动态
-      and tagged
-      %a{href: '/tag7.html'} 合生基因
-      %a{href: '/tag8.html'} 数学
-      %a{href: '/tag9.html'} 生命科学
-      %a{href: '/tag10.html'} 计算机
     %hr
     %br
     %ul.am-pagination
       %li.am-pagination-prev
-        %a{href: '/blog-child8.html'} &laquo; 第二届全国...
+        %a{href: '{{ "/2015/06/09/the-Second-NCCBB" | prepend: site.url.blog }}'} &laquo; 第二届全国...
       %li.am-pagination-next
-        %a{href: '/blog-child10.html'} 首届合成生... &raquo;
+        %a{href: '{{ "/2015/06/02/the-first-SynBio-YSF" | prepend: site.url.blog }}'} 首届合成生... &raquo;

@@ -29,30 +29,30 @@
               <a href="{{ '/solution' | prepend: site.url.service }}">解决方案</a>
               <ul class="list-content am-nav">
                 <li><a href="{{ '/solution/knockdown' | prepend: site.url.service }}">基因敲除</a></li>
-                <li><a href="/service/solution/LncRNAknockdown">LncRNA敲除</a></li>
-                <li><a href="/service/solution/nonsite-specificintegration">非定点基因整合</a></li>
-                <li><a href="/service/solution/knockin">基因敲入</a></li>
-                <li><a href="/service/solution/silencing">基因沉默</a></li>
-                <li><a href="/service/solution/Activation">转录激活</a></li>
-                <li><a href="/service/solution/inhibition">转录抑制</a></li>
-                <li><a href="/service/solution/highediting">高通量基因编辑</a></li>
+                <li><a href="{{ '/solution/LncRNA-knockdown' | prepend: site.url.service }}">LncRNA敲除</a></li>
+                <li><a href="{{ '/solution/nonsite-specific-integration' | prepend: site.url.service }}">非定点基因整合</a></li>
+                <li><a href="{{ '/solution/knockin' | prepend: site.url.service }}">基因敲入</a></li>
+                <li><a href="{{ '/solution/silencing' | prepend: site.url.service }}">基因沉默</a></li>
+                <li><a href="{{ '/solution/Activation' | prepend: site.url.service }}">转录激活</a></li>
+                <li><a href="{{ '/solution/inhibition' | prepend: site.url.service }}">转录抑制</a></li>
+                <li><a href="{{ '/solution/high-editing' | prepend: site.url.service }}">高通量基因编辑</a></li>
               </ul>
             </li>
             <li class="list">
               <a href="{{ '/product' | prepend: site.url.service }}">服务产品</a>
               <ul class="list-content am-nav">
-                <li><a href="{{ '/product/CRISPRdesign' | prepend: site.url.service }}">CRISPR/Cas9 载体设计与构建</a></li>
-                <li><a href="/service/product/CRISPRconstruction">CRISPR/Cas9 快速构建试剂盒</a></li>
-                <li><a href="/service/product/CRISPRactivity">CRISPR/Cas9 活性检测</a></li>
-                <li><a href="/service/product/gRNAlibrary">gRNA文库构建</a></li>
-                <li><a href="/service/product/RNAidesign">RNAi 载体设计与构建</a></li>
-                <li><a href="/service/product/miRNAspongedesign">miRNA sponge 抑制载体设计与构建</a></li>
-                <li><a href="/service/product/shRNAlibrary">shRNA文库构建</a></li>
-                <li><a href="/service/product/celllinetransform">细胞系工程改造服务</a></li>
-                <li><a href="/service/product/LV">慢病毒包装</a></li>
-                <li><a href="/service/product/transgenicmice">基因工程鼠</a></li>
-                <li><a href="/service/product/genesynthesis">基因合成</a></li>
-                <li><a href="/service/product/synbioserve">合成生物学技术服务外包</a></li>
+                <li><a href="{{ '/product/CRISPR-design' | prepend: site.url.service }}">CRISPR/Cas9 载体设计与构建</a></li>
+                <li><a href="{{ '/product/CRISPR-construction' | prepend: site.url.service }}">CRISPR/Cas9 快速构建试剂盒</a></li>
+                <li><a href="{{ '/product/CRISPR-activity' | prepend: site.url.service }}">CRISPR/Cas9 活性检测</a></li>
+                <li><a href="{{ '/product/gRNA-library' | prepend: site.url.service }}">gRNA文库构建</a></li>
+                <li><a href="{{ '/product/RNAi-design' | prepend: site.url.service }}">RNAi 载体设计与构建</a></li>
+                <li><a href="{{ '/product/miRNA-sponge-design' | prepend: site.url.service }}">miRNA sponge 抑制载体设计与构建</a></li>
+                <li><a href="{{ '/product/shRNA-library' | prepend: site.url.service }}">shRNA文库构建</a></li>
+                <li><a href="{{ '/product/cell-line-transform' | prepend: site.url.service }}">细胞系工程改造服务</a></li>
+                <li><a href="{{ '/product/LV' | prepend: site.url.service }}">慢病毒包装</a></li>
+                <li><a href="{{ '/product/transgenic-mice' | prepend: site.url.service }}">基因工程鼠</a></li>
+                <li><a href="{{ '/product/gene-synthesis' | prepend: site.url.service }}">基因合成</a></li>
+                <li><a href="{{ '/product/synbio-serve' | prepend: site.url.service }}">合成生物学技术服务外包</a></li>
               </ul>
             </li>
           </ul>
@@ -80,17 +80,17 @@
       <ul class="am-list admin-sidebar-list" id="offcanvas-collapse">
         <li class="am-panel">
           <div class="am-padding-sm">
-            <i class="am-margin-left"><a href="/index.html">首页</a></i>
+            <i class="am-margin-left"><a href="{{ '/' | prepend: site.url.root }}">首页</a></i>
           </div>
         </li>
         <li class="am-panel">
           <div class="am-padding-sm">
-            <i class="am-margin-left"><a href="www.syngentech.com.cn">基因山</a></i>
+            <i class="am-margin-left"><a href="http://www.geshare.com.cn">基因山</a></i>
           </div>
         </li>
         <li class="am-panel">
           <div class="am-padding-sm">
-            <i class="am-margin-left" ><a href="www.syngentech.com.cn">BioGeek</a></i>
+            <i class="am-margin-left" ><a href="{{ site.url.biogeek }}">BioGeek</a></i>
             <i class="am-icon-caret-down am-fr am-margin-right" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-Biogeek'}"></i>
           </div>
           <ul class="am-list am-collapse admin-sidebar-sub" id="offcanvas-Biogeek">
@@ -102,51 +102,51 @@
         </li>
         <li class="am-panel">
           <div class="am-padding-sm">
-            <i class="am-margin-left" ><a href="/service/index.html">合生基因</a></i>
+            <i class="am-margin-left" ><a href="{{ site.url.service }}">合生基因</a></i>
             <i class="am-icon-caret-down am-fr am-margin-right" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-Serve'}"></i>
           </div>
           <ul class="am-list am-collapse admin-sidebar-sub" id="offcanvas-Serve">
             <li class="am-panel">
               <div class="am-padding-sm border-style-one">
-                <i class="am-margin-left"><a href="/service/solution/solution">解决方案</a></i>
+                <i class="am-margin-left"><a href="{{ '/solution' | prepend: site.url.service }}">解决方案</a></i>
                 <i class="am-icon-caret-down am-fr am-margin-right" data-am-collapse="{parent: '#offcanvas-Serve', target: '#offcanvas-solution'}"></i>
               </div>
               <ul class="am-list am-collapse admin-sidebar-sub color-style" id="offcanvas-solution">
-                <li class="border-style-two"><a href="/service/solution/knockdown">基因敲除</a></li>
-                <li class="border-style-two"><a href="/service/solution/LncRNAknockdown">LncRNA敲除</a></li>
-                <li class="border-style-two"><a href="/service/solution/nonsite-specificintegration">非定点基因整合</a></li>
-                <li class="border-style-two"><a href="/service/solution/knockin">基因敲入</a></li>
-                <li class="border-style-two"><a href="/service/solution/silencing">基因沉默</a></li>
-                <li class="border-style-two"><a href="/service/solution/Activation">转录激活</a></li>
-                <li class="border-style-two"><a href="/service/solution/inhibition">转录抑制</a></li>
-                <li class="border-style-two"><a href="/service/solution/highediting">高通量基因编辑</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/knockdown' | prepend: site.url.service }}">基因敲除</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/LncRNA-knockdown' | prepend: site.url.service }}">LncRNA敲除</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/nonsite-specific-integration' | prepend: site.url.service }}">非定点基因整合</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/knockin' | prepend: site.url.service }}">基因敲入</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/silencing' | prepend: site.url.service }}">基因沉默</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/Activation' | prepend: site.url.service }}">转录激活</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/inhibition' | prepend: site.url.service }}">转录抑制</a></li>
+                <li class="border-style-two"><a href="{{ '/solution/high-editing' | prepend: site.url.service }}">高通量基因编辑</a></li>
               </ul>
             </li>
             <li class="am-panel">
               <div class="am-padding-sm border-style-one">
-                <i class="am-margin-left " ><a href="/service/product/product">服务与产品</a></i>
+                <i class="am-margin-left " ><a href="{{ '/product' | prepend: site.url.service }}">服务与产品</a></i>
                 <i class="am-icon-caret-down am-fr am-margin-right" data-am-collapse="{parent: '#offcanvas-Serve', target: '#offcanvas-product'}"></i>
               </div>
               <ul class="am-list am-collapse admin-sidebar-sub color-style" id="offcanvas-product">
-                <li class="border-style-two"><a href="/service/product/CRISPRdesign">CRISPR/Cas9 载体设计与构建</a></li>
-                <li class="border-style-two"><a href="/service/product/CRISPRconstruction">CRISPR/Cas9 快速构建试剂盒</a></li>
-                <li class="border-style-two"><a href="/service/product/CRISPRactivity">CRISPR/Cas9 活性检测</a></li>
-                <li class="border-style-two"><a href="/service/product/gRNAlibrary">gRNA文库构建</a></li>
-                <li class="border-style-two"><a href="/service/product/RNAidesign">RNAi 载体设计与构建</a></li>
-                <li class="border-style-two"><a href="/service/product/miRNAspongedesign">miRNA sponge 抑制载体设计与构建</a></li>
-                <li class="border-style-two"><a href="/service/product/shRNAlibrary">shRNA文库构建</a></li>
-                <li class="border-style-two"><a href="/service/product/celllinetransform">细胞系工程改造服务</a></li>
-                <li class="border-style-two"><a href="/service/product/LV">慢病毒包装</a></li>
-                <li class="border-style-two"><a href="/service/product/transgenicmice">基因工程鼠</a></li>
-                <li class="border-style-two"><a href="/service/product/genesynthesis">基因合成</a></li>
-                <li class="border-style-two"><a href="/service/product/synbioserve">合成生物学技术服务外包</a></li>
+                <li class="border-style-two"><a href="{{ '/product/CRISPR-design' | prepend: site.url.service }}">CRISPR/Cas9 载体设计与构建</a></li>
+                <li class="border-style-two"><a href="{{ '/product/CRISPR-construction' | prepend: site.url.service }}">CRISPR/Cas9 快速构建试剂盒</a></li>
+                <li class="border-style-two"><a href="{{ '/product/CRISPR-activity' | prepend: site.url.service }}">CRISPR/Cas9 活性检测</a></li>
+                <li class="border-style-two"><a href="{{ '/product/gRNA-library' | prepend: site.url.service }}">gRNA文库构建</a></li>
+                <li class="border-style-two"><a href="{{ '/product/RNAi-design' | prepend: site.url.service }}">RNAi 载体设计与构建</a></li>
+                <li class="border-style-two"><a href="{{ '/product/miRNA-sponge-design' | prepend: site.url.service }}">miRNA sponge 抑制载体设计与构建</a></li>
+                <li class="border-style-two"><a href="{{ '/product/shRNA-library' | prepend: site.url.service }}">shRNA文库构建</a></li>
+                <li class="border-style-two"><a href="{{ '/product/cell-line-transform' | prepend: site.url.service }}">细胞系工程改造服务</a></li>
+                <li class="border-style-two"><a href="{{ '/product/LV' | prepend: site.url.service }}">慢病毒包装</a></li>
+                <li class="border-style-two"><a href="{{ '/product/transgenic-mice' | prepend: site.url.service }}">基因工程鼠</a></li>
+                <li class="border-style-two"><a href="{{ '/product/gene-synthesis' | prepend: site.url.service }}">基因合成</a></li>
+                <li class="border-style-two"><a href="{{ '/product/synbio-serve' | prepend: site.url.service }}">合成生物学技术服务外包</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li class="am-panel">
           <div class="am-padding-sm">
-            <i class="am-margin-left"><a href="/blog/index.html">博客</a></i>
+            <i class="am-margin-left"><a href="{{ site.url.blog }}">博客</a></i>
           </div>
         </li>
         <li class="am-panel">
@@ -155,10 +155,10 @@
             <i class="am-icon-caret-down am-fr am-margin-right" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-about'}"></i>
           </div>
           <ul class="am-list am-collapse admin-sidebar-sub" id="offcanvas-about">
-            <li class="border-style-one"><a href="/Introduction">企业简介</a></li>
-            <li class="border-style-one"><a href="/recruit">招贤纳士</a></li>
-            <li class="border-style-one"><a href="/Cooperation">工业合作/代理加盟</a></li>
-            <li class="border-style-one"><a href="/connection">联系我们</a></li>
+            <li class="border-style-one"><a href="{{ '/about' | prepend: site.url.root }}">企业简介</a></li>
+            <li class="border-style-one"><a href="{{ '/hire' | prepend: site.url.root }}">招贤纳士</a></li>
+            <li class="border-style-one"><a href="{{ '/cooperate' | prepend: site.url.root }}">工业合作/代理加盟</a></li>
+            <li class="border-style-one"><a href="{{ '/contact' | prepend: site.url.root }}">联系我们</a></li>
           </ul>
         </li>
       </ul>

@@ -9,15 +9,14 @@ tags:
 .am-container
   .article
     %br
-    %a{href: '/blog-child10.html'}
+    %a{href: '{{ "/2015/06/02/the-first-SynBio-YSF" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog10.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child10.html'}
+    %a{href: '{{ "/2015/06/02/the-first-SynBio-YSF" | prepend: site.url.blog }}'}
       %h1 首届合成生物学青年学者论坛在京拉开帷幕
     %small
       Posted on
-      %a{href: '/blog-child10.html'} 2015年6月2日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/06/02/the-first-SynBio-YSF" | prepend: site.url.blog }}'} 2015年6月2日
+      by Luyang Li
     %p
       2015年5月23日首届
       %a{href: 'http://bioinfo.au.tsinghua.edu.cn/CSSB/forum/index.html'} 合成生物学青年学者论坛（Synthetic Biology Young Scholar Forum, SynBioYSF）
@@ -46,19 +45,10 @@ tags:
     %p 叶海峰 &nbsp;&nbsp; 华东师范大学
     %p 朱听 &nbsp;&nbsp;&nbsp; 清华大学
     %p 赵国屏 &nbsp;&nbsp; 中国科学院合成生物学重点实验室
-    %br
-    %small
-      Posted in
-      %a{href: '/category1.html'} 公司资讯
-      %a{href: '/category2.html'} 行业动态
-      and tagged
-      %a{href: '/tag11.html'} 合成生物学
-      %a{href: '/tag7.html'} 合生基因
-      %a{href: '/tag12.html'} 论坛
     %hr
     %br
     %ul.am-pagination
       %li.am-pagination-prev
-        %a{href: '/blog-child9.html'} &laquo; 第三届数学...
+        %a{href: '{{ "/2015/06/02/the-third-MCB" | prepend: site.url.blog }}'} &laquo; 第三届数学...
       %li.am-pagination-next
-        %a{href: '/blog-child11.html'} 第八届世界... &raquo;
+        %a{href: '{{ "/2015/05/20/BITs-8th-AWCC" | prepend: site.url.blog }}'} 第八届世界... &raquo;

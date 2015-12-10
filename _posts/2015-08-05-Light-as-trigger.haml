@@ -7,15 +7,14 @@ tags:
 .am-container
   .article
     %br
-    %a{href: '/blog-child5.html'}
+    %a{href: '{{ "/2015/08/05/Light-as-triggerP" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog5.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child5.html'}
+    %a{href: '{{ "/2015/08/05/Light-as-triggerP" | prepend: site.url.blog }}'}
       %h1 像开关灯一样控制基因编辑？光活化的CRISPR-Cas9系统
     %small
       Posted on
-      %a{href: '/blog-child5.html'} 2015年8月5日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/08/05/Light-as-triggerP" | prepend: site.url.blog }}'} 2015年8月5日
+      by Luyang Li
     %p 自2012年CRISPR-Cas9技术在学术界崭露头角，便凭借基因改造能力和基因治疗潜力，扮演着基因编辑领域受关注度最高的“宠儿”角色。然而，CRISPR-Cas9系统中以不可控的Cas9核酸酶活性为主要诱因之一的脱靶效应，也始终是一片笼罩研究学者内心的阴霾。近日，由日本科学家研发的一种光活化的Cas9蛋白，为研究学者在时间和空间上对CRISPR-Cas9系统进行控制提供了新的灵感。
     %p 这篇名为《Photoactivatable CRISPR-Cas9 for optogenetic genome editing》的文章于2015年6月15日发表于《Nature》杂志子刊《Nature Biotechnology》期刊。作者Moritoshi Sato等在文中阐述了光活化CRISPR-Cas9系统的工作原理：完整的Cas9蛋白被分离成两个无核酸酶活性的片段，然后将这两个片段分别连接一个名为“磁铁蛋白”的光学开关蛋白质；当上述两个片段受到蓝光照射时，磁铁蛋白通过静电作用发生聚集，引起分离的多肽片段重组为完整Cas9，并能够在gRNA的引导下完成对DNA序列的定点切割；当光源关闭后，磁铁蛋白的静电作用停止，Cas9再次分离为两个不具有核酸酶活性的片段。即通过控制光源的照射部位以及开启/关闭，可以精确地控制CRISPR-Cas9系统的作用位置和作用时间。
     %p 光活化的CRISPR-Cas9系统提出了同时在时间和空间上控制基因编辑的研究思路，不仅可以在常规基因编辑研究中随时开启和暂停Cas9的核酸酶活性，而且为发育生物学领域研究不同时期对特定组织/器官进行基因编辑创造了可行性。作者表示，目前尚不清楚此方法能否有效减少CRISPR-Cas9系统脱靶效应的发生，但能够在一定程度上精确控制此系统即是提高了该系统的工作效率；并且，开发受多色光调控的开关蛋白质将会推动CRISPR-Cas9系统的完善工作。
@@ -28,15 +27,10 @@ tags:
         欢迎致电400-680-3200，或发送邮件至
         %a{href: 'mailto:info@syngentech.com.cn'} info@syngentech.com.cn
         咨询，合生基因技术工程师将为您竭心服务。
-    %small
-      Posted in
-      %a{href: '/category1.html'} 公司资讯
-      and tagged
-      %a{href: '/tag4.html'}  CRISPR-Cas9技术.
     %hr
     %br
     %ul.am-pagination
       %li.am-pagination-prev
-        %a{href: '/blog-child4.html'} &laquo; CRISP...
+        %a{href: '{{ "/2015/08/20/CRISPR-Cas9-danger-or-good" | prepend: site.url.blog }}'} &laquo; CRISP...
       %li.am-pagination-next
-        %a{href: '/blog-child6.html'} 2015第... &raquo;
+        %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}.html'} 2015第... &raquo;

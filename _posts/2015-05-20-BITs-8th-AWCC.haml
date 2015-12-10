@@ -5,15 +5,14 @@ image: /images/blog11.jpg
 .am-container
   .article
     %br
-    %a{href: '/blog-child11.html'}
+    %a{href: '{{ "/2015/05/20/BITs-8th-AWCC" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog11.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child11.html'}
+    %a{href: '{{ "/2015/05/20/BITs-8th-AWCC" | prepend: site.url.blog }}'}
       %h1 第八届世界癌症大会——合生基因精彩亮相
     %small
       Posted on
-      %a{href: '/blog-child11.html'} 2015年5月20日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/05/20/BITs-8th-AWCC" | prepend: site.url.blog }}'} 2015年5月20日
+      by Luyang Li
     %p
       2015年5月17日,
       %a{href: 'http://www.bitcongress.com/cancer2015/cn/default.asp'} 第八届世界癌症大会
@@ -40,13 +39,10 @@ image: /images/blog11.jpg
         %img.am-img-responsive{src: '{{ "/images/blog-child11.5.jpg" | prepend: site.url.assets }}', width: '465', height: '349'}
         %p &nbsp;
       %p 合生基因在本次大会上以突出的表现、卓越的技术水平获得了无数赞誉，整体性的各大解决方案更是吸引全场眼球，旨在为国内外科研工作者提供优质、可靠、高效的个性化服务。我们期待在之后的2015年合成生物学青年学者论坛上，与您再聚。
-      %small
-        Posted in
-        %a{href: '/category1.html'} 公司资讯
       %hr
       %br
       %ul.am-pagination
         %li.am-pagination-prev
-          %a{href: '/blog-child10.html'} &laquo; 首届合成...
+          %a{href: '{{ "/2015/06/02/the-first-SynBio-YSF" | prepend: site.url.blog }}'} &laquo; 首届合成...
         %li.am-pagination-next
-          %a{href: '/blog-child12.html'} 合生基因... &raquo;
+          %a{href: '{{ "/2015/05/06/syngen-service" | prepend: site.url.blog }}'} 合生基因... &raquo;

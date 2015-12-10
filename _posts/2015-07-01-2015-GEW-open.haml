@@ -5,15 +5,14 @@ image: /images/blog6.jpg
 .am-container
   .article
     %br
-    %a{href: '/blog-child6.html'}
+    %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}'}
       %img.am-img-responsive{src: '{{ "/images/blog6.jpg" | prepend: site.url.assets }}'}
-    %a{href: '/blog-child6.html'}
+    %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}'}
       %h1 2015第二届基因编辑研讨会在上海拉开帷幕
     %small
       Posted on
-      %a{href: '/blog-child6.html'} 2015年7月1日
-      by
-      %a{href: '/author-luyangli.html', rel: 'author'} Luyang Li
+      %a{href: '{{ "/2015/07/01/2015-GEW-open" | prepend: site.url.blog }}'} 2015年7月1日
+      by Luyang Li
     %p 由上海生物谷主办，合生基因赞助，梅斯医学和相关媒体支持的《2015(第二届)基因编辑研讨会》于2015年6月25日在上海好望角大饭店隆重开幕。北京合生基因科技有限公司作为赞助商如邀参加展会。
     %div{align: 'center'}
       %img.am-img-responsive{src: '{{ "/images/blog-child6.1.jpg" | prepend: site.url.assets }}', width: '750', height: '514'}
@@ -30,6 +29,6 @@ image: /images/blog6.jpg
     %br
     %ul.am-pagination
       %li.am-pagination-prev
-        %a{href: '/blog-child5.html'} &laquo; 像开关灯...
+        %a{href: '{{ "/2015/08/05/Light-as-trigger" | prepend: site.url.blog }}'} &laquo; 像开关灯...
       %li.am-pagination-next
-        %a{href: '/blog-child7.html'} 生物信息学... &raquo;
+        %a{href: '{{ "/2015/07/01/2015-TBIIP" | prepend: site.url.blog }}'} 生物信息学... &raquo;
