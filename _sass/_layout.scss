@@ -20,13 +20,13 @@ $black: #000;
     -webkit-background-size: 40px 36px;
     background-size: 40px 36px;
   }
-  .am-dropdown-content:after  { border-bottom-color: rgba($purple,0.9); }
-  .am-dropdown-content:before { border-bottom-color: rgba($purple,0.9); }
+  .am-dropdown-content:after  { border-bottom-color: rgba($purple, 0.9); }
+  .am-dropdown-content:before { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content {
     position:absolute;
     top: 80%;
-    background-color: rgba($purple,0.6);
-    border-color:rgba($purple,0.7);
+    background-color: rgba($purple, 0.6);
+    border-color:rgba($purple, 0.7);
     a {
       display: block;
       padding: 6px 20px;
@@ -34,33 +34,26 @@ $black: #000;
       color: darken($white, 15%);
     }
     a:hover {
-      background-color: rgba($purple,0.9);
+      background-color: rgba($purple, 0.9);
       color: $white;
     }
   }
 }
-.am-offcanvas-content {
-  a {
-    color: lighten($black,20%);
-  }
-  .border-style-one { border-left: 6px solid rgba($black,0.5); }
-  .border-style-two { border-left: 6px solid rgba($purple,0.9); }
-  .admin-sidebar-sub a:hover {
-    background-color: rgba($black,0.3);
-  }
-  .color-style a:hover {
-    background-color: rgba($purple,0.3);
-  }
+
+.am-offcanvas {
+  a { color: lighten($black, 20%); }
+  ul ul { border-left: 16px solid white; }
 }
+
 .list{
   position: relative;
   .list-content{
     width:300px;
-    background-color: rgba($purple,0.6);
+    background-color: rgba($purple, 0.6);
     position:absolute;
     left:100%;
     top:-40%;
-    border-color:rgba($purple,0.7);
+    border-color:rgba($purple, 0.7);
     display: none;
   }
 }
@@ -71,9 +64,10 @@ $black: #000;
 .site-footer {
   background-color: $purple;
   font-size: 0.75em;
-  color: darken($white,25%);
+  color: darken($white, 25%);
+
   .title-style{
-    color: darken($white,15%);
+    color: darken($white, 15%);
   }
   .text-style {
     text-indent: 2em;
@@ -84,7 +78,5 @@ $black: #000;
   * Site service.index
   */
 .animate {
-  a {
-    color: #333;
-  }
+  a { color: #333; }
 }
