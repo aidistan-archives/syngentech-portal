@@ -1,0 +1,27 @@
+.icon-list li {
+  list-style: none;
+  text-align: center;
+ }
+.icon-list img {
+  max-height: 120px;
+ }
+.am-margin-right-xl {
+  margin-right: 6.9rem;
+ }
+@media screen {
+   .am-topbar-nav > li > a:after{
+     border-bottom: none;
+   }
+   .am-topbar {
+     margin-bottom: 0rem;
+   }
+ }
+li {
+   list-style: none;
+ }
+a {
+   text-decoration: none;
+ }
+a:focus {
+   outline: none;
+ }
