@@ -5,22 +5,16 @@ layout: default
   <img class="am-img-responsive am-margin-top-lg" src="{{ page.image | prepend: site.url.assets }}">
   <h1>{{ page.title }}</h1>
 
-  <small>
-    Posted on
-    发表于 {{ post.date | date: "%Y年%m月%d日" }}
-  </small>
+  <small>发表于 {{ page.date | date: "%Y年%m月%d日" }}</small>
+  {% for tag in page.tags %}
+    <a class="am-badge am-round" href="{{ '/tags#'| prepend: site.url.blog | append: tag }}">{{ tag }}</a>
+  {% endfor %}
 
   {{ content }}
 
-  {% if page.tags %}
-  <small>
-    tag:
-    <a href="{{ '/tags' | prepend: site.url.blog }}">{{ page.tags }}</a>
-  </small>
-  {% endif %}
   <hr></hr>
   <ul class="am-margin-lg am-pagination">
-	  {%if page.previous %}
+	  {% if page.previous %}
 	  <li class="am-pagination-prev">
 	    <a href="{{ page.previous.url | prepend: site.url.root }}">
 	      &laquo; 上一篇 &nbsp;{{ page.previous.title }}
