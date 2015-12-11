@@ -13,8 +13,9 @@ title: 文章列表 - 合生博客
     &nbsp;by Luyang Li
   %a{href: "{{ post.url }}" }
     %img.am-img-responsive.am-margin-top-sm{src: "{{ post.image | prepend: site.url.assets }}" }
-  %p {{ post.content | strip_newlines | truncate: 125 }}
+  %p {{ post.content | strip_html | strip_newlines | truncate: 125 }}
   %p
     %a{:href => "{{ post.url }}"}
       %span 阅读全文 &raquo;
+  %hr
 {% endfor %}
