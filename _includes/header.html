@@ -19,10 +19,19 @@
         <li class="am-dropdown">
           <a href="{{ site.url.biogeek }}" class="am-dropdown-toggle">BioGeek</a>
           <ul class="am-dropdown-content">
-            <li><a href="#">分子克隆</a></li>
-            <li><a href="#">细胞培养</a></li>
-            <li><a href="#">NGS</a></li>
-            <li><a href="#">蛋白表达</a></li>
+            <li class="list">
+              <a href="{{ '/clone' | prepend: site.url.biogeek }}">分子克隆</a>
+              <ul class="list-content am-nav">
+                <li><a href="{{ '/clone/bg10102' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Gene Taq<sup>TM</sup> DNA 聚合酶</a></li>
+                <li><a href="{{ '/clone/bg10104' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Gene Taq<sup>TM</sup> 2 × Master Mix</a></li>
+                <li><a href="{{ '/clone/bg10201' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> T4 DNA 连接酶</a></li>
+                <li><a href="{{ '/clone/bg10202' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Quick Ligase<sup>TM</sup></a></li>
+                <li><a href="{{ '/clone/bg10301' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup>  pfu DNA聚合酶</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a></li>
+            <li><a href="{{ '/ngs' | prepend: site.url.biogeek }}">NGS</a></li>
+            <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li>
           </ul>
         </li>
         <li class="am-dropdown">
@@ -93,14 +102,28 @@
         </li>
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ site.url.biogeek }}">BioGeek</a>
+            <a href="{{ site.url.Biogeek }}">BioGeek</a>
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-biogeek'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-biogeek">
-            <li><a href="www.syngentech.com.cn">分子克隆</a></li>
-            <li><a href="www.syngentech.com.cn">细胞培养</a></li>
-            <li><a href="www.syngentech.com.cn">NGS</a></li>
-            <li><a href="www.syngentech.com.cn">蛋白表达</a></li>
+            <li class="am-panel">
+              <div>
+                <div class="am-padding-sm am-padding-horizontal ">
+                  <a href="{{ '/clone' | prepend: site.url.biogeek }}">分子克隆</a>
+                  <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-clone'}"></i>
+                </div>
+              </div>
+              <ul class="am-list am-collapse" id="offcanvas-clone">
+                <li><a href="{{ '/clone/bg10102' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Gene Taq<sup>TM</sup> DNA 聚合酶</a></li>
+                <li><a href="{{ '/clone/bg10104' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Gene Taq<sup>TM</sup> 2 × Master Mix</a></li>
+                <li><a href="{{ '/clone/bg10201' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> T4 DNA 连接酶</a></li>
+                <li><a href="{{ '/clone/bg10202' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Quick Ligase<sup>TM</sup></a></li>
+                <li><a href="{{ '/clone/bg10301' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup>  pfu DNA聚合酶</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a></li>
+            <li><a href="{{ '/ngs' | prepend: site.url.biogeek }}">NGS</a></li>
+            <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li>
           </ul>
         </li>
         <li class="am-panel">
