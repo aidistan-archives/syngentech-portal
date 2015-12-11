@@ -15,7 +15,7 @@ title: bg10301
 .am-container{:style => "background:#eee;border-radius:10px;padding-top:10px"}
   .am-cf.am-g
     %p.am-align-left
-      %img{:src => "/images/th-product.png", :style => "width:75%;height:75%"}/
+      %img.product{src: '{{ "/images/th-product.png" | prepend: site.url.assets }}'}
     %p.am-margin-right-xl{:style => "margin-top:50px;font-size:16px"}
       %i pfu
       DNA聚合酶在镁离子存在的条件下，75°C时可以催化脱氧核苷酸沿着5'端→ 3'端发生聚合反应成双链DNA。同时它具有3'端→ 5'端的核酸外切活性，因此具有校正功能，无5' 端→ 3'端核酸外切活性。
@@ -133,33 +133,33 @@ title: bg10301
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{:href => '{{ "/clone/molecular" | prepend: site.url.service }}', :style => "color:#0E90D2"} 分子克隆
+            %a{:href => '{{ "/clone" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} 分子克隆
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10102" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10102" | prepend: site.url.biogeek }}'}
             · Gene
             %i Taq
             %sup{:style => "margin:0 0 0 -4px"} TM
             DNA &nbsp;&nbsp;Polymerase
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10104" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10104" | prepend: site.url.biogeek }}'}
             · Gene
             %i Taq
             %sup{:style => "margin:0 0 0 -4px"} TM
             2X Master Mix
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10202" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10202" | prepend: site.url.biogeek }}'}
             · Quick Ligase
             %sup{:style => "margin:0 0 0 -4px"} TM
             Kit
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10201" | prepend: site.url.service }}'} · T4 DNA Ligase
+          %a{href: '{{ "/cell/bg10201" | prepend: site.url.biogeek }}'} · T4 DNA Ligase
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10301" | prepend: site.url.service }}'} · Pfu DNA Polymerase
+          %a{href: '{{ "/cell/bg10301" | prepend: site.url.biogeek }}'} · Pfu DNA Polymerase
     %li.am-u-sm-6.am-u-md-3
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{href: '{{ "/cell/cellular" | prepend: site.url.service }}'} 细胞培养
+            %a{href: '{{ "/cell" | prepend: site.url.biogeek }}'} 细胞培养
         %li.am-margin-top-xs
           %a{:href => "#"} · Transfection
         %li
@@ -176,7 +176,7 @@ title: bg10301
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{:href => '{{ "/ngs/ngs" | prepend: site.url.service }}', :style => "color:#0E90D2"} NGS
+            %a{:href => '{{ "/ngs" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} NGS
         %li.am-margin-top-xs
           %a{:href => "#"} · Mag-Nucleotide Purification
         %li
@@ -196,6 +196,3 @@ title: bg10301
         %li{:style => "font-size:16px"}
           %strong
             %a{:href => "#", :style => "color:#0E90D2"} 蛋白表达
-%a#third-top{:href => "#top", :title => "返回顶部"}
-  %img#third-img{:src => "images/top.png"}/
-%script{:src => "/product1.js"}

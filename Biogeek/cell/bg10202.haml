@@ -15,12 +15,12 @@ title: bg10202
 .am-container{:style => "background:#eee;border-radius:10px;padding-top:10px"}
   .am-cf.am-g
     %p.am-align-left
-      %img{:src => "/images/th-product.png", :style => "width:75%;height:75%"}/
+      %img.product{src: '{{ "/images/th-product.png" | prepend: site.url.assets }}'}
     %p.am-margin-right-xl{:style => "margin-top:50px;font-size:16px"}
       Quick Ligase
-      %sup{:style => "font-size:10px"} TM
+      %sup{:style => "font-size:10px;style:0 0 0 -5px"} TM
       催化双链的DNA或RNA中相邻的5' -磷酸末端和3'羟基末端形成磷酸二酯键。Quick Ligase
-      %sup{:style => "font-size:10px"} TM
+      %sup{:style => "font-size:10px;style:0 0 0 -5px"} TM
       在室温(25°C )反应5 min即可完成DNA粘性末端或平齐末端的连接反应。
 .am-container.am-g-collapse.am-u-md-centered{:style => "height:60px"}
 .am-container{:style => "padding-top:0px;background:#eee;border-radius:20px"}
@@ -84,7 +84,7 @@ title: bg10202
           %td
             %p.am-margin-top
               5 × Quick Ligase
-              %sup{:style => "font-size:10px"} TM
+              %sup{:style => "font-size:10px;margin:0 0 0 -5px"} TM
               反应缓冲液
           %td
             %p.am-margin-top ¥799
@@ -101,7 +101,7 @@ title: bg10202
           %td
             %p.am-margin-top
               5 × Quick Ligase
-              %sup{:style => "font-size:10px"} TM
+              %sup{:style => "font-size:10px;margin:0 0 0 -5px"} TM
               反应缓冲液
           %td
             %p.am-margin-top ¥2999
@@ -129,33 +129,33 @@ title: bg10202
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{:href => '{{ "/clone/molecular" | prepend: site.url.service }}', :style => "color:#0E90D2"} 分子克隆
+            %a{:href => '{{ "/clone" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} 分子克隆
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10102" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10102" | prepend: site.url.biogeek }}'}
             · Gene
             %i Taq
             %sup{:style => "margin:0 0 0 -4px"} TM
             DNA &nbsp;&nbsp;Polymerase
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10104" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10104" | prepend: site.url.biogeek }}'}
             · Gene
             %i Taq
             %sup{:style => "margin:0 0 0 -4px"} TM
             2X Master Mix
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10202" | prepend: site.url.service }}'}
+          %a{href: '{{ "/cell/bg10202" | prepend: site.url.biogeek }}'}
             · Quick Ligase
             %sup{:style => "margin:0 0 0 -4px"} TM
             Kit
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10201" | prepend: site.url.service }}'} · T4 DNA Ligase
+          %a{href: '{{ "/cell/bg10201" | prepend: site.url.biogeek }}'} · T4 DNA Ligase
         %li.am-margin-top-xs
-          %a{href: '{{ "/cell/bg10301" | prepend: site.url.service }}'} · Pfu DNA Polymerase
+          %a{href: '{{ "/cell/bg10301" | prepend: site.url.biogeek }}'} · Pfu DNA Polymerase
     %li.am-u-sm-6.am-u-md-3
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{href: '{{ "/cell/cellular" | prepend: site.url.service }}'} 细胞培养
+            %a{href: '{{ "/cell" | prepend: site.url.biogeek }}'} 细胞培养
         %li.am-margin-top-xs
           %a{:href => "#"} · Transfection
         %li
@@ -172,7 +172,7 @@ title: bg10202
       %ul.am-margin-top-xl.list
         %li{:style => "font-size:16px"}
           %strong
-            %a{:href => '{{ "/ngs/ngs" | prepend: site.url.service }}', :style => "color:#0E90D2"} NGS
+            %a{:href => '{{ "/ngs" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} NGS
         %li.am-margin-top-xs
           %a{:href => "#"} · Mag-Nucleotide Purification
         %li
@@ -192,6 +192,3 @@ title: bg10202
         %li{:style => "font-size:16px"}
           %strong
             %a{:href => "#", :style => "color:#0E90D2"} 蛋白表达
-%a#third-top{:href => "#top", :title => "返回顶部"}
-  %img#third-img{:src => "images/top.png"}/
-%script{:src => "/product1.js"}

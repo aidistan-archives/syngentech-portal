@@ -1,4 +1,31 @@
-
+//reset
+.icon-list li {
+  list-style: none;
+  text-align: center;
+ }
+.icon-list img {
+  max-height: 120px;
+ }
+.am-margin-right-xl {
+  margin-right: 6.9rem;
+ }
+@media screen {
+   .am-topbar-nav > li > a:after{
+     border-bottom: none;
+   }
+   .am-topbar {
+     margin-bottom: 0rem;
+   }
+ }
+li {
+   list-style: none;
+ }
+a {
+   text-decoration: none;
+ }
+a:focus {
+   outline: none;
+ }
  // Biogeek
 $color:#383838;
 .background {
@@ -6,7 +33,7 @@ $color:#383838;
   background-position: center;
 }
 .first-home-banner {
-  background-image: url(/images/first.jpg);
+  background-image: url(../images/first.jpg);
   @extend.background;
   height: 592px;
   color: $color;
@@ -24,9 +51,9 @@ $color:#383838;
   font-weight: 500;
 }
 .first-sprite ul.u-footer {
-  li{
-    list-style: none;
-  }
+  // li{
+  //   list-style: none;
+  // }
   h4{
     font-size: 18px;
     color: $color;
@@ -59,14 +86,17 @@ $color:#383838;
   vertical-align: center;
 }
 .first-adv1 {
-  background-image: url(/images/six.jpg);
+  background-image: url(../images/six.jpg);
   @extend.adv;
   @extend.adv-p-title;
   @extend.adv-p-text;
 }
-div.first-adv2 {
+.max {
+  max-width: 1200px;
+}
+.first-adv2 {
   // max-width: 1200px;
-  background-image: url(/images/eight.jpg);
+  background-image: url(../images/eight.jpg);
   @extend.adv;
   @extend.adv-p-title;
   @extend.adv-p-text;
@@ -82,7 +112,7 @@ div.first-adv2 {
   color: #666;
   font-weight: 200;
 }
-div.first-slogan1 {
+.first-slogan1 {
   margin-bottom: 30px;
   margin-top: 70px;
   text-align: center;
@@ -104,10 +134,10 @@ div.first-slogan1 {
     @extend.slogan-p-text
   }
 }
+.comment {
+  font-size: 18px;
+}
 .first-footer {
-  li{
-    list-style: none;
-  }
   h4.p-title {
     font-size: 18px;
     color: #808080;
@@ -122,9 +152,9 @@ div.first-slogan1 {
     margin:0 auto;
     margin-top: -15px;
   }
-  a{
-    font-size: 16px;
-  }
+  // a{
+  //   font-size: 16px;
+  // }
 }
 .product-list {
   background: #efefef;
@@ -133,23 +163,13 @@ div.first-slogan1 {
     border-bottom: solid 3px #fff;
   }
   .list li{
-    list-style: none;
+    // list-style: none;
     text-align: left;
     font-size: 16px;
   }
   .title {
     color: #000
   }
-}
-.footerimg {
-  width: 100%;
-  height: 100%;
-}
-.comment {
-  font-size: 18px;
-}
-.max {
-  max-width: 1200px;
 }
 // second
 .pic {
@@ -158,15 +178,15 @@ div.first-slogan1 {
   height: 592px;
 }
 .molecular-pic {
-  background-image: url(/images/molecular-pic.jpg);
+  background-image: url(../images/molecular-pic.jpg);
   @extend.pic
 }
 .ngs-pic {
-  background-image: url(/images/ngs-pic.jpg);
+  background-image: url(../images/ngs-pic.jpg);
   @extend.pic
 }
 .cellular-pic {
-  background-image: url(/images/cellular-pic.jpg);
+  background-image: url(../images/cellular-pic.jpg);
   @extend.pic
 }
 .p {
@@ -215,23 +235,23 @@ div.first-slogan1 {
   }
 }
 .molecular-adv1 {
-  background-image: url(/images/sadv1.jpg);
+  background-image: url(../images/sadv1.jpg);
   @extend.adv
 }
 .molecular-adv2 {
-  background-image: url(/images/sadv2.jpg);
+  background-image: url(../images/sadv2.jpg);
   @extend.adv
 }
 .ngs-adv1 {
-  background-image: url(/images/ngs-adv1.jpg);
+  background-image: url(../images/ngs-adv1.jpg);
   @extend.adv
 }
 .ngs-adv2 {
-  background-image: url(/images/ngs-adv2.jpg);
+  background-image: url(../images/ngs-adv2.jpg);
   @extend.adv
 }
 .cellular-adv1 {
-  background-image: url(/images/cellular-adv1.jpg);
+  background-image: url(../images/cellular-adv1.jpg);
   .masking {
     background: rgba(0,0,0,0.3);
     padding: 10px;
@@ -241,9 +261,10 @@ div.first-slogan1 {
   @extend.adv
 }
 .cellular-adv2 {
-  background-image: url(/images/cellular-adv2.jpg);
+  background-image: url(../images/cellular-adv2.jpg);
   @extend.adv
 }
+//third
 .productlist {
   background-position: center;
   background-size: cover;
@@ -259,27 +280,24 @@ div.first-slogan1 {
   }
 }
 .third-pic {
-  background-image: url(/images/GP.jpg);
+  background-image: url(../images/GP.jpg);
   @extend.productlist;
 }
 .third-pic2 {
-  background-image: url(/images/GM.jpg);
+  background-image: url(../images/GM.jpg);
   @extend.productlist;
 }
 .third-pic3 {
-  background-image: url(/images/QK.jpg);
+  background-image: url(../images/QK.jpg);
   @extend.productlist;
 }
 .third-pic4 {
-  background-image: url(/images/TL.jpg);
+  background-image: url(../images/TL.jpg);
   @extend.productlist;
 }
 .third-pic5 {
-  background-image: url(/images/PP.jpg);
+  background-image: url(../images/PP.jpg);
   @extend.productlist;
-}
-.space {
-  height: 60px;
 }
 .product {
   background:#eee;
@@ -307,4 +325,31 @@ div.first-slogan1 {
 }
 .title {
   font-size: 16px;
+}
+.product {
+  width: 75%;
+  height: 75%;
+}
+.link {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 175px;
+}
+#slink6 {
+  @extend.link;
+  background-image: url(../images/s6.jpg);
+}
+#slink6:hover {
+  display:block;
+  background: #f00 !important;
+}
+#slink10 {
+  @extend.link;
+  background-image: url(../images/s10.jpg);
+}
+#slink10:hover {
+  display:block;
+  background: #0f0 !important;
 }
