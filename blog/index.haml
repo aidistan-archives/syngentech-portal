@@ -4,9 +4,17 @@ title: 文章列表 - 合生博客
 ---
 {% for post in site.posts %}
 .am-container
-  %h1.am-margin-top-lg {{ post.title }}
-  %small
-    %a.am-margin-bottom{href: "{{ post.url }}" } {{ post.url }}
+  %h1.am-margin-top-lg
+    %a{href: "{{ post.url }}"} {{ post.title }}
+  %span
+    Posted on
+    %a{href: "{{ post.url }}"}
+      {{ post.date | date_to_string }}
+    &nbsp;by Luyang Li
   %a{href: "{{ post.url }}" }
-    %img.am-img-responsive.am-margin-bottom-lg{src: "{{ post.image | prepend: site.url.assets }}" }
+    %img.am-img-responsive.am-margin-top-sm{src: "{{ post.image | prepend: site.url.assets }}" }
+  %p {{ post.content | strip_newlines | truncate: 125 }}
+  %p
+    %a{:href => "{{ post.url }}"}
+      %span 阅读全文 &raquo;
 {% endfor %}
