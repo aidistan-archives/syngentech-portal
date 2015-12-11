@@ -2,37 +2,32 @@
 layout: default
 ---
 <div class="am-container">
-  <a href="{{ page.url }}">
-    <img class="am-img-responsive am-margin-top-lg" src="{{ page.image | prepend: site.url.assets }}">
-  </a>
-  <a href="{{ page.url }}">
-    <h1>{{ page.title }}</h1>
-  </a>
+  <img class="am-img-responsive am-margin-top-lg" src="{{ page.image | prepend: site.url.assets }}">
+  <h1>{{ page.title }}</h1>
+
   <small>
     Posted on
-    <a href="{{ page.url }}">
-      {{ page.date | date_to_string }}
-    </a>
-    by Luyang Li
+    发表于 {{ post.date | date: "%Y年%m月%d日" }}
   </small>
 
-    {{ content }}
+  {{ content }}
 
   <hr></hr>
+
   <ul class="am-margin-lg am-pagination">
-	  {%if page.previous%}
+	  {%if page.previous %}
 	  <li class="am-pagination-prev">
-	    <a href="{{ page.previous.url }}">
-	      &laquo; Prev &nbsp;{{page.previous.title}}
+	    <a href="{{ page.previous.url | prepend: site.url.root }}">
+	      &laquo; 上一篇 &nbsp;{{ page.previous.title }}
 	    </a>
 	  </li>
-	  {%endif%}
-	  {%if page.next%}
+	  {% endif %}
+	  {% if page.next %}
 	  <li class="am-pagination-next">
-	    <a href="{{ page.next.url }}">
-	      Next &raquo; &nbsp;{{page.next.title}}
+	    <a href="{{ page.next.url | prepend: site.url.root }}">
+	      下一篇 &raquo; &nbsp;{{ page.next.title }}
 	    </a>
 	  </li>
-	  {%endif%}
+	  {% endif %}
 	</ul>
 </div>
