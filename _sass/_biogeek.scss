@@ -33,34 +33,21 @@ $color:#383838;
   background-position: center;
 }
 .first-home-banner {
-  background-image: url(../images/first.jpg);
   @extend.background;
   height: 592px;
   color: $color;
-  .p-title {
-    font-size: 48px;
-  }
-  .p-text {
-    font-size: 20px;
-  }
 }
 .first-sprite p {
   text-align: center;
-  font-size: 36px;
   color: $color;
   font-weight: 500;
 }
 .first-sprite ul.u-footer {
-  // li{
-  //   list-style: none;
-  // }
   h4{
-    font-size: 18px;
     color: $color;
     font-weight: 500;
   }
   span {
-    font-size: 14px;
     color: #808080;
     width: 160px;
     height: 100px;
@@ -75,19 +62,15 @@ $color:#383838;
   height: 450px;
 }
 .adv-p-title {
-  font-size: 48px;
   color: #fff;
   font-weight: 200;
 }
 .adv-p-text {
-  font-size: 18px;
   color: #fff;
   text-align: center;
   vertical-align: center;
 }
 .first-adv1 {
-  background-image: url(../images/six.jpg);
-  @extend.adv;
   @extend.adv-p-title;
   @extend.adv-p-text;
 }
@@ -95,20 +78,15 @@ $color:#383838;
   max-width: 1200px;
 }
 .first-adv2 {
-  // max-width: 1200px;
-  background-image: url(../images/eight.jpg);
-  @extend.adv;
   @extend.adv-p-title;
   @extend.adv-p-text;
 }
 .slogan-p-title {
-  font-size: 26px;
   color: #444;
   font-weight: 500;
   letter-spacing:1px;
 }
 .slogan-p-text {
-  font-size: 16px;
   color: #666;
   font-weight: 200;
 }
@@ -134,17 +112,12 @@ $color:#383838;
     @extend.slogan-p-text
   }
 }
-.comment {
-  font-size: 18px;
-}
 .first-footer {
   h4.p-title {
-    font-size: 18px;
     color: #808080;
     font-weight: 500;
   }
   span.p-text {
-    font-size: 14px;
     color: #808080;
     width: 255px;
     height: 30px;
@@ -152,20 +125,14 @@ $color:#383838;
     margin:0 auto;
     margin-top: -15px;
   }
-  // a{
-  //   font-size: 16px;
-  // }
 }
 .product-list {
   background: #efefef;
   p{
-    font-size: 16px;
     border-bottom: solid 3px #fff;
   }
   .list li{
-    // list-style: none;
     text-align: left;
-    font-size: 16px;
   }
   .title {
     color: #000
@@ -177,27 +144,13 @@ $color:#383838;
   background-size: cover;
   height: 592px;
 }
-.molecular-pic {
-  background-image: url(../images/molecular-pic.jpg);
-  @extend.pic
-}
-.ngs-pic {
-  background-image: url(../images/ngs-pic.jpg);
-  @extend.pic
-}
-.cellular-pic {
-  background-image: url(../images/cellular-pic.jpg);
-  @extend.pic
-}
 .p {
   .p-title {
-    font-size: 26px;
     color: #444;
     font-weight: 500;
     letter-spacing: 1px;
   }
   .p-text {
-    font-size: 16px;
     color: #666;
     font-weight: 200;
   }
@@ -221,47 +174,17 @@ $color:#383838;
 }
 .adv {
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 450px;
-  p.p-title {
-    font-size: 48px;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-  p.p-text {
-    font-size: 29px;
-    color: #fff;
-    letter-spacing: 2px;
-  }
+  color: #fff;
 }
 .molecular-adv1 {
-  background-image: url(../images/sadv1.jpg);
-  @extend.adv
-}
-.molecular-adv2 {
-  background-image: url(../images/sadv2.jpg);
-  @extend.adv
-}
-.ngs-adv1 {
-  background-image: url(../images/ngs-adv1.jpg);
-  @extend.adv
-}
-.ngs-adv2 {
-  background-image: url(../images/ngs-adv2.jpg);
-  @extend.adv
-}
-.cellular-adv1 {
-  background-image: url(../images/cellular-adv1.jpg);
   .masking {
     background: rgba(0,0,0,0.3);
     padding: 10px;
     text-align: center;
     border-radius: 10px;
   }
-  @extend.adv
-}
-.cellular-adv2 {
-  background-image: url(../images/cellular-adv2.jpg);
   @extend.adv
 }
 //third
@@ -275,29 +198,6 @@ $color:#383838;
     border-radius:0 20px 20px 0;
     color:#fff;
   }
-  .title {
-    font-size: 40px;
-  }
-}
-.third-pic {
-  background-image: url(../images/GP.jpg);
-  @extend.productlist;
-}
-.third-pic2 {
-  background-image: url(../images/GM.jpg);
-  @extend.productlist;
-}
-.third-pic3 {
-  background-image: url(../images/QK.jpg);
-  @extend.productlist;
-}
-.third-pic4 {
-  background-image: url(../images/TL.jpg);
-  @extend.productlist;
-}
-.third-pic5 {
-  background-image: url(../images/PP.jpg);
-  @extend.productlist;
 }
 .product {
   background:#eee;
@@ -310,21 +210,13 @@ $color:#383838;
 }
 .article {
   margin-top: 50px;
-  font-size: 18px;
 }
 .special {
   background: #eee;
   border-radius: 20px;
   .text {
-    font-size:20px;
     border-bottom:solid 3px #fff;
   }
-  .word {
-    font-size: 16px;
-  }
-}
-.title {
-  font-size: 16px;
 }
 .product {
   width: 75%;

@@ -3,24 +3,20 @@ layout: default
 title: bg10202
 ---
 .am-g
-  .third-pic4.am-vertical-align
+  .productlist.am-vertical-align{style: 'background-image: url({{ "/images/biogeek/product/TL.jpg" | prepend: site.url.assets }})'}
     .am-vertical-align-bottom.am-padding.am-margin-bottom-lg{:style => "background:#EC5C44;border-radius:0 20px 20px 0;color:#fff"}
-      %p.am-margin-left.am-padding-right-xl.am-margin-top-sm{:style => "font-size:40px"}
-        \&nbsp;&nbsp;&nbsp;BioGeek
-        %sup{:style => "font-size:26px"}> TM
-        \&nbsp;Quick Ligase
-        %sup{:style => "font-size:26px"}> TM
-        \&nbsp;&nbsp;&nbsp;
+      %p.am-margin-left.am-padding-right-xl.am-margin-top-sm.am-text-xxxl
+        &nbsp;&nbsp;&nbsp;BioGeek<sup>TM</sup>
+        &nbsp;Quick Ligase<sup>TM</sup>
+        &nbsp;&nbsp;&nbsp;
 %div{:style => "height:60px"}
 .am-container{:style => "background:#eee;border-radius:10px;padding-top:10px"}
   .am-cf.am-g
     %p.am-align-left
       %img.product{src: '{{ "/images/th-product.png" | prepend: site.url.assets }}'}
-    %p.am-margin-right-xl{:style => "margin-top:50px;font-size:16px"}
-      Quick Ligase
-      %sup{:style => "font-size:10px;style:0 0 0 -5px"} TM
-      催化双链的DNA或RNA中相邻的5' -磷酸末端和3'羟基末端形成磷酸二酯键。Quick Ligase
-      %sup{:style => "font-size:10px;style:0 0 0 -5px"} TM
+    %p.am-margin-right-xl{style: 'margin-top:50px'}
+      Quick Ligase<sup>TM</sup>
+      催化双链的DNA或RNA中相邻的5' -磷酸末端和3'羟基末端形成磷酸二酯键。Quick Ligase<sup>TM</sup>
       在室温(25°C )反应5 min即可完成DNA粘性末端或平齐末端的连接反应。
 .am-container.am-g-collapse.am-u-md-centered{:style => "height:60px"}
 .am-container{:style => "padding-top:0px;background:#eee;border-radius:20px"}
@@ -83,8 +79,7 @@ title: bg10202
             %p.am-margin-top 1 mL×1
           %td
             %p.am-margin-top
-              5 × Quick Ligase
-              %sup{:style => "font-size:10px;margin:0 0 0 -5px"} TM
+              5 × Quick Ligase<sup>TM</sup>
               反应缓冲液
           %td
             %p.am-margin-top ¥799
@@ -100,8 +95,7 @@ title: bg10202
             %p.am-margin-top 1 mL×1
           %td
             %p.am-margin-top
-              5 × Quick Ligase
-              %sup{:style => "font-size:10px;margin:0 0 0 -5px"} TM
+              5 × Quick Ligase<sup>TM</sup>
               反应缓冲液
           %td
             %p.am-margin-top ¥2999
@@ -110,7 +104,7 @@ title: bg10202
               %a{:href => "#"} 下载
     .am-u-md-11.am-u-md-centered
       %div{:style => "color:#f00"}
-        %p{:style => "font-size:24px"}
+        %p.am-text-xl
           %strong 订购方式
         %p{:style => "margin-top:-10px"} 电话订购：400-680-3200
         %p{:style => "margin-top:-15px"}
@@ -121,31 +115,27 @@ title: bg10202
 .am-container.am-g-collapse.product-list{:style => "margin-bottom:20px;background:#eee;border-radius:20px"}
   %p.am-margin-top.am-padding-bottom.am-g
     %strong.am-margin-left
-      BioGeek
-      %sup{:style => "margin:0 0 0 -4px"} TM
+      BioGeek<sup>TM</sup>
       产品列表
-  %ul.am-g.am-u-md-centered.icon-list.am-g-collapse{:style => "font-size:14px"}
+  %ul.am-g.am-u-md-centered.icon-list.am-g-collapse.am-text-sm
     %li.am-u-sm-6.am-u-md-3.am-g-collapse
       %ul.am-margin-top-xl.list
-        %li{:style => "font-size:16px"}
+        %li
           %strong
             %a{:href => '{{ "/clone" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} 分子克隆
         %li.am-margin-top-xs
           %a{href: '{{ "/cell/bg10102" | prepend: site.url.biogeek }}'}
             · Gene
-            %i Taq
-            %sup{:style => "margin:0 0 0 -4px"} TM
+            <i>Taq</i><sup>TM</sup>
             DNA &nbsp;&nbsp;Polymerase
         %li.am-margin-top-xs
           %a{href: '{{ "/cell/bg10104" | prepend: site.url.biogeek }}'}
             · Gene
-            %i Taq
-            %sup{:style => "margin:0 0 0 -4px"} TM
+            <i>Taq</i><sup>TM</sup>
             2X Master Mix
         %li.am-margin-top-xs
           %a{href: '{{ "/cell/bg10202" | prepend: site.url.biogeek }}'}
-            · Quick Ligase
-            %sup{:style => "margin:0 0 0 -4px"} TM
+            · Quick Ligase<sup>TM</sup>
             Kit
         %li.am-margin-top-xs
           %a{href: '{{ "/cell/bg10201" | prepend: site.url.biogeek }}'} · T4 DNA Ligase
@@ -153,7 +143,7 @@ title: bg10202
           %a{href: '{{ "/cell/bg10301" | prepend: site.url.biogeek }}'} · Pfu DNA Polymerase
     %li.am-u-sm-6.am-u-md-3
       %ul.am-margin-top-xl.list
-        %li{:style => "font-size:16px"}
+        %li
           %strong
             %a{href: '{{ "/cell" | prepend: site.url.biogeek }}'} 细胞培养
         %li.am-margin-top-xs
@@ -170,7 +160,7 @@ title: bg10202
           %a{:href => "#"} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     %li.am-u-sm-6.am-u-md-3
       %ul.am-margin-top-xl.list
-        %li{:style => "font-size:16px"}
+        %li
           %strong
             %a{:href => '{{ "/ngs" | prepend: site.url.biogeek }}', :style => "color:#0E90D2"} NGS
         %li.am-margin-top-xs
@@ -189,6 +179,6 @@ title: bg10202
           %a{:href => "#"} · T4 DNA 聚合酶
     %li.am-u-sm-6.am-u-md-3
       %ul.am-margin-top-xl.list
-        %li{:style => "font-size:16px"}
+        %li
           %strong
             %a{:href => "#", :style => "color:#0E90D2"} 蛋白表达
