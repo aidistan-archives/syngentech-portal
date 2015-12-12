@@ -23,41 +23,20 @@ a {
 a:focus {
    outline: none;
  }
+
  // Biogeek
 $color:#383838;
-.background {
+
+.biogeek-banner {
   background-size: cover;
   background-position: center;
-}
-.first-home-banner {
-  @extend.background;
-  height: 592px;
-  color: $color;
-}
-.first-sprite p {
-  text-align: center;
-  color: $color;
-  font-weight: 500;
-}
-.first-sprite ul.u-footer {
-  h4{
-    color: $color;
-    font-weight: 500;
-  }
-  span {
-    color: #808080;
-    width: 160px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    margin-top: -15px;
+
+  .am-vertical-align-middle,
+  .am-vertical-align-bottom {
+    width: 100%;
   }
 }
-.adv {
-  background-position: center;
-  background-size: 100% 100%;
-  height: 450px;
-}
+
 .adv-p-title {
   color: #fff;
   font-weight: 200;
@@ -87,28 +66,8 @@ $color:#383838;
   color: #666;
   font-weight: 200;
 }
-.first-slogan1 {
-  margin-bottom: 30px;
-  margin-top: 70px;
-  text-align: center;
-  .p-title {
-    @extend.slogan-p-title
-  }
-  .p-text {
-    @extend.slogan-p-text
-  }
-}
-.first-slogan2 {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  text-align: center;
-  .p-title {
-    @extend.slogan-p-title
-  }
-  .p-text {
-    @extend.slogan-p-text
-  }
-}
+
+
 .product-list {
   background: #efefef;
   p{

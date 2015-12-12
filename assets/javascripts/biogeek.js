@@ -1,9 +1,11 @@
 $(document).on('ready', screenHeight);
 $(window).on('resize', screenHeight);
 $(window).on('load',color);
+
 function screenHeight() {
-  $('[screen-height]').height($(window).height());
+  $('.screen-height').height($(window).height());
 }
+
 function color() {
   var oLink1 = document.getElementById("link1");
   var oLink6 = document.getElementById("link6");
