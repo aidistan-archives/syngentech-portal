@@ -37,30 +37,18 @@ $color:#383838;
   @extend.background;
   height: 592px;
   color: $color;
-  .p-title {
-    font-size: 48px;
-  }
-  .p-text {
-    font-size: 20px;
-  }
 }
 .first-sprite p {
   text-align: center;
-  font-size: 36px;
   color: $color;
   font-weight: 500;
 }
 .first-sprite ul.u-footer {
-  // li{
-  //   list-style: none;
-  // }
   h4{
-    font-size: 18px;
     color: $color;
     font-weight: 500;
   }
   span {
-    font-size: 14px;
     color: #808080;
     width: 160px;
     height: 100px;
@@ -75,12 +63,10 @@ $color:#383838;
   height: 450px;
 }
 .adv-p-title {
-  font-size: 48px;
   color: #fff;
   font-weight: 200;
 }
 .adv-p-text {
-  font-size: 18px;
   color: #fff;
   text-align: center;
   vertical-align: center;
@@ -102,13 +88,11 @@ $color:#383838;
   @extend.adv-p-text;
 }
 .slogan-p-title {
-  font-size: 26px;
   color: #444;
   font-weight: 500;
   letter-spacing:1px;
 }
 .slogan-p-text {
-  font-size: 16px;
   color: #666;
   font-weight: 200;
 }
@@ -139,12 +123,10 @@ $color:#383838;
 }
 .first-footer {
   h4.p-title {
-    font-size: 18px;
     color: #808080;
     font-weight: 500;
   }
   span.p-text {
-    font-size: 14px;
     color: #808080;
     width: 255px;
     height: 30px;
@@ -152,20 +134,14 @@ $color:#383838;
     margin:0 auto;
     margin-top: -15px;
   }
-  // a{
-  //   font-size: 16px;
-  // }
 }
 .product-list {
   background: #efefef;
   p{
-    font-size: 16px;
     border-bottom: solid 3px #fff;
   }
   .list li{
-    // list-style: none;
     text-align: left;
-    font-size: 16px;
   }
   .title {
     color: #000
@@ -191,13 +167,11 @@ $color:#383838;
 }
 .p {
   .p-title {
-    font-size: 26px;
     color: #444;
     font-weight: 500;
     letter-spacing: 1px;
   }
   .p-text {
-    font-size: 16px;
     color: #666;
     font-weight: 200;
   }
@@ -224,12 +198,10 @@ $color:#383838;
   background-size: 100% 100%;
   height: 450px;
   p.p-title {
-    font-size: 48px;
     color: #fff;
     letter-spacing: 1px;
   }
   p.p-text {
-    font-size: 29px;
     color: #fff;
     letter-spacing: 2px;
   }
@@ -275,9 +247,6 @@ $color:#383838;
     border-radius:0 20px 20px 0;
     color:#fff;
   }
-  .title {
-    font-size: 40px;
-  }
 }
 .third-pic {
   background-image: url(../images/GP.jpg);
@@ -310,21 +279,13 @@ $color:#383838;
 }
 .article {
   margin-top: 50px;
-  font-size: 18px;
 }
 .special {
   background: #eee;
   border-radius: 20px;
   .text {
-    font-size:20px;
     border-bottom:solid 3px #fff;
   }
-  .word {
-    font-size: 16px;
-  }
-}
-.title {
-  font-size: 16px;
 }
 .product {
   width: 75%;
