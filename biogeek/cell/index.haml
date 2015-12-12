@@ -2,13 +2,15 @@
 layout: biogeek_menu
 title: 细胞生物学试剂
 ---
-.pic{style: 'background-image: url({{ "/images/biogeek/cell/cell-pic.jpg" | prepend: site.url.assets }})'}
-.am-container.cellular-slogan
-  %p.am-text-xl 合生试剂为您倾力打造完备的细胞生物学产品
+.biogeek-banner.screen-height{style: 'background-image: url({{ "/images/biogeek/cell-banner-1.jpg" | prepend: site.url.assets }})'}
+
+.am-container.am-margin-vertical-xl.am-text-center
+  %h2.am-margin-top-xl 合生试剂为您倾力打造完备的细胞生物学产品
   %hr
   %p 优质稳定的细胞生物学试剂，在保证安全性的基础上，降低您每一次实验的系统误差
-.am-container
-  %ul#slink.am-center.am-avg-sm-3.am-avg-md-5.second-pic-sprite
+
+#biogeek-cell-puzzle.am-container
+  %ul.am-center.am-avg-sm-3.am-avg-md-5
     %li.am-hide-sm-only
       %img.am-img-responsive{src: '{{ "/images/s1.jpg" | prepend: site.url.assets }}'}
     %li.am-hide-sm-only
@@ -19,10 +21,10 @@ title: 细胞生物学试剂
       %img.am-img-responsive{src: '{{ "/images/s4.jpg" | prepend: site.url.assets }}'}
     %li.am-hide-sm-only
       %img.am-img-responsive{src: '{{ "/images/s5.jpg" | prepend: site.url.assets }}'}
-    %li{:style => "position:relative"}
-      %a#slink6.am-img-responsive
-        -# %img#simg6.am-img-responsive{src: '{{ "/images/s6.jpg" | prepend: site.url.assets }}'}
-        %span.am-margin-sm{:style => "position:absolute;left:0;bottom:0;color:#fff;font-size:16px"}
+    %li
+      %img.am-img-responsive{src: '{{ "/images/s6.jpg" | prepend: site.url.assets }}'}
+      .puzzle-wrapper
+        %a.am-margin-sm
           Transfection Kit
           %br
           细胞转染试剂
@@ -32,13 +34,13 @@ title: 细胞生物学试剂
       %img.am-img-responsive{src: '{{ "/images/s8.jpg" | prepend: site.url.assets }}'}
     %li.am-hide-sm-only
       %img.am-img-responsive{src: '{{ "/images/s9.jpg" | prepend: site.url.assets }}'}
-    %li{:style => "position:relative"}
-      %a#slink10.am-img-responsive
-        -# %img#simg10.am-img-responsive{src: '{{ "/images/s10.jpg" | prepend: site.url.assets }}'}
-        %span.am-margin-sm{:style => "position:absolute;left:0;bottom:0;color:#fff;font-size:16px"}
-          Lentivirus Concentration
+    %li
+      %img.am-img-responsive{src: '{{ "/images/s10.jpg" | prepend: site.url.assets }}'}
+      .puzzle-wrapper
+        %a.am-margin-sm
+          Lentivirus Concentration Solution Kit
           %br
-          Solution Kit慢病毒浓缩试剂盒
+          慢病毒浓缩试剂盒
     %li.am-hide-sm-only
       %img.am-img-responsive{src: '{{ "/images/s11.jpg" | prepend: site.url.assets }}'}
     %li.am-hide-sm-only
@@ -49,27 +51,24 @@ title: 细胞生物学试剂
       %img.am-img-responsive{src: '{{ "/images/s14.jpg" | prepend: site.url.assets }}'}
     %li.am-hide-sm-only
       %img.am-img-responsive{src: '{{ "/images/s15.jpg" | prepend: site.url.assets }}'}
-.am-container.cellular-slogan
-  %p.am-text-xl 溯源经典 · 展望颠覆
+
+.am-container.am-margin-vertical-xl.am-text-center
+  %h2.am-margin-top-xl 溯源经典 · 展望颠覆
   %hr
   %p 化学法转染，为您的方案设计提供更多可能
-.adv.am-vertical-align.am-text-center{style: 'background-image: url({{ "/images/biogeek/cell/cellular-adv1.jpg" | prepend: site.url.assets }})'}
-  .am-u-sm-10.am-u-md-8.am-u-sm-centered.am-vertical-align-middle.am-margin.masking
-    %p.am-text-4xl{style: 'color:#fff'}
-      BioGeek<sup>TM</sup>
-      细胞转染试剂
-    %p.am-text-xxl{style: 'color:#fff'}
-      化学导入 · 高效低毒
-    %a{href: ''}
-      进一步了解>
-.am-container.cellular-slogan
-  %p.am-text-xl 卓效浓缩 · 新锐品质
+
+.biogeek-banner.am-vertical-align.am-text-center{style: 'height: 540px; background-image: url({{ "/images/biogeek/cell-banner-2.jpg" | prepend: site.url.assets }})'}
+  .am-vertical-align-middle.am-text-white
+    %h2.am-text-xxxl BioGeek<sup>TM</sup> 细胞转染试剂
+    %p.am-text-lg 化学导入 · 高效低毒
+    -# %a{href: ''} 进一步了解 >
+
+.am-container.am-margin-vertical-xl.am-text-center
+  %h2.am-margin-top-xl 卓效浓缩 · 新锐品质
   %hr
   %p 更优性能造就更高滴度，简便操作规划更多时间
-.adv.am-vertical-align.am-text-center{style: 'background-image: url({{ "/images/biogeek/cell/cellular-adv2.jpg" | prepend: site.url.assets }})'}
-  .am-u-sm-10.am-u-md-8.am-u-sm-centered.am-vertical-align-middle.am-margin
-    %p.am-text-4xl{style: 'color:#fff'}
-      Biogeek<sup>TM</sup>
-      慢病毒浓缩试剂盒
-    %a{href: ''}
-      进一步了解>
+
+.biogeek-banner.am-vertical-align.am-margin-bottom-xl.am-text-center{style: 'height: 540px; background-image: url({{ "/images/biogeek/cell-banner-3.jpg" | prepend: site.url.assets }})'}
+  .am-vertical-align-middle.am-text-white
+    %h2.am-text-xxxl Biogeek<sup>TM</sup> 慢病毒浓缩试剂盒
+    -# %a{href: ''} 进一步了解 >
