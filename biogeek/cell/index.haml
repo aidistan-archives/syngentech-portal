@@ -2,7 +2,7 @@
 layout: default
 title: 细胞生物学试剂
 ---
-.cellular-pic
+.pic{style: 'background-image: url({{ "/images/biogeek/cell/cell-pic.jpg" | prepend: site.url.assets }})'}
 .am-container.cellular-slogan
   %p.am-text-xl 合生试剂为您倾力打造完备的细胞生物学产品
   %hr
@@ -53,25 +53,26 @@ title: 细胞生物学试剂
   %p.am-text-xl 溯源经典 · 展望颠覆
   %hr
   %p 化学法转染，为您的方案设计提供更多可能
-.cellular-adv1.am-vertical-align.am-text-center
+.adv.am-vertical-align.am-text-center{style: 'background-image: url({{ "/images/biogeek/cell/cellular-adv1.jpg" | prepend: site.url.assets }})'}
   .am-u-sm-10.am-u-md-8.am-u-sm-centered.am-vertical-align-middle.am-margin.masking
     %p.am-text-4xl{style: 'color:#fff'}
-      BioGeek
-      %sup{style: 'margin:0 0 0 -10px'}TM
+      BioGeek<sup>TM</sup>
       细胞转染试剂
-    %p.am-text-xxl{style: 'color:#fff'} 化学导入 · 高效低毒
-    %a{href: ''}进一步了解>
+    %p.am-text-xxl{style: 'color:#fff'}
+      化学导入 · 高效低毒
+    %a{href: ''}
+      进一步了解>
 .am-container.cellular-slogan
   %p.am-text-xl 卓效浓缩 · 新锐品质
   %hr
   %p 更优性能造就更高滴度，简便操作规划更多时间
-.cellular-adv2.am-vertical-align.am-text-center
-  .am-u-sm-10.am-u-md-10.am-u-sm-centered.am-vertical-align-bottom.am-margin-top-xl.am-g-collapse
-    %p.am-margin-top-xl.am-text-xxl{style: 'color:#383838'}
-      Biogeek
-      %sup{style: 'margin:0 0 0 -10px'} TM
+.adv.am-vertical-align.am-text-center{style: 'background-image: url({{ "/images/biogeek/cell/cellular-adv2.jpg" | prepend: site.url.assets }})'}
+  .am-u-sm-10.am-u-md-8.am-u-sm-centered.am-vertical-align-middle.am-margin
+    %p.am-text-4xl{style: 'color:#fff'}
+      Biogeek<sup>TM</sup>
       慢病毒浓缩试剂盒
-      %a.am-margin-left-xl.am-padding-bottom{:href => "#", :style => "font-size:16px"} 进一步了解>
+    %a{href: ''}
+      进一步了解>
 .am-g.am-margin-top-xl
   %ul.am-u-md-11.am-u-md-centered.icon-list.first-footer.am-margin-top-xl
     %li.am-u-sm-6.am-u-md-3
