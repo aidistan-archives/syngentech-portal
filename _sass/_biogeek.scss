@@ -1,31 +1,16 @@
 //reset
-.icon-list li {
-  list-style: none;
-  text-align: center;
- }
-.icon-list img {
-  max-height: 120px;
- }
-.am-margin-right-xl {
-  margin-right: 6.9rem;
- }
-@media screen {
-   .am-topbar-nav > li > a:after{
-     border-bottom: none;
-   }
-   .am-topbar {
-     margin-bottom: 0rem;
-   }
- }
-a {
-   text-decoration: none;
- }
-a:focus {
-   outline: none;
- }
+// .am-margin-right-xl {
+//   margin-right: 6.9rem;
+// }
 
- // Biogeek
-$color:#383838;
+@media screen {
+  .am-topbar-nav > li > a:after{
+    border-bottom: none;
+  }
+  .am-topbar {
+    margin-bottom: 0rem;
+  }
+}
 
 .biogeek-banner {
   background-size: cover;
@@ -37,100 +22,22 @@ $color:#383838;
   }
 }
 
-.pic {
-  background-position: center;
-  background-size: cover;
-  height: 592px;
-}
-
-.adv-p-title {
-  color: #fff;
-  font-weight: 200;
-}
-.adv-p-text {
-  color: #fff;
-  text-align: center;
-  vertical-align: center;
-}
-.first-adv1 {
-  @extend.adv-p-title;
-  @extend.adv-p-text;
-}
-.max {
-  max-width: 1200px;
-}
-.first-adv2 {
-  @extend.adv-p-title;
-  @extend.adv-p-text;
-}
-.slogan-p-title {
-  color: #444;
-  font-weight: 500;
-  letter-spacing:1px;
-}
-.slogan-p-text {
-  color: #666;
-  font-weight: 200;
-}
-
-
 .product-list {
   background: #efefef;
-  p{
+
+  p, h2 {
     border-bottom: solid 3px #fff;
   }
+
   .list li{
     text-align: left;
   }
+
   .title {
     color: #000
   }
 }
-// second
 
-.p {
-  .p-title {
-    color: #444;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  .p-text {
-    color: #666;
-    font-weight: 200;
-  }
-}
-.slogan {
-  margin-bottom: 70px;
-  margin-top:70px;
-  text-align: center;
-}
-.molecular-slogan {
-  @extend.p;
-  @extend.slogan
-}
-.ngs-slogan {
-  @extend.p;
-  @extend.slogan
-}
-.cellular-slogan {
-  @extend.p;
-  @extend.slogan
-}
-.adv {
-  background-position: center;
-  background-size: cover;
-  height: 450px;
-  color: #fff;
-}
-.molecular-adv1 {
-  .masking {
-    background: rgba(0,0,0,0.3);
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  @extend.adv
-}
 //third
 .productlist {
   background-position: center;
