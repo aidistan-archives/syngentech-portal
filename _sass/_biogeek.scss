@@ -18,7 +18,7 @@
 
   .am-vertical-align-middle,
   .am-vertical-align-bottom {
-    width: 100%;
+    width: 99%; //to solve the problem of browser compatibility
   }
 }
 
