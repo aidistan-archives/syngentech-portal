@@ -18,7 +18,7 @@
 
   .am-vertical-align-middle,
   .am-vertical-align-bottom {
-    width: 100%;
+    width: 99%; //to solve the problem of browser compatibility
   }
 }
 
@@ -51,36 +51,21 @@
   }
 }
 .product {
-  background:#eee;
-  border-radius:10px;
-  padding-top:10px;
-}
-.pimg {
   width: 75%;
   height: 75%;
 }
-.article {
-  margin-top: 50px;
+.blank {
+  height: 60px;
 }
-.special {
+.box-border {
   background: #eee;
   border-radius: 20px;
-  .text {
-    border-bottom:solid 3px #fff;
-  }
 }
-.product {
-  width: 75%;
-  height: 75%;
+.color-zone {
+  background:#EC5C44;
+  border-radius:0 20px 20px 0;
+  color:#fff;
 }
-.link {
-  display: block;
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-  height: 175px;
-}
-
 .biogeek-puzzle {
   ul li {
     position: relative;
