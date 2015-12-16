@@ -14,19 +14,19 @@ layout: default
 
   <hr></hr>
   <ul class="am-margin-lg am-pagination">
-	  {% if page.previous %}
-	  <li class="am-pagination-prev">
-	    <a href="{{ page.previous.url | prepend: site.url.root }}">
-	      &laquo; 上一篇 &nbsp;{{ page.previous.title }}
-	    </a>
-	  </li>
-	  {% endif %}
-	  {% if page.next %}
-	  <li class="am-pagination-next">
-	    <a href="{{ page.next.url | prepend: site.url.root }}">
-	      下一篇 &raquo; &nbsp;{{ page.next.title }}
-	    </a>
-	  </li>
-	  {% endif %}
-	</ul>
+    {% if page.previous %}
+    <li class="am-pagination-prev">
+      <a href="{{ page.previous.url | prepend: site.url.root }}">
+        &laquo; 上一篇 &nbsp;{{ page.previous.title }}
+      </a>
+    </li>
+    {% endif %}
+    {% if page.next %}
+    <li class="am-pagination-next">
+      <a href="{{ page.next.url | prepend: site.url.root }}">
+        下一篇 &raquo; &nbsp;{{ page.next.title }}
+      </a>
+    </li>
+    {% endif %}
+  </ul>
 </div>
