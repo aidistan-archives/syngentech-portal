@@ -59,7 +59,7 @@ namespace :config do
     config = load_config.merge(
       'url' => {
         'root' =>    'http://www.syngen.tech',
-        'assets' =>  'http://assets.syngen.tech',
+        'assets' =>  'http://portal.assets.syngentech.com.cn',
         'blog' =>    'http://blog.syngen.tech',
         'biogeek' => 'http://biogeek.syngen.tech',
         'service' => 'http://service.syngen.tech'
