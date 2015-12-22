@@ -1,19 +1,5 @@
-//reset
-// .am-margin-right-xl {
-//   margin-right: 6.9rem;
-// }
-
-@media screen {
-  .am-topbar-nav > li > a:after{
-    border-bottom: none;
-  }
-  .am-topbar {
-    margin-bottom: 0rem;
-  }
-}
-
 .biogeek-banner {
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 
   .am-vertical-align-middle,
@@ -22,50 +8,6 @@
   }
 }
 
-.product-list {
-  background: #efefef;
-
-  p, h2 {
-    border-bottom: solid 3px #fff;
-  }
-
-  .list li{
-    text-align: left;
-  }
-
-  .title {
-    color: #000
-  }
-}
-
-//third
-.productlist {
-  background-position: bottom center;
-  background-size: 100% 100%;
-  height: 370px;
-  position: relative;
-  .diamond {
-    background:#EC5C44;
-    border-radius:0 20px 20px 0;
-    color:#fff;
-  }
-}
-.product {
-  width: 75%;
-  height: 75%;
-}
-.blank {
-  height: 60px;
-}
-.box-border {
-  background: #eee;
-  border-radius: 20px;
-}
-.color-zone {
-  background:#EC5C44;
-  border-radius:0 20px 20px 0;
-  color:#fff;
-}
 .biogeek-puzzle {
   ul li {
     position: relative;
@@ -104,4 +46,49 @@
   ul li:nth-child( 6):hover a { background-color: #CE6E08; }
   ul li:nth-child(10):hover a { background-color: #0A8CE0; }
   ul li:nth-child(13):hover a { background-color: #B40808; }
+}
+
+.product-list {
+  background: #efefef;
+
+  p, h2 {
+    border-bottom: solid 3px #fff;
+  }
+
+  .list li{
+    text-align: left;
+  }
+
+  .title {
+    color: #000
+  }
+}
+
+//third
+.productlist {
+  background-size: cover;
+  background-position: bottom center;
+  height: 370px;
+  position: relative;
+  .diamond {
+    background:#EC5C44;
+    border-radius:0 20px 20px 0;
+    color:#fff;
+  }
+}
+.product {
+  width: 75%;
+  height: 75%;
+}
+.blank {
+  height: 60px;
+}
+.box-border {
+  background: #eee;
+  border-radius: 20px;
+}
+.color-zone {
+  background:#EC5C44;
+  border-radius:0 20px 20px 0;
+  color:#fff;
 }
