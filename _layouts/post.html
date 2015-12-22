@@ -1,32 +1,35 @@
 ---
 layout: default
 ---
-<div class="am-container">
-  <img class="am-img-responsive am-margin-top-lg" src="{{ page.image | prepend: site.url.assets }}">
-  <h1>{{ page.title }}</h1>
+<div class="bg-style">
+  <div class="am-container">
+    <div class="cm">
+      <img class="am-img-responsive" src="{{ page.image | prepend: site.url.assets }}">
+      <h1>{{ page.title }}</h1>
+      <small>发表于 {{ page.date | date: "%Y年%m月%d日" }}</small>
+      {% for tag in page.tags %}
+        <a class="am-badge am-round" href="{{ '/tags#'| prepend: site.url.blog | append: tag }}">{{ tag }}</a>
+      {% endfor %}
 
-  <small>发表于 {{ page.date | date: "%Y年%m月%d日" }}</small>
-  {% for tag in page.tags %}
-    <a class="am-badge am-round" href="{{ '/tags#'| prepend: site.url.blog | append: tag }}">{{ tag }}</a>
-  {% endfor %}
+      {{ content }}
 
-  {{ content }}
-
-  <hr></hr>
-  <ul class="am-margin-lg am-pagination">
-    {% if page.previous %}
-    <li class="am-pagination-prev">
-      <a href="{{ page.previous.url | prepend: site.url.root }}">
-        &laquo; 上一篇 &nbsp;{{ page.previous.title }}
-      </a>
-    </li>
-    {% endif %}
-    {% if page.next %}
-    <li class="am-pagination-next">
-      <a href="{{ page.next.url | prepend: site.url.root }}">
-        下一篇 &raquo; &nbsp;{{ page.next.title }}
-      </a>
-    </li>
-    {% endif %}
-  </ul>
+    </div>
+  </div>
 </div>
+
+<ul class="am-margin-lg am-pagination">
+  {% if page.previous %}
+  <li class="am-pagination-prev">
+    <a href="{{ page.previous.url | prepend: site.url.root }}">
+      &laquo; 上一篇 &nbsp;
+    </a>
+  </li>
+  {% endif %}
+  {% if page.next %}
+  <li class="am-pagination-next">
+    <a href="{{ page.next.url | prepend: site.url.root }}">
+      下一篇 &raquo; &nbsp;
+    </a>
+  </li>
+  {% endif %}
+</ul>

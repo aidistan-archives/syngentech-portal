@@ -78,3 +78,20 @@ $black: #000;
 #service {
   p { text-indent: 2em; }
 }
+
+/**
+ * blog
+ */
+
+.bg-style {
+  margin-top: 50px;
+  .am-container {
+    max-width: 900px;
+    box-shadow: 0 0 10px 0 #cfcfcf;
+    .cm {
+      max-width: 800px;
+      padding: 50px 50px;
+      margin: 0 auto;
+    }
+  }
+}
