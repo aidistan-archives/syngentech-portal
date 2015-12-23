@@ -1,11 +1,32 @@
 ---
 layout: default
 ---
+<div class="am-g">
+  <div class="productlist am-vertical-align" style= "background-image: url({{ page.image | prepend: site.url.assets }})">
+    <div class="am-vertical-align-bottom am-padding am-margin-bottom-lg color-zone">
+      <p class="am-margin-left am-padding-right-sm am-margin-top-sm am-text-xxxl">
+        {% if page.title_html %}
+          {{ page.title_html }}
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</div>
 
 {{ content }}
 
-<div class="am-container am-margin-vertical am-link-muted product-list" style=" margin-bottom:20px;background:#eee;border-radius:20px">
-  <h2 class="am-padding">BioGeek<sup>TM</sup> 产品列表</h2>
+<div class="am-u-md-11 am-u-md-centered am-margin-top-sm am-margin-bottom-lg">
+  <div style="color:#f00">
+    <p class="am-text-lg"><strong>订购方式</strong></p>
+    <p>电话订购：400-680-3200</p>
+    <p>联系邮箱：service@syngentech.com.cn</p>
+    <p>运输方式：满1000元包邮哦，切莫错失良机，抓紧时间订购吧。</p>
+  </div>
+</div>
+
+<div class="am-container am-margin-vertical am-link-muted" >
+  <hr></hr>
+  <h2>BioGeek<sup>TM</sup> 产品列表</h2>
   <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
     <strong>
       <a href='{{ "/clone" | prepend: site.url.biogeek }}'>分子克隆</a>
@@ -43,6 +64,7 @@ layout: default
         <br>
         慢病毒浓缩试剂盒
       </li>
+      <br>
     </ul>
   </div>
   <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
