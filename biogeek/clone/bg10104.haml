@@ -40,6 +40,7 @@ image: /images/biogeek/product/GM.jpg
       .am-u-md-11.am-u-md-centered
         %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
           %tr{:style => "background:#f9f9f9"}
+            %th 产品名称
             %th 货号
             %th 规格
             %th 随酶提供试剂
@@ -47,38 +48,75 @@ image: /images/biogeek/product/GM.jpg
             %th 价格
             %th 说明书
           %tr
+            %td.am-text-middle{:rowspan => "3", :style=>" width:100px"}
+              %p.am-margin-top{:align => "center"} GeneTaq<sup>TM</sup> 2X Green Master Mix
             %td
-              %p.am-margin-top BG10104S
+              %p.am-margin-top BG10103S
             %td
               %p.am-margin-top 20 R
             %td
-              %p.am-margin-top 无核酸酶水
+              %p.am-margin-top ddH2O
             %td
               %p.am-margin-top 1.5mL
             %td
               %p.am-margin-top ¥75
-            %td.am-text-middle{:rowspan => "3"}
+            %td.am-text-middle{:rowspan => "6"}
               %p.am-margin-top{:align => "center"}
                 %a{href: '{{ "/documents/GeneTaq-2xMaster-Mix-V1.0.3.pdf" | prepend: site.url.assets }}'} 下载
           %tr{:style => "background:#f9f9f9"}
             %td
-              %p.am-margin-top BG10104M
+              %p.am-margin-top BG10103M
             %td
               %p.am-margin-top 100 R
             %td
-              %p.am-margin-top 无核酸酶水
+              %p.am-margin-top ddH2O
             %td
               %p.am-margin-top 1.5mLx2
             %td
               %p.am-margin-top ¥309
           %tr
             %td
-              %p.am-margin-top BG10104L
+              %p.am-margin-top BG10103L
             %td
               %p.am-margin-top 500 R
             %td
-              %p.am-margin-top 无核酸酶水
+              %p.am-margin-top ddH2O
             %td
               %p.am-margin-top 1.5mL×10
             %td
               %p.am-margin-top ¥1388
+            %tr
+              %td.am-text-middle{:rowspan => "3", width: '150'}
+                %p.am-margin-top{:align => "center"} GeneTaq<sup>TM</sup> 2X Colorless Master Mix
+              %td
+                %p.am-margin-top BG10104S
+              %td
+                %p.am-margin-top 20 R
+              %td
+                %p.am-margin-top ddH2O
+              %td
+                %p.am-margin-top 1.5mL
+              %td
+                %p.am-margin-top ¥75
+            %tr{:style => "background:#f9f9f9"}
+              %td
+                %p.am-margin-top BG10104M
+              %td
+                %p.am-margin-top 100 R
+              %td
+                %p.am-margin-top ddH2O
+              %td
+                %p.am-margin-top 1.5mLx2
+              %td
+                %p.am-margin-top ¥309
+            %tr
+              %td
+                %p.am-margin-top BG10104L
+              %td
+                %p.am-margin-top 500 R
+              %td
+                %p.am-margin-top ddH2O
+              %td
+                %p.am-margin-top 1.5mL×10
+              %td
+                %p.am-margin-top ¥1388
