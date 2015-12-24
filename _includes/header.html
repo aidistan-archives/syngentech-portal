@@ -29,7 +29,13 @@
                 <li><a href="{{ '/clone/bg10301' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup>  pfu DNA聚合酶</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a></li>
+            <li class="list">
+              <a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a>
+              <ul class="list-content am-nav">
+                <li><a href="{{ '/cell/Transfection-Reagent' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Transfection Reagent</a></li>
+                <li><a href="{{ '/cell/LCS-kit' | prepend: site.url.biogeek }}">Lentivirus Concentration Solution Kit</a></li>
+              </ul>
+            </li>
             <li><a href="{{ '/ngs' | prepend: site.url.biogeek }}">NGS</a></li>
             <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
           </ul>
@@ -121,7 +127,19 @@
                 <li><a href="{{ '/clone/bg10301' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup>  pfu DNA聚合酶</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a></li>
+            <ul class="am-list am-collapse" id="offcanvas-biogeek">
+              <li class="am-panel">
+                <div>
+                  <div class="am-padding-sm am-padding-horizontal ">
+                    <a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a>
+                    <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-cell'}"></i>
+                  </div>
+                </div>
+                <ul class="am-list am-collapse" id="offcanvas-cell">
+                  <li><a href="{{ '/cell/Transfection-Reagent' | prepend: site.url.biogeek }}">BioGeek<sup>TM</sup> Transfection Reagent</a></li>
+                  <li><a href="{{ '/cell/LCS-kit' | prepend: site.url.biogeek }}">Lentivirus Concentration Solution Kit</a></li>
+                </ul>
+              </li>
             <li><a href="{{ '/ngs' | prepend: site.url.biogeek }}">NGS</a></li>
             <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
           </ul>
