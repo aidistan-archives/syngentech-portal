@@ -5,20 +5,60 @@ title_html: Lentivirus Concentration Kit
 image: /images/biogeek/product/LK.jpg
 ---
 .am-container.am-margin-top-xl
-  %h1 BioGeekTM慢病毒浓缩试剂盒（6X）
+  %h1 BioGeek<sup>TM</sup> 慢病毒浓缩试剂盒（6X）
+  .am-margin-top-xl.am-margin-bottom-xl.am-g
+    .am-cf
+      .am-u-md-4
+        %p.am-align-left
+          %img.am-img-responsive{src: '{{ "/images/cell2.png" | prepend: site.url.assets }}', width: '286', height: '202'}
+      .am-u-md-8
+        %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
+          %tr{:style => "background:#f9f9f9"}
+            %th 产品名称
+            %th 货号
+            %th 规格
+            %th 储存条件
+            %th 价格
+            %th 说明书下载
+          %tr
+            %td.am-text-middle{:rowspan => "4", width: '200'}
+              %p.am-margin-top{:align => "center"} Lentivirus Concentration Solution Kit
+            %td.am-text-middle{:rowspan => "2"}
+              %p.am-margin-top{:align => "center"} BG20101S
+            %td{"am-text-middle" => "", :rowspan => "2"}
+              %p.am-margin-top{:align => "center"} 50mL
+            %td{"am-text-middle" => "", :rowspan => "2"}
+              %p.am-margin-top{:align => "center"} 4 &#8451;
+            %td.am-text-middle{:rowspan => "2"}
+              %p.am-margin-top{:align => "center"} ¥600.00
+              %td.am-text-middle{:rowspan => "4"}
+                %p.am-margin-top{:align => "center"}
+                  %a{href: '{{ "/documents/Lentivirus-Concentration-Kit.pdf" | prepend: site.url.assets }}'} 下载
+              %tr
+          %tr{:style => "background:#f9f9f9"}
+            %td.am-text-middle{:rowspan => "2"}
+              %p.am-margin-top{:align => "center"} BG20101L
+            %td.am-text-middle{:rowspan => "2"}
+              %p.am-margin-top{:align => "center"} 100mL
+            %td{"am-text-middle" => "", :rowspan => "2"}
+              %p.am-margin-top{:align => "center"} 4 &#8451;
+            %td.am-text-middle{:rowspan => "2"}
+              %p.am-margin-top{:align => "center"} ¥1000.00
+  %h2 产品说明
+  %p.am-margin-bottom-xl Syngentech团队自主研发的BioGeek<sup>TM</sup>慢病毒浓缩试剂盒，经多次严格测试，可快速、高效浓缩任何慢病毒颗粒。操作简单，无需超速离心，只需将收获的慢病毒上清液与浓缩试剂按比例混匀，4℃孵育一段时间，正常离心即可得到浓缩比例100倍以上的慢病毒颗粒，回收率高达90%以上。
+  %h2 储存条件及有效期
+  %p 4℃保存12个月
   %hr
   .am-margin-top-xl.am-margin-bottom-xl
-    .am-cf
-      %p.am-align-left
-        %img.am-img-responsive{src: '{{ "/images/cell2.png" | prepend: site.url.assets }}', width: '486', height: '342'}
-      %h2{style: 'margin-top: 0'} 产品优势
-      .am-u-md-12.am-u-md-centered
-        %p .方便：无需昂贵的过滤柱，超速离心机，只需要配制低温离心机即可。
-        %p .快速：只需混合放置2小时，离心30 min即可。
-        %p .高效：可富集90%以上的病毒颗粒，病毒滴度可浓缩100倍以上。
-        %p .广谱：可富集各种类型的慢病毒颗粒。
-  %hr
+    %h2{style: 'margin-top: 0'} 产品优势
+    .am-u-md-12.am-u-md-centered
+      %p .方便：无需昂贵的过滤柱，超速离心机，只需要配制低温离心机即可。
+      %p .快速：只需混合放置2小时，离心30 min 即可。
+      %p .高效：可富集90%以上的病毒颗粒，病毒滴度可浓缩100倍以上。
+      %p .广谱：可富集各种类型的慢病毒颗粒。
+
   .am-margin-top-xl
+    %hr
     %h2 使用方法
     %p 1. 慢病毒包装成功后，收集慢病毒上清液，4℃，4000 g离心10 min；
     %p 2. 用0.45 µm滤器过滤上清液，除去细胞碎片；
@@ -31,11 +71,12 @@ image: /images/biogeek/product/LK.jpg
     %p 5. 小心移去上清（切勿碰触沉淀物）；
     %p 6. 加入适量体积的DMEM或PBS，轻轻吹打重悬沉淀物；
     %p 7. 按需求分装病毒，-80℃保存病毒。
+    %p
+      %strong 注：慢病毒切忌反复冻融，每冻融一次，慢病毒效价将下降10%-20%。
   .am-margin-top-xl
     %hr
     %h2 应用实例
-    %p 第二代慢病毒包装系统，插入片段约为5 kb（hEF1a-EGFP）。 4 mL病毒上清液利用BioGeekTM慢病毒浓缩试剂浓缩后，加入40 µL PBS重悬。将病毒梯度稀释（准备10个1.5ml EP管，每管加入90µl培养液，往第一个管中加入10µl病毒原液，记作100；混匀后，吸取10µl加入第二个管混匀，记作10-1；依此类推），感染HEK293细胞，在对应孔中加入10ul稀释好的病毒液并做好标记，72h后利用荧光计数法检测病毒滴度，滴度可达108/mL。
-
+    %p 第二代慢病毒包装系统，插入片段约为5kb（hEF1a-EGFP）。4 mL病毒上清液利用BioGeek<sup>TM</sup> 慢病毒浓缩试剂浓缩后，加入40 µL PBS重悬。将病毒梯度稀释（准备10个1.5ml EP管，每管加入90µl培养液，往第一个管中加入10µl病毒原液，记作10<sup>0</sup>；混匀后，吸取10µl加入第二个管混匀，记作10<sup>-1</sup>；依此类推），感染HEK293细胞，在对应孔中加入10ul稀释好的病毒液并做好标记，72h后利用荧光计数法检测病毒滴度，滴度可达10<sup>8</sup>/mL。
   .am-margin-top-xl
     .am-u-md-11.am-u-md-centered
       %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
@@ -106,43 +147,5 @@ image: /images/biogeek/product/LK.jpg
       %hr
       %h2 注意事项
       %p 1. 所有慢病毒操作均应尽量在BSL2级生物安全柜中进行，并佩戴一次性口罩和手套；
-      %p 2. 本品仅可用于科学研究，不可用于临床治疗。
-    .am-margin-top-xl
+      %p.am-margin-bottom-xl 2. 本品仅可用于科学研究，不可用于临床治疗。
       %hr
-      .am-g
-        %h2 产品说明
-        %p.am-margin-bottom-xl Syngentech团队自主研发的BioGeek<sup>TM</sup>慢病毒浓缩试剂盒，经多次严格测试，可快速、高效浓缩任何慢病毒颗粒。操作简单，无需超速离心，只需将收获的慢病毒上清液与浓缩试剂按比例混匀，4℃孵育一段时间，正常离心即可得到浓缩比例100倍以上的慢病毒颗粒，回收率高达90%以上。
-
-        .am-u-md-11.am-u-md-centered
-          %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
-            %tr{:style => "background:#f9f9f9"}
-              %th 产品名称
-              %th 货号
-              %th 规格
-              %th 储存条件
-              %th 价格
-              %th 说明书下载
-            %tr
-              %td.am-text-middle{:rowspan => "4"}
-                %p.am-margin-top{:align => "center"} Lentivirus Concentration Solution Kit
-              %td.am-text-middle{:rowspan => "2"}
-                %p.am-margin-top{:align => "center"} BG20101S
-              %td{"am-text-middle" => "", :rowspan => "2"}
-                %p.am-margin-top{:align => "center"} 50mL
-              %td{"am-text-middle" => "", :rowspan => "2"}
-                %p.am-margin-top{:align => "center"} 4<sup>。</sup>C
-              %td.am-text-middle{:rowspan => "2"}
-                %p.am-margin-top{:align => "center"} ¥600.00
-                %td.am-text-middle{:rowspan => "4"}
-                  %p.am-margin-top{:align => "center"}
-                    %a{href: '{{ "/documents/Lentivirus-Concentration-Solution-Kit.pdf" | prepend: site.url.assets }}'} 下载
-                %tr
-            %tr{:style => "background:#f9f9f9"}
-              %td.am-text-middle{:rowspan => "2"}
-                %p.am-margin-top{:align => "center"} BG20101L
-              %td.am-text-middle{:rowspan => "2"}
-                %p.am-margin-top{:align => "center"} 100mL
-              %td{"am-text-middle" => "", :rowspan => "2"}
-                %p.am-margin-top{:align => "center"} 4<sup>。</sup>C
-              %td.am-text-middle{:rowspan => "2"}
-                %p.am-margin-top{:align => "center"} ¥1200.00
