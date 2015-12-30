@@ -2,12 +2,13 @@
 layout: default
 title: 文章列表 - 合生博客
 ---
+
 {% for post in site.posts %}
-.am-container
+.am-container{:style => "max-width: 800px"}
   %a.am-link-muted{href: "{{ post.url | prepend: site.url.root }}"}
     %h1.am-margin-top-lg {{ post.title }}
     %span 发表于 {{ post.date | date: "%Y年%m月%d日" }}
-    %img.am-img-responsive.am-margin-top-sm{src: "{{ post.image | prepend: site.url.assets }}" }
+    %img.am-img-responsive.am-margin-top-sm{src: "{{ post.image | prepend: site.url.assets }}"}
     %p {{ post.content | strip_html | strip_newlines | truncate: 125 }}
   %a.am-margin-vertical{href: "{{ post.url | prepend: site.url.root }}"} 阅读全文 &raquo;
   %hr
