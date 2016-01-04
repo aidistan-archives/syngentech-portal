@@ -6,22 +6,54 @@ image: /images/biogeek/product/TL.jpg
 ---
 
 .am-container.am-margin-top-xl
+  .am-margin-top-xl.am-margin-bottom-xl.am-g
+    .am-cf
+      .am-u-md-3
+        %p.am-align-left
+          %img.am-img-responsive{src: '{{ "/images/Quick-ligase.png" | prepend: site.url.assets }}', width: '486', height: '342'}
+      .am-u-md-9
+        %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
+          %tr{:style => "background:#f9f9f9"}
+            %th 产品名称
+            %th 货号
+            %th 规格
+            %th 价格
+            %th 说明书
+          %tr
+            %td.am-text-middle{:rowspan => "4", :style=>" width:150px"}
+              %p.am-margin-top Quick Ligase<sup>TM</sup> Kit
+            %td
+              %p.am-margin-top BG10202S
+            %td
+              %p.am-margin-top 30 R
+            %td
+              %p.am-margin-top ¥799.00
+            %td.am-text-middle{:rowspan => "4"}
+              %p.am-margin-top{:align => "center"}
+                %a{href: '{{ "/documents/Quick-Ligase-Kit-V1.0.3.pdf" | prepend: site.url.assets }}'} 下载
+            %tr
+          %tr{:style => "background:#f9f9f9"}
+            %td
+              %p.am-margin-top BG10202L
+            %td
+              %p.am-margin-top 150 R
+            %td
+              %p.am-margin-top ¥2999.00
+
+  %h2.am-margin-top-sm 产品说明
   %p.am-margin-bottom-xl Quick Ligase<sup>TM</sup> 催化双链的DNA或RNA中相邻的5' -磷酸末端和3'羟基末端形成磷酸二酯键。Quick Ligase<sup>TM</sup> 在室温(25°C )反应5 min即可完成DNA粘性末端或平齐末端的连接反应。
   %hr
   .am-margin-top-xl.am-margin-bottom-xl
-    .am-cf
-      %p.am-align-left
-        %img.am-img-responsive{src: '{{ "/images/thr-product.png" | prepend: site.url.assets }}', width: '486', height: '342'}
-      %h2{style: 'margin-top: 0'} 产品特性
-      .am-u-md-12.am-u-md-centered
-        %h3 ·高纯度
-        %p SDS-PAGE 检测纯度 >99%&#x2028;。
-        %h3 ·低核酸残留
-        %p 通过Taqman探针qPCR法检测大肠杆菌16S rRNA位点，用至少5 &mu;l的quick ligase来检测，结果显示大肠杆菌基因组DNA的污染水平小于10个大肠杆菌基因组。
-        %h3 ·高效率
-        %p 在室温(25°C )反应5 min即可完成DNA粘性末端或平齐末端的连接反应。
-        %h3 ·高适用
-        %p 可用于所有常规DNA连接反应。
+    %h2{style: 'margin-top: 0'} 产品特性
+    .am-u-md-12.am-u-md-centered
+      %h3 ·高纯度
+      %p SDS-PAGE 检测纯度 >99%&#x2028;。
+      %h3 ·低核酸残留
+      %p 通过Taqman探针qPCR法检测大肠杆菌16S rRNA位点，用至少5 &mu;l的quick ligase来检测，结果显示大肠杆菌基因组DNA的污染水平小于10个大肠杆菌基因组。
+      %h3 ·高效率
+      %p 在室温(25°C )反应5 min即可完成DNA粘性末端或平齐末端的连接反应。
+      %h3 ·高适用
+      %p 可用于所有常规DNA连接反应。
   %hr
     .am-g.am-margin-top-xl
       %h2.am-margin-left-xl 应用
@@ -40,45 +72,4 @@ image: /images/biogeek/product/TL.jpg
           %strong ·&nbsp;Golden Gate反应
         %p.am-margin-left-xl
           %strong ·&nbsp;文库构建
-  .am-margin-top-xl
-    %hr
-    .am-g
-      %h1.am-margin-left.am-margin-top-lg 产品
-      .am-u-md-11.am-u-md-centered
-        %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
-          %tr{:style => "background:#f9f9f9"}
-            %th 货号
-            %th 规格
-            %th 随酶提供试剂
-            %th 数量
-            %th 价格
-            %th 说明书
-          %tr
-            %td
-              %p.am-margin-top BG10202S
-            %td
-              %p.am-margin-top 30 R
-            %td
-              %p.am-margin-top 2 × Quick Ligase<sup>TM</sup>反应缓冲液
-            %td
-              %p.am-margin-top 1 mL
-            %td
-              %p.am-margin-top ¥799.00
-            %td
-              %p.am-margin-top
-                %a{href: '{{ "/documents/Quick-Ligase-Kit-V1.0.3.pdf" | prepend: site.url.assets }}'} 下载
-          %tr{:style => "background:#f9f9f9"}
-            %td
-              %p.am-margin-top BG10202L
-            %td
-              %p.am-margin-top 150 R
-            %td
-              %p.am-margin-top 2 × Quick Ligase<sup>TM</sup>反应缓冲液
-            %td
-              %p.am-margin-top
-                1 mL×2
-            %td
-              %p.am-margin-top ¥2999.00
-            %td
-              %p.am-margin-top
-                %a{href: '{{ "/documents/Quick-Ligase-Kit-V1.0.3.pdf" | prepend: site.url.assets }}'} 下载
+  %hr
