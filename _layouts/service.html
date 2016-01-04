@@ -2,8 +2,8 @@
 layout: default
 ---
 <div id="service" class="am-container">
-  <h1 class="am-margin-top-xl">{{ page.title }}</h1>
-  <img class="am-img-responsive am-margin-top-lg" src="{{ page.image.header | prepend: site.url.assets }}">
+  <h1 class="am-margin-top">{{ page.title }}</h1>
+  <img src="{{ page.image.header | prepend: site.url.assets }}" width="100%" height="360px">
 
   {{ content }}
 
@@ -14,5 +14,5 @@ layout: default
       咨询，合生基因技术工程师将为您竭心服务。
     </strong>
   </p>
-  <img class="am-img-responsive am-margin-bottom-lg" src="{{ page.image.footer | prepend: site.url.assets }}">
+  <img class="am-margin-bottom-lg" src="{{ page.image.footer | prepend: site.url.assets }}" width="100%" height="250px">
 </div>
