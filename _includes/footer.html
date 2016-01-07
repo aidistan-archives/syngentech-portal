@@ -9,12 +9,13 @@
       <p>北京合生基因科技有限公司是国内第一家专注于合成生物学在科研和医药健康领域应用的生物技术公司。公司将秉持“科教兴国、产业报国、健康强国”理念，以“在过程中寻找机会、在发展中解决问题、在创新中获得效益”为思路，以发展民族生物产业为己任，努力成为集合成生物学技术研发、科研服务和产品销售于一体的新型生物医药技术型企业。</p>
     </div>
     <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">
-      <!-- <h3>切换语言</h3>
+      <h3>切换语言</h3>
       <div>
-        <a href="#">简体中文</a>
+        {% capture realUrl %}{{ page.url | replace_first: '/en/', '/' }}{% endcapture %}
+        <a href="{{ realUrl | prepend: site.url.root }}">简体中文</a>
         <span class="am-margin-horizontal-xs">|</span>
-        <a href="#">English</a>
-      </div> -->
+        <a href="{{ realUrl | prepend: '/en' | prepend: site.url.root |}}">English</a>
+      </div>
       <h3>联系我们</h3>
       <ul class="am-nav">
         <li>联系热线：400-680-3200</li>
