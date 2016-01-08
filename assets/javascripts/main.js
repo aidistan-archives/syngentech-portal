@@ -22,6 +22,14 @@
       $(this).css({'transform': 'scale(1)'});
     });
 
+    // index page animation effects
+    $(".animation img").mouseover(function() {
+      $(this).css({'opacity': '0.85'});
+    });
+    $(".animation img").mouseout(function() {
+      $(this).css({'opacity': '1'});
+    });
+
     // 关闭侧边栏
     var id = '#offcanvasId';
     var $myOc = $(id);
