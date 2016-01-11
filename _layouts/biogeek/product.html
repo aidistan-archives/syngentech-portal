@@ -2,15 +2,18 @@
 layout: default
 ---
 <div class="am-g">
-  <div class="productlist am-vertical-align" style= "background-image: url({{ page.image | prepend: site.url.assets }})">
-    <div class="am-vertical-align-bottom am-padding am-padding-bottom-0 color-zone">
-      <h1 class="am-container am-text-justify">
-        {% if page.title_html %}
-          {{ page.title_html }}
-        {% endif %}
-      </h1>
-    </div>
-  </div>
+  <div class="productlist am-vertical-align biogeek-banner " style= "background-image: url({{ page.image | prepend: site.url.assets }})">
+
+     <div class="am-vertical-align-bottom am-text-center cong">
+       <div class="am-container">
+         <h1 class="am-text-left color-zong am-padding">
+           {% if page.title_html %}
+             {{ page.title_html }}
+           {% endif %}
+          </h1>
+        </div>
+     </div>
+   </div>
 </div>
 
 {{ content }}

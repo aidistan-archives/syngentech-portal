@@ -1,6 +1,6 @@
 .biogeek-banner {
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
 
   .am-vertical-align-middle,
   .am-vertical-align-bottom {
@@ -87,11 +87,17 @@
   background: #eee;
   border-radius: 20px;
 }
-.color-zone {
-  background:#EC5C44;
-  border-radius:0 20px 20px 0;
-  color:#fff;
+.cong {
   position: absolute;
-  left: 0;
-  bottom: 10%;
+  bottom: 6%;
+}
+.color-zong {
+  background:#EC5C44;
+  border-radius: 20px;
+  color:#fff;
+  max-width: 520px;
+}
+.am-vertical-align-bottom {
+    display: inline-block !important;
+
 }
