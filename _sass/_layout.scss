@@ -77,6 +77,12 @@ $black: #000;
 #service {
   p { text-indent: 2em; }
 }
+.img-style {
+  height: 370px;
+  background-size: cover;
+  background-position: -100px right;
+  display: block;
+}
 /**
  * blog
  */
