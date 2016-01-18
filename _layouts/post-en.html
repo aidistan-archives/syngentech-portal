@@ -1,0 +1,35 @@
+---
+layout: default-en
+---
+<div class="bg-style">
+  <div class="am-container">
+    <div class="cm">
+      <img class="am-img-responsive" src="{{ page.image | prepend: site.url.assets }}">
+      <h1>{{ page.title }}</h1>
+      <small>Submit on {{ page.date | date: "%YYear%mMonth%dDay" }}</small>
+      {% for tag in page.tags %}
+        <a class="am-badge am-round" href="{{ '/tags#'| prepend: site.url.blog | append: tag }}">{{ tag }}</a>
+      {% endfor %}
+
+      {{ content }}
+
+    </div>
+  </div>
+</div>
+
+<ul class="am-margin-lg am-pagination">
+  {% if page.previous %}
+  <li class="am-pagination-prev">
+    <a href="{{ page.previous.url | prepend: site.url.root }}">
+      &laquo; Up &nbsp;
+    </a>
+  </li>
+  {% endif %}
+  {% if page.next %}
+  <li class="am-pagination-next">
+    <a href="{{ page.next.url | prepend: site.url.root }}">
+      Next &raquo; &nbsp;
+    </a>
+  </li>
+  {% endif %}
+</ul>

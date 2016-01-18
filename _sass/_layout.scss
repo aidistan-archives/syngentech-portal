@@ -66,7 +66,6 @@ $black: #000;
 .site-footer {
   background-color: $purple;
   color: darken($white, 25%);
-
   h3 { color: darken($white, 15%); }
 }
 
@@ -79,6 +78,12 @@ $black: #000;
 }
 .img-style {
   height: 370px;
+  background-size: cover;
+  background-position: -100px right;
+  display: block;
+}
+.img-style1 {
+  height: 250px;
   background-size: cover;
   background-position: -100px right;
   display: block;

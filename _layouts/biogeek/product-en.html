@@ -1,0 +1,87 @@
+---
+layout: default-en
+---
+<div class="am-g">
+  <div class="productlist am-vertical-align biogeek-banner " style= "background-image: url({{ page.image | prepend: site.url.assets }})">
+
+     <div class="am-vertical-align-bottom am-text-center cong">
+       <div class="am-container">
+         <h1 class="am-text-left color-zong am-padding">
+           {% if page.title_html %}
+             {{ page.title_html }}
+           {% endif %}
+          </h1>
+        </div>
+     </div>
+   </div>
+</div>
+
+{{ content }}
+
+<div class="am-u-md-11 am-u-md-centered am-margin-top-sm am-margin-bottom-lg">
+  <div style="color:#f00">
+    <p class="am-text-lg"><strong>Order</strong></p>
+    <p>Tel：400-680-3200</p>
+    <p>Email：service@syngentech.com.cn</p>
+  </div>
+</div>
+
+<div class="am-container am-margin-vertical am-link-muted" >
+  <hr></hr>
+  <h2>BioGeek<sup>TM</sup> Product List</h2>
+  <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+    <strong>
+      <a href='{{ "/en/biogeek/clone" | prepend: site.url.root }}'>Molecular Cloning</a>
+    </strong>
+    <ul>
+      <li><a href='{{ "/en/biogeek/clone/bg10102" | prepend: site.url.root }}'>
+        Gene<i>Taq</i><sup>TM</sup> DNA Polymerase
+      </a></li>
+      <li><a href='{{ "/en/biogeek/clone/bg10104" | prepend: site.url.root }}'>
+        Gene<i>Taq</i><sup>TM</sup> 2 x Master Mix
+      </a></li>
+      <li><a href='{{ "/en/biogeek/clone/bg10202" | prepend: site.url.root }}'>
+        Quick Ligase<sup>TM</sup> Kit
+      </a></li>
+      <li><a href='{{ "/en/biogeek/clone/bg10201" | prepend: site.url.root }}'>
+        T4 DNA Ligase
+      </a></li>
+      <li><a href='{{ "/en/biogeek/clone/bg10301" | prepend: site.url.root }}'>
+        pfu DNA Polymerase
+      </a></li>
+    </ul>
+  </div>
+  <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+    <strong>
+      <a href="{{ '/en/biogeek/cell' | prepend: site.url.root }}">Cell Culture</a>
+    </strong>
+    <ul>
+      <li><a href='{{ "/en/biogeek/cell/Transfection-Reagent" | prepend: site.url.root }}'>
+        Transfection Kit
+      </li>
+      <li><a href='{{ "/en/biogeek/cell/LC-kit" | prepend: site.url.root }}'>
+        Lentivirus Concentration Kit
+      </li>
+      <br>
+    </ul>
+  </div>
+  <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+    <strong>
+      <a href="{{ '/en/biogeek/ngs' | prepend: site.url.root }}">NGS</a>
+    </strong>
+    <ul>
+      <li>
+        Mag-Nucleotide Purification
+      </li>
+      <li>
+        Mag-Nucleotide Fragment Selection Kit
+      </li>
+      <li>
+        Mag-Plasmid Prep Kit
+      </li>
+    </ul>
+  </div>
+  <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+    <strong>Protein Expression</strong>
+  </div>
+</div>
