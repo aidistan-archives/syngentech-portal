@@ -7,7 +7,9 @@
     width: 99%; //to solve the problem of browser compatibility
   }
 }
-
+.am-margin-bottom-xxxl {
+  margin-bottom: 10.0rem;
+}
 .biogeek-puzzle {
   ul li {
     position: relative;
@@ -36,7 +38,8 @@
 }
 
 #biogeek-clone-puzzle {
-  ul li:nth-child( 8):hover a { background-color: #A219C9; }
+  ul li:nth-child(1):hover a { background-color: #f00; }
+  ul li:nth-child(8):hover a { background-color: #A219C9; }
   ul li:nth-child(10):hover a { background-color: #CE6E08; }
   ul li:nth-child(12):hover a { background-color: #E0CE08; }
   ul li:nth-child(14):hover a { background-color: #21C516; }
