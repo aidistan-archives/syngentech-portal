@@ -1,5 +1,6 @@
-require 'yaml'
 require 'fileutils'
+require 'rake/testtask'
+require 'yaml'
 
 desc 'Serve and watch (alias: w)'
 task watch: 'watch:development'
@@ -15,16 +16,21 @@ end
 
 namespace :watch do
   task default: :clean do
-    system('bundle exec jekyll s -w')
+    system('bundle exec jekyll serve -w')
   end
 
   task development: ['config:development', 'watch:default']
   task production: ['config:production', 'watch:default']
 end
 
+Rake::TestTask.new(:test) do |t|
+  t.pattern = '_test/**/test_*.rb'
+  t.verbose = false
+end
+
 namespace :build do
   task default: :clean do
-    system('bundle exec jekyll b')
+    system('bundle exec jekyll build')
   end
 
   task development: ['config:development', 'build:default']
