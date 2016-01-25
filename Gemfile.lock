@@ -5,7 +5,7 @@ GEM
     ffi (1.9.10)
     haml (4.0.7)
       tilt
-    jekyll (3.0.1)
+    jekyll (3.0.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -14,9 +14,9 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-sass-converter (1.3.0)
-      sass (~> 3.2)
-    jekyll-watch (1.3.0)
+    jekyll-sass-converter (1.4.0)
+      sass (~> 3.4)
+    jekyll-watch (1.3.1)
       listen (~> 3.0)
     kramdown (1.9.0)
     liquid (3.0.6)
@@ -24,13 +24,14 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
-    rb-fsevent (0.9.6)
+    minitest (5.8.4)
+    rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
-    sass (3.4.19)
-    tilt (2.0.1)
+    sass (3.4.21)
+    tilt (2.0.2)
 
 PLATFORMS
   ruby
@@ -38,3 +39,7 @@ PLATFORMS
 DEPENDENCIES
   haml
   jekyll
+  minitest
+
+BUNDLED WITH
+   1.11.2
