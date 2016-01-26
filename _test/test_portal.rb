@@ -1,38 +1,18 @@
-require 'minitest/autorun'
-require 'nokogiri'
-require 'open-uri'
+require 'test_helper'
 
-# Main test for portal
-class PortalTest < MiniTest::Test
-  def setup
-    @map = {}
-    @root = 'http://localhost:4000'
+describe Crawler do
+  crawler = Crawler.new
+
+  it 'should find no invalid urls' do
+    invalid_urls = crawler.map.select { |_, v| v == :invalid }.keys
+    assert_empty(invalid_urls)
   end
 
-  def test_urls_in_pages
-    crawl_page('/')
-  end
-
-  private
-
-  def crawl_page(path)
-    crawl_urls(path)
-    @map.keys.each { |l| crawl_page(l) unless @map[l] }
-  end
-
-  def crawl_urls(path)
-    @map[path] = true
-    doc = Nokogiri::HTML(open(@root + path))
-
-    filter_urls(
-      doc.css('a').map { |a| a['href'] },
-      doc.css('img').map { |a| a['src'] }
-    ).each { |l| @map[l] ||= false }
-  rescue
-    puts path
-  end
-
-  def filter_urls(*urls)
-    urls.flatten.select { |l| l =~ %r{^/} }.uniq.compact
+  it 'should find no dead files' do
+    dead_files = Dir['_site/**/*']
+      .reject { |path| Dir.exist?(path) || /\.(js|css|xml)/.match(path) }
+      .map { |path| path.gsub(/^_site/, '').gsub('index.html', '') }
+      .reject { |path| crawler.map[path] }
+    assert_empty(dead_files)
   end
 end

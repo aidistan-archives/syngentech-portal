@@ -24,6 +24,7 @@ namespace :watch do
 end
 
 Rake::TestTask.new(:test) do |t|
+  t.libs << '_test'
   t.pattern = '_test/**/test_*.rb'
   t.verbose = false
 end
