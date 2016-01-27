@@ -88,12 +88,19 @@ $black: #000;
   background-position: -100px right;
   display: block;
 }
-.am-slider-desc {
-  position: absolute;
-  left: 50%;
-  right: 3%;
-  top: 25%;
+.fc {
+  background-color: rgba($black, 0.7);
+  color: darken($white, 15%);
 }
+.fccc {
+  background-color: #fbfbfb;
+}
+// .am-slider-desc {
+//   position: absolute;
+//   left: 50%;
+//   right: 3%;
+//   top: 25%;
+// }
 /**
  * blog
  */
