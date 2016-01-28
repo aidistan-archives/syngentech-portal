@@ -88,6 +88,11 @@ $black: #000;
   background-position: -100px right;
   display: block;
 }
+.img-sty2 {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #fbfbfb;
+}
 .fc {
   background-color: rgba($black, 0.7);
   color: darken($white, 15%);
