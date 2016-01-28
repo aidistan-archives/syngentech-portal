@@ -28,7 +28,8 @@ class Crawler
 
     filter_urls(
       doc.css('a').map { |a| a['href'] },
-      doc.css('img').map { |a| a['src'] }
+      doc.css('img').map { |a| a['src'] },
+      doc.css('*').map { |ele| bgimg_url(ele) }
     ).each { |l| @map[l] ||= false }
 
     @map[path] = :valid
@@ -36,7 +37,12 @@ class Crawler
     @map[path] = :invalid
   end
 
+  def bgimg_url(ele)
+    match = /background-image: ?url\((.*)\)/.match(ele['style'])
+    match[1] if match
+  end
+
   def filter_urls(*urls)
-    urls.flatten.select { |l| l =~ %r{^/} }.uniq.compact
+    urls.flatten.select { |l| l =~ %r{^/} }.map { |l| l.split('#').first }.uniq.compact
   end
 end

@@ -10,6 +10,13 @@ desc 'Build (alias: b)'
 task build: 'build:production'
 task b: :build
 
+Rake::TestTask.new(:test) do |t|
+  t.libs << '_test'
+  t.pattern = '_test/**/test_*.rb'
+  t.verbose = false
+end
+task t: :test
+
 task :clean do
   FileUtils.rm_rf('_site') if Dir.exist?('_site')
 end
@@ -21,12 +28,6 @@ namespace :watch do
 
   task development: ['config:development', 'watch:default']
   task production: ['config:production', 'watch:default']
-end
-
-Rake::TestTask.new(:test) do |t|
-  t.libs << '_test'
-  t.pattern = '_test/**/test_*.rb'
-  t.verbose = false
 end
 
 namespace :build do
