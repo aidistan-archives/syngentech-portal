@@ -93,13 +93,14 @@ $black: #000;
   background-repeat: no-repeat;
   background-color: #fbfbfb;
 }
-.fc {
+.text-show-sm-only {
   background-color: rgba($black, 0.7);
   color: darken($white, 15%);
+  height: 588px;
 }
-.fccc {
-  background-color: #fbfbfb;
-}
+// .fccc {
+//   background-color: #fbfbfb;
+// }
 // .am-slider-desc {
 //   position: absolute;
 //   left: 50%;
