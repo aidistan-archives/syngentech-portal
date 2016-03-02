@@ -98,15 +98,12 @@ $black: #000;
   color: darken($white, 15%);
   height: 588px;
 }
-// .fccc {
-//   background-color: #fbfbfb;
-// }
-// .am-slider-desc {
-//   position: absolute;
-//   left: 50%;
-//   right: 3%;
-//   top: 25%;
-// }
+.am-progress-bar-success {
+  background-color: $purple;
+}
+.am-progress-bar {
+  background-color: darken($purple, 2%);
+}
 /**
  * blog
  */

@@ -2,26 +2,34 @@
 layout: default
 title: 合生基因
 ---
-.am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false}'}
-  %ul.am-slides
-    %li
-      %img{src: '{{ "/images/index1.jpg" | prepend: site.url.assets }}', alt: 'SyngenTech'}
-    %li
-      %img{src: '{{ "/images/index2.jpg" | prepend: site.url.assets }}', alt: '基因山'}
-    %li
-      %img{src: '{{ "/images/index3.jpg" | prepend: site.url.assets }}', alt: 'biogeek'}
-    %li
-      %img{src: '{{ "/images/index4.jpg" | prepend: site.url.assets }}', alt: '合生健康'}
-.am-g.am-margin-top-xl.animation
-  .am-u-sm-12.am-u-md-6.am-u-lg-3
-    %a{href: 'http://www.geshare.com.cn'}
-      %img.am-thumbnail{src: '{{ "/images/index5.jpg" | prepend: site.url.assets }}', alt: '基因山网站'}
-  .am-u-sm-12.am-u-md-6.am-u-lg-3
-    %a{href: '{{ site.url.biogeek }}'}
-      %img.am-thumbnail{src: '{{ "/images/index6.jpg" | prepend: site.url.assets }}', alt: 'biogeek'}
-  .am-u-sm-12.am-u-md-6.am-u-lg-3
-    %a{href: '{{ site.url.service }}'}
-      %img.am-thumbnail{src: '{{ "/images/index7.jpg" | prepend: site.url.assets }}', alt: '技术服务页面'}
-  .am-u-sm-12.am-u-md-6.am-u-lg-3
-    %a
-      %img.am-thumbnail{src: '{{ "/images/index8.jpg" | prepend: site.url.assets }}', alt: '合生健康图片'}
+.am-vertical-align.am-text-center.loading{style: 'height: 400px;'}
+  .am-vertical-align-middle
+    .am-progress.am-progress-striped.am-progress-sm.am-active{style: 'width: 300px'}
+      .am-progress-bar.am-progress-bar-success{style: 'width: 100%'}
+    %h1.am-text-xl.am-margin-bottom-xs.am-margin-top-xs Loading
+    %p.am-text-xs.am-margin-top-xs Please wait...
+
+.hide{style:'display:none'}
+  .am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false}'}
+    %ul.am-slides
+      %li
+        %img{src: '{{ "/images/index1.jpg" | prepend: site.url.assets }}', alt: 'SyngenTech'}
+      %li
+        %img{src: '{{ "/images/index2.jpg" | prepend: site.url.assets }}', alt: '基因山'}
+      %li
+        %img{src: '{{ "/images/index3.jpg" | prepend: site.url.assets }}', alt: 'biogeek'}
+      %li
+        %img{src: '{{ "/images/index4.jpg" | prepend: site.url.assets }}', alt: '合生健康'}
+  .am-g.am-margin-top-xl.animation
+    .am-u-sm-12.am-u-md-6.am-u-lg-3
+      %a{href: 'http://www.geshare.com.cn'}
+        %img.am-thumbnail{src: '{{ "/images/index5.jpg" | prepend: site.url.assets }}', alt: '基因山网站'}
+    .am-u-sm-12.am-u-md-6.am-u-lg-3
+      %a{href: '{{ site.url.biogeek }}'}
+        %img.am-thumbnail{src: '{{ "/images/index6.jpg" | prepend: site.url.assets }}', alt: 'biogeek'}
+    .am-u-sm-12.am-u-md-6.am-u-lg-3
+      %a{href: '{{ site.url.service }}'}
+        %img.am-thumbnail{src: '{{ "/images/index7.jpg" | prepend: site.url.assets }}', alt: '技术服务页面'}
+    .am-u-sm-12.am-u-md-6.am-u-lg-3
+      %a
+        %img.am-thumbnail{src: '{{ "/images/index8.jpg" | prepend: site.url.assets }}', alt: '合生健康图片'}

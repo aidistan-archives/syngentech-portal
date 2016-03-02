@@ -14,7 +14,7 @@
       $(this).children("ul").hide();
     });
 
-    // 合生基因页面的动画效果
+    // index page animation effects
     $(".animate img").mouseover(function() {//鼠标划入图片让其变大
       $(this).css({'transform': 'scale(0.95)'});
     });
@@ -30,7 +30,7 @@
       $(this).css({'opacity': '1'});
     });
 
-    // 关闭侧边栏
+    // close offCanvas
     var id = '#offcanvasId';
     var $myOc = $(id);
     $('.doc-oc-js').on('click', function() {
@@ -44,4 +44,12 @@
   function screenHeight() {
     $('.screen-height').height($(window).height());
   }
+
+  //close wait layout
+  window.onload = function() {
+    $('.loading').hide();
+    $('.hide').show();
+  }
+
+
 })(jQuery);
