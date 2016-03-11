@@ -2,7 +2,7 @@
 layout: default-en
 title: SyngenTech
 ---
-.am-vertical-align.am-text-center.loading{style: 'height: 400px;'}
+.am-vertical-align.am-text-center.loading{style: 'height: 613px;'}
   .am-vertical-align-middle
     .am-progress.am-progress-striped.am-progress-sm.am-active{style: 'width: 300px'}
       .am-progress-bar.am-progress-bar-success{style: 'width: 100%'}
@@ -10,7 +10,7 @@ title: SyngenTech
     %p.am-text-xs.am-margin-top-xs Please wait...
 
 .hide{style:'display:none'}
-  .am-slider.am-slider-default{'data-am-flexslider' => '{directionNav:false}'}
+  .am-slider.am-slider-default#slider
     %ul.am-slides
       %li
         %img{src: '{{ "/images/index-en1.jpg" | prepend: site.url.assets }}', alt: 'SyngenTech'}
