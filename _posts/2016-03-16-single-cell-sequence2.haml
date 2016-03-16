@@ -1,0 +1,28 @@
+---
+layout: post
+image: /images/blog18.jpg
+title: 史上最全单细胞测序教程(二)
+---
+%h2 ＃史上最全单细胞测序第二讲＃ By 大程
+%p 小伙伴们，大家好，今天让我们来继续聊聊单细胞测序的那些事儿，上一讲我们讲到了不同单细胞 DNA 测序的方法，比较了不同测序方法的异同？大家还记得吗？这里给一张图片供大家复习参考：
+%img.am-img-responsive{src: '{{ "/images/blog-child18.1.png" | prepend: site.url.assets }}'}
+%p
+  今天，我们主要来了解一下单细胞 RNA-seq 的方法，使用
+  %a{href: '{{"/solution/high-throughput-edting" | prepend: site.url.service}}'} microarray
+  和 RNA-seq 我们可以获得在不同组织和细胞中基因表达的强弱，显而易见，单细胞 RNA-seq 方法为我们具体一个组织内，或者不同类型细胞的表达差异，同时还可以为我们发现新的细胞类型奠定基础，单细胞 RNA-seq 的主要障碍是如何从单个细胞中获取充分量的 RNA 用于下一步的测序，不同的方法被开发出来用于扩增低于 pg 级的 mRNA。
+%p 这些方法的主要障碍是扩增的 bias 问题，对于来自不同基因的 mRNA 之间的差异比较产生干扰。
+%p 第一个利用单细胞进行 RNA-seq 是 Surani 实验室在 2009 年开发出来的，第一作者汤富酬大神，自此 Tang 大神在 single cell 领域风生水起，这是后话，接下来人们用 single cell RNA-Seq 跟踪 MES cell 的发育分化情况，扩增的方法主要是使用将 RNA pull down 下来，然后使用 polyT 引物反转录带 ployA 的 RNA，同时引物上含有特定的 anchor 序列。
+%img.am-img-responsive{src: '{{ "/images/blog-child18.2.png" | prepend: site.url.assets }}'}
+%p 科学家们在借鉴了基于 microarray 用于 single cell sequence 的技术后，修改了一些实验条件，比如延伸时间等，从而获得全长的 cDNA，进一步通过 SOLID 测序，我们可以看到具有非常好的稳定性。
+%img.am-img-responsive{src: '{{ "/images/blog-child18.3.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child18.4.png" | prepend: site.url.assets }}'}
+%p 在这个技术之后，2011 年科学家们使用了新的 cell barcode 方法，从而可以复杂的探究多个复杂细胞的特性，称为 STRT 技术，但是 STRT 技术对于 5’end 具有偏好性，基于转座子酶，人们开发了升级版的 STRT2 技术。
+%p 为了减少由于扩增引起的误差，人们在一些单细胞测序的步骤中增加了 UMI（unique molecular identifiers），UMIs 是由 4-10 个随机核苷酸组成的序列，在 mRNA 反转录后，进入到文库中，每一个 mRNA，随机连上一个 UMI，因此可以计数不同的 UMI，最终计数 mRNA 的数量。
+%p 不同的方法的优劣我们可以在最上面的图中得到，那么我们如何进行选择哪？
+%p 如果我们想了解不同细胞间的异质性，那么我们需要减少实验的 bias，推荐使用 UMI 相应的技术，如果我们想了解 RNA 全长，包括 splice site 等信息，那么我们就需要选择包含全部转录长度的技术。
+%p 目前多种技术可以通过多通道微流控自动处理技术进行处理，可以允许自动分离和处理细胞，同时控制细胞的数量，实验的误差，我们相信随着实验技术的改进，single cell sequence 终有一日，会成为常用的实验技术，助力人类了解自己，了解生物！！
+%p
+  欢迎大家关注我们的公众号，
+  %a{href: '{{site.url.biogeek}}'}生物极客
+  ，接下来，大程将给大家一一讲来~~
+%img.am-img-responsive{src: '{{ "/images/blog-child15.6.png" | prepend: site.url.assets }}'}
