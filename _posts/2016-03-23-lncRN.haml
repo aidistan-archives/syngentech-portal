@@ -1,0 +1,45 @@
+---
+layout: post
+image: /images/blog25.jpg
+title: 如何将大数据挖掘与 lncRNA 结合起来增益你的研究？
+---
+%p
+  大家好，今天我们一同走进
+  %a{ href: '{{"/solution/lncRNA-knock-down" | prepend: site.url.service}}' } lncRNA
+  的领域，lncRNA 越来越引起人们的重视，在肿瘤的发生发展过程中，也被认为扮演重要的角色，那么如何使用 lncRNA 的表达数据进行大数据挖掘，发现背后潜在的规律？
+%p 今天我们一同走进华人科学家 zhang lin 的研究工作，探究 lncRNA 背后的规律，了解如何使用数据挖掘工具，寻找不为人知的奥秘。
+%p lncRNA 的发现，极大的改变了人们对于生物，对于癌症的认知，华人科学家 zhang lin 对来自 13 种不同的癌症包括 5037 种不同的肿瘤样本中的 lncRNA 进行分析。
+%p 人类基因组总共包括大约 20000 个蛋白编码基因，只占基因组区域的 2%，然而多达 70% 的人类基因组区域可以转录出来 RNA。lncRNA 被定义为转录本长度大于 200 nt，并不含有编码蛋白潜能的转录本，与编码蛋白的转录本相同，lncRNA 转录本也拥有特定的组蛋白修饰，同时也会被可变剪切。不过相对于蛋白编码区域，lncRNA 基因由很少的外显子组成，在进化过程中也有很小的选择压力。不仅如此，lncRNA 的表达具备相应的细胞特异性。
+%p lncRNA 可以作为骨架介导调节蛋白和蛋白，蛋白和 DNA 之间的相互作用，通过与 miRNA 或蛋白相互作用发生降解，也可以作为增强作用调节基因的转录。
+%p 更重要的是，越来越多的证据表明 lncRNA 与染色体修饰复合体相互作用，介导染色体表观遗传学的修饰。
+%p 在癌症中 lncRNA 参与多种过程，可以作为癌基因或者抑癌基因发挥作用，首先科学家们，对于 TCGA 中 5037 种肿瘤样本的 RNA-seq 数据进行分析，通过与 lncRNA 的注释数据 进行比对分析，科学家们首先滤过低表达的 lncRNA，在每种癌症中，总共获得 4409 种不同的 lncRNA，其中发现在所有的 13 中癌症类型中，2316 种 lncRNA 都被表达。
+%p 为了寻找在肿瘤中发挥异常功能的 lncRNA，科学家们分析了 lncRNA 相应的表达差异。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.1.png" | prepend: site.url.assets }}'}
+%p 他们发现大约 15% 的 lncRNA 被明显的上调或者下调，通过对于不同细胞之间的 lncRNA 进行比对分析，他们发现 60% 的 lncRNA 是具有癌症特异性的，只发现 5 种 lncRNA 在所有的 7 种癌症细胞中被明显改变。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.2.png" | prepend: site.url.assets }}'}
+%p 在以往被发现的参与癌症过程的 lncRNA 中，也被发现明显的改变，比如 PCAT7，PVT1 等。
+%p 接下来科学家们通过 SNP microarray 分析了 5860 种肿瘤的体细胞拷贝数改变。对于每种细胞 lncRNA 位点的拷贝数突变频率被计算，高频的改变是指在一类特定的癌症类型中大约 25% 的样品发生改变。在 13 种癌症细胞中，有 13% 的 lncRNA 被发现被高频的富集或丢失。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.3.png" | prepend: site.url.assets }}'}
+%p 为了具体研究具体的基因组改变与 lncRNA 的关系，科学家们发现 435 种 lncRNA 可以被 map 到特定改变的区域。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.4.png" | prepend: site.url.assets }}'}
+%p 为了评价染色体突变对于 lncRNA 表达的影响，对于所有可检测的 lncRNA，科学家们，分析了拷贝数突变与 RNA 表达之间的关系。
+%p 总体来说，对于 36.2% 的 lncRNA 有相关关系。同时对于突变频率高的癌症类型，相关系数更高。
+%p 更近一步，科学家们分析了不同类型癌症细胞中 lncRNA 启动子区域的 DNA 甲基化情况。首先科学家们使用非负矩阵分解的聚类方法对于癌症类型进行聚类，结果反映，对于正常的样品，lncRNA 表达区域的甲基化非常一致，但是对于不同的癌症样品，DNA 甲基化的模式非常不同。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.5.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child25.6.png" | prepend: site.url.assets }}'}
+%p 紧接着科学家们利用不同的过滤准则寻找肿瘤相关的表观遗传沉默 lncRNA 基因，总体而言 3% 的 lncRNA 表达具有高甲基化的启动子和减少的 RNA 表达。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.7.png" | prepend: site.url.assets }}'}
+%p 紧接着科学家们对于 SNP 情况进行分析，他们发现 11.75% 的 SNP 在 lncRNA 位置附近。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.8.png" | prepend: site.url.assets }}'}
+%p 为了评估是否存在特定的 lncRNA 可以作为特定的 biomarker，科学家们首先探究是否 lncRNA 的表达在正常细胞和肿瘤细胞中明显不同。科学家们首先选择乳腺癌作为研究类型，乳腺癌是目前已知较好的分类清楚的癌症，对于 817 种癌症样本，可以发现 lncRNA 亚类中的表达具备很高的相关性。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.9.png" | prepend: site.url.assets }}'}
+%p 最终科学家们发现 19 种 lncRNA 具备肿瘤基因组的改变，同时与肿瘤病人的生存期息息相关。科学家们使用 siRNA 敲除实验表明，对于 BCAL8 这个 lncRNA 可以明显减少 MDA 细胞系的生长情况，这个 lncRNA 与 OTUD6B 区域 overlap，提示有可能这个基因的机制有关。
+%img.am-img-responsive{src: '{{ "/images/blog-child25.10.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child25.11.png" | prepend: site.url.assets }}'}
+%p 可以发现这个 lncRNA 对于肿瘤的生长有明显的影响。
+%p 小伙伴们，学会了吗？
+%p 让我们一起与大牛一起成长吧~~
+%p
+  欢迎大家关注我们的公众号，
+  %a{href: '{{site.url.biogeek}}'}生物极客
+%img.am-img-responsive{src: '{{ "/images/blog-child15.6.png" | prepend: site.url.assets }}'}
