@@ -1,0 +1,46 @@
+---
+layout: post
+image: /images/blog30.jpg
+title: 手把手教你做 real-time PCR（一）
+---
+%p
+  大家好，阳光明媚，今天我们来走进一个新的系列，最全基本实验学习系列，今天，我们主要来学习
+  %a{href: '{{ "/clone/bg10401" | prepend: site.url.biogeek }}'} real-time PCR
+  的基础知识和操作方法。
+%p 一、	real-time PCR 的基本原理
+%p 师兄，师兄，我从来没有做过定量 PCR，到底怎么做啊！！！！
+%p 师姐师姐，定量 PCR 的数据如何分析啊，老板明天就要 data 了！！！！！！
+%p 小伙伴们，大家别着急，首先让我们了解 real-time PCR 的基本原理，问一个最最基础的问题，我们为什么要做定量 PCR？
+%p 小伙伴肯定要说啊，我要干什么，干什么，干什么！对，你要用荧光定量 PCR 干什么？当你开展一项实验的时候，首先问自己，你用这个实验手段，是否能够真正的如实的证明你的猜想，或者回答你的问题。（这是当然，其实很多时候，我们往往忘了最初要证明或者回答的问题，而造成徒劳无功）
+%p 回到我们 real time PCR 上来，我们 real time PCR 可以干什么？
+%p Real-time 主要是相对定量 DNA、RNA、microRNA 等数量，比如我们可以使用 real time PCR 手段衡量一个细胞中某个基因 mRNA 水平表达量的变化差异等。
+%img.am-img-responsive{src: '{{ "/images/blog-child30.1.png" | prepend: site.url.assets }}'}
+%p 那么是如何实现可以定量 DNA 等的量那？
+%p 如果说我们有 100 份 DNA 分子，然后通过 30 轮 PCR，然后我们以最终 30 轮 PCR 产物的量和推测最初是不是 100 份，这样去衡量是否靠谱那？
+%p 显然，这样是不靠谱的，因们 PCR 过程，极小的差别，比如不同的引物结合强度等最终对产物物质的量影响很大。
+%p 比如下图：
+%img.am-img-responsive{src: '{{ "/images/blog-child30.2.png" | prepend: site.url.assets }}'}
+%p 同样扩增 96 个样品，使用相同的条件，最终结果产生很大的差异。
+%p 那么是否存在一个值非常具有重现性，与最初的物质的量成线性关系那？
+%img.am-img-responsive{src: '{{ "/images/blog-child30.3.png" | prepend: site.url.assets }}'}
+%p Ct 值，Ct 值是指扩增产物的荧光信号达到设定的阈值时所经过的扩增循环数。
+%img.am-img-responsive{src: '{{ "/images/blog-child30.4.png" | prepend: site.url.assets }}'}
+%p 对于一般的扩增，主要分为四个步骤，首先是基线期，然后是指数增长期，线性生长期，平台期。
+%p 首先我们来看基线期，在基线期，主要是由于误差引起的改变，但是如果我们使用标准偏差的十倍的阈值去卡的话，那么我们就可以准确的说捕捉到了 PCR 扩增，也就是大家平时所说起峰开始，这个时候，对于的循环数也就是 ct 值。
+%img.am-img-responsive{src: '{{ "/images/blog-child30.5.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child30.6.png" | prepend: site.url.assets }}'}
+%p 为什么 Ct 值可以与起始 DNA 的物质的量成正比例关系那？
+%p 下图是 PCR 理论方程
+%img.am-img-responsive{src: '{{ "/images/blog-child30.7.png" | prepend: site.url.assets }}'}
+%p 在指数期，记住是指数期，符合上面的 PCR 理论方程，我们可以使用使用该方程计算荧光强度
+%img.am-img-responsive{src: '{{ "/images/blog-child30.8.png" | prepend: site.url.assets }}'}
+%p 看到没有，Ct 值与起始分子的 -lg 成线性关系。
+%p 因此对于如果拿到某个样品的 Ct 值，我们就可以通过两个 Ct 相减，得到 △CT，这里的b就被减掉了，这样就可以得到相对距离。
+%p
+  那么是如何衡量在定量 PCR 的数量那？下一讲我们将给大家讲解 SYBR Green 和
+  %a{href: '{{ "/clone/bg10401" | prepend: site.url.biogeek }}'} Eva Green
+  嵌合荧光法进行实时荧光定量 PCR 的方法，同时讲解 taqman 探针的原理，大家一起进步吧~
+%p
+  欢迎大家关注我们的公众号，
+  %a{href: '{{site.url.biogeek}}'} 生物极客
+%img.am-img-responsive{src: '{{ "/images/blog-child29.17.png" | prepend: site.url.assets }}'}
