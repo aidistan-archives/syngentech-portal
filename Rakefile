@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'net/ssh'
 require 'rake/testtask'
 require 'yaml'
 
@@ -37,6 +38,30 @@ namespace :build do
 
   task development: ['config:development', 'build:default']
   task production: ['config:production', 'build:default']
+end
+
+namespace :deploy do
+  task :staging do
+    Net::SSH.start('shao.server.syngentech.org', 'ad.tan') do |ssh|
+      puts ssh.exec! <<-END_OF_DOC
+source ~/.bash_profile
+cd /var/www/portal
+git pull
+rake build:development
+      END_OF_DOC
+    end
+  end
+
+  task :production do
+    Net::SSH.start('mike.server.syngentech.org', 'root') do |ssh|
+      puts ssh.exec! <<-END_OF_DOC
+source ~/.bash_profile
+cd /var/www/portal
+git pull
+rake build:development
+      END_OF_DOC
+    end
+  end
 end
 
 namespace :config do
