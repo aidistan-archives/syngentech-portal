@@ -55,7 +55,7 @@ rake build:development
   task :production do
     Net::SSH.start('mike.server.syngentech.org', 'root') do |ssh|
       puts ssh.exec! <<-END_OF_DOC
-source ~/.zshrc
+source ~/.bashrc
 cd /var/www/portal
 git pull
 rake build:development
