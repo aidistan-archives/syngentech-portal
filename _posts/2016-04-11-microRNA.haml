@@ -1,0 +1,49 @@
+---
+layout: post
+image: /images/blog34.jpg
+title: 环状 RNA 导致白血病！！#跟 CNS 学思维#
+---
+%p
+  大家好，又到了新的一周，今天我们主要来学习最新一期 Cell 的文章 Oncogenic Role of Fusion-circRNAs Derived from Cancer-Associated Chromosomal Translocations。自从 2014 年，两篇 Nature 文章以来，cicular RNA 从被剪切失败的垃圾中，被发现拥有重要的功能。可以作为
+  %a{href: '{{ "/product/miRNA-sponge-design" | prepend: site.url.service }}'}microRNA sponge
+  ，吸引 microRNA 的结合，然而 sponge 的功能并不非常普遍，那么 circRNA 是否参与具体疾病的发生发展？
+%p 2015年我国科学家 yang li 和 Chen Lingling 在 Cell 发表文章，揭示 Alu 原件对于形成 circular RNA 的重要性。当存在反向 Alu 元件时，可以显著促进 circluar RNA 的形成：
+%img.am-img-responsive{src: '{{ "/images/blog-child34.1.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child34.2.png" | prepend: site.url.assets }}'}
+%p 在肿瘤中，染色体的重组在癌症的发生发展过程中，被认为是扮演着重要的角色，比如在白血病中，常见的 PML 和 RAR 重组，导致形成融合蛋白，起始了白血病的发生，那么当染色体重组的过程中，是否会有相应重组的 circular RNA 的发生？
+%img.am-img-responsive{src: '{{ "/images/blog-child34.3.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child34.4.png" | prepend: site.url.assets }}'}
+%p 科学家们猜想，在两个染色体重组过程中，转位基因间的反向重复序列可以促进形成 f-circular RNA。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.5.png" | prepend: site.url.assets }}'}
+%p 如上图，我们可以看到在 PML 与 RAR 形成融合基因，PML 蛋白的 1-6 号外显子与 RAR 的 3-9 号外显子发生融合，这个时候，PML 中反向 ALU 与 RAR 中的正向 ALU 会促进形成 circular RNA。
+%p 那么如何证明这个猜想？
+%p 考虑到环状 RNA 的相反取向，因此可以通过反向 PCR 进行鉴定。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.6.png" | prepend: site.url.assets }}'}
+%p 在 C 图中，converge Primer 是 PCR linear 的 RNA，而 Divergent primer 是 PCR 环状 RNA，可以发现在发生了基因融合的样本中，可以看到多种不同的 circular RNA 的生成。
+%p 这是在病人样本中，那么在一些常见的细胞系是否也是如此？
+%img.am-img-responsive{src: '{{ "/images/blog-child34.7.png" | prepend: site.url.assets }}'}
+%p 在发生染色体重组的白血病细胞系 NB4 中，使用 RNAase 去除线性 RNA，可以看到非常明显的 F-circular 的条带。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.8.png" | prepend: site.url.assets }}'}
+%p 除了 PML-RAR 重组外，白血病中常见的 MLL-AF9 基因融合也被发现存在着环状 RNA 的生成。
+%p 除了特定的检测特殊融合基因位点的环状 RNA 的生成，可否从宏观上发现？
+%p 科学家们，使用 ribominus-RNA seq，然后对测序结果进行 map，寻找可以 map 到特定基因融合位置反向连接的 reads，然后科学家们，使用两种方法，进行评估，首先科学家们，生成特定的融合基因融合 circular library，然后对 reads 进行 map，方法2，则首先将 reads mapping 到 UCSC 的参考转录本中，然后将没有 map 的数据 map 到融合 RNA 中。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.9.png" | prepend: site.url.assets }}'}
+%p 既然发现了环状 RNA，那么 f-circular RNA 是否在白血病的发生发展中扮演重要的角色？
+%p 科学家们，发现在 MEF 细胞中，导入环状 RNA，可以明显的促进细胞的生长。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.10.png" | prepend: site.url.assets }}'}
+%p 同时如果将环状 RNA 成环的可变剪切的位点进行突变，则可以减弱相应的功能。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.11.png" | prepend: site.url.assets }}'}
+%p 既然在 MEF 可以观察到相应的表型，那么在白血病中那？
+%p 在白血病中，科学家们，发现并非顺风顺水。
+%p 首先科学家们，单独导入 circularRNA，发现并没有可以预期的表型，在疾病的发生过程中，融合蛋白已经证明可以促进疾病的发展，那么是否加上 circular RNA 可以进一步促进相应的表型？
+%img.am-img-responsive{src: '{{ "/images/blog-child34.12.png" | prepend: site.url.assets }}'}
+%p 在已经整合了 MLL、AF9 融合基因的细胞中，通过导入环状 RNA，然后将阳性细胞 sort 出来，
+%img.am-img-responsive{src: '{{ "/images/blog-child34.13.png" | prepend: site.url.assets }}'}
+%p 可以发现导入 circularRNA 细胞生长变化明显。同时如果将可变剪切位点突变，则没有相关表型。
+%img.am-img-responsive{src: '{{ "/images/blog-child34.14.png" | prepend: site.url.assets }}'}
+%p 大程按：
+%p 科学是如此迷人，在繁复中寻求闪光！让我们大家一起努力吧！
+%p
+  获取更多生物咨讯，请关注
+  %a{href: '{{site.url.biogeek}}'} 生物极客
+%img.am-img-responsive{src: '{{ "/images/blog-child29.17.png" | prepend: site.url.assets }}'}
