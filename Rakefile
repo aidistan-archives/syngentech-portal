@@ -44,7 +44,7 @@ namespace :deploy do
   task :staging do
     Net::SSH.start('shao.server.syngentech.org', 'ad.tan') do |ssh|
       puts ssh.exec! <<-END_OF_DOC
-source ~/.bashrc
+source ~/.bash_profile
 cd /var/www/portal
 git pull
 rake build:development
