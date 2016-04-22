@@ -1,0 +1,38 @@
+---
+layout: post
+image: /images/blog39.jpg
+title: 让 cas9 像彩虹一样标记多个基因组位点
+---
+%p 小伙伴们，大家好，今天我们来一同学习 Nature biotechnology 最新的一篇文章，使用 cas9 成像技术复杂标记多个基因组位点。
+
+%p 本篇文章的通讯作者是麻省大学的 Thoru pederson，他一直关注 RNA 追踪等成像问题，目前我们缺乏有效的基因组多个成像位点，从而能够调查染色体的动力学问题，科学家使用优化的 cas9 sgRNA 骨架结合多个荧光蛋白，最多可以标记 6 个染色体位点，研究不同染色体位置的动力学情况。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child39.1.png" | prepend: site.url.assets }}'}
+%p
+  尽管目前
+  %a{href: '{{ "/solution/knock-down" | prepend: site.url.service }}'} crispr
+  技术被广泛的应用在基因的编辑和调节，与 FISH 成像相互补，科学们使用 cas9 技术对染色体进行了三维基因组成像，pederson 等人使用正交的 CRISPR 进行多色的标记，在这篇文章中科学家们，使用多种骨架从而可以实现最多六种颜色的标记，极大的扩展了人们对于染色体的认知。
+%p 为了更好的对成像进行比较，首先科学家们，对于 sgRNA 的骨架进行了进一步的改进，通过将第一个 stem loop 区域的 A-U pair 改成 G-C pair ，如左图，可以发现极大的提高成像的效果。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child39.2.png" | prepend: site.url.assets }}'}
+%p 同时为了进行多色标记，科学家们使用三种 hairpin，MS2，PP7 和 BoxB，加入到 sgRNA 的骨架区域。每一种 sgRNA，可以募集两种不同的荧光。
+.am-g
+  .am-u-sm-6
+    %img.am-img-responsive{src: '{{ "/images/blog-child39.3.png" | prepend: site.url.assets }}'}
+  .am-u-sm-6
+    %img.am-img-responsive{src: '{{ "/images/blog-child39.4.png" | prepend: site.url.assets }}'}
+%p 首先使用三种最初的荧光，可以产生三种颜色，同时通过组合也可以产生二级颜色，Cyan，magenta 和 yellow。在实验开始的时候，他们发现 BoxB 结构的效率比较低，因此科学家们使用增强版的 boxB 系统可以很大的增强相应的信噪比。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child39.5.png" | prepend: site.url.assets }}'}
+%p 首先科学家们使用相同的颜色，对基因组位点进行标记，在 U2OS 细胞中可以展现出来期待的端粒成像结果。多色标记则可以通过组合不同的荧光蛋白从而实现六色标记。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child39.6.png" | prepend: site.url.assets }}'}
+%p 为了进一步探索可以同时标记四个可能的位置，科学家们在原有 3 个重复序列的基础上，进一步进行探索，找到一个新的重复序列，同时科学家们使用 11 个长度的 sgRNA，发现可以对于重复序列显著提高信噪比。
+%p 为了探索可能对于基因组不同的位置进行成像，科学家们，在全基因组水平进行探究寻找相应的重复序列，共找到潜在的 1000 个相应位置，同时对其中 100 个位置进行了测试
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child39.7.png" | prepend: site.url.assets }}'}
+%p 最终科学家们寻找到了相应的位置进行最多 6 种不同颜色的成像。为了探究细胞核内不同的动力学范围，科学家们使用了 time-lampse 显微镜同时追踪这些位置。
+%p
+  获取更多生物咨讯，请关注
+  %a{href: '{{site.url.biogeek}}'} 生物极客
+%img.am-img-responsive{src: '{{ "/images/blog-child29.17.png" | prepend: site.url.assets }}'}
