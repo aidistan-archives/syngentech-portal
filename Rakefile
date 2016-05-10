@@ -58,7 +58,7 @@ rake build:development
 source ~/.bashrc
 cd /var/www/portal
 git pull
-rake build:development
+rake build:production
       END_OF_DOC
     end
   end
