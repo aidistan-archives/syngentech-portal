@@ -1,0 +1,61 @@
+---
+layout: post
+image: /images/blog41.jpg
+title: 小分子诱导型cas9华丽诞生！
+---
+%p 小伙伴们，大家五四青年节快乐！在最新一期的 Nature Biotech 文章上，来自加利福尼亚大学伯克利分校的 David Savage 等人，成功实现了将 cas9 变成诱导型酶，从而实现 cas9 可逆诱导激活和切割。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.1.png" | prepend: site.url.assets }}'}
+
+%p 在蛋白进化的历史上，结构域的随机插入到另外一个结构域是一种极为常见的现象。从而有利于快速实现新的功能，这里科学家们，使用随机插入的方法实现了可编程的 cas9，为 CRISPR 基因组编辑技术提供了新的机遇！
+
+%p 目前已经有多种融合 cas9 和其他蛋白结构域从而实现特定功能的方式，然而由于 cas9 蛋白的 N 端和 C 端距离比较相近，因此限制了很多融合蛋白的功能。
+
+%p 另外一种可以使用的方式，就是类似于进化上的机制，将融合蛋白的 domian 插入到 cas9 的内部中，从而实现空间上的接近。
+
+%p 这里科学家们，首先探究了直接在 cas9 中随机插入一个 domain，而不干扰 cas9 结合 gRNA 和 DNA 的能力。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.2.png" | prepend: site.url.assets }}'}
+
+%p 首先，科学家们，通过转座酶，随机在 cas9 表达框中插入携带有 IIS 内切酶位点和抗性基因的片段。经过深度测序，可以发现涵盖了>70% 的位置。进一步，通过 BsaI 连接入感兴趣的结构域，科学家们，使用 PDZ 结构域进行概念性的证明，考虑到这个结构域比较小，同时在自然中非常容易的被折叠，同时 N 段和 C 端非常接近。同时，PDZ 是已知的蛋白蛋白相互作用单元，通过 PDZ 与其他蛋白的相互作用，还可以募集其他蛋白。
+
+%p 通过两轮 CIRPSRi 的筛选，科学家们利用 FACS 筛选可以直接抑制荧光的表达。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.3.png" | prepend: site.url.assets }}'}
+
+%p 可以发现筛选后的文库，移码框的移码突变的频率明显降低。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.4.png" | prepend: site.url.assets }}'}
+
+%p 最终科学家们，寻找到了175个统计显著的位点。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.5.png" | prepend: site.url.assets }}'}
+
+%p 当把这些区域映射到 cas9 的结构中去，可以看到这些区域在离散的区域聚集，通常是柔软的 loop 区域，螺旋的末端，或者溶剂暴露的残基。特别的，在很多内部结构中，也发现可以进行插入，在 REClobe 的6个位置，包括 REC 和 Nuclease 连接的区域，在 HNH 结构域中，还有整个 Pam 的结构域中，这些区域为提供 DNA 结合的区域提供了良好的契机。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.6.png" | prepend: site.url.assets }}'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.7.png" | prepend: site.url.assets }}'}
+
+%p 紧接着，科学家们对不同的 domain 进行切割，包括使用 SH3 等结构域。
+
+%p 在很多蛋白的异位调控中，最困难的就是寻找可以选择的位点用于插入，这里，科学家们，通过上面的方法选择了多个可以被插入的位点，继而，科学家们便试图通过插入 ER-LBD 结构域进入 cas9，从而实现 cas9 的有效调控。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.8.png" | prepend: site.url.assets }}'}
+
+%p 不同的激活剂或者拮抗剂，可以促进蛋白构象发生很大的改变，为了创造异位调控 cas9，科学家使用同样的方法进行 screen 筛选，在231号位置，筛选得到一个可以被 4HT 调控的 cas9，当缺失 4HT 时，蛋白没有活性。
+
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.9.png" | prepend: site.url.assets }}'}
+
+%p 紧接着，科学家们，在 HEK293 细胞中，对 EGFP 进行 disruption 实验，探究可诱导蛋白的功能。
+%p 同时科学家们，利用 ER-LBD 自身的进核信号，而去掉 cas9 的 NLS，可以发现去除相关的背景。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child41.10.png" | prepend: site.url.assets }}'}
+%p 这一实验的开展，为可逆诱导型 cas9 的开发，提供了新的工具。我们期待更多更有意思的发现！！
