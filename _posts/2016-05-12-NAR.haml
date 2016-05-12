@@ -1,0 +1,40 @@
+---
+layout: post
+image: /images/blog43.jpg
+title: NAR:如何快速设计多条 qPCR 引物？
+---
+%p By 大程
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.1.png" | prepend: site.url.assets }}'}
+%p 小伙伴们，大家新的一周已经开始啦，有没有从周末中复苏过来，今天首先让我们来了解一款快速设计多条 qPCR 引物的数据库。
+%p MRPrimer 使用篇
+%p qPCR 成为诊断检测等多种技术手段的有利工具，在一个实验中，往往我们要设计多条 qPCR 引物，在多条引物的设计过程中，我们需要考虑引物之间的干扰等多种问题，目前已知的多种引物设计工具有尚有很多不足，比如需要耗时的 Blast 检测，缺少对引物进行排序等。来自韩国的科学家们，设计了 MRPrimer 在线计算工具，可以多快多次设计多条 qPCR 引物，是大家不可多得的好帮手。
+%p 网址：
+%a{:href => "http://mrprimerw.com/"} http://mrprimerw.com/
+%p 使用方法：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.2.png" | prepend: site.url.assets }}'}
+%p 在基因名称中输入感兴趣的基因，并且选择物种是人还是小鼠。
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.3.png" | prepend: site.url.assets }}'}
+%p 然后进入数据库检索阶段：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.4.png" | prepend: site.url.assets }}'}
+%p 最终就可以得到我们感兴趣的 qPCR 引物，
+%p 我们还可以点击观察不同的转录本：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.5.png" | prepend: site.url.assets }}'}
+%p 原理篇：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.6.png" | prepend: site.url.assets }}'}
+%p 在目前已知的多种 qPCR 引物设计工具包中，比如 primer3Plus ， BatchPrimer ，还有 primer-Blast 等， Primer3Plus 主要是利用 Primer3 的计算核心，可以同时设计多个基因的 qPCR 引物，但是这个算法不能够去除 off-target 引物的误差，同时 BLAST-primer 方法非常耗时，不能够批量设计多种基因的 qPCR 引物，为了综合上面多种工具优点，科学家们开发了这个工具：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.7.png" | prepend: site.url.assets }}'}
+%p 首先科学家们，从 CCDS 数据中获取输入的 DNA 序列：
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.8.png" | prepend: site.url.assets }}'}
+%div{align: 'center'}
+  %img.am-img-responsive{src: '{{ "/images/blog-child43.9.png" | prepend: site.url.assets }}'}
+%div{align: 'center'}
+%p 然后科学家们，设计了多个过滤参数，进行引物的设计。
+
