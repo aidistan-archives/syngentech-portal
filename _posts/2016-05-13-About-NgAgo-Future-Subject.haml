@@ -1,0 +1,155 @@
+---
+layout: post
+image: /images/blog44.jpg
+title: 关于  NgAgo未来的课题
+---
+:css 
+ .blue{
+ color:rgb(141,179,226);
+ font-weight:bold;
+ }
+ .yellow{
+ display:inline;
+ background:rgb(255,255,0);
+ }
+%p 关于 NgAgo 未来的课题，各种大牛们怎么看？未来会出来那些大 paper ？
+%p 小伙伴们，大家好，今天我们继续昨日的话题，昨天我们讲到了韩春雨老师的参考文献中的内容，涉及了 NgAgo 最初发现时候的相关背景。
+%p.blue 在 NgAgo 被大家认为极有可能取代 Cas9，作为基因组编辑的工具的时候，合成生物学的大神们，究竟怎么看待这一明星蛋白？他们有着怎样的思考？
+
+%p 首先我们来看一看合成生物学家，张浩千的观点：
+%p 张浩千，曾经担任北京大学 iGEM 代表队队长，师从国内著名合成生物学家欧阳颀院士，在 nature Communication 发表文章，世界上首次将巴普洛夫效应植入到合成生物学基因线路中。
+%img.am-img-responsive{src: '{{ "/images/blog-child44.1.png" | prepend: site.url.assets }}'}
+%p.yellow 张浩千：
+%p 
+ 对于生物学技术，要针对科研和应用需求，深入了解细节再进行判断，不能人云亦云。同意 
+ %a{:href => "http://www.zhihu.com/people/1667ef52ca31308d7a5079e3ac573f3e"}>@Yang Liu
+ 的谨慎态度，部分同意
+ %a{:href => "http://www.zhihu.com/people/d75e3cc0c84c322ae56d2e010e4d8e9e"}>@孟浩巍
+ 的乐观分析。
+%p NgAgo 的缺点其实是很明显的：只能切割具有负超螺旋构象的 DNA（SC DNA，比如质粒），对于线性化双链 DNA 和 ssDNA 是没有切割活性的。这说明：一， NgAgo 无法用于 dsDNA 和 ssDNA 在体外温和环境下的编辑处理，因此很难用于开发相关的体外分子生物学工具，这比起 Cas9 是一大劣势；二，在分裂生长不迅速的细胞中，基因组 DNA 的 SC DNA 比例不高，因此 NgAgo 很有可能也无法进行有效编辑。此外，在生物医疗应用中，向人类细胞中导入外源 DNA 是很忌讳的， CRISPR-Cas9-sgRNA complex 导入人体细胞后不会在细胞中长期存在，而 NgAgo的gDNA 导入细胞后可能会被整合到基因组上，进而带来 ethic issue，这一点也是不能忽略的。
+%p 至于为什么 NgAgo 及其之前发现的 homolog 只能切割 ssDNA 和 SC DNA，原因很可能正是 NgAgo 没有 PAM 序列依赖性。从前些时候发表的 CRISPR-Cas9 的单分子观测可以知道，PAM 对于 Cas9 的作用可不单是位点识别，更重要的是 gRNA 与 DNA 的结合起始处；也就是说，PAM 处先打开一小段，让 gRNA 的 seed sequence 做 strand invasion ，然后整条 gRNA 才能达成对于 target sequence 中 DNA 双链的打开和替换，整个过程相当于通过 PAM 实现了一个动力学上进行快速 target binding 的路径；换言之，PAM 的依赖性是 Cas9 在 editing feasibility 和 target binding kinetics 之间进行妥协平衡的结果。NgAgo 没有 PAM 依赖性，而文章 Supplementary Fig. 3 也表明 NgAgo 确实无法切割线性化的 DNA，但对于双螺旋结构不稳定的 SC DNA 和没有双螺旋结构的 ssDNA， NgAgo 却具有正常切割活性，这些结果强烈地暗示，没有 PAM 的代价就是 NgAgo 无法单靠自己的力量打开正常 dsDNA 的双链结构。
+%p 我们再看看能够切割 DNA 的 bacterial argonaute 的来源，都是极端嗜热古生菌和极端嗜盐古生菌。嗜热古生菌的生存温度通常在60摄氏度以上，这种温度下 DNA 双链结构本身就不稳定（类似于我们做 PCR 的环境）。NgAgo 来源于极端嗜盐古生菌，我将其蛋白质序列用于 NCBI non-redundant protein database 的检索，得到 BLAST 结果的前十都是极端嗜盐古生菌，其基因组的 GC 含量均在 60% 以上。以前的生化知识告诉我们，当 DNA 的 GC 含量较高，且位于高盐浓度环境中时，DNA 的负超螺旋比例会显著提高；因此这些基因组 GC 含量高的极端嗜盐古生菌的基因组 DNA 很可能存在着大比例的负超螺旋。这就解释了为什么 DNA-editing bacterial argonaute 的来源不是极端嗜热古生菌就是嗜盐古生菌——只有在这两种菌的生存条件下， bacterial argonaute 才能有效执行 DNA editing 的功能。
+%p 我们回过头来看 NgAgo 的优点，有三点。第一，NgAgo 和 gDNA 转染哺乳动物细胞的实验方法，特别是在 multiplexed editing 方面，应该会比 CRISPR-Cas9 简化很多，毕竟 gDNA 只需要合成拿到手里就可以转染，不必再像 CRISPR-Cas9 一样需要特殊的载体或者牺牲转染效率. 第二， NgAgo 毕竟摆脱了 PAM 的限制，对于一些 DNA 特殊序列的 editing 应该会特别有用，比如 AT-rich 的基因组复制起始位点。第三，前人的实验表明 CRISPR-Cas9 在哺乳动物细胞中很容易被内源 RNA 干扰，而 NgAgo 由于只能结合 ssDNA，所以内源 RNA 的干扰是可以忽略的，这也暗示了 NgAgo 对于负超螺旋程度不高的细胞基因组 DNA 切割能力应该不如 Cas9 但体现出来的效率却与后者相差无几的原因。
+%p 总体来说这是一个创新性极强，应用前景尚且不明朗的工作； NgAgo 的优劣势在行内人看来是很明显的，如何根据具体的生物工程和科研场景来使用好这个新的合成生物学工具，是未来生物科研界的一个值得追踪的有趣问题。
+%p ——————————————————
+%p 最后结尾多说两句。NgAgo 作为合成生物学的新工具，其发掘过程所依赖的 bioinformatics 技术并没有什么特别之处，仅仅是生物科研日常使用的 NCBI 数据库；但其所依赖的思路非常可贵。 TtAgo 可以切割 DNA，但必须需要高温→寻找带有 TtAgo homolog 但生存温度温和的细菌→挖掘出 NgAgo ，这一思路正印证了可能是 20 世纪最伟大的生物进化与遗传学家 Theodosius Dobzhansky 曾说过的话，" Nothing in Biology Makes Sense Except in the Light of Evolution"。在我看来，生物实验室里大多数搬砖的人以及监督别人搬砖的人，早已沉溺在搬砖的细节而忘记了这句话的含义。
+%p 我的导师欧阳颀院士曾说，需要复杂统计方法才能得到的相关性就不是相关性。这句话对应到合成生物学的元件发掘过程就可以表述为，合成生物学的元件发掘不需要太高深的 bioinformatics，关键还是指导发掘的思想。每次看到国内外有人用自己的 bioinformatic algorithm 多高深多复杂来证明自己的元件好，合成生物学做得好，我的内心都是平静的。
+%p ——————————————————
+%p 真心希望越来越多工作在北清浙复交之外高校的年轻老师们做出这样创新性极强的工作。我们的高校科学资金目前还绝大部分集中在北清浙复交这几所学校里；韩春雨能在艰难的科研环境和窘迫的资金支持下做出这样的工作，实为难能可贵。这也提醒科技部领导们，科研资源不能仅仅集中在北清浙复交这几所学校，我们这个国家里，有科研追求的年轻一辈，还多得很呐。
+%p ——————————————————
+%p 
+ 多谢
+ %a{:href => "http://www.zhihu.com/people/20fdc5a036b65e77c6f0b24168e4b8a5"}>@夏小迪
+ 指正我关于 NgAgo 是否能够切割 ssDNA 方面的错误；我之前误以为是能切的。
+%p 作者：张浩千
+%p 链接：http://www.zhihu.com/question/45729553/answer/99767618
+%p 来源：知乎
+%p 郭昊天：
+%p 郭昊天，曾经任复旦大学 iGEM 队长，目前在巴黎攻读。 
+%p 欧洲时间大早上的时候就被刷屏了，所以我第一时间就把原文和最近相关的几篇文章看了遍。
+%p 
+ 详细的关于文章和课题组的介绍可以移步知识分子
+ %a{:href=>'https://zhuanlan.zhihu.com/p/20865434?refer=zhishifenzi'}>韩春雨：“一鸣惊人”的中国科学家发明世界一流新技术 | 特稿 - 知识分子 - 知乎专栏。
+%p 我以下做一些简单的介绍，并针对性和这几年比较火热的 CRISPR 做些比较。
+%p{:style=>"font-weight:bold"} 我个人的观点是个极具潜力的新技术，但是无法全面替代 CRISPR。而且这篇文章实际上是 Ago Genome editing 的复兴。
+%p{:style=>"font-weight:bold"} 1. 什么是 Argonaute（ Ago ）？
+%p Argonaute 在真核细胞中被熟知参与 RNA 沉默，组装成复合物对靶点 mRNA 进行切割从而实现沉默，并被认为来自对 RNA 病毒的免疫机制。前人工作发现 Argonaute 在很多原核生物中的确会参与对病毒的“获得性免疫”，而且不但可以针对外源性 RNA 还可以切外源性 DNA。
+
+%p{:style=>"font-weight:bold"} 2. 什么是 NgAgo ？
+%p 这篇文章找到 NgAgo 是来自古细菌中的一种嗜盐菌 Natronobacterium gregoryi 的 Argonaute 蛋白。NgAgo 结合 24碱基长度左右的单链 DNA（ ssDNA ），并由这段 guide-DNA 介导，切割具有相同/互补序列的双链 DNA。
+
+%p{:style=>"font-weight:bold"} 3. 这篇文章的主要贡献是什么？
+%p 文章最大的贡献是找到一个可以在常温下工作的使用 ssDNA 做 guide 的 Ago 同源蛋白，并证明是在人类细胞内 NgAgo 可以可编程地定点切割双链 DNA 从而实现基因组编辑。
+%p 而之前所有报道文献中的 Ago 同源蛋白都有各种问题以至于不能应用在人类基因组编辑中：多数来源于嗜热菌（van der Oost Lab的 2014 Nature 【2】和 2015 NAR文章【3】，Doudna Lab 2015 PNAS 文章【4】），因此需要较高温度的工作环境或热激活（60-100℃）；Alexei A. Aravin 2013 Mol Cell 文章【5】是一个比较复杂的机制，可以结合 ssRNA 定点切质粒，结合 ssDNA 定点切 RNA ，不实用，容易受到背景 ssRNA 的干扰。实际上除了已经发了不错的文章的这些工作，Ago 作为 Genome editing 并不是一个全新的概念，很早就有很多组再做了，不过各有各的问题。iGEM 2009年就有人做了：
+%a{:href=>'http://2010.igem.org/Team:Freiburg_Bioware/Project'}>Team:Freiburg bioware/Project
+%img.am-img-responsive{src: '{{ "/images/blog-child44.2.png" | prepend: site.url.assets }}'}
+%p{:style=>"font-weight:bold"} 4. 和传统CRISPR基因编辑的区别以及优劣分别是什么？
+%p 可编程的基因组编辑目前最成熟有效的手段是 CRISPR-Cas9 ， Cas9 是一种单体蛋白，可以结合单链 single guide-RNA（sgRNA），定点的切割 sgRNA 对应 DNA。对一个基因编辑工具，我们最关心的几个问题有：
+%p -可靶向的序列
+%p -切割的方式（切一条链？两条链？）
+%p -切割酶的效率（ NgAgo 和 Cas9 应该差不多，后面不讨论了）
+%p -使用、设计的便捷性
+%p -识别序列的长度：太短了不行，会导致靶点太多
+%p -脱靶率：涉及至少两方面，识别的特异性（对突变的容忍度），遗传背景的影响（系统正交性）
+%p -拓展性：比如说多靶点同时编辑，比如说基因沉默等功能如何实现
+%p 1）不论是 Cas9，Cpf1，CRISPR Cascade ，都需要 PAM 位点（ protospacer-adjacent motif ）的识别和 sgRNA 对靶向序列的识别。PAM 的序列限制了 Cas9 等的靶点范围。而 NgAgo 不需要 PAM 位点，从而理论上可以定位于任何靶点。
+而且由于 PAM 在 Cas9 的脱靶上贡献“极大”，所以没有 PAM 也可以提高相应的效率和特异性。原文比较了 NgAgo 和 SpCas9 ，发现在 GC 含量高的区域 NgAgo 效率更高，而 Cas9 的 PAM 序列恰恰也是 GC 编码的。
+不过 PAM 因为是 Cas9 解开 DNA 双螺旋的起始位点，其重要也是不言而喻的。没有 PAM 的类似物会使得 NgAgo 在平直的 DNA 上效率严重下降。
+%p 2）NgAgo 切割的方式很有趣，会随机抹掉一段靶点内的序列
+%img.am-img-responsive{src: '{{ "/images/blog-child44.3.png" | prepend: site.url.assets }}'}
+%p 图片显示的对于 GFP 的切割，对 20 个实验结果进行测序后确定的被切割的部分。我觉得目前还不能下结论是好还是不好，需要进一步实验分析。我猜测可能是会使得同源重组修复变得更有效。
+%p 3）NgAgo使用的是 23~25-nt DNA，这是和 CRISPR 一票的系统最大的不同。
+DNA 相比 RNA 的优点也是明显的， DNA-DNA 识别的精确度和效率理论上一般比 RNA-DNA 识别要高。文章测试了 NgAgo 对碱基错配的容忍度，单个碱基会明显降低效率，多个碱基错配完全失去活性。这是我认为对比 Cas9 最大的优势，Cas9 有时候错配 5、6 个碱基一样可以切。
+%p Figure 4.d （图传不上来什么鬼）图中 G10 是正确的 gDNA，效率很高，一条高浓度的切割产物。而其他 mN 的错配 gDNA 效率要低很多
+%p 识别序列长了一点，差不多 4 个碱基，但是如知识分子的报道说理论上准确度提高了 1024 算是夸大报道的。。首先这个理论上的准确度也不是这么算的。而且讲道理 Cas9 识别序列总长 gRNA+PAM 也有 25nt 了。事实上 19nt 在目前绝大多数的基因组编辑就够用了，对于非重复序列能够保证单一靶点。
+%p 但是 ssDNA 的缺点和限制性也很多，下文详谈。一个比较明显的就是不能由靶细胞自己生产，用完了就没了。
+%p 4）NgAgo 要比 Cas9 小太多了，很容易放到载体中用来做基因治疗。
+%p{:style=>"font-weight:bold"} 5. NgAgo 的 gDNA 和 Cas9 sgRNA 相比的劣势是什么？
+%p 两点：不依赖特殊结构，对长度有限制
+%p{:style=>"font-weight:bold"} gDNA 不需要什么特殊结构，这是最大的劣势。也是我认为从根本上 NgAgo 不能取代 Cas9 的原因。有认为不依赖特殊结构是很大的优点的那些言论都是血外行。
+%p 搞个核酸结构费不了多大事，没有成本问题。但是没有一个特殊结构引发的问题却很多。
+%p{:style=>"font-weight:bold"} 不依赖特殊结构，最严重的问题就是导致无法避免的背景的正交性不足：
+%p 1）遗传背景里面到底有多少 ssDNA ？人类细胞比较少，可喜可贺。但是别的物种呢？至少原核生物里面大量的 ssDNA 。因为不依赖特殊结构，是个 ssDNA 都能上，这就限制了系统的通用性，凡是 ssDNA 含量较高的物种都不能用。
+%p 2）Deliver 引起的问题，如果 ssDNA 细胞自己没有 NgAgo 才能用，那 ssDNA 就不能由细胞自己生产，必须外源供给，降解了就没了（ NgAgo 和 ssDNA 结合不可逆，因此降解速率可能没那么高，但仍然比不上 sgRNA 可以自给自足）。知识分子的报道里面张翼提出了解决这个问题的几个优化方向，仔细想想都可行性都很差：
+%p - 找一个生产 ssDNA 的方法。说实话做合成生物学的知道这种方法遍地都是，大多数基于反转录酶的，马上就有安全性问题。如果反转录用的 RNA 模板有特殊结构，就没有安全性问题，但是 ssDNA 还必须得可丁可卯 23~25-nt 的长度，不能有附加的部分，这种 process 是很困难的。如果反转录不要求模板的特殊结构，那么不但有安全性问题，而且没办法解决内源 RNA 被反转录成 ssDNA ，导致脱靶的问题。
+%p - 找一个RNA介导的 Ago。这个就是没看文献【5】。早在2013年就有 RNA 介导的 Ago 了，而且这款 RsAgo 室温就有活性。但是仍然不能用啊。使用 ssRNA 最大的问题就是内源 ssRNA 从原核到真核全都有，很难把内源的 ssRNA 和我们设计的 ssRNA 区分开。而且很多 ssRNA 都来自于 mRNA 的正常降解，扔个 Ago 进去简直到处都可以剪。
+%img.am-img-responsive{src: '{{ "/images/blog-child44.4.png" | prepend: site.url.assets }}'}
+%p 这里图 C 显示了 RsAgo 可以利用 mRNA 降解剩下的一些边角料作为 guide（ diRNA ） 切割外源质粒，并再用之列切下来的片段作为 guide（ riDNA ） 反过来切那些还没降解的 mRNA ，进行双重保险的高效免疫。
+%p 如果有特殊结构，正交性问题就没这么头疼了，只要分析一下内源 RNA or DNA 哪些有相应的特殊结构就可以估计背景。
+%p 其次没有特殊结构导致的系统内部的正交性会很差，比如：
+%p 3）当我们做真正的 editing 而不是仅仅做 deletion 的时候，需要再导入一条 ssDNA 做模板介导同源重组。那么这条 ssDNA 必须得足够长，否则到时候就会有 gDNA 和模板 DNA 竞争的问题。
+%p{:style=>'font-weight:bold'} 最后对长度的限制基本上让 NgAgo 在除了基因编辑以外没什么拓展性可谈了。Ago 结合 13~25nt 的 ssDNA，这 25 个碱基全用来识别了。所以在 ssDNA 上我们不能设计任何其他功能了。
+%p 而 Cas9 技术在基础科学的应用上却可以玩的五花八门，全赖于其 gRNA 除了识别区段之外，还有很大的空间去设计其他功能，包括不限于：募集转录因子控制基因表达 （Stanley Qi Lab），募集荧光蛋白进行定点标记 （Stanley Qi Lab），加一段 lncRNA 用来研究非编码 RNA 的调控功能 （John Rinn Lab），招募一个单碱基置换的酶 （David Liu Lab）etc.
+%img.am-img-responsive{src: '{{ "/images/blog-child44.5.png" | prepend: site.url.assets }}'}
+%p （CRISPR interference (CRISPRi) and CRISPR activation (CRISPRa) for transcription repression and activation. Antonia A. Dominguez, Wendell A. Lim & Lei S. QiNature Reviews Molecular Cell Biology 2016）由于所有这些募集行为都可以设计在 gRNA 上，所以是定点发生的。如果同时在多个靶点上使用 Cas9 ，每个靶点发生的反应不会串流：比如一个切割，一个激活基因，一个抑制基因。
+%p 而这种设计对于 Ago 是不可能的。很遗憾。
+%p{:style=>'font-weight:bold'} 6. 为啥不能发个大新闻？
+%p 
+ 首先恭喜韩老师在如此艰苦的条件下能做出如此 impressive 的工作。我觉得很可惜没能发表在 Science 上。虽然 Nature biotech 的影响因子要高于 CNS 任意一个，但是在大家心中的地位还是不如的。 
+ %a{:href=>'https://www.zhihu.com/people/li1-lei2-78'}> @李雷
+ 说这是学术壁垒的问题。学术明星的确文章稍微好发表一些，所有的 social community 都有这种看脸的毛病。但是实际上没有那么严重，发 Science 都是很难的。
+%p （就在基因编辑圈子里举个例子： Andy Ellington Lab 之前2013年的时候在提倡一种基于内含子的 “Targetron” 技术（大概是这个名字），企图改变 Cas9 的垄断效应。当时和 Cas9 比各有优劣吧，但是 @Yang Liu 和我在2015年初去的 Genome editing 的峰会，Andy 作报告的时候受众寥寥，后来也根本没人跟进。大家都觉得有 Cas9 就够了。原始的文章发的杂志远远不如 Nat Biotech 。而 Andy Ellington 和 Jennifer Doudna 是炸药奖得主 Jack Szostak 同窗的学生，当年一起发的 ribozyme 的文章，后来的发展也不错，算是 RNA 领域的大牛，然而并没有卵用。）
+%p 我觉得导致这次没能发个大新闻的主要原因还是：
+%p{:style=>'font-weight:bold'} 穷！穷！穷！
+%p 上个月 Science senior editor Melissa McCartney 来我们学校介绍的时候给的统计数据：Science 的审稿周期中最难过的一关其实是第一步 editor board 筛选（90% 以上都被退回了），进入同行评议之后的淘汰率其实是 50%，并没有那么高，只要能把两轮审稿人要求的实验都补上而且实验结果符合预期（这当然很不容易了），一般就发表了。
+%p 这篇文章据称是“审稿人要求的比较完美”所以被拒了。韩老师这篇文章，就凭目前已经发表的工作，我觉得投给 Science 还是会被评审要求补充实验的。
+%p{:style=>'font-weight:bold'} 所以很可能没钱、没条件做这些实验才不得不放弃的吧。
+%p 比如说我觉得至少需要的一个补充的实验：
+%p -NgAgo 是不是会切割 RNA ？引用文献 12 Olovnikov et al. 2013 Mol Cell 的文章中 Ago 是 RNA 和 DNA 都能切的。如果 NgAgo 不是特异性切割 DNA ，也切割 RNA 的话，是不是会影响到内源 RNA 的表达？但是这个实验做起来不论体内体外都要麻烦许多。而且如果 RNA-seq 那又是大把的银子。
+%p{:style=>'font-weight:bold'} 7. 结论：
+%p 不管怎样能够在艰苦的条件下做出这样的工作仍是可敬可喜的。我相信 Ago 基因编辑也会发展成为一个小热点。前人已经体外【2】、体内【1】证明了Ago进行基因组编辑的可能性，只不过在体内都不实用（前者是因为高温，后者是因为使用 ssRNA ），而这篇文章找到了一个相对可靠地系统。所以我认为这篇文章在 Ago 未来发展中的地位应该和丛乐、张峰的文章在 Cas9 中的作用差不多，但是地位上可能稍高一些。
+%p 但是和 CRISPR-Cas9 相比，我认为目前来看还是很难全面替代的，而且根据我对 Ago 的了解，我也不持乐观态度。Ago 有潜力部分替代 Cas9 ，比如在人基因组编辑。
+%p 参考文献：
+%ol
+ %li Gao F et al. Nature Biotech 2016
+ %li Swarts D C et al. Nature 2014
+ %li Swarts D C et al. NAR 2015
+ %li Kaya E et al. PNAS 2015
+ %li Olovnikov et al. Mol Cell 2013
+ %li Dominguez A A et al. Nature Review MCB 2016
+%p 作者：郭昊天
+%p 链接：http://www.zhihu.com/question/45729553/answer/99771853
+%p 来源：知乎
+%p （本文中，相关科学家意见整理自网络）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
