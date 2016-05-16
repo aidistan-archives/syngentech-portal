@@ -1,0 +1,32 @@
+---
+layout: post
+image: /images/blog45.jpg
+title: NgAgo最全Protocol火热出炉！
+---
+:css 
+ .blue{
+ color:rgb(141,179,226);
+ font-weight:bold;
+ }
+ .yellow{
+ display:inline;
+ background:rgb(255,255,0);
+ }
+%p 大程
+%p 大家好，我们继续上周的话题，今天将关注 NgAgo 的实验细节：
+%p 一、靶序列的设计
+%p 首先我们选择我们感兴趣的基因，这里以 TP53 为例，我们通过 CCDS 数据库，获取 TP53 不同转录本的公共区域。
+%img.am-img-responsive{src: '{{ "/images/blog-child45.1.png" | prepend: site.url.assets }}'}
+我们得到关于TP53如下的结果：
+%img.am-img-responsive{src: '{{ "/images/blog-child45.2.png" | prepend: site.url.assets }}'}
+%p 我们点击 S ，可以进入 NCBI 的基因组浏览器，观察识别的位置。
+%p 我们看到有一个区域，不同的转录本，都含有这个相应的外显子，这里我们滑到这个区域，然后下载 FASTA 格式的序列文件。
+%img.am-img-responsive{src: '{{ "/images/blog-child45.3.png" | prepend: site.url.assets }}'}
+%p 因为现在还没有专门的 NgAgo ，这里我们使用 BLAST 引物设计，进行替代其中需要考虑的是 NgAgo 识别的序列是 24bp 
+%img.am-img-responsive{src: '{{ "/images/blog-child45.4.png" | prepend: site.url.assets }}'}
+%p 这里点击高级选项：
+%p 我们勾选 all ，并且确认一下所在的区域：
+%img.am-img-responsive{src: '{{ "/images/blog-child45.5.png" | prepend: site.url.assets }}'}
+%p 接下来，我们需要订购 gDNA 的 oligo 。
+%p 注意，这些使用公司标记 5’ p 基团，从而让 NgAgo 进行识别。在转染的前一天，细胞分到 24 孔板中，每孔 200000 个细胞，然后使用 lipofectamine2000 ，对 NgAgo 表达质粒，和 100ng oligo 进行转染。
+%p 经过两天后，我们便可以提取细胞基因组，对特定区域进行 PCR ，从而判断突变情况。
