@@ -1,0 +1,58 @@
+---
+layout: post
+image: /images/blog46.jpg
+title: 个人基因组测序降到 500 元以内后基因组学将有哪些大的改变？
+---
+%p 来源：知乎
+%p 
+那对
+%span{:style=>'color:red;font-weight:bold'} 单细胞组学的发展
+将是多么广阔的前景。群体测序的异质性已经太阻碍我们认识很多情况的本质了，以至于对于细微的差异根本察觉不到，而这些差距又是非常之关键的。就比如说对于干细胞、肿瘤以及衰老这些现在热门的生物学问题，都已经有人做过单细胞水平的测序了。其实对于单细胞水平的测序，其核心问题就在于扩增这一步反应，以及是否有钱去测很多个单细胞克隆的 DNA ，如果将测序费用降至 500 RMB 或以下，那么单细胞的大量测序反应就不是梦了。这里可以稍微科普一下单细胞测序为什么是未来的热门。（ PS :这里的单细胞指的也不是仅仅一个细胞，而是极少量的细胞的 DNA ，比如 pg 级别的 DNA ）
+%span{:style=>'color:red;font-weight:bold'} 从肿瘤开始说起好了，
+肿瘤难以完全治疗的特点不仅在于其基因组的复杂性，还在于其复杂性所延伸而出的异质性，异质性其实就是肿瘤基因组复杂性导致的一种表型性质。
+%span{:style=>'color:red;font-weight:bold'} 异质性一般分两种情况讨论，
+第一种情况指的是：同一个病人的肿瘤细胞具有异质性。处于肿瘤发生的不同时期的肿瘤细胞的基因突变情况不同，造就了每一个肿瘤细胞群体内还有许多亚群（ subclones ），肿瘤细胞在通过转移时，就会有属于不同亚群的肿瘤细胞去侵入新的地方，形成新的肿瘤。这里，就要引入 CTC （循环肿瘤细胞）（ circulating tumor cells ）的概念。见下图一，现在有观点认为， CTC 是肿瘤初级细胞造成肿瘤转移的主要诱因。CTC 细胞有着普通肿瘤细胞许多没有的特性，例如会体积更大，会拥有“干性”，或是会更容易进入 EMT （上皮细胞间质化）途径等。研究表明， CTC 与肿瘤的发展进程有以下关系：
+%p 一、 CTC 的数量可以作为推测肿瘤的发展进程的标记物（ marker ）；
+%p 二、血液中高CTC数量会加快肿瘤的进程并会减少肿瘤复发的时间；
+%p 三、 CTC 还能作为临床指标，用于指导治疗进程。然而，如此重要的细胞却因为获取难而难以研究，因为它们在血液中的含量极其地少。例如，在得晚期乳腺癌的病人中，只有 1.43% 的病人会在每 7.5ml 血液中有 500 个以上的 CTC 。这就意味着对于 CTC 的研究就会有着很多障碍，因为细胞的量太少。第二种情况指的是：除了同一病人的不同肿瘤细胞会造成肿瘤的异质性外，肿瘤的异质性还体现在不同病人可能得了相同的肿瘤，但是那个“相同”未必真是相同——仅仅是表型相同，不代表着基因型也相同。下图二就是肿瘤异质性的反应，不同颜色代表着不同的肿瘤亚群，不同亚群的肿瘤侵入到不同的地方形成新的肿瘤“进化”（应理解为发展）分支，造就了肿瘤的异质性；以及不同的病人之间得的肿瘤之间也有异质性。
+%img.am-img-responsive{src: '{{ "/images/blog-child46.1.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child46.2.png" | prepend: site.url.assets }}'}
+%p 在论述为何要用单细胞水平的基因组测序方法解决问题之前，我们需要再一次地把我们所面临的问题再梳理一遍：
+%p 1.肿瘤基因组太复杂了，突变多，不同时期突变还不一样，异质化严重，如果还是以一大批肿瘤细胞的基因组拿去测序，得到的混合结果往往会干扰判断。
+%p 2.肿瘤转移相关的重要细胞类群 CTC 在血液中的含量极少，而且不同 CTC 之间也有异质性——因此一方面是较难得到大批的 CTC 细胞的基因组，另一方面是即使得到了相关信息依旧不能说明问题。
+%p{:style=>'color:red;font-weight:bold'} 鉴于要解决这两个问题，能更好地为肿瘤病人提供更精准的个性化治疗，笔者发现利用单细胞测序法确实能很好地（目前看来至少是概念上）部分解决这些问题。
+%p 最早的时候方法是由 Roger Lasken 领导的研究组，优化建立了 MDA (多重置换扩增)第一代试剂盒。该技术应用耶鲁大学专利化的 Phi29 DNA聚合酶。该酶具有多重置换的特性——在反应中，后一引物的延伸能超越其前面已经结合的DNA而不受其阻挡；该酶还具有超强的模板DNA结合能力，能连续合成10 kb到50 kb 长的产物，最大可达 100 kb ，同时具有 3'-5' 外切酶活性和自我修复错误的能力，从而具有高保真性。然而，由于起始基因组 DNA 的量极小，直接用于扩增会因为某些片段（例如 GC 含量较少）特别容易扩增，因此会有较强的扩增偏好性（ Amplification Bias ），导致了对基因组的覆盖度会减小，MDA 法就不能很好地解决该问题。2012 年哈佛大学终身教授谢晓亮院士开发了一种新的单细胞基因组测序方法—— MALBAC ( multiple annealing and looping-based amplification cycles )。它可以大大减少扩增偏好性，下面我就来简单介绍一下其原理，见下图
+%img.am-img-responsive{src: '{{ "/images/blog-child46.3.png" | prepend: site.url.assets }}'}
+%p MALBAC 法的核心步骤：依旧利用 MDA 方法中的酶（可以用于替代原来延伸好的链）。但用的引物却是自己事先设计好的，这段引物在基因组上随机的结合，并且延伸。假设以一条链作为基础看，它在引物结合后延伸了一次后会在 5‘ 端留下引物的序列，接下来会有更多的引物结合上来，当一条链被引物结合了 2 次并能一直延伸到原来链的 5‘ 端，那么就会延伸出一段能和原引物序列互补的序列，当在 58 摄氏度温度下，该链 DNA 就会自身形成头尾互补的结构，之后的引物就不会再结合上来。这样就几乎达成了一种线性扩增 DNA 的效果，也可以避免已经扩增过一定次数的 DNA 再一次重复扩增，因为有可能那一段特别好扩增，从而会导致扩增偏好性。在 5 个线性扩增的循环之后，基因组 DNA 再进入传统的 PCR 扩增中。这样既可以保证 DNA 的质（尽量多的覆盖基因组），又可以保证 DNA 的量。
+%p 北大在 2013 年末发表了一篇 PNAS ，内容就是利用该方法对肺癌病人做了 CTC 的单细胞测序，并发现了各个 CTC 细胞的 SNVs 和 INDELs 的异质现象，为个性化疗法提供了较好的选择。但却发现对于同一病人，肺肿瘤中和该病人转移到身体其他地方的肿瘤拥有相似的 CNV 形式。并且不同病人的同类肺腺癌（ ADC ）自身也会共享 CNV 的形式。以及发现了小细胞肺癌和肺腺癌的 CNV 形式是不一样的。这也就暗示着基因座位上的 CNV 可能是被转移的肿瘤有一定选择性的，并且可能是各种癌症中特异的。
+%p 这个发现不仅在研究癌症的机理上，给了我们一个很好的启发——利用单细胞水平的测序可以发现许多曾经发现不到的基因组突变规律；在临床上也给予了我们较好的启示——也许利用单细胞测序来检测肿瘤 SNVs 和 INDELs ，可以用于个性化治疗，并更好地理解肿瘤的发展情况；而检测 CNV 的时候则可能不必利用单细胞测序就能判断肿瘤的种类，并帮助病人对症下药，更好地预防、治疗。
+%p 
+%span{:style=>'color:red;font-weight:bold'} 除了基因组，转录组的单细胞测序也是非常关键的，
+国内同济大学的孙毅教授是这个领域的专家，最近有幸听了她的报告，甚是膜拜。贴个她最近的工作：
+%p 
+ Genetic programs in human and mouse early embryos revealed by single-cell RNA sequencing.
+ %a{:href=>'https://www.ncbi.nlm.nih.gov/pubmed/23892778#'}> Nature.
+ 2013 Aug 29;500(7464):593-7. doi: 10.1038/nature12364. Epub 2013 Jul 28.
+%p 为了不跑题，就不再说单细胞 RNAseq 的问题了，其实对于一个还未踏入研究大门的菜鸟笔者本人来说，我更看好 single cell 的 RNAseq ，最好还能玩起 dUTP 链特异性等方法，这样发起文章来肯定一篇又一篇。。。。当然为了更好地进行单细胞测序，如果这个测序费用能降到跟构载体送测序的测序费用一样就更好了，哈哈。。。。
+%p 参考文献：
+%p 1.Navin N, Kendall J, Troge J, et al. Tumour evolution inferred by single-cell sequencing[J]. Nature, 2011, 472(7341): 90-94
+%p 2.Vogelstein B, Papadopoulos N, Velculescu V E, et al. Cancer genome landscapes[J]. science, 2013, 339(6127): 1546-1558.
+%p 3.Zong C, Lu S, Chapman A R, et al. Genome-wide detection of single-nucleotide and copy-number variations of a single human cell[J]. Science, 2012, 338(6114): 1622-1626.
+%p 4.Ni X, Zhuo M, Su Z, et al. Reproducible copy number variation patterns among single circulating tumor cells of lung cancer patients[J]. Proceedings of the National Academy of Sciences, 2013, 110(52): 21083-21088.
+%p 5.Plaks V, Koopman C D, Werb Z. Circulating tumor cells[J]. Science (New York, NY), 2013, 341(6151).
+%p 6.Cristofanilli M, Budd G T, Ellis M J, et al. Circulating tumor cells, disease progression, and survival in metastatic breast cancer[J]. New England Journal of Medicine, 2004, 351(8): 781-791.
+%p 7.Baccelli I, Schneeweiss A, Riethdorf S, et al. Identification of a population of blood circulating tumor cells from breast cancer patients that initiates metastasis in a xenograft assay[J]. Nature biotechnology, 2013, 31(6): 539-544.
+%p 作者：石辉水
+%p
+ 链接：
+ %a{:href => "http://www.zhihu.com/question/23875077/answer/34484183"}>http://www.zhihu.com/question/23875077/answer/34484183
+%p{:style=>'color:red;font-size:20px;font-weight:bold'} 更低的成本意味着更高的通量也就是更多的数据，也就可以做更多的事，还可以用于更多的人。
+%p 1、科研方面：测序范围从一个时间点到贯穿一个个体的整个生命周期，再从个体到群体，庞大的数据量可以让研究人员发现很多以前发现不了的规律，而绝大多数新发现应该都是从客观规律推出的（理论物理除外），测序成本每降低一个阶段，研究人员就可以获得更大数量级的数据，也就可以做更多的事：从人类基因组计划，到 HapMap 计划，再到千人基因组计划，期间还有各种诸如 COSMIC/TCGA/encode 等大项目都是伴随着成本下降而逐步开展的，我相信随着测序成本进一步下降肯定还会有更多新的基因组项目开展。
+那么当测序成本降到一个临界值的时候则很可能会带来生命科学研究的井喷时代（个人认为生物学研究困难的一个重要原因就是实验难设计周期长甚至实验结果经常也不好观察，导致很多客观规律隐藏的太深，而大数据挖掘很可能会带来转机——通过数据分析发现的规律甚至可以开启新的研究领域）
+%p 2、临床及相关应用产业方面：这个应该不用多说，测序成本的下降必然开启一个新的产业，可以类比于轿车、PC 进入各家各户，据说已经有地方计划试点对每个新生儿进行测序。个人认为，随着测序成本进一步降低，个人基因组数据进入病例档案应该是迟早的事，这样可以记录一个病人在不同年龄段的基因组变化，于临床和科研都很有帮助。
+%p 作者：Liu jingxing
+%p
+ 链接：
+ %a{:href => "http://www.zhihu.com/question/23875077/answer/34452594"}>http://www.zhihu.com/question/23875077/answer/34484183
+
+
