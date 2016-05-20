@@ -26,7 +26,6 @@ GEM
     mercenary (0.3.5)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    net-ssh (3.0.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     rb-fsevent (0.9.7)
@@ -44,7 +43,6 @@ DEPENDENCIES
   haml
   jekyll
   minitest
-  net-ssh
   nokogiri
 
 BUNDLED WITH
