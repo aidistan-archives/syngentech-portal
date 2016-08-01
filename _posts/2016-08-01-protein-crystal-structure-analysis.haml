@@ -1,0 +1,45 @@
+---
+layout: post
+image: /images/blog52.jpg
+title: 蛋白晶体结构里面那些有意思的分析<small>#每天进步一点点#</small>
+---
+:css
+ ul>li {
+  color:rgb(255,0,255);
+  font-size:18px;
+ }
+ p {
+  margin-top:10px;
+  margin-bottom:10px;
+ }
+%small by 大程
+%p 跟大家分享自己昨天看到了三句话：
+%ul
+ %li 实验开始时，自己一人处理所有问题，老板整天忙着临床手术，没有时间理会我的实验。 每次见他，我说“实验很难，摸不到头绪。” 老板回答“不主动，不动手，不碰壁，是不能有技术的，包括实验和手术。” 整个实验，我比实验计划多花了2个月，每当遇到困难时，老板的话语总在我耳边回响，激励我前进。
+ %li 想看电视就看吧，想打游戏就打吧，反正你不想毕业！
+ %li 失败只有一种－－－半途而废
+%p
+ %strong 的确，只有当你觉得有所困难，不是很顺利，不是很舒服的时候，这个时候，才是你进步最快的。今天我们来学习一个在线版的蛋白质结构分析小工具：
+%p
+ WHAT IF：
+ %a{:href=>'http://swift.cmbi.ru.nl/servers/html/index.html'} http://swift.cmbi.ru.nl/servers/html/index.html<br>
+ 提供了十分丰富的蛋白质模拟相关工具。包括同源模建、检查和修复蛋白结构、残基突变、蛋白结构分析、可及表面计算、分析氢键、补全质子、原子间不正当接触检测、计算盐桥、生成 FlexDock 输入文件等等。
+%img.am-img-responsive{src: '{{ "/images/blog-child52.1.png" | prepend: site.url.assets }}'}
+%p 我们以一个蛋白质晶体结构 4OO8 为例，看看特定氨基酸残基的性质：
+%img.am-img-responsive{src: '{{ "/images/blog-child52.2.png" | prepend: site.url.assets }}'}
+%p 可以看到相应的坐标，组成等。<br>Whatif 的功能非常强大，我们来看看另外一个，计算蛋白接触表面：
+%img.am-img-responsive{src: '{{ "/images/blog-child52.3.png" | prepend: site.url.assets }}'}
+%p 还可以分析蛋白结构与 DNA 、RNA 之间的相互作用：
+%img.am-img-responsive{src: '{{ "/images/blog-child52.4.png" | prepend: site.url.assets }}'}
+%p
+ 不过感觉这样看是否不是很直观？？<br>不怕，小编提供另外一个有意思的工具：<br>
+ %a{:href=>'http://www.ebi.ac.uk/thornton-srv/software/NUCPLOT/'} http://www.ebi.ac.uk/thornton-srv/software/NUCPLOT/
+%img.am-img-responsive{src: '{{ "/images/blog-child52.5.png" | prepend: site.url.assets }}'}
+%img.am-img-responsive{src: '{{ "/images/blog-child52.6.png" | prepend: site.url.assets }}'}
+%p 可以非常直观的看到 DNA 、蛋白相互之间作用。
+%p 这里还包括预测 pro 氨基酸残基突变，增加蛋白稳定性的预测：
+%img.am-img-responsive{src: '{{ "/images/blog-child52.7.png" | prepend: site.url.assets }}'}
+%p 其中带星号更加推荐。
+%img.am-img-responsive{src: '{{ "/images/blog-child52.8.png" | prepend: site.url.assets }}'}
+
+
