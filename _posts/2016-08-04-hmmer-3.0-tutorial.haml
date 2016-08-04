@@ -1,0 +1,67 @@
+---
+layout: post
+image: /images/blog55.jpg
+title: 比blast生猛的同源序列搜索程序HMMER 3.0使用教程<small>#每天进步一点点#</small>
+---
+:css
+ .blog55 .indent {
+   text-indent: 2em;
+ }
+%div.blog55
+ %span by Dacheng
+ %p.indent HMMER 被用于在序列数据库中搜索同源序列，产生同源序列比对，所使用的方法是基于隐马尔科夫模型。HMMER 常常与 profile 数据库连用，例如 Pfam 等。但是 HMMER 同时能够处理特定的索引，并不仅仅是多序列比对后产生的 profile 文件，这个与 BLAST 很像。例如可以使用一条蛋白序列搜索特定的数据库，或者迭代搜索。
+ %p.indent HMMER 的强大之处在于可以检测到远的同源序列。本教程是在 win7 下演示本底使用安装，当然和 blast 类似，也存在网页版。
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.1.png" | prepend: site.url.assets }}'}
+ %p hMMER下载主页：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.2.png" | prepend: site.url.assets }}'}
+ %p 在 windows 下 HMMER 需要在 Cygwin 环境下执行，这是一种在 windows 情况下模拟 linux 的工作环境。
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.3.png" | prepend: site.url.assets }}'}
+ %p 下载好之后，我们首先设置 Cygwin 的环境：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.4.png" | prepend: site.url.assets }}'}
+ %p 按照提示，一步步进行安装：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.5.png" | prepend: site.url.assets }}'}
+ %p 等候几分钟下载成功后，默认是选择最基本的包进行安装：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.6.png" | prepend: site.url.assets }}'}
+ %p 安装好后，可以看到桌面出现 Cygwin 图标：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.7.png" | prepend: site.url.assets }}'}
+ %p 启动命令行：<br>需要注意在使用 Cygwin 的时候，所需要的对应的路径需要更改：
+ %code /cygdrive/c/mypath/myfile
+ %p 而不是
+ %code c:\mypath\myfile.
+ %p 现在我们就可以体验 HMMER 啦！<br>接下来，我们通过一些范例程序演示如何使用 HMMER ：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.8.png" | prepend: site.url.assets }}'}
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.9.png" | prepend: site.url.assets }}'}
+ %p.indent Hmmbuild 、hmmsearch 、 hmmscan 和 hmmalign 被誉为蛋白质 domain 分析和注释的核心四工具。
+ %p.indent Phmmer 和 jackhmmer 类似于 BSLASTP 和 PSIBLAST 搜索特定的蛋白序列。HMMER 可以自动检测输入文件的格式。如果需要特殊指定，则使用命令行参数  –informat afa
+ %p 第一步：使用 hmmbuild 产生 HMM profile 文件
+ %p 首先提供一个 Stockholm 格式的多序列比对文件，用于生成 HMM profile 文件：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.10.png" | prepend: site.url.assets }}'}
+ %p 执行命令行：
+ %code $ binaries/hmmbuild globins4.hmm tutorial/globins4.sto
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.11.png" | prepend: site.url.assets }}'}
+ %p 从上面的命令行结果我们可以看到：<br>总共 4 条对应的序列，长度是 171bp ，一致的长度是 149bp
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.12.png" | prepend: site.url.assets }}'}
+ %p 我们看到生成了对应的 hmm 文件：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.13.png" | prepend: site.url.assets }}'}
+ %p 第二步：使用 hmmsearch 进行数据库的搜索
+ %p Hmmsearch 可以接受任何 FASTA 格式的文件作为数据库的输入。同时接受 EMBL/UniProt 格式的文件和 Genbank 文件。
+ %code $ binaries/hmmsearch globins4.hmm tutorial/globins45.fa > globins4.out
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.14.png" | prepend: site.url.assets }}'}
+ %p 输出结果：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.15.png" | prepend: site.url.assets }}'}
+ %p 我们来具体看看输出文件的每一行的含义：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.16.png" | prepend: site.url.assets }}'}
+ %p 第一部分告诉我们使用的HMM文件和对应的数据库。
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.17.png" | prepend: site.url.assets }}'}
+ %p 第二部分列举出来了一些最最同源的序列，最后两列分别是名称和描述。
+ %p 前面两个主列分别是 基于全长的打分和基于最匹配 domain 的打分。<br>其中 E-value 与序列长度有关，而 score 则与序列长度无关。<br>为了给大家更好的演示与 domian 有关的序列比对，我们使用 fibronectin type III domain 进行比对：
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.18.png" | prepend: site.url.assets }}'}
+ %img.am-img-responsive{src: '{{ "/images/blog-child55.19.png" | prepend: site.url.assets }}'}
+ %p 大家有没有学会呀~~<br>有问题欢迎联系小编  微信号  mzqjcbx
+
+
+
+
+
+
+
