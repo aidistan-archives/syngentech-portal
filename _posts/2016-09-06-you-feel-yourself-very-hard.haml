@@ -1,0 +1,103 @@
+---
+layout: post
+image: /images/blog-child59.5.png
+title: 你觉得自己很辛苦？深圳大学第一附属医院 973 团队 Nature Methods 41 个 Figure 讲述高度可控 cas9 的智能工具
+---
+:css
+ .blog59 h5 {
+   color:rgb(17, 57, 121);
+  }
+ .blog59 .list {
+   color:rgb(17, 57, 121);
+   border-top:4px solid rgb(134, 191, 143);
+   border-bottom:4px solid rgb(134, 191, 143);
+   border-right:1px solid rgb(134, 191, 143);
+   border-left:1px solid rgb(134, 191, 143);
+  }
+  .blog59 .list div {
+    margin:1px 0;
+    padding:10px;
+    border-top:1px solid rgb(134, 191, 143);
+    border-bottom:1px solid rgb(134, 191, 143);
+  }
+  .blog59 p span.blue {
+    color:rgb(17, 57, 121);
+  }
+%div.blog59
+ %p 小编时常在思索，在 Zhang Feng 大神一篇又一篇 CNS ，发的速度比我们读的速度还快的时候，当 Timothy K. Lu、David Baker 和 GM church 大师们，连续两周连续两篇 Science paper 的时候？
+ %h5 我们自己究竟与他们差距在哪里？
+ %p 也许有的人会说，国外的条件好，但是国外好的不只他们一家，也许有的人说，国内更浮躁，但是别人浮躁又关乎你什么事情
+ %section
+  %span 也许，我们可以更踏实！
+  %span 也许，我们可以更专注！
+  %span 也许，我们可以把别人喝咖啡的时间用来思考！
+  %span 也许，我们可以。。。
+ %p 当我们尝试一次又一次也许之后，也许真的有一天，我们也能成为他们！
+ %p 今天我们就来拜读深圳大学第一附属医院（深圳市第二人民医院）973医学合成生物学团队在 Nature Methods 的文章。
+ %p 做科研，不是说你能多么精彩的讲述别人的工作，虽然这也很重要，但是更多的是看到目前该领域的问题。
+ %p 正如单细胞领域大神汤富酬所说，能想到未来十年，未来二十年情况的人，是将把握世界的人，那么在 cas9 领域，在 Zhang Feng 等人一篇又一篇 Science、Cell、 Nature 的背后，你觉得这个系统有什么不足？
+ %p 当你使用诺基亚手机的时候，你想到今天我们使用 iphone 进行大众点评，百度地图，微信，支付宝这些情景吗？
+ %h5 那么在2020年，全世界是如何使用 cas9 ？在2025年呢？
+ %p 这里我没有说如何使用cas9，也许那个时候，是另外一个名词或者系统。
+ %p 好的，顺着智能手机的思路，我们所需要的其实就是更便捷，比如你走到家乐福迷路了，有导航告诉你回家的路，你需要打车就有滴滴，其实对于 cas9 系统也是一样，我们需要智能化的 cas9！
+ %h5 那么什么叫智能化？
+ %p 很简单，就是你越不费劲，就越智能，当然这个前提是你想干一件复杂的事情，比如在古代你想从幽州到长安，可能得花大半年，但现在几个小时就可以，那么对于 cas9 而言，稍微复杂一点的事情是什么？
+ %p 最简单的，对于元件而言，倘若他能感知很多信号才发挥作用，那就非常神奇。
+ %p 因为一旦我们可以复杂的操控，对于可以执行包括激活、抑制、切割、表观调控功能等多种的 cas9 而言，这个意义不言而喻。
+ %p 好了，让我们进入正题，深圳大学 973 合成生物学课题组的医生们，讲述了怎样的一个故事？
+ %img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.2.png" | prepend: site.url.assets }}'}
+ %p 我们知道 cas9 如果想发挥作用，需要两样东西，一个是 cas9 一个是 gRNA 。
+ %img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.3.png" | prepend: site.url.assets }}'}
+ %p gRNA 中前 20bp 序列负责识别相应的 DNA 序列。
+ %p 那么如果将这 20bp 遮挡起来，cas9 还会不会识别呢？
+ %p 这是不可以的，但是如果我们可控的释放这 20bp 呢？
+ %p 那么这又是如何实现的呢？
+ %h5 合成生物学的理念就是来源于自然，高于自然，改造自然。
+ %img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.4.png" | prepend: site.url.assets }}'}
+ %p 事实上，自然界中存在一类叫做 riboswitch 的工具，尤其是在细菌中，这是调节细菌感应代谢物的机制之一。
+ %p 在今年的 science paper 中，专门有文章，系统性的探究细菌中的 riboswitch。
+ %p 具体来讲，当被感应的小分子或者蛋白没有出现的时候，这个时候，RNA 会形成一个发卡形式的结构，这个时候，可以将比如 RBS（核糖体结合位点）通过碱基配对的方式给藏起来，而当小分子出现的时候，通过小分子与 riboswitch 相结合，则可以释放相应的序列。
+ %p 当然除了小分子，人们基于 SLEXEX 筛选的方式，获得多种蛋白的适配体。
+ %p 那么如果将被藏起来的序列换成 sgRNA 序列是否可以？
+ %p 如果将小分子感应的相应序列换成结合一些蛋白的序列是否可以？
+ %p 一个伟大的 idea 从课题组科学家等人的头脑中孕育出来。
+ %img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.5.png" | prepend: site.url.assets }}'}
+ %p 紧随其后，
+ %div.list
+  %div
+   %p 那么这一设计机制是否具有普遍性？是不是对于很多种 sgRNA 都可以？
+   %p 作为一个感受器，这一机制的敏感性如何？对相应的小分子，蛋白的相应曲线如何？
+   %p 这一系统的具体参数，比如之间的偶联长度等，是否可以优化？
+   %p 这一系统是否还可以进一步升级？
+   %p 比如感应多个信号？进行相应信号的处理？
+   %p 比如可否将感知信号与执行特定的功能偶联起来？
+%p 我们一个问题，一个问题来跟随科学家们的脚步来思索：
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.6.png" | prepend: site.url.assets }}'}
+-# img
+%p使用针对于四环素的riboswitch，科学家们，通过使用 dcas9 去抑制 VEGF 基因的表达和 dcas9-VP64 激活相应基因的表达。
+%p 这里我们可以看到无论是激活还是抑制，与 control 比较，对于多种 sgRNA 相应的效果均非常好。
+%h5 对于这一系统的具体参数而言：
+%p 首先科学家们观察是否增加 riboswitch 元件后影响那个原来 sgRNA 的效率，从 supplemenary Figure1，我们可以看到：
+-# img
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.7.png" | prepend: site.url.assets }}'}
+%p 无论是激活还是抑制效率都没有显著的改变。
+%p 同时还可以看到，最合适的 stem 区域长度是 15bp
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.8.png" | prepend: site.url.assets }}'}
+%center 上图中标记为黄色的为 antisense stem 区域
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.9.png" | prepend: site.url.assets }}'}
+%p 在没有四环素的情况下，按照道理来说，最好的情况应该是 sgRNA 完全处于关闭状态，当有四环素情况下，sgRNA 打开，而且效率最高，那么什么样的一个匹配长度，也就是 stem 区域的长度最合适呢？
+%p 科学家们，进行了细致的分析，综合两方面的结果，可以看到 15bp 最满足！
+%h5 进一步，除了小分子？蛋白是否也可以被感知？
+%p 科学家们针对于噬菌体衣壳蛋白 MS2 进行设计，寻找到 MS2 的适配体，然后使用 TET-－ON 系统，在 HEK293 中表达 MS2 蛋白，当 MS2 蛋白表达时候，就可以被 sgRNA 感知，从而打开 sgRNA ，进一步激活感兴趣的基因。
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.10.png" | prepend: site.url.assets }}'}
+%p 当然，可以利用相应的感知系统进行逻辑运算，科学家们，选择 P53 和 HSF1 进行相关研究，利用 Tenovin-－6 和乙醇来提高 P53 和 HSF1 的表达，从而表达抑制 luciferase 酶的表达，从而实现 NOT 运算。
+%p 更为出彩的是，除了感知相应的信号，科学家们通过感知特定癌症信号后，而对细胞内信号通路进行重新设定，人工的在不同生物信号通路间架起一座桥梁！
+%img.am-center.am-img-responsive{src: '{{ "/images/blog-child59.11.png" | prepend: site.url.assets }}'}
+%p
+ 也许我们可以将电影明星如数家珍，但是今天不妨花一分钟，从第一个“也许”开始做起，最后让我们记住英雄的名字，该文第一作者——
+ %span.blue 刘宇辰
+ ，该文通讯作者——
+ %span.blue 蔡志明，黄卫人！
+ 来自于
+ %span.blue 深圳市第二人民医院（深圳大学第一附属医院）973 医学合成生物学项目团队！
+%p 谨以此文，向耕耘在科研战线的英雄们致敬！
