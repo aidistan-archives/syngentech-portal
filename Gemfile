@@ -1,4 +1,4 @@
-source "https://ruby.taobao.org"
+source 'https://ruby.taobao.org'
 
 gem 'capistrano', '~> 3.5'
 gem 'capistrano-rvm'

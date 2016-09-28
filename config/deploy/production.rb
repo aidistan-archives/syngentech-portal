@@ -1,7 +1,7 @@
 # Server-based syntax
 # ======================
 
-server 'root@mike.server.syngentech.org', roles: %w{web}
+server 'root@mike.server.syngentech.org', roles: %w(web)
 
 # Configuration
 # =============
