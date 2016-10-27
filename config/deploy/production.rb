@@ -6,7 +6,7 @@ server 'root@mike.server.syngentech.org', roles: %w(web)
 # Configuration
 # =============
 
-set :branch, 'production'
+set :branch, 'master'
 
 before 'deploy:publishing', :build do
   on roles(:web) do

@@ -6,7 +6,7 @@ server 'ad.tan@shao.server.syngentech.org', roles: %w(web)
 # Configuration
 # =============
 
-set :branch, 'staging'
+set :branch, 'develop'
 
 before 'deploy:publishing', :build do
   on roles(:web) do
