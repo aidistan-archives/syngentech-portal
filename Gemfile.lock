@@ -30,6 +30,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
+    rake (11.3.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -46,6 +47,7 @@ DEPENDENCIES
   jekyll
   minitest
   nokogiri
+  rake
 
 BUNDLED WITH
    1.12.5
