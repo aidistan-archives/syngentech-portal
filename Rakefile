@@ -66,11 +66,11 @@ namespace :config do
   task :production do
     config = load_config.merge(
       'url' => {
-        'root' =>    'http://syngen.tech',
+        'root' =>    'http://www.syngentech.com.cn',
         'assets' =>  'http://portal.assets.syngentech.com.cn',
-        'blog' =>    'http://syngen.tech/blog',
-        'biogeek' => 'http://syngen.tech/biogeek',
-        'service' => 'http://syngen.tech/service'
+        'blog' =>    'http://www.syngentech.com.cn/blog',
+        'biogeek' => 'http://www.syngentech.com.cn/biogeek',
+        'service' => 'http://www.syngentech.com.cn/service'
       }
     )
     save_config(config)
