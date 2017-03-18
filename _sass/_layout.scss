@@ -6,10 +6,14 @@ $black: #000;
  * Global header
  */
 
+.am-with-topbar-fixed-top {
+  padding-top: 50px;
+}
+
 .am-topbar-inverse {
-  font-size:0.9em;
+  font-size: 0.9em;
   background-color: $purple;
-  border-color: $purple;
+  border: none;
 }
 
 .am-topbar {
@@ -21,40 +25,71 @@ $black: #000;
     background: no-repeat left center;
     background-size: 36px 36px;
   }
+
   .am-dropdown-content:after  { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content:before { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content {
-    position:absolute;
     top: 80%;
-    background-color: rgba($purple, 0.6);
-    border-color:rgba($purple, 0.7);
+    background-color: rgba($purple, 0.8);
+    border: none;
+
     a {
       display: block;
       padding: 6px 20px;
       font-weight: 400;
       color: darken($white, 15%);
     }
+
     a:hover {
-      background-color: rgba($purple, 0.9);
+      background-color: rgba($purple, 1);
       color: $white;
+    }
+
+    a.disable {
+      color: darken($white, 45%);
+      cursor: default;
+    }
+
+    a.disable:hover {
+      background-color: transparent;;
     }
   }
 }
 
+#header-service {
+  position: fixed;
+  width: 100%;
+
+  p {
+    padding: 12px 6px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  a {
+    padding: 6px;
+  }
+}
+
 .am-offcanvas {
-  a { color: lighten($black, 20%); }
-  ul ul { border-left: 16px solid white; }
+  a         { color: lighten($black, 20%); }
+  a.disable { color: lighten($black, 60%); }
+
+  ul ul {
+    border-left: 16px solid white;
+  }
 }
 
 .list{
   position: relative;
+
   .list-content{
     width:300px;
-    background-color: rgba($purple, 0.6);
+    background-color: rgba($purple, 0.8);
     position:absolute;
     left:100%;
     top:-40%;
-    border-color:rgba($purple, 0.7);
+    border: none;
     display: none;
   }
 }
@@ -104,15 +139,18 @@ $black: #000;
 .am-progress-bar {
   background-color: darken($purple, 2%);
 }
+
 /**
  * blog
  */
 
 .bg-style {
   margin-top: 50px;
+
   .am-container {
     max-width: 900px;
     box-shadow: 0 0 10px 0 #cfcfcf;
+
     .cm {
       max-width: 800px;
       padding: 50px 50px;
