@@ -17,7 +17,7 @@
         <li><a href="{{ '/' | prepend: site.url.root }}">首页</a></li>
         <li class="am-dropdown">
           <a href="{{ '/service' | prepend: site.url.root }}" class="am-dropdown-toggle">技术服务</a>
-          <ul id="header-service" class="am-dropdown-content">
+          <ul class="am-dropdown-content full-width">
             <div class="am-container">
               <div class="am-u-md-2">
                 <p>方法</p>
@@ -31,7 +31,7 @@
                 </ul>
               </div>
               <div class="am-u-md-3">
-                <p class="title">载体</p>
+                <p>载体</p>
                 <ul class="am-nav">
                   <li><a href="{{ '/service/product/gRNA-library/' | prepend: site.url.root }}">gRNA文库构建</a></li>
                   <li><a href="{{ '/service/product/shRNA-library/' | prepend: site.url.root }}">shRNA文库构建</a></li>
@@ -44,7 +44,7 @@
                 </ul>
               </div>
               <div class="am-u-md-3">
-                <p class="title">细胞</p>
+                <p>细胞</p>
                 <ul class="am-nav">
                   <li><a href="{{ '/service/solution/knock-in/' | prepend: site.url.root }}">定点敲入细胞株</a></li>
                   <li><a href="{{ '/service/solution/knock-down/' | prepend: site.url.root }}">基因敲除细胞株</a></li>
@@ -58,7 +58,7 @@
                 </ul>
               </div>
               <div class="am-u-md-2">
-                <p class="title">病毒</p>
+                <p>病毒</p>
                 <ul class="am-nav">
                   <li><a href="{{ '/service/product/LV/' | prepend: site.url.root }}">慢病毒包装</a></li>
                   <li><a href="{{ '/service/solution/silencing/' | prepend: site.url.root }}">基因沉默慢病毒包装</a></li>
@@ -70,7 +70,7 @@
                 </ul>
               </div>
               <div class="am-u-md-2">
-                <p class="title">其他服务</p>
+                <p>其他服务</p>
                 <ul class="am-nav">
                   <li><a href="{{ '/service/product/gene-synthesis/' | prepend: site.url.root }}">基因合成</a></li>
                   <li><a href="{{ '/service/product/transgenic-mice/' | prepend: site.url.root }}">基因工程鼠</a></li>
@@ -80,37 +80,40 @@
           </ul>
         </li>
         <li class="am-dropdown">
-          <a href="{{ site.url.biogeek }}" class="am-dropdown-toggle">BioGeek试剂</a>
-          <ul class="am-dropdown-content">
-            <li class="list">
-              <a href="{{ '/biogeek/clone' | prepend: site.url.root }}">分子克隆</a>
-              <ul class="list-content am-nav">
-                <li><a href="{{ '/biogeek/clone/bg10102' | prepend: site.url.root }}">GeneTaq<sup>TM</sup> DNA 聚合酶</a></li>
-                <li><a href="{{ '/biogeek/clone/bg10110' | prepend: site.url.root }}">2 × <i>Taq</i> Master Mix</a></li>
-                <li><a href="{{ '/biogeek/clone/bg10201' | prepend: site.url.root }}">T4 DNA 连接酶</a></li>
-                <li><a href="{{ '/biogeek/clone/bg10202' | prepend: site.url.root }}">Quick Ligase<sup>TM</sup></a></li>
-                <li><a href="{{ '/biogeek/clone/bg10301' | prepend: site.url.root }}">pfu DNA聚合酶</a></li>
-                <li><a href="{{ '/biogeek/clone/bg10401' | prepend: site.url.root }}">2 × EvaGreen Master Mix</a></li>
-              </ul>
-            </li>
-            <li class="list">
-              <a href="{{ '/biogeek/cell' | prepend: site.url.root }}">细胞培养</a>
-              <ul class="list-content am-nav">
-                <li><a href="{{ '/biogeek/cell/LC-kit' | prepend: site.url.root }}">Lentivirus Concentration Kit</a></li>
-                <li><a href="{{ '/biogeek/cell/bg20201' | prepend: site.url.root }}">EpFect<sup>TM</sup> 转染试剂</a></li>
-                <li><a href="{{ '/biogeek/cell/bg20301' | prepend: site.url.root }}">Polybrene（聚凝胺）</a></li>
-                <li><a href="{{ '/biogeek/cell/LP-kit' | prepend: site.url.root }}">慢病毒包装试剂盒</a></li>
-              </ul>
-            </li>
-            <li class="list">
-              <a href="{{ '/biogeek/ngs' | prepend: site.url.root }}">NGS</a>
-              <ul class="list-content am-nav">
-                <li><a href="{{ '/biogeek/ngs/bg30101' | prepend: site.url.root }}">IMag<sup>TM</sup> 质粒提取</a></li>
-                <li><a href="{{ '/biogeek/ngs/bg30201' | prepend: site.url.root }}">IMag<sup>TM</sup> 核酸纯化</a></li>
-                <li><a href="{{ '/biogeek/ngs/bg30301' | prepend: site.url.root }}">IMag<sup>TM</sup> 片段分选</a></li>
-              </ul>
-            </li>
-            <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
+          <a href="{{ '/biogeek' | prepend: site.url.root }}" class="am-dropdown-toggle">BioGeek试剂</a>
+          <ul class="am-dropdown-content full-width">
+            <div class="am-container">
+              <div class="am-u-md-4">
+                <p>分子克隆</p>
+                <ul class="am-nav">
+                  <li><a href="{{ '/biogeek/clone/bg10401/' | prepend: site.url.root }}">2 x EvaGreen Master Mix</a></li>
+                  <li><a class="disable">KOD DNA 聚合酶</a></li>
+                  <li><a class="disable">Easyclone 快速克隆试剂盒</a></li>
+                  <li><a href="{{ '/biogeek/clone/bg10102/' | prepend: site.url.root }}">GeneTag<sup>TM</sup> DNA 聚合酶</a></li>
+                  <li><a href="{{ '/biogeek/clone/bg10110/' | prepend: site.url.root }}">2 x Taq Master Mix</a></li>
+                  <li><a href="{{ '/biogeek/clone/bg10201/' | prepend: site.url.root }}">T4 DNA 连接酶</a></li>
+                  <li><a href="{{ '/biogeek/clone/bg10202/' | prepend: site.url.root }}">Quick Ligase<sup>TM</sup></a></li>
+                  <li><a href="{{ '/biogeek/clone/bg10301/' | prepend: site.url.root }}">Pfu DNA 聚合酶</a></li>
+                </ul>
+              </div>
+              <div class="am-u-md-4">
+                <p>细胞培养</p>
+                <ul class="am-nav">
+                  <li><a href="{{ '/biogeek/cell/LP-kit/' | prepend: site.url.root }}">慢病毒包装试剂盒</a></li>
+                  <li><a href="{{ '/biogeek/cell/LC-kit/' | prepend: site.url.root }}">慢病毒浓缩试剂盒</a></li>
+                  <li><a href="{{ '/biogeek/cell/bg20201/' | prepend: site.url.root }}">Epect<sup>TM</sup> 转染试剂</a></li>
+                  <li><a href="{{ '/biogeek/cell/bg20301/' | prepend: site.url.root }}">Polybrene</a></li>
+                </ul>
+              </div>
+              <div class="am-u-md-4">
+                <p>高通量测序样本制备</p>
+                <ul class="am-nav">
+                  <li><a href="{{ '/biogeek/ngs/bg30101/' | prepend: site.url.root }}">iMag<sup>TM</sup> 质粒提取试剂盒</a></li>
+                  <li><a href="{{ '/biogeek/ngs/bg30201/' | prepend: site.url.root }}">iMag<sup>TM</sup> 核酸纯化试剂盒</a></li>
+                  <li><a href="{{ '/biogeek/ngs/bg30301/' | prepend: site.url.root }}">iMag<sup>TM</sup> 片段分选试剂盒</a></li>
+                </ul>
+              </div>
+            </div>
           </ul>
         </li>
         <li><a href="http://www.geshare.com.cn" target="_blank">基因山</a></li>
@@ -220,40 +223,55 @@
         </li>
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ site.url.biogeek }}">BioGeek试剂</a>
+            <a href="{{ '/biogeek/' | prepend: site.url.root }}">BioGeek试剂</a>
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-biogeek'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-biogeek">
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal">
-                  <a href="{{ '/clone' | prepend: site.url.biogeek }}">分子克隆</a>
+                  <a href="{{ '/biogeek/clone/' | prepend: site.url.root }}">分子克隆</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-clone'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-clone">
-                <li><a href="{{ '/clone/bg10102' | prepend: site.url.biogeek }}">GeneTaq<sup>TM</sup> DNA 聚合酶</a></li>
-                <li><a href="{{ '/clone/bg10110' | prepend: site.url.biogeek }}">2 × <i>Taq</i> Master Mix</a></li>
-                <li><a href="{{ '/clone/bg10201' | prepend: site.url.biogeek }}">T4 DNA 连接酶</a></li>
-                <li><a href="{{ '/clone/bg10202' | prepend: site.url.biogeek }}">Quick Ligase<sup>TM</sup></a></li>
-                <li><a href="{{ '/clone/bg10301' | prepend: site.url.biogeek }}">pfu DNA聚合酶</a></li>
+                <li><a href="{{ '/biogeek/clone/bg10401/' | prepend: site.url.root }}">2 x EvaGreen Master Mix</a></li>
+                <li><a class="disable">KOD DNA 聚合酶</a></li>
+                <li><a class="disable">Easyclone 快速克隆试剂盒</a></li>
+                <li><a href="{{ '/biogeek/clone/bg10102/' | prepend: site.url.root }}">GeneTag<sup>TM</sup> DNA 聚合酶</a></li>
+                <li><a href="{{ '/biogeek/clone/bg10110/' | prepend: site.url.root }}">2 x Taq Master Mix</a></li>
+                <li><a href="{{ '/biogeek/clone/bg10201/' | prepend: site.url.root }}">T4 DNA 连接酶</a></li>
+                <li><a href="{{ '/biogeek/clone/bg10202/' | prepend: site.url.root }}">Quick Ligase<sup>TM</sup></a></li>
+                <li><a href="{{ '/biogeek/clone/bg10301/' | prepend: site.url.root }}">Pfu DNA 聚合酶</a></li>
               </ul>
             </li>
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal">
-                  <a href="{{ '/cell' | prepend: site.url.biogeek }}">细胞培养</a>
+                  <a href="{{ '/biogeek/cell/' | prepend: site.url.root }}">细胞培养</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-cell'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-cell">
-                <li><a href="{{ '/cell/LC-kit' | prepend: site.url.biogeek }}">Lentivirus Concentration Kit</a></li>
-                <li><a href="{{ '/cell/bg20201' | prepend: site.url.biogeek }}">EpFect<sup>TM</sup> 转染试剂</a></li>
-                <li><a href="{{ '/cell/bg20301' | prepend: site.url.biogeek }}">Polybrene（聚凝胺）</a></li>
+                <li><a href="{{ '/biogeek/cell/LP-kit/' | prepend: site.url.root }}">慢病毒包装试剂盒</a></li>
+                <li><a href="{{ '/biogeek/cell/LC-kit/' | prepend: site.url.root }}">慢病毒浓缩试剂盒</a></li>
+                <li><a href="{{ '/biogeek/cell/bg20201/' | prepend: site.url.root }}">Epect<sup>TM</sup> 转染试剂</a></li>
+                <li><a href="{{ '/biogeek/cell/bg20301/' | prepend: site.url.root }}">Polybrene</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/ngs' | prepend: site.url.biogeek }}">NGS</a></li>
-              <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
+            <li class="am-panel">
+              <div>
+                <div class="am-padding-sm am-padding-horizontal">
+                  <a href="{{ '/biogeek/ngs' | prepend: site.url.root }}">高通量测序样本制备</a>
+                  <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-ngs'}"></i>
+                </div>
+              </div>
+              <ul class="am-list am-collapse" id="offcanvas-ngs">
+                <li><a href="{{ '/biogeek/ngs/bg30101/' | prepend: site.url.root }}">iMag<sup>TM</sup> 质粒提取试剂盒</a></li>
+                <li><a href="{{ '/biogeek/ngs/bg30201/' | prepend: site.url.root }}">iMag<sup>TM</sup> 核酸纯化试剂盒</a></li>
+                <li><a href="{{ '/biogeek/ngs/bg30301/' | prepend: site.url.root }}">iMag<sup>TM</sup> 片段分选试剂盒</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li class="am-panel">
