@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ", " }}{% else %}合生基因, 基因山, CRISPR/Cas9, CRISPR, Cas9, 基因编辑, 基因敲除, 基因元件获取, 质粒购买, 技术服务, 生物技术解决方案{% endif %}" />
 <meta name="description" content="合生基因推出病毒载体与包装服务/shRNA/miRNA/Cas9/基因过表达/诱导表达/病毒可在2-3周生成并交付/欢迎致4006803200或发送邮件至service@syngen.tech咨询" />
-<title>{% if page.title %}{{ page.title }}{% else %}合生基因{% endif %}</title>
+<title>{% if page.title.head %}{{ page.title.head }}{% elsif page.title %}{{ page.title }}{% else %}合生基因{% endif %}</title>
 
 <link rel="shortcut icon" type="image/png" href="{{ '/images/logo.png' | prepend: site.url.assets }}" />
 <link rel="alternate" type="application/rss+xml" title="合生基因" href="{{ "/feed.xml" | prepend: site.url.root }}">

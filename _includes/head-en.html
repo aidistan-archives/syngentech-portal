@@ -4,7 +4,7 @@
 <meta name="keywords" content="syngentech, geshare, CRISPR/Cas9, CIRSPR, Cas9, Gene Editing, Gene Knock Out, Gene Elements Order, Plasmid Purchase, Technical Service, Biology Technical Solution">
 <meta name="description" content="SyngenTech is a one-stop service platform consisting of Biology Technical Service, Optimized Biological Reagents and Gene Element Share/Order.">
 
-<title>{% if page.title %}{{ page.title }}{% else %}SyngenTech{% endif %}</title>
+<title>{% if page.title.head %}{{ page.title.head }}{% elsif page.title %}{{ page.title }}{% else %}SyngenTech{% endif %}</title>
 
 <link rel="shortcut icon" type="image/png" href="{{ '/images/logo.png' | prepend: site.url.assets }}" />
 <link rel="alternate" type="application/rss+xml" title="SyngenTech" href="{{ "/feed.xml" | prepend: site.url.root }}">
