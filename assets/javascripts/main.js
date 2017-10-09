@@ -56,7 +56,8 @@
           i++;
         }
           $('.hide').show();
-        if(i==4){
+        if(i>2){
+        // if(i==4){
           clearInterval(Interval);
           Interval=null;
           $('#slider').flexslider({
