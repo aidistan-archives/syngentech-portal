@@ -15,6 +15,6 @@ layout: default
       咨询，合生基因技术工程师将为您竭心服务。
     </strong>
   </p>
-  <div class="img-style1 am-vertical-align am-margin-bottom-lg " style= "background-image: url({{ page.image.footer | prepend: site.url.assets }})">
+  {% if page.image.footer %}<div class="img-style1 am-vertical-align am-margin-bottom-lg " style= "background-image: url({{ page.image.footer | prepend: site.url.assets }})">{% endif %}
   </div>
 </div>
