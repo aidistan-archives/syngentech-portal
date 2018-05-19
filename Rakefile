@@ -55,7 +55,6 @@ namespace :config do
       'url' => {
         'root' =>    '',
         'assets' =>  '/assets',
-        'blog' =>    'http://blog.syngentech.com.cn',
         'biogeek' => '/biogeek',
         'service' => '/service'
       }
@@ -68,7 +67,6 @@ namespace :config do
       'url' => {
         'root' =>    'http://www.syngentech.com.cn',
         'assets' =>  'http://portal.assets.syngentech.com.cn',
-        'blog' =>    'http://blog.syngentech.com.cn',
         'biogeek' => 'http://www.syngentech.com.cn/biogeek',
         'service' => 'http://www.syngentech.com.cn/service'
       }
