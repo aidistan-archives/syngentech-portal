@@ -12,9 +12,9 @@
       <h3>切换语言</h3>
       <div>
         {% capture realUrl %}{{ page.url | replace_first: '/en/', '/' }}{% endcapture %}
-        <a href="{{ realUrl | prepend: site.url.root }}">简体中文</a>
+        <a href="{{ realUrl | prepend: site.domain.root }}">简体中文</a>
         <span class="am-margin-horizontal-xs">|</span>
-        <a href="{{ realUrl | prepend: '/en' | prepend: site.url.root |}}">English</a>
+        <a href="{{ realUrl | prepend: '/en' | prepend: site.domain.root |}}">English</a>
       </div>
       <h3>联系我们</h3>
       <ul class="am-nav">
@@ -24,7 +24,7 @@
       </ul>
     </div>
     <div class="am-u-sm-12 am-u-md-2 am-u-lg-2">
-      <img class="am-img-responsive" src='{{ "/images/index26.jpg" | prepend: site.url.assets }}'>
+      <img class="am-img-responsive" src='{{ "/images/index26.jpg" | prepend: site.domain.assets }}'>
     </div>
   </div>
   <div class="am-container am-padding-bottom-xs">
@@ -33,4 +33,4 @@
 </footer>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.amazeui.org/amazeui/2.4.2/js/amazeui.js"></script>
-<script src="{{ '/javascripts/main.js' | prepend: site.url.assets }}"></script>
+<script src="{{ '/javascripts/main.js' | prepend: site.domain.assets }}"></script>

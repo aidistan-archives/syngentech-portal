@@ -14,7 +14,7 @@ image: /images/biogeek/product/polybrene.jpeg
     .am-cf
       .am-u-md-4
         %p.am-align-left
-          %img.am-img-responsive{src: '{{ "/images/polybrene.png" | prepend: site.url.assets }}', alt: '聚凝胺', width: '286', height: '202'}
+          %img.am-img-responsive{src: '{{ "/images/polybrene.png" | prepend: site.domain.assets }}', alt: '聚凝胺', width: '286', height: '202'}
       .am-u-md-8
         %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
           %tr{:style => "background:#f9f9f9"}
@@ -34,7 +34,7 @@ image: /images/biogeek/product/polybrene.jpeg
               %p.am-margin-top{:align => "center"} ¥320.00
             %td.am-text-middle{:rowspan => "4"}
               %p.am-margin-top{:align => "center"}
-                %a{href: '{{ "/documents/Polybrene.pdf" | prepend: site.url.assets }}'} 下载
+                %a{href: '{{ "/documents/Polybrene.pdf" | prepend: site.domain.assets }}'} 下载
             %tr
           %tr{:style => "background:#f9f9f9"}
             %td.am-text-middle{:rowspan => "2"}

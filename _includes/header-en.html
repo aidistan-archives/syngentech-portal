@@ -1,7 +1,7 @@
 <header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
   <div class="am-container">
     <h1 class="am-topbar-brand am-show-sm-only">
-      <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.url.assets }});">logo</a>
+      <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.domain.assets }});">logo</a>
     </h1>
 
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-default am-show-sm-only" data-am-offcanvas="{target: '#offcanvas'}">
@@ -12,67 +12,67 @@
     <div class="am-collapse am-topbar-collapse">
       <ul class="am-nav am-nav-pills am-topbar-nav am-nav-justify" style="max-width: 1200px;">
         <h1 class="am-topbar-brand">
-          <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.url.assets }});">logo</a>
+          <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.domain.assets }});">logo</a>
         </h1>
-        <li><a href="{{ '/en' | prepend: site.url.root }}">Home</a></li>
+        <li><a href="{{ '/en' | prepend: site.domain.root }}">Home</a></li>
         <li><a href="http://www.geshare.com.cn" target="_blank">GE Share</a></li>
         <li class="am-dropdown">
-          <a href="{{ '/en/biogeek' | prepend: site.url.root }}" class="am-dropdown-toggle">BioGeek</a>
+          <a href="{{ '/en/biogeek' | prepend: site.domain.root }}" class="am-dropdown-toggle">BioGeek</a>
           <ul class="am-dropdown-content">
             <li class="list">
-              <a href="{{ '/en/biogeek/clone' | prepend: site.url.root }}">Molecular Cloning</a>
+              <a href="{{ '/en/biogeek/clone' | prepend: site.domain.root }}">Molecular Cloning</a>
               <ul class="list-content am-nav">
-                <li><a href="{{ '/en/biogeek/clone/bg10102' | prepend: site.url.root }}">GeneTaq<sup>TM</sup> DNA Polymerase</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10110' | prepend: site.url.root }}">2 × <i>Taq</i> Master Mix</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10201' | prepend: site.url.root }}">T4 DNA Ligase</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10202' | prepend: site.url.root }}">Quick Ligase<sup>TM</sup></a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10301' | prepend: site.url.root }}">pfu DNA Polymerase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10102' | prepend: site.domain.root }}">GeneTaq<sup>TM</sup> DNA Polymerase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10110' | prepend: site.domain.root }}">2 × <i>Taq</i> Master Mix</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10201' | prepend: site.domain.root }}">T4 DNA Ligase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10202' | prepend: site.domain.root }}">Quick Ligase<sup>TM</sup></a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10301' | prepend: site.domain.root }}">pfu DNA Polymerase</a></li>
               </ul>
             </li>
             <li class="list">
-              <a href="{{ '/en/biogeek/cell' | prepend: site.url.root }}">Cell Culture</a>
+              <a href="{{ '/en/biogeek/cell' | prepend: site.domain.root }}">Cell Culture</a>
               <ul class="list-content am-nav">
-                <li><a href="{{ '/en/biogeek/cell/LC-kit' | prepend: site.url.root }}">Lentivirus Concentration Kit</a></li>
-                <li><a href="{{ '/cell/bg20201' | prepend: site.url.biogeek }}">EpFect<sup>TM</sup> Transfection Reagent</a></li>
-                <li><a href="{{ '/cell/bg20301' | prepend: site.url.biogeek }}">Polybrene</a></li>
+                <li><a href="{{ '/en/biogeek/cell/LC-kit' | prepend: site.domain.root }}">Lentivirus Concentration Kit</a></li>
+                <li><a href="{{ '/cell/bg20201' | prepend: site.domain.biogeek }}">EpFect<sup>TM</sup> Transfection Reagent</a></li>
+                <li><a href="{{ '/cell/bg20301' | prepend: site.domain.biogeek }}">Polybrene</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/en/biogeek/ngs' | prepend: site.url.root }}">NGS</a></li>
-            <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
+            <li><a href="{{ '/en/biogeek/ngs' | prepend: site.domain.root }}">NGS</a></li>
+            <!-- <li><a href="{{ '/glair' | prepend: site.domain.biogeek }}">蛋白表达</a></li> -->
           </ul>
         </li>
         <li class="am-dropdown">
-          <a href="{{ '/en/service' | prepend: site.url.root }}" class="am-dropdown-toggle">Services</a>
+          <a href="{{ '/en/service' | prepend: site.domain.root }}" class="am-dropdown-toggle">Services</a>
           <ul class="am-dropdown-content">
             <li class="list">
-              <a href="{{ '/en/service/solution' | prepend: site.url.root }}">Solutions</a>
+              <a href="{{ '/en/service/solution' | prepend: site.domain.root }}">Solutions</a>
               <ul class="list-content am-nav">
-                <li><a href="{{ '/en/service/solution/knock-down' | prepend: site.url.root }}">Gene Knock-out</a></li>
-                <li><a href="{{ '/en/service/solution/lncRNA-knock-down' | prepend: site.url.root }}">LncRNA Knock-out</a></li>
-                <li><a href="{{ '/en/service/solution/non-site-specific-integration' | prepend: site.url.root }}">Non Site-specific Gene Knock-in</a></li>
-                <li><a href="{{ '/en/service/solution/knock-in' | prepend: site.url.root }}">Site-specific Gene Knock-in</a></li>
-                <li><a href="{{ '/en/service/solution/silencing' | prepend: site.url.root }}">RNAi</a></li>
-                <li><a href="{{ '/en/service/solution/activation' | prepend: site.url.root }}">Transcriptional Activation</a></li>
-                <li><a href="{{ '/en/service/solution/inhibition' | prepend: site.url.root }}">Transcriptional Inhibition</a></li>
-                <li><a href="{{ '/en/service/solution/high-throughput-edting' | prepend: site.url.root }}">High Throughput Genome Editing</a></li>
+                <li><a href="{{ '/en/service/solution/knock-down' | prepend: site.domain.root }}">Gene Knock-out</a></li>
+                <li><a href="{{ '/en/service/solution/lncRNA-knock-down' | prepend: site.domain.root }}">LncRNA Knock-out</a></li>
+                <li><a href="{{ '/en/service/solution/non-site-specific-integration' | prepend: site.domain.root }}">Non Site-specific Gene Knock-in</a></li>
+                <li><a href="{{ '/en/service/solution/knock-in' | prepend: site.domain.root }}">Site-specific Gene Knock-in</a></li>
+                <li><a href="{{ '/en/service/solution/silencing' | prepend: site.domain.root }}">RNAi</a></li>
+                <li><a href="{{ '/en/service/solution/activation' | prepend: site.domain.root }}">Transcriptional Activation</a></li>
+                <li><a href="{{ '/en/service/solution/inhibition' | prepend: site.domain.root }}">Transcriptional Inhibition</a></li>
+                <li><a href="{{ '/en/service/solution/high-throughput-edting' | prepend: site.domain.root }}">High Throughput Genome Editing</a></li>
               </ul>
             </li>
             <li class="list">
-              <a href="{{ '/en/service/product' | prepend: site.url.root }}">Technical Services and Products</a>
+              <a href="{{ '/en/service/product' | prepend: site.domain.root }}">Technical Services and Products</a>
               <ul class="list-content am-nav">
-                <li><a href="{{ '/en/service/product/CRISPR-design' | prepend: site.url.root }}">Vector Design and Construction for CRISPR/Cas9 system</a></li>
-                <li><a href="{{ '/en/service/product/CRISPR-construction' | prepend: site.url.root }}">Quick Cloning Kits for CRISPR/Cas9 System</a></li>
-                <li><a href="{{ '/en/service/product/CRISPR-activity' | prepend: site.url.root }}">Activity Test for CRISPR/Cas9 System</a></li>
-                <li><a href="{{ '/en/service/product/gRNA-library' | prepend: site.url.root }}">gRNA Library Construction</a></li>
-                <li><a href="{{ '/en/service/product/RNAi-design' | prepend: site.url.root }}">Vector Design and Construction for RNAi</a></li>
-                <li><a href="{{ '/en/service/product/miRNA-sponge-design' | prepend: site.url.root }}">Vector Design and Construction for miRNA Sponge</a></li>
-                <li><a href="{{ '/en/service/product/shRNA-library' | prepend: site.url.root }}">shRNA Library Construction</a></li>
-                <li><a href="{{ '/en/service/product/cell-line-transform' | prepend: site.url.root }}">Cell Line Engineering</a></li>
-                <li><a href="{{ '/en/service/product/LV' | prepend: site.url.root }}">Lentivirus Packaging</a></li>
-                <li><a href="{{ '/service/product/adenovirus' | prepend: site.url.root }}">Adenovirus Packaging</a></li>
-                <li><a href="{{ '/en/service/product/transgenic-mice' | prepend: site.url.root }}">Transgenetic Model Animals</a></li>
-                <li><a href="{{ '/en/service/product/gene-synthesis' | prepend: site.url.root }}">Gene Synthesis</a></li>
-                <li><a href="{{ '/en/service/product/synbio-service' | prepend: site.url.root }}">Technical Services Outsourcing</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-design' | prepend: site.domain.root }}">Vector Design and Construction for CRISPR/Cas9 system</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-construction' | prepend: site.domain.root }}">Quick Cloning Kits for CRISPR/Cas9 System</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-activity' | prepend: site.domain.root }}">Activity Test for CRISPR/Cas9 System</a></li>
+                <li><a href="{{ '/en/service/product/gRNA-library' | prepend: site.domain.root }}">gRNA Library Construction</a></li>
+                <li><a href="{{ '/en/service/product/RNAi-design' | prepend: site.domain.root }}">Vector Design and Construction for RNAi</a></li>
+                <li><a href="{{ '/en/service/product/miRNA-sponge-design' | prepend: site.domain.root }}">Vector Design and Construction for miRNA Sponge</a></li>
+                <li><a href="{{ '/en/service/product/shRNA-library' | prepend: site.domain.root }}">shRNA Library Construction</a></li>
+                <li><a href="{{ '/en/service/product/cell-line-transform' | prepend: site.domain.root }}">Cell Line Engineering</a></li>
+                <li><a href="{{ '/en/service/product/LV' | prepend: site.domain.root }}">Lentivirus Packaging</a></li>
+                <li><a href="{{ '/service/product/adenovirus' | prepend: site.domain.root }}">Adenovirus Packaging</a></li>
+                <li><a href="{{ '/en/service/product/transgenic-mice' | prepend: site.domain.root }}">Transgenetic Model Animals</a></li>
+                <li><a href="{{ '/en/service/product/gene-synthesis' | prepend: site.domain.root }}">Gene Synthesis</a></li>
+                <li><a href="{{ '/en/service/product/synbio-service' | prepend: site.domain.root }}">Technical Services Outsourcing</a></li>
               </ul>
             </li>
           </ul>
@@ -81,10 +81,10 @@
         <li class="am-dropdown">
           <a href="javascript:;" class="am-dropdown-toggle">About</a>
           <ul class="am-dropdown-content">
-            <li><a href="{{ '/en/about' | prepend: site.url.root }}">About us</a></li>
-            <li><a href="{{ '/en/hire' | prepend: site.url.root }}">Careers</a></li>
-            <li><a href="{{ '/en/cooperate' | prepend: site.url.root }}">Cooperation</a></li>
-            <li><a href="{{ '/en/contact' | prepend: site.url.root }}">Contact Us</a></li>
+            <li><a href="{{ '/en/about' | prepend: site.domain.root }}">About us</a></li>
+            <li><a href="{{ '/en/hire' | prepend: site.domain.root }}">Careers</a></li>
+            <li><a href="{{ '/en/cooperate' | prepend: site.domain.root }}">Cooperation</a></li>
+            <li><a href="{{ '/en/contact' | prepend: site.domain.root }}">Contact Us</a></li>
           </ul>
         </li>
       </ul>
@@ -99,7 +99,7 @@
       <ul class="am-list" id="offcanvas-collapse">
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ '/en' | prepend: site.url.root }}">Home</a>
+            <a href="{{ '/en' | prepend: site.domain.root }}">Home</a>
           </div>
         </li>
         <li class="am-panel">
@@ -109,86 +109,86 @@
         </li>
        <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ '/en/biogeek' | prepend: site.url.root }}">BioGeek</a>
+            <a href="{{ '/en/biogeek' | prepend: site.domain.root }}">BioGeek</a>
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-biogeek'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-biogeek">
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal ">
-                  <a href="{{ '/en/biogeek/clone' | prepend: site.url.root }}">Molecular Cloning</a>
+                  <a href="{{ '/en/biogeek/clone' | prepend: site.domain.root }}">Molecular Cloning</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-clone'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-clone">
-                <li><a href="{{ '/en/biogeek/clone/bg10102' | prepend: site.url.root }}">GeneTaq<sup>TM</sup> DNA Polymerase</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10110' | prepend: site.url.root }}">2 × <i>Taq</i> Master Mix</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10201' | prepend: site.url.root }}">T4 DNA Ligase</a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10202' | prepend: site.url.root }}">Quick Ligase<sup>TM</sup></a></li>
-                <li><a href="{{ '/en/biogeek/clone/bg10301' | prepend: site.url.root }}">pfu DNA Polymerase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10102' | prepend: site.domain.root }}">GeneTaq<sup>TM</sup> DNA Polymerase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10110' | prepend: site.domain.root }}">2 × <i>Taq</i> Master Mix</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10201' | prepend: site.domain.root }}">T4 DNA Ligase</a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10202' | prepend: site.domain.root }}">Quick Ligase<sup>TM</sup></a></li>
+                <li><a href="{{ '/en/biogeek/clone/bg10301' | prepend: site.domain.root }}">pfu DNA Polymerase</a></li>
               </ul>
             </li>
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal ">
-                  <a href="{{ '/en/biogeek/cell' | prepend: site.url.root }}">Cell Culture</a>
+                  <a href="{{ '/en/biogeek/cell' | prepend: site.domain.root }}">Cell Culture</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-biogeek', target: '#offcanvas-cell'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-cell">
-                <li><a href="{{ '/en/biogeek/cell/LC-kit' | prepend: site.url.root }}">Lentivirus Concentration Kit</a></li>
-                <li><a href="{{ '/cell/bg20201' | prepend: site.url.biogeek }}">EpFect<sup>TM</sup> Transfection Reagent</a></li>
-                <li><a href="{{ '/cell/bg20301' | prepend: site.url.biogeek }}">Polybrene</a></li>
+                <li><a href="{{ '/en/biogeek/cell/LC-kit' | prepend: site.domain.root }}">Lentivirus Concentration Kit</a></li>
+                <li><a href="{{ '/cell/bg20201' | prepend: site.domain.biogeek }}">EpFect<sup>TM</sup> Transfection Reagent</a></li>
+                <li><a href="{{ '/cell/bg20301' | prepend: site.domain.biogeek }}">Polybrene</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/en/biogeek/ngs' | prepend: site.url.root }}">NGS</a></li>
-              <!-- <li><a href="{{ '/glair' | prepend: site.url.biogeek }}">蛋白表达</a></li> -->
+            <li><a href="{{ '/en/biogeek/ngs' | prepend: site.domain.root }}">NGS</a></li>
+              <!-- <li><a href="{{ '/glair' | prepend: site.domain.biogeek }}">蛋白表达</a></li> -->
           </ul>
         </li>
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ '/en/service' | prepend: site.url.root }}">Technical Services</a>
+            <a href="{{ '/en/service' | prepend: site.domain.root }}">Technical Services</a>
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-service'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-service">
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal ">
-                  <a href="{{ '/en/service/solution' | prepend: site.url.root }}">Solutions</a>
+                  <a href="{{ '/en/service/solution' | prepend: site.domain.root }}">Solutions</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-service', target: '#offcanvas-solution'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-solution">
-                <li><a href="{{ '/en/service/solution/knock-down' | prepend: site.url.root }}">Gene Knock-out</a></li>
-                <li><a href="{{ '/en/service/solution/lncRNA-knock-down' | prepend: site.url.root }}">LncRNA Knock-out</a></li>
-                <li><a href="{{ '/en/service/solution/non-site-specific-integration' | prepend: site.url.root }}">Non Site-specific Gene Knock-in</a></li>
-                <li><a href="{{ '/en/service/solution/knock-in' | prepend: site.url.root }}">Site-specific Gene Knock-in</a></li>
-                <li><a href="{{ '/en/service/solution/silencing' | prepend: site.url.root }}">RNAi</a></li>
-                <li><a href="{{ '/en/service/solution/activation' | prepend: site.url.root }}">Transcriptional Activation</a></li>
-                <li><a href="{{ '/en/service/solution/inhibition' | prepend: site.url.root }}">Transcriptional Inhibition</a></li>
-                <li><a href="{{ '/en/service/solution/high-throughput-edting' | prepend: site.url.root }}">High Throughput Genome Editing</a></li>
+                <li><a href="{{ '/en/service/solution/knock-down' | prepend: site.domain.root }}">Gene Knock-out</a></li>
+                <li><a href="{{ '/en/service/solution/lncRNA-knock-down' | prepend: site.domain.root }}">LncRNA Knock-out</a></li>
+                <li><a href="{{ '/en/service/solution/non-site-specific-integration' | prepend: site.domain.root }}">Non Site-specific Gene Knock-in</a></li>
+                <li><a href="{{ '/en/service/solution/knock-in' | prepend: site.domain.root }}">Site-specific Gene Knock-in</a></li>
+                <li><a href="{{ '/en/service/solution/silencing' | prepend: site.domain.root }}">RNAi</a></li>
+                <li><a href="{{ '/en/service/solution/activation' | prepend: site.domain.root }}">Transcriptional Activation</a></li>
+                <li><a href="{{ '/en/service/solution/inhibition' | prepend: site.domain.root }}">Transcriptional Inhibition</a></li>
+                <li><a href="{{ '/en/service/solution/high-throughput-edting' | prepend: site.domain.root }}">High Throughput Genome Editing</a></li>
               </ul>
             </li>
             <li class="am-panel">
               <div>
                 <div class="am-padding-sm am-padding-horizontal ">
-                  <a href="{{ '/en/service/product' | prepend: site.url.root }}">Technical Services and Products</a>
+                  <a href="{{ '/en/service/product' | prepend: site.domain.root }}">Technical Services and Products</a>
                   <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-service', target: '#offcanvas-product'}"></i>
                 </div>
               </div>
               <ul class="am-list am-collapse" id="offcanvas-product">
-                <li><a href="{{ '/en/service/product/CRISPR-design' | prepend: site.url.root }}">Vector Design and Construction for CRISPR/Cas9 system</a></li>
-                <li><a href="{{ '/en/service/product/CRISPR-construction' | prepend: site.url.root }}">Quick Cloning Kits for CRISPR/Cas9 System</a></li>
-                <li><a href="{{ '/en/service/product/CRISPR-activity' | prepend: site.url.root }}">Activity Test for CRISPR/Cas9 System</a></li>
-                <li><a href="{{ '/en/service/product/gRNA-library' | prepend: site.url.root }}">gRNA Library Construction</a></li>
-                <li><a href="{{ '/en/service/product/RNAi-design' | prepend: site.url.root }}">Vector Design and Construction for RNAi</a></li>
-                <li><a href="{{ '/en/service/product/miRNA-sponge-design' | prepend: site.url.root }}">Vector Design and Construction for miRNA Sponge</a></li>
-                <li><a href="{{ '/en/service/product/shRNA-library' | prepend: site.url.root }}">shRNA Library Construction</a></li>
-                <li><a href="{{ '/en/service/product/cell-line-transform' | prepend: site.url.root }}">Cell Line Engineering</a></li>
-                <li><a href="{{ '/en/service/product/LV' | prepend: site.url.root }}">Lentivirus Packaging</a></li>
-                <li><a href="{{ '/en/service/product/transgenic-mice' | prepend: site.url.root }}">Transgenetic Model Animals</a></li>
-                <li><a href="{{ '/en/service/product/gene-synthesis' | prepend: site.url.root }}">Gene Synthesis</a></li>
-                <li><a href="{{ '/en/service/product/synbio-service' | prepend: site.url.root }}">Technical Services Outsourcing</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-design' | prepend: site.domain.root }}">Vector Design and Construction for CRISPR/Cas9 system</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-construction' | prepend: site.domain.root }}">Quick Cloning Kits for CRISPR/Cas9 System</a></li>
+                <li><a href="{{ '/en/service/product/CRISPR-activity' | prepend: site.domain.root }}">Activity Test for CRISPR/Cas9 System</a></li>
+                <li><a href="{{ '/en/service/product/gRNA-library' | prepend: site.domain.root }}">gRNA Library Construction</a></li>
+                <li><a href="{{ '/en/service/product/RNAi-design' | prepend: site.domain.root }}">Vector Design and Construction for RNAi</a></li>
+                <li><a href="{{ '/en/service/product/miRNA-sponge-design' | prepend: site.domain.root }}">Vector Design and Construction for miRNA Sponge</a></li>
+                <li><a href="{{ '/en/service/product/shRNA-library' | prepend: site.domain.root }}">shRNA Library Construction</a></li>
+                <li><a href="{{ '/en/service/product/cell-line-transform' | prepend: site.domain.root }}">Cell Line Engineering</a></li>
+                <li><a href="{{ '/en/service/product/LV' | prepend: site.domain.root }}">Lentivirus Packaging</a></li>
+                <li><a href="{{ '/en/service/product/transgenic-mice' | prepend: site.domain.root }}">Transgenetic Model Animals</a></li>
+                <li><a href="{{ '/en/service/product/gene-synthesis' | prepend: site.domain.root }}">Gene Synthesis</a></li>
+                <li><a href="{{ '/en/service/product/synbio-service' | prepend: site.domain.root }}">Technical Services Outsourcing</a></li>
               </ul>
             </li>
           </ul>
@@ -199,10 +199,10 @@
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-about'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-about">
-            <li><a href="{{ '/en/about' | prepend: site.url.root }}">About Us</a></li>
-            <li><a href="{{ '/en/hire' | prepend: site.url.root }}">Careers</a></li>
-            <li><a href="{{ '/en/cooperate' | prepend: site.url.root }}">Cooperation</a></li>
-            <li><a href="{{ '/en/contact' | prepend: site.url.root }}">Contact Us</a></li>
+            <li><a href="{{ '/en/about' | prepend: site.domain.root }}">About Us</a></li>
+            <li><a href="{{ '/en/hire' | prepend: site.domain.root }}">Careers</a></li>
+            <li><a href="{{ '/en/cooperate' | prepend: site.domain.root }}">Cooperation</a></li>
+            <li><a href="{{ '/en/contact' | prepend: site.domain.root }}">Contact Us</a></li>
           </ul>
         </li>
       </ul>

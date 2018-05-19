@@ -10,7 +10,7 @@ image: /images/biogeek/product/PP.jpg
     .am-cf
       .am-u-md-4
         %p.am-align-left
-          %img.am-img-responsive{src: '{{ "/images/pfu.jpg" | prepend: site.url.assets }}', alt: 'BioGeek pfu DNA 聚合酶', width: '286', height: '202'}
+          %img.am-img-responsive{src: '{{ "/images/pfu.jpg" | prepend: site.domain.assets }}', alt: 'BioGeek pfu DNA 聚合酶', width: '286', height: '202'}
       .am-u-md-8
         %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
           %tr{:style => "background:#f9f9f9"}
@@ -30,7 +30,7 @@ image: /images/biogeek/product/PP.jpg
               %p.am-margin-top ¥80.00
             %td.am-text-middle{:rowspan => "3"}
               %p.am-margin-top{:align => "center"}
-                %a{href: '{{ "/documents/pfu-DNA-Polymerase-V1.0.3.pdf" | prepend: site.url.assets }}'} Instruction
+                %a{href: '{{ "/documents/pfu-DNA-Polymerase-V1.0.3.pdf" | prepend: site.domain.assets }}'} Instruction
           %tr{:style => "background:#f9f9f9"}
             %td
               %p.am-margin-top BG10301M

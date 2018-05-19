@@ -24,7 +24,7 @@ class Crawler
   end
 
   def crawl_urls(path)
-    doc = Nokogiri::HTML(open(@root + path))
+    doc = Nokogiri::HTML(open(@root + path)) # rubocop:disable Security/Open
 
     filter_urls(
       doc.css('a').map { |a| a['href'] },
@@ -33,7 +33,7 @@ class Crawler
     ).each { |l| @map[l] ||= false }
 
     @map[path] = :valid
-  rescue
+  rescue OpenURI::HTTPError
     @map[path] = :invalid
   end
 

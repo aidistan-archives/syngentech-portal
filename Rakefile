@@ -52,7 +52,7 @@ namespace :config do
 
   task :development do
     config = load_config.merge(
-      'url' => {
+      'domain' => {
         'root' =>    '',
         'assets' =>  '/assets',
         'biogeek' => '/biogeek',
@@ -64,7 +64,7 @@ namespace :config do
 
   task :production do
     config = load_config.merge(
-      'url' => {
+      'domain' => {
         'root' =>    'http://www.syngentech.com.cn',
         'assets' =>  'http://portal.assets.syngentech.com.cn',
         'biogeek' => 'http://www.syngentech.com.cn/biogeek',

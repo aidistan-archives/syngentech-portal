@@ -14,7 +14,7 @@ image: /images/biogeek/product/QK.jpg
     .am-cf
       .am-u-md-3
         %p.am-align-left
-          %img.am-img-responsive{src: '{{ "/images/T4-DNA.jpg" | prepend: site.url.assets }}', alt: 'BioGeek T4 DNA 连接酶', width: '286', height: '202'}
+          %img.am-img-responsive{src: '{{ "/images/T4-DNA.jpg" | prepend: site.domain.assets }}', alt: 'BioGeek T4 DNA 连接酶', width: '286', height: '202'}
       .am-u-md-9
         %table.am-table.am-table-bordered.am-table-compact.am-table-centered.am-text-middle
           %tr{:style => "background:#f9f9f9"}
@@ -34,7 +34,7 @@ image: /images/biogeek/product/QK.jpg
               %p.am-margin-top ¥267.00
             %td.am-text-middle{:rowspan => "4"}
               %p.am-margin-top{:align => "center"}
-                %a{href: '{{ "/documents/T4-DNA-Ligase-V1.0.3.pdf" | prepend: site.url.assets }}'} 下载
+                %a{href: '{{ "/documents/T4-DNA-Ligase-V1.0.3.pdf" | prepend: site.domain.assets }}'} 下载
             %tr
           %tr{:style => "background:#f9f9f9"}
             %td
