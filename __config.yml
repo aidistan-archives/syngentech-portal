@@ -1,10 +1,7 @@
-# Handling Reading
 exclude: [Gemfile, Gemfile.lock, README.md, Rakefile]
-
-# Conversion
 markdown: kramdown
+permalink: pretty
 
-# Serving
 domain:
   root:
   assets:
