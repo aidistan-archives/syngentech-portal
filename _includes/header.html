@@ -10,12 +10,23 @@
     </button>
 
     <div class="am-collapse am-topbar-collapse">
-      <ul class="am-nav am-nav-pills am-topbar-nav" style="max-width: 960px;">
+      <ul class="am-nav am-nav-pills am-topbar-nav" style="width: 100%;">
         <h1 class="am-topbar-brand">
           <a href="{{ '/' | prepend: site.domain.root }}" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.domain.assets }});">logo</a>
         </h1>
         <li class="am-dropdown">
-          <a style="padding: 0 25px 0 25px" href="{{ '/service' | prepend: site.domain.root }}" class="am-dropdown-toggle">科研服务</a>
+          <a href="javascript:;" class="am-dropdown-toggle">关于我们</a>
+          <ul class="am-dropdown-content">
+            <li><a href="{{ '/about' | prepend: site.domain.root }}">企业简介</a></li>
+            <li><a href="{{ '/hire' | prepend: site.domain.root }}">招贤纳士</a></li>
+            <li><a href="{{ '/cooperate' | prepend: site.domain.root }}">合作加盟</a></li>
+            <li><a href="{{ '/contact' | prepend: site.domain.root }}">联系我们</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a></li>
+        <li><a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a></li>
+        <li class="am-dropdown">
+          <a href="{{ '/service' | prepend: site.domain.root }}" class="am-dropdown-toggle">科研服务</a>
           <ul class="am-dropdown-content full-width">
             <div class="am-container">
 
@@ -64,17 +75,6 @@
               </div>
 
             </div>
-          </ul>
-        </li>
-        <li><a style="padding: 0 25px 0 25px" href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a></li>
-        <li><a style="padding: 0 25px 0 25px" href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a></li>
-        <li class="am-dropdown">
-          <a style="padding: 0 25px 0 25px" href="javascript:;" class="am-dropdown-toggle">关于我们</a>
-          <ul class="am-dropdown-content">
-            <li><a href="{{ '/about' | prepend: site.domain.root }}">企业简介</a></li>
-            <li><a href="{{ '/hire' | prepend: site.domain.root }}">招贤纳士</a></li>
-            <li><a href="{{ '/cooperate' | prepend: site.domain.root }}">合作加盟</a></li>
-            <li><a href="{{ '/contact' | prepend: site.domain.root }}">联系我们</a></li>
           </ul>
         </li>
       </ul>

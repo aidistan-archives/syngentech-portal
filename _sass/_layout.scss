@@ -26,6 +26,15 @@ $black: #000;
     background-size: 36px 36px;
   }
 
+  .am-topbar-nav > li {
+    float: right;
+
+    & > a {
+      padding: 0 40px 0 40px;
+      font-size: 16px;
+    }
+  }
+
   .am-dropdown-content:after  { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content:before { border-bottom-color: rgba($purple, 0.9); }
   .am-dropdown-content {
