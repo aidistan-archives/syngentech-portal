@@ -23,8 +23,6 @@
             <li><a href="{{ '/contact' | prepend: site.domain.root }}">联系我们</a></li>
           </ul>
         </li>
-        <!-- <li><a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a></li> -->
-        <!-- <li><a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a></li> -->
         <li class="am-dropdown">
           <a href="{{ '/service' | prepend: site.domain.root }}" class="am-dropdown-toggle">科研服务</a>
           <ul class="am-dropdown-content full-width">
@@ -77,6 +75,8 @@
             </div>
           </ul>
         </li>
+        <li><a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a></li>
+        <li><a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a></li>
       </ul>
     </div>
   </div>
@@ -94,7 +94,17 @@
         </li>
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ site.domain.service }}">技术服务</a>
+            <a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a>
+          </div>
+        </li>
+        <li class="am-panel">
+          <div class="am-padding-sm am-padding-horizontal">
+            <a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a>
+          </div>
+        </li>
+        <li class="am-panel">
+          <div class="am-padding-sm am-padding-horizontal">
+            <a href="{{ site.domain.service }}">科研服务</a>
             <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-service'}"></i>
           </div>
           <ul class="am-list am-collapse" id="offcanvas-service">
@@ -167,16 +177,6 @@
               </ul>
             </li>
           </ul>
-        </li>
-        <li class="am-panel">
-          <div class="am-padding-sm am-padding-horizontal">
-            <!-- <a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a> -->
-          </div>
-        </li>
-        <li class="am-panel">
-          <div class="am-padding-sm am-padding-horizontal">
-            <!-- <a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a> -->
-          </div>
         </li>
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
