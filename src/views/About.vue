@@ -1,25 +1,43 @@
 <template>
-  <div id="about">
-    <h1>公司简介</h1>
-    <hr>
-    <br>
-    <p>北京合生基因科技有限公司（以下简称“合生基因”）是国内领先的致力于合成生物学在生物医药和生命健康领域应用的国家级高新技术企业，专注于基于合成生物学技术的基因与细胞治疗药物研发及科研与临床服务。</p>
-    <p>合成生物学是进入本世纪以来刚刚发展起来的一门新兴交叉学科，它是在基于对生命规律认识的基础上，利用工程化思想和信息技术，通过人工方式设计、制造或改造DNA等生物分子，来构建和优化生物系统，使其能够处理信息、制造材料、生产能源、提供食物、改善人类健康和环境等，已经成为生命科学中最受关注的前沿学科方向之一。</p>
-    <p>合生基因基于自身团队与技术优势，现已逐步搭建：智能靶向肿瘤基因治疗药物平台、基因治疗药物工艺开发平台、基因治疗药物转化医学平台、合成生物学技术服务平台。合生基因紧跟世界前沿，正逐步建立建设成为一家以合成生物学与信息技术为底盘的，集生物药物新品种研发、工艺研究、临床实验管理、创新技术服务于一体的合成生物学技术创新与研发的企业，为解决恶性肿瘤、治疗遗传疾病做出深远贡献。</p>
-    <p>合生基因秉持“创新守护生命，远见成就未来”的从业理念，创造具有中国自主知识产权的药物与治疗方案，不遗余力做中国人自己的生物硬科技，旨在用中国智造帮助人民远离疾病与痛苦，用中国智慧守护人类健康。</p>
-    <ul>
-      <li>愿景：创新守护生命，远见成就未来</li>
-      <li>使命：做中国人自己的生物硬科技</li>
-      <li>核心价值观：以人为本，至诚守信；和合共生，守正出新</li>
-    </ul>
+  <div id="about" class="page">
+    <el-image :src="banner" fit="cover"></el-image>
+
+    <div class="content">
+      <h1>{{ $t('nav.more.about') }}</h1>
+
+      <p>{{ $t('about.p1') }}</p>
+      <p>{{ $t('about.p2') }}</p>
+      <p>{{ $t('about.p3') }}</p>
+      <p>{{ $t('about.p4') }}</p>
+      <ul>
+        <li>{{ $t('about.i1') }}</li>
+        <li>{{ $t('about.i2') }}</li>
+        <li>{{ $t('about.i3') }}</li>
+      </ul>
+
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'about',
+  data () {
+    return {
+      banner: require('../assets/banner-3.jpg')
+    }
+  },
   created () {
     this.$emit('nav-index', 'about-us')
-  }
+  },
+  components: { Footer }
 }
 </script>
+
+<style lang="scss">
+#about {
+}
+</style>

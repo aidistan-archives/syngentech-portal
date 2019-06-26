@@ -8,7 +8,7 @@
     <div class="dimmer">
       <div class="title">{{ $t('home.title') }}</div>
       <div class="subtitle">{{ $t('home.subtitle') }}</div>
-      <div class="footer">{{ $t('home.footer') }}</div>
+      <div class="footer">{{ $t('footer.copyright') }}</div>
     </div>
   </div>
 </template>
@@ -105,8 +105,6 @@ export default {
     width: 100%;
     padding: 0.5em;
 
-    text-align: center;
-    font-size: 0.9rem;
     color: rgba(239, 239, 239, 0.618);
   }
 }

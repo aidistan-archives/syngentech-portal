@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="header">
-      <div :class="{ 'header-content': true, 'max-width': !navHome }">
+    <div class="header" :style="{ backgroundColor: navHome ? 'transparent' : 'white' }">
+      <div class="content" :style="{ maxWidth: navHome ? 'inherit' : '1000px' }">
         <div class="logo" :style="{ backgroundImage: 'url(' + logoSource[navHome] +')' }"></div>
 
         <el-menu
@@ -11,7 +11,7 @@
           :default-active="navIndex" @select="onSelect"
         >
           <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item>
-          <el-menu-item index="drug-development">{{ $t('nav.science') }}</el-menu-item>
+          <el-menu-item index="biopharma">{{ $t('nav.biopharma') }}</el-menu-item>
           <el-menu-item index="research-service">{{ $t('nav.service') }}</el-menu-item>
           <el-submenu index="more" :popper-class="navHome && 'home'">
             <template slot="title">{{ $t('nav.more.title' )}}</template>
@@ -76,24 +76,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.page {
+  margin-top: 100px;
+  @media screen and (max-width: 600px) { & { margin-top: 50px; } }
 
-  .header {
-    position: fixed;
-    top: 0;
+  & > .el-image {
     width: 100%;
     height: 100px;
   }
 
-  .header-content {
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    &.max-width { max-width: 1000px; }
+  h1 {
+    text-align: center;
+  }
+}
 
+.content {
+  max-width: 1000px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  * + h1 {
+    margin-top: 60px;
+  }
+
+  * + h2 {
+    margin-top: 40px;
+  }
+
+  p {
+    text-indent: 2em;
+    line-height: 1.5em;
+  }
+
+  li {
+    line-height: 1.5em;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    @media screen and (max-width: 600px) { & { height: 50px; } }
+  }
+
+  .header .content {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
