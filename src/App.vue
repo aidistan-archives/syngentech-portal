@@ -2,28 +2,31 @@
   <div id="app">
     <div class="header">
       <div :class="{ 'header-content': true, 'max-width': !navHome }">
-        <img class="logo" :src="logoSource[navHome]" />
+        <div class="logo" :style="{ backgroundImage: 'url(' + logoSource[navHome] +')' }"></div>
 
-        <!-- <el-menu text-color="#fff" active-text-color="#39b9e6"
-          mode="horizontal" :default-active="navIndex" @select="onSelect">
-          <div>English</div>
-          <el-menu-item index="home">首页</el-menu-item>
-          <el-menu-item index="drug-development">新药研发</el-menu-item>
-          <el-menu-item index="research-service">科研服务</el-menu-item>
-          <el-submenu index="more">
-            <template slot="title">关于我们</template>
-            <el-menu-item index="about-us">公司简介</el-menu-item>
-            <el-menu-item index="management-team">管理团队</el-menu-item>
-            <el-menu-item index="our-investors">融资情况</el-menu-item>
-            <el-menu-item index="contact-us">联系我们</el-menu-item>
+        <el-menu
+          :text-color="navHome ? '#efefef' : '#111111'"
+          :active-text-color="navHome ? '#39b9e6' : '#90268e'"
+          mode="horizontal" menu-trigger="click"
+          :default-active="navIndex" @select="onSelect"
+        >
+          <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item>
+          <el-menu-item index="drug-development">{{ $t('nav.science') }}</el-menu-item>
+          <el-menu-item index="research-service">{{ $t('nav.service') }}</el-menu-item>
+          <el-submenu index="more" :popper-class="navHome && 'home'">
+            <template slot="title">{{ $t('nav.more.title' )}}</template>
+            <el-menu-item index="about-us">{{ $t('nav.more.about') }}</el-menu-item>
+            <el-menu-item index="management-team">{{ $t('nav.more.management') }}</el-menu-item>
+            <el-menu-item index="our-investors">{{ $t('nav.more.investors') }}</el-menu-item>
+            <el-menu-item index="contact-us">{{ $t('nav.more.contact') }}</el-menu-item>
           </el-submenu>
-        </el-menu> -->
+          <el-menu-item v-if="$i18n.locale === 'en'" index="zh">汉</el-menu-item>
+          <el-menu-item v-else index="en">En</el-menu-item>
+        </el-menu>
       </div>
     </div>
 
-    <transition name="fade">
-      <router-view @nav-index="navIndex = $event"/>
-    </transition>
+    <router-view @nav-index="navIndex = $event"/>
   </div>
 </template>
 
@@ -53,7 +56,11 @@ export default {
   },
   methods: {
     onSelect (key) {
-      this.$router.push({ name: key })
+      if (key === 'zh' || key === 'en') {
+        this.$i18n.locale = key
+      } else {
+        this.$router.push({ name: key })
+      }
     }
   }
 }
@@ -69,14 +76,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
 #app {
   width: 100%;
   height: 100%;
@@ -90,52 +89,59 @@ body {
   }
 
   .header-content {
-    &.max-width { max-width: 1000px; }
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    &.max-width { max-width: 1000px; }
 
-    img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .logo {
       height: 60px;
+      width: 200px;
+
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
     }
 
     .el-menu {
-      float: right;
       background-color: transparent;
       border-color: transparent;
-      border-width: 0;
     }
 
     .el-menu-item, .el-submenu__title {
-      height: 2.4rem;
-      line-height: 2.4rem;
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 5px;
+      margin: 0 15px;
 
       color: #efefef;
       font-size: 0.9rem;
       font-weight: bold;
 
       &:focus, &:hover { background-color: transparent; }
+    }
 
-      border-bottom: solid transparent 2px;
-
-      &.is-active { border-bottom-color: #cccccc; }
-      &:hover, &.is-active:hover { border-bottom-color: #efefef; }
+    @media screen and (max-width: 600px) {
+      & { padding: 10px; }
+      .logo { height: 2rem; width: 2rem; }
+      .el-menu-item, .el-submenu__title { margin: 0 5px; }
     }
   }
 }
 
-// #app-foreground > .el-main > div {
-//   padding: 20px;
-//   width: 100%;
-//   max-width: 800px;
-//
-//   overflow-y: auto;
-//   overflow-x: hidden;
-//   background-color: rgba(0, 0, 0, 0.618);
-//
-//   h1 {
-//     text-align: center;
-//     font-size: 2rem;
-//   }
-// }
+.el-menu--popup {
+  width: 150px;
+  min-width: 0 !important;
+}
+
+.el-menu--horizontal.home {
+  .el-menu--popup, .el-menu-item {
+    background-color: transparent !important;
+  }
+}
 </style>

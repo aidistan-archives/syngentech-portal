@@ -25,6 +25,9 @@ export default {
       }
     }
   },
+  created () {
+    this.$emit('nav-index', 'home')
+  },
   mounted () {
     this.onResize()
     document.getElementById('home-video')
@@ -77,12 +80,15 @@ export default {
   .title {
     padding-top: 1em;
 
+    line-height: 1.1em;
     font-size: 4rem;
     font-family: titleFont;
     text-shadow: 0px 0px 5px #999;
   }
 
   .subtitle {
+    padding-top: 0.5em;
+
     font-size: 2rem;
     font-family: titleFont;
     opacity: 0.8;

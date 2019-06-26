@@ -9,9 +9,22 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(VueI18n)
 const i18n = new VueI18n({
-  locale: /^zh/.test(navigator.language || navigator.userLanguage) ? 'zh' : 'en',
+  locale: 'zh',
+  // locale: /^zh/.test(navigator.language || navigator.userLanguage) ? 'zh' : 'en',
   messages: {
     en: {
+      nav: {
+        home: 'Home',
+        science: 'Science',
+        service: 'Service',
+        more: {
+          title: 'About',
+          about: 'About Us',
+          management: 'Management Team',
+          investors: 'Our Investors',
+          contact: 'Contact Us'
+        }
+      },
       home: {
         title: 'Explore the power of life',
         subtitle: 'Enabling biomedical innovation with information technology',
@@ -20,6 +33,18 @@ const i18n = new VueI18n({
       ...enLocale
     },
     zh: {
+      nav: {
+        home: '首页',
+        science: '新药研发',
+        service: '科研服务',
+        more: {
+          title: '关于我们',
+          about: '公司简介',
+          management: '管理团队',
+          investors: '融资情况',
+          contact: '联系我们'
+        }
+      },
       home: {
         title: '探索生命的力量',
         subtitle: '用信息技术赋能生物医药创新',

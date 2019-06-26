@@ -17,6 +17,9 @@
 
 <script>
 export default {
-  name: 'about'
+  name: 'about',
+  created () {
+    this.$emit('nav-index', 'about-us')
+  }
 }
 </script>
