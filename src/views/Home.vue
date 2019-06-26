@@ -6,9 +6,9 @@
     </video>
 
     <div class="dimmer">
-      <div class="title">探索生命的力量</div>
-      <div class="subtitle">用信息技术赋能生物医药创新</div>
-      <div class="footer">版权所有 © 北京合生基因科技有限公司 · 京ICP备14043945号</div>
+      <div class="title">{{ $t('home.title') }}</div>
+      <div class="subtitle">{{ $t('home.subtitle') }}</div>
+      <div class="footer">{{ $t('home.footer') }}</div>
     </div>
   </div>
 </template>
