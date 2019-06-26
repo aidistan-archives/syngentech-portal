@@ -1,66 +1,107 @@
 <template>
   <div id="home">
-    <div class="slogan">信息技术赋能生物医药创新</div>
-    <div class="more" @click.stop="$emit('nav')">了解更多 <i class="el-icon-right"></i></div>
+    <video id="home-video" autoplay muted loop :poster="video.poster">
+      <source :src="video.webm" type="video/webm">
+      <source :src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="dimmer">
+      <div class="title">探索生命的力量</div>
+      <div class="subtitle">用信息技术赋能生物医药创新</div>
+      <div class="footer">版权所有 © 北京合生基因科技有限公司 · 京ICP备14043945号</div>
+    </div>
   </div>
 </template>
 
 <script>
-import anime from 'animejs'
-
 export default {
   name: 'home',
+  data () {
+    return {
+      video: {
+        poster: require('@/assets/curiosity.jpg'),
+        webm: require('@/assets/curiosity.webm'),
+        mp4: require('@/assets/curiosity.mp4')
+      }
+    }
+  },
   mounted () {
-    anime({
-      targets: '#app-foreground',
-      backgroundColor: 'rgba(0, 0, 0, 0.382)'
-    })
-    anime({
-      targets: '#app-foreground .el-header',
-      height: '85px'
-    })
-    anime({
-      targets: '#app-foreground .logo',
-      height: '75px'
-    })
+    this.onResize()
+    document.getElementById('home-video')
+      .addEventListener('canplay', () => this.onResize())
+    window.addEventListener('resize', () => this.onResize())
+  },
+  methods: {
+    onResize () {
+      let ratio = 596 / 336 // resolution ratio of the video
+      let video = document.getElementById('home-video')
+      if (video === null) return
+
+      video.style.minWidth = window.innerWidth + 'px'
+      video.style.minHeight = window.innerHeight + 'px'
+      if (window.innerWidth / window.innerHeight > ratio) {
+        video.style.left = '0px'
+        video.style.top = ((window.innerHeight - window.innerWidth / ratio) / 2) + 'px'
+      } else {
+        video.style.left = ((window.innerWidth - window.innerHeight * ratio) / 2) + 'px'
+        video.style.top = '0px'
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
-@font-face { font-family: sloganFont; src: url('/slogan-font.ttf'); }
+@font-face { font-family: titleFont; src: url('../assets/title-font.ttf'); }
 
 #home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
 
-  // Override styles in App.vue
-  padding: 0 !important;
-  background-color: transparent !important;
+  video {
+    position: fixed;
+    z-index: -1;
+  }
 
-  .slogan {
-    padding-top: 1.5em;
-    padding-bottom: 0.5em;
-    line-height: 1.2em;
+  .dimmer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.382);
+  }
+
+  .title {
+    padding-top: 1em;
+
     font-size: 4rem;
-    font-family: sloganFont;
-    color: rgba(239, 239, 239, 1);
+    font-family: titleFont;
     text-shadow: 0px 0px 5px #999;
   }
 
-  .more {
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bold;
+  .subtitle {
+    font-size: 2rem;
+    font-family: titleFont;
     opacity: 0.8;
+  }
 
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
+  .title, .subtitle {
+    color: #efefef;
+    text-align: center;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(239, 239, 239, 0.618);
   }
 }
 </style>
