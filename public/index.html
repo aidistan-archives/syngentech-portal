@@ -5,20 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.png">
-    <title>合生基因 | 信息技术赋能生物医药创新</title>
+    <title>SyngenTech | Loading ...</title>
   </head>
   <body>
     <style>
-      body {
-        background-image: url('<%= BASE_URL %>digital-dna.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #preloader{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          width: 100%;
+          height: 100%;
+      }
+
+      #preloader div{
+          position: relative;
+          margin: 4px;
+          width: 26px;
+          height: 15px;
+
+          /* #9b59b6 -> #3498db */
+          background:#90268e;
+          animation: preloader 1.5s infinite ease-in-out;
+      }
+
+      #preloader div:nth-child(2) { animation-delay: .2s; }
+      #preloader div:nth-child(3) { animation-delay: .4s; }
+      #preloader div:nth-child(4) { animation-delay: .6s; }
+      #preloader div:nth-child(5) { animation-delay: .8s; }
+
+      @keyframes preloader {
+          0%   { height: 15px; background:#90268e;}
+          25%  { height: 90px; background:#39b9e6;}
+          50%  { height: 15px; background:#90268e;}
+          100% { height: 15px; background:#90268e;}
       }
     </style>
+
     <noscript>
       <strong>We're sorry but portal doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <div id="preloader">
+      <div></div><div></div><div></div><div></div><div></div>
+    </div>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
