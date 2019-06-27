@@ -9,7 +9,7 @@ zh:
 
 <template>
   <div id="home">
-    <video id="home-video" autoplay muted loop :poster="video.poster">
+    <video id="home-video" muted loop :poster="video.poster">
       <source :src="video.webm" type="video/webm">
       <source :src="video.mp4" type="video/mp4">
     </video>
@@ -69,6 +69,8 @@ export default {
         video.style.left = ((window.innerWidth - window.innerHeight * ratio) / 2) + 'px'
         video.style.top = '0px'
       }
+
+      video[window.innerWidth < 600 ? 'pause' : 'play'].bind(video)()
     }
   }
 }
