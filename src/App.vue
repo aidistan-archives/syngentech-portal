@@ -26,7 +26,9 @@
       </div>
     </div>
 
-    <router-view @nav-index="navIndex = $event"/>
+    <transition name="fade">
+      <router-view @nav-index="navIndex = $event"/>
+    </transition>
   </div>
 </template>
 
@@ -73,6 +75,18 @@ body {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 
 .page {
