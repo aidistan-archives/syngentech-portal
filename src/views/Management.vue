@@ -1,71 +1,107 @@
+<i18n>
+en:
+  cb:
+    name: Bin Chen, PhD
+    title: Chief Executive Officer
+  jy:
+    name: Yun Jiang, MBA
+    title: Chief Operating Officer
+  xz:
+    name: Zhen Xie, PhD
+    title: Chief Science Officer
+  lyy:
+    name: Yinying Lu, PhD
+    title: Chief Medical Officer
+  zxg:
+    name: Xuegong Zhang, PhD
+    title: Advisor
+  ls:
+    name: Shao Li, PhD
+    title: Advisor
+  wxw:
+    name: Xiaowo Wang, PhD
+    title: Advisor
+  gj:
+    name: Jin Gu, PhD
+    title: Advisor
+zh:
+  cb:
+    name: 陈彬, PhD
+    title: 首席执行官
+  jy:
+    name: 蒋云, MBA
+    title: 首席运营官
+  xz:
+    name: 谢震, PhD
+    title: 首席科学家
+  lyy:
+    name: 陆荫英, PhD
+    title: 首席医学官
+  zxg:
+    name: 张学工, PhD
+    title: 顾问
+  ls:
+    name: 李梢, PhD
+    title: 顾问
+  wxw:
+    name: 汪小我, PhD
+    title: 顾问
+  gj:
+    name: 古槿, PhD
+    title: 顾问
+</i18n>
+
 <template>
   <div id="management" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
-      <h1 v-if="$i18n.locale === 'zh'">高管介绍</h1>
-      <h1 v-else>Management Team</h1>
-      <el-row :gutter="20">
-        <el-col :xs="12" :sm="6">
-          <el-image :src="images[0]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">谢震, PhD</div>
-          <div class="name" v-else>Zhen Xie, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">首席科学家</div>
-          <div class="title" v-else>Chief Science Officer</div>
-        </el-col>
+      <el-row :gutter="20" type="flex" justify="space-around">
         <el-col :xs="12" :sm="6">
           <el-image :src="images[1]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">陈彬, PhD</div>
-          <div class="name" v-else>Bin Chen, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">首席执行官</div>
-          <div class="title" v-else>Chief Executive Officer</div>
+          <div class="name">{{ $t('cb.name') }}</div>
+          <div class="title">{{ $t('cb.title') }}</div>
         </el-col>
         <el-col :xs="12" :sm="6">
           <el-image :src="images[2]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">蒋云, MBA</div>
-          <div class="name" v-else>Yun Jiang, MBA</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">首席运营官</div>
-          <div class="title" v-else>Chief Operating Officer</div>
-        </el-col>
-        <el-col :xs="12" :sm="6">
-          <el-image :src="images[3]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">陆荫英, PhD</div>
-          <div class="name" v-else>Yinying Lu, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">首席医学官</div>
-          <div class="title" v-else>Chief Medical Officer</div>
+          <div class="name">{{ $t('jy.name') }}</div>
+          <div class="title">{{ $t('jy.title') }}</div>
         </el-col>
       </el-row>
 
-      <h1 v-if="$i18n.locale === 'zh'">顾问介绍</h1>
-      <h1 v-else>Our Advisors</h1>
+      <el-row :gutter="20" type="flex" justify="space-around">
+        <el-col :xs="12" :sm="6">
+          <el-image :src="images[0]"></el-image>
+          <div class="name">{{ $t('xz.name') }}</div>
+          <div class="title">{{ $t('xz.title') }}</div>
+        </el-col>
+        <el-col :xs="12" :sm="6">
+          <el-image :src="images[3]"></el-image>
+          <div class="name">{{ $t('lyy.name') }}</div>
+          <div class="title">{{ $t('lyy.title') }}</div>
+        </el-col>
+      </el-row>
+
       <el-row :gutter="10">
         <el-col :xs="12" :sm="6">
           <el-image :src="images[4]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">张学工, PhD</div>
-          <div class="name" v-else>Xuegong Zhang, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">顾问</div>
-          <div class="title" v-else>Advisor</div>
+          <div class="name">{{ $t('zxg.name') }}</div>
+          <div class="title">{{ $t('zxg.title') }}</div>
         </el-col>
         <el-col :xs="12" :sm="6">
           <el-image :src="images[5]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">李梢, PhD</div>
-          <div class="name" v-else>Shao Li, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">顾问</div>
-          <div class="title" v-else>Advisor</div>
+          <div class="name">{{ $t('ls.name') }}</div>
+          <div class="title">{{ $t('ls.title') }}</div>
         </el-col>
         <el-col :xs="12" :sm="6">
           <el-image :src="images[6]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">汪小我, PhD</div>
-          <div class="name" v-else>Xiaowo Wang, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">顾问</div>
-          <div class="title" v-else>Advisor</div>
+          <div class="name">{{ $t('wxw.name') }}</div>
+          <div class="title">{{ $t('wxw.title') }}</div>
         </el-col>
         <el-col :xs="12" :sm="6">
           <el-image :src="images[7]"></el-image>
-          <div class="name" v-if="$i18n.locale === 'zh'">古槿, PhD</div>
-          <div class="name" v-else>Jin Gu, PhD</div>
-          <div class="title" v-if="$i18n.locale === 'zh'">顾问</div>
-          <div class="title" v-else>Advisor</div>
+          <div class="name">{{ $t('gj.name') }}</div>
+          <div class="title">{{ $t('gj.title') }}</div>
         </el-col>
       </el-row>
 

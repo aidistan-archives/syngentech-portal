@@ -16,13 +16,13 @@
         <p>确定肿瘤类型和兴趣基因后，我们为您提供多样化的细胞水平检测，包括细胞克隆形成能力、周期、凋亡、增殖、迁移、侵袭等多项综合实验服务。</p>
       </template>
 
-      <template v-else>
+      <template v-else-if="$i18n.locale === 'en'">
         <p>Scientific Research Services department of Beijing Syngentech Co., LTD. is committed to providing the leading edge personalized synthetic biology technology services and research products to life science researchers and medical practitioner worldwide. We aim at the two major application scenarios: basic and clinical research, build a synthetic biology technology-driven platform, and provide customers with three core services and products: Genetic Circuits construction, viral vector packaging and gene function analysis.</p>
 
-        <h2>Service of basic research</h2>
+        <h2>Service for Basic Research</h2>
         <p>Gene function is the cornerstone of life science research. A basic research needs to include genetic circuits design and construction, viral vector packaging, and gene function analysis. We provide a pack of synthetic biology services, including genetic circuits, vrius and cell function experiments, covered in a basic research workflow.</p>
 
-        <h2>Integrated Service of Clinical Cancer Research</h2>
+        <h2>Integrated Service for Clinical Cancer Research</h2>
         <p>In 2015, about 90.5 million people had cancer. About 14.1 million new cases occur a year (not including skin cancer other than melanoma). It caused about 8.8 million deaths (15.7% of deaths). Therefore, oncology research is one of the major areas of current life science and medical research. We provide integrated service of clinical cancer research for different tumor models, including tumor cell clonality, proliferation, apoptosis, cell cycle, migration and invasion. Beijing Syngentech Co., LTD. has a complete research platform, which can fully support your personalized research.</p>
         <p>After determining the tumor type and interest gene, we provide you with integrated services of clinical cancer research, including cell clone formation ability, cycle, apoptosis, proliferation, migration, invasion and many other comprehensive experimental assays.</p>
       </template>
@@ -48,9 +48,3 @@ export default {
   components: { Footer }
 }
 </script>
-
-<style lang="scss">
-#service {
-  p { text-indent: 2em; }
-}
-</style>

@@ -22,8 +22,8 @@
         <p>合生基因基于自主研发的专利技术搭建了智能靶向肿瘤基因治疗药物平台(SynOV)。利用识别多个肿瘤特征的逻辑线路控制溶瘤腺病毒的复制，裂解肿瘤细胞，同时表达多种效应因子激活机体抗肿瘤免疫。基于SynOV平台，通过更换逻辑线路和效应因子，我们可以快速构建针对不同肿瘤的溶瘤病毒。</p>
       </template>
 
-      <template v-else>
-        <h2>Oncolytic viruses</h2>
+      <template v-else-if="$i18n.locale === 'en'">
+        <h2>Oncolytic Viruses</h2>
         <p>Oncolytic viruses are native or genetically modified viruses that selectively replicate within tumors and kill cancer cells. As replicating biotherapeutics, the OV is unable to replicate in normal tissues and yet retains the ability to replicate within and kill cancer cells. Oncolytic viruses promote anti-tumour responses through a triple mechanism of action:</p>
         <ol>
           <li>Direct cancer cell lysis. Oncolytic viruses propagate and selective kill tumour cells following viral infection.</li>
@@ -31,7 +31,7 @@
           <li>OVs can be a perfect platforms of therapeutic gene delivery. Engineered oncolytic viruses encoding pro-inflammatory cytokines and/or T cell co‐stimulatory molecules can more effectively stimulate anti‐tumour immune responses. </li>
         </ol>
 
-        <h2>Synthetic biology</h2>
+        <h2>Synthetic Biology</h2>
         <p>Synthetic biology is the engineering of biology, combining disciplines such as biotechnology, evolutionary biology, molecular biology, systems biology, biophysics, computer engineering, and genetic engineering.</p>
 
         <h2>SynOV Genetic Circuit Guided Oncolytic Viruses Platform</h2>
@@ -60,8 +60,3 @@ export default {
   components: { Footer }
 }
 </script>
-
-<style lang="scss">
-#biopharma {
-}
-</style>

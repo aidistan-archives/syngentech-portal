@@ -1,3 +1,12 @@
+<i18n>
+en:
+  title: "Exploring the Power of Life"
+  subtitle: 'Enabling Biomedical Innovation with Information Technology'
+zh:
+  title: '探索生命的力量'
+  subtitle: '用信息技术赋能生物医药创新'
+</i18n>
+
 <template>
   <div id="home">
     <video id="home-video" autoplay muted loop :poster="video.poster">
@@ -6,9 +15,9 @@
     </video>
 
     <div class="dimmer">
-      <div class="title">{{ $t('home.title') }}</div>
-      <div class="subtitle">{{ $t('home.subtitle') }}</div>
-      <div class="footer">{{ $t('footer.copyright') }}</div>
+      <div class="title">{{ $t('title') }}</div>
+      <div class="subtitle">{{ $t('subtitle') }}</div>
+      <div class="footer">{{ $t('copyright') }}</div>
     </div>
   </div>
 </template>

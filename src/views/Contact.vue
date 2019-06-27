@@ -27,13 +27,13 @@
         </ul>
       </template>
 
-      <template v-else>
+      <template v-else-if="$i18n.locale === 'en'">
         <p>Beijing SyngenTech Co., LTD. (Hereinafter referred to as SyngenTech) is a domestic leading national high-tech enterprise, which is dedicated to the application of synthetic biology in the fields of biomedicine and life health. SyngenTech is focuses on the research and development process of gene and cell therapeutics based on synthetic biology, as well as scientific research and clinical services.</p>
         <ul>
           <li>Website: <a href="http://syngen.tech">http://syngen.tech</a></li>
           <li>Address: Region 7, Building 8, No. 20 Life Science Park Road, Huilongguan, Changping District, Beijing</li>
           <li>Postal code: 102206</li>
-          <li>TEL: <ul>
+          <li>Telephone: <ul>
             <li>Sales: 400-680-3200</li>
             <li>Service: +86-010-80767807</li>
             <li>Human Resources: +86-010-80767807-852/826/817</li>
@@ -42,9 +42,9 @@
             <li>Customer Service: service@syngen.tech</li>
             <li>Human Resources: hr@syngen.tech</li>
           </ul></li>
-          <li>Branch Offices: <ul>
-            <li>Syngentech ShangHai: 5th floor, South Building, No. 1, Jinchuang, 4560 Jinke Road, Zhangjiang Hi-tech Park, Shanghai</li>
-            <li>Syngentech ChongQing: Beibei District, Chongqing</li>
+          <li>Branch Office: <ul>
+            <li>ShangHai: 5th floor, South Building, No. 1, Jinchuang, 4560 Jinke Road, Zhangjiang Hi-tech Park</li>
+            <li>ChongQing: Beibei District</li>
           </ul></li>
         </ul>
       </template>
@@ -70,8 +70,3 @@ export default {
   components: { Footer }
 }
 </script>
-
-<style lang="scss">
-#contact {
-}
-</style>
