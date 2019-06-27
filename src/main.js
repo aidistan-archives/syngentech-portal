@@ -9,6 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(VueI18n)
 const i18n = new VueI18n({
+  // locale: 'zh', // only used for SPA prerender
   locale: /^zh/.test(navigator.language || navigator.userLanguage) ? 'zh' : 'en',
   messages: {
     en: {
