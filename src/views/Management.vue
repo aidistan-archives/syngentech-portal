@@ -130,8 +130,19 @@ export default {
       ]
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.more.management') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'management-team')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }

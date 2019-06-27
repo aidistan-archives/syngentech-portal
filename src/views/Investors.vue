@@ -57,8 +57,19 @@ export default {
       ]
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.more.investors') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'our-investors')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }

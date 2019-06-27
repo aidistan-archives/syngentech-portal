@@ -42,8 +42,19 @@ export default {
       banner: require('../assets/banner-2.jpg')
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.service') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'research-service')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }

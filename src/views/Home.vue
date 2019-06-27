@@ -1,9 +1,9 @@
 <i18n>
 en:
-  title: "Exploring the Power of Life"
+  _title: "Exploring the Power of Life"
   subtitle: 'Enabling Biomedical Innovation with Information Technology'
 zh:
-  title: '探索生命的力量'
+  _title: '探索生命的力量'
   subtitle: '用信息技术赋能生物医药创新'
 </i18n>
 
@@ -15,7 +15,7 @@ zh:
     </video>
 
     <div class="dimmer">
-      <div class="title">{{ $t('title') }}</div>
+      <div class="title">{{ $t('_title') }}</div>
       <div class="subtitle">{{ $t('subtitle') }}</div>
       <div class="footer">{{ $t('copyright') }}</div>
     </div>
@@ -34,7 +34,13 @@ export default {
       }
     }
   },
+  computed: {
+    title () {
+      return this.$t('title') + ' | ' + this.$t('_title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'home')
   },
   mounted () {
@@ -42,6 +48,11 @@ export default {
     document.getElementById('home-video')
       .addEventListener('canplay', () => this.onResize())
     window.addEventListener('resize', () => this.onResize())
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   methods: {
     onResize () {

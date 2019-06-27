@@ -12,6 +12,7 @@ const i18n = new VueI18n({
   locale: /^zh/.test(navigator.language || navigator.userLanguage) ? 'zh' : 'en',
   messages: {
     en: {
+      title: 'SyngenTech',
       nav: {
         home: 'Home',
         biopharma: 'Biopharma',
@@ -28,6 +29,7 @@ const i18n = new VueI18n({
       ...enLocale
     },
     zh: {
+      title: '合生基因',
       nav: {
         home: '首页',
         biopharma: '新药研发',

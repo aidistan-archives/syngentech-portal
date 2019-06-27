@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="header" :style="{ backgroundColor: navHome ? 'transparent' : 'white' }">
-      <div class="content" :style="{ maxWidth: navHome ? 'inherit' : '1000px' }">
+    <div :class="{ header: true, home: navHome }">
+      <div class="content">
         <div class="logo" :style="{ backgroundImage: 'url(' + logoSource[navHome] +')' }"></div>
 
         <el-menu
@@ -52,7 +52,6 @@ export default {
   },
   mounted () {
     document.getElementById('preloader').remove()
-    document.title = 'SyngenTech'
   },
   methods: {
     onSelect (key) {
@@ -77,21 +76,18 @@ body {
 }
 
 .page {
-  margin-top: 100px;
-  @media screen and (max-width: 600px) { & { margin-top: 50px; } }
-
   & > .el-image {
     width: 100%;
     height: 100px;
   }
 
-  h1 {
+  & > h1 {
     text-align: center;
   }
 }
 
 .content {
-  max-width: 1000px;
+  max-width: 900px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -121,19 +117,25 @@ body {
   overflow-y: auto;
 
   .header {
-    position: fixed;
-    top: 0;
-    z-index: 2;
     width: 100%;
     height: 100px;
-    @media screen and (max-width: 600px) { & { height: 50px; } }
-  }
+    background-color: white;
 
-  .header .content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
+    &.home {
+      position: fixed;
+      top: 0;
+      z-index: 2;
+
+      background-color: transparent;
+      .content { max-width: inherit; }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
 
     .logo {
       height: 60px;
@@ -162,8 +164,9 @@ body {
       &:focus, &:hover { background-color: transparent; }
     }
 
-    @media screen and (max-width: 600px) {
-      & { padding: 10px; }
+    @media screen and (max-width: 700px) {
+      & { height: 50px; }
+      .content { padding: 10px; }
       .logo { height: 2rem; width: 2rem; }
       .el-menu-item, .el-submenu__title { margin: 0 5px; }
     }

@@ -1,3 +1,4 @@
+
 <template>
   <div id="about" class="page">
     <el-image :src="banner" fit="cover"></el-image>
@@ -44,8 +45,19 @@ export default {
       banner: require('../assets/banner-3.jpg')
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.more.about') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'about-us')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }

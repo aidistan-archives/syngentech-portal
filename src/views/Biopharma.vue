@@ -54,8 +54,19 @@ export default {
       banner: require('../assets/banner-1.jpg')
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.biopharma') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'biopharma')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }

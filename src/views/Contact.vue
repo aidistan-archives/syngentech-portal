@@ -64,8 +64,19 @@ export default {
       banner: require('../assets/banner-3.jpg')
     }
   },
+  computed: {
+    title () {
+      return this.$t('nav.more.contact') + ' | ' + this.$t('title')
+    }
+  },
   created () {
+    document.title = this.title
     this.$emit('nav-index', 'contact-us')
+  },
+  watch: {
+    '$i18n.locale' () {
+      document.title = this.title
+    }
   },
   components: { Footer }
 }
