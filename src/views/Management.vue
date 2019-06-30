@@ -162,6 +162,9 @@ export default {
 
   .name {
     margin-top: -10px;
+  }
+
+  .title {
     font-weight: bold;
   }
 

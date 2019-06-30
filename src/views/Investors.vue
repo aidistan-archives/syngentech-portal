@@ -20,14 +20,14 @@ zh:
         <el-timeline-item timestamp="2018" placement="top">
           <el-card>
             <h4>{{ $t('2018') }}</h4>
-            <el-image :src="images[2]" height="60px"></el-image>
+            <el-image :src="images[2]"></el-image>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2017" placement="top">
           <el-card>
             <h4>{{ $t('2017') }}</h4>
-            <el-image :src="images[0]" height="60px"></el-image>
-            <el-image :src="images[1]" height="60px"></el-image>
+            <el-image :src="images[0]"></el-image>
+            <el-image :src="images[1]"></el-image>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2016" placement="top">
@@ -52,7 +52,7 @@ export default {
       banner: require('../assets/banner-3.jpg'),
       images: [
         require('../assets/investor-0.png'),
-        require('../assets/investor-1.jpg'),
+        require('../assets/investor-1.png'),
         require('../assets/investor-2.png')
       ]
     }
@@ -78,7 +78,7 @@ export default {
 <style lang="scss">
 #investors {
   .el-timeline-item{
-    .el-image { height: 50px; }
+    .el-image { img { height: 50px; width: auto; } }
     .el-image + .el-image { margin-left: 20px; }
   }
 }

@@ -106,13 +106,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  * + h1 {
-    margin-top: 60px;
+  h1, h2 {
+    padding: 6px 20px;
   }
 
-  * + h2 {
-    margin-top: 40px;
-  }
+  h1 { border-left: solid #90268e 5px; }
+  h2 { border-left: solid #39b9e6 5px; }
+
+  * + h1 { margin-top: 60px; }
+  * + h2 { margin-top: 40px; }
 
   p {
     text-indent: 2em;
@@ -132,7 +134,7 @@ body {
 
   .header {
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: white;
 
     &.home {
@@ -152,8 +154,8 @@ body {
     }
 
     .logo {
-      height: 60px;
-      width: 200px;
+      height: 50px;
+      width: 166px;
 
       background-size: cover;
       background-position: left;
