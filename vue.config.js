@@ -11,15 +11,15 @@ module.exports = {
       .use('yaml').loader('yaml-loader').end()
   },
 
-  configureWebpack: {
-    plugins: [
-      new PrerenderSPAPlugin({
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      config.plugins.push(new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
         routes: [
           '/', '/biopharma', '/research-service',
           '/about-us', '/management-team', '/our-investors', '/contact-us'
         ]
-      })
-    ]
+      }))
+    }
   }
 }
