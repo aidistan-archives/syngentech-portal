@@ -106,12 +106,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  h1, h2 {
+  h1, h2, h3 {
     padding: 6px 20px;
   }
 
   h1 { border-left: solid #90268e 5px; }
   h2 { border-left: solid #39b9e6 5px; }
+  h3 { border-left: solid #999999 5px; }
 
   * + h1 { margin-top: 60px; }
   * + h2 { margin-top: 40px; }
