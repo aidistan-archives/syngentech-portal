@@ -99,21 +99,20 @@ zh:
 
       <h2>{{ $t('_1.h') }}</h2>
       <p>{{ $t('_1.p') }}</p>
-      <el-collapse>
-        <el-collapse-item v-for="(x, i) in $t('_1._')" :key="i" :title="x.h" >
-          <p>{{ x.p }}</p>
-          <el-row>
-            <el-col v-for="(y, i) in x._" :key="i" :xs="24" :sm="12" :md="8">
-              <el-card>
-                <h4>{{ y.h }}</h4>
-                <template v-if="y._">
-                  <div v-for="(z, i) in y._" :key="i">- {{ z }}</div>
-                </template>
-              </el-card>
-            </el-col>
-          </el-row>
-        </el-collapse-item>
-      </el-collapse>
+      <template v-for="(x, i) in $t('_1._')">
+        <h3 :key="i">{{ x.h }}</h3>
+        <p :key="i">{{ x.p }}</p>
+        <el-row :key="i">
+          <el-col v-for="(y, i) in x._" :key="i" :xs="24" :sm="12" :md="8">
+            <el-card>
+              <div class="title"><b>{{ y.h }}</b></div>
+              <template v-if="y._">
+                <div v-for="(z, i) in y._" :key="i">- {{ z }}</div>
+              </template>
+            </el-card>
+          </el-col>
+        </el-row>
+      </template>
 
       <h2>{{ $t('_2.h') }}</h2>
       <p>{{ $t('_2.p1') }}</p>
@@ -156,6 +155,11 @@ export default {
 #service {
   .el-col {
     padding: 10px;
+  }
+
+  .el-card {
+    div.title + div { margin-top: 20px; }
+    div + div { height: 25px; line-height: 25px;}
   }
 }
 </style>

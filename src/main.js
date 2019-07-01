@@ -33,7 +33,7 @@ const i18n = new VueI18n({
       title: '合生基因',
       nav: {
         home: '首页',
-        biopharma: '新药研发',
+        biopharma: '药物研发',
         service: '科研服务',
         more: {
           title: '关于我们',

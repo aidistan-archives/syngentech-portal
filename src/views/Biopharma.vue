@@ -9,7 +9,7 @@ en:
     p: "Cell therapy is a new area of cancer immuno-therapy involving the infusion of lymphocytes to mediate antitumor effects. The field has rapidly advanced from a promising form of immuno-oncology in preclinical models to the recent commercial approvals of chimeric antigen receptor (CAR) T cells to treat leukemia and lymphoma. The emergence of synthetic biology approaches for cellular engineering is providing us with a broadly expanded set of tools for programming immune cells which can overcome the cell therapy challenges and create more robust, effective adaptive therapies that enable the specific targeting of cancer cells while sparing healthy cells."
   _3:
     h: "Technology Platform"
-    p: "Synthetic Inc. integrated biotechnology and information technology to construct a synthetic biological system for the regulation of synthetic gene systems targeting cancer therapy. Synthetic biological systems can effectively improve the efficacy and safety of cancer treatment, providing more survival opportunities for cancer patients."
+    p: "Syngentech Co., LTD. integrated biotechnology and information technology to construct a synthetic biological system for the regulation of synthetic gene systems targeting cancer therapy. Synthetic biological systems can effectively improve the efficacy and safety of cancer treatment, providing more survival opportunities for cancer patients."
   pipelines: "Pipelines"
   pipeline_prods:
     - ["<b>SynOV 1.1</b><br>HCC", 2]
@@ -141,6 +141,10 @@ export default {
       font-weight: 500;
       visibility: visible;
     }
+  }
+
+  h3 {
+    margin-bottom: 20px;
   }
 }
 </style>
