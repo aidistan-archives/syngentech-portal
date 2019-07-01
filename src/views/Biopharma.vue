@@ -10,6 +10,15 @@ en:
   _3:
     h: "Technology Platform"
     p: "Synthetic Inc. integrated biotechnology and information technology to construct a synthetic biological system for the regulation of synthetic gene systems targeting cancer therapy. Synthetic biological systems can effectively improve the efficacy and safety of cancer treatment, providing more survival opportunities for cancer patients."
+  pipelines: "Pipelines"
+  pipeline_prods:
+    - ["<b>SynOV 1.1</b><br>HCC", 2]
+    - ["<b>SynOV 2</b><br>HCC", 1]
+    - ["<b>SynOV 3</b><br>GC", 0]
+    - ["<b>SynOV 4</b><br>PC", 0]
+    - ["<b>SynOV<sub>BM</sub></b><br>Multi", 0]
+    - ["<b>SynOV<sub>multi</sub></b><br>Multi", 0]
+  pipeline_steps: ["Pre-study", "PPD", "PK/PD", "IND", "Phase I", "Phase II", "Phase III"]
 zh:
   _0: "随着生物技术和信息技术的发展，合成生物学可以利用生物元件构建基因线路改造、编程活的生物体。重新设计基因线路、生物模块和合成途径可以被用于解决重大疾病问题。通过识别疾病生物标志物，合成基因线路可以调节基因表达和治疗活动的剂量、时间和定位，为癌症等无法治愈或难以治疗的疾病提供新的干预手段。"
   _1:
@@ -21,6 +30,15 @@ zh:
   _3:
     h: "技术平台"
     p: "北京合生基因通过整合生物技术和信息技术，构建基因线路调控的合成生物系统靶向肿瘤治疗。合成生物系统可以有效提高肿瘤治疗效果和安全性为肿瘤患者提供更多生存机会。"
+  pipelines: "研发管线"
+  pipeline_prods:
+    - ["<b>SynOV 1.1</b><br>肝癌", 2]
+    - ["<b>SynOV 2</b><br>肝癌", 1]
+    - ["<b>SynOV 3</b><br>胃癌", 0]
+    - ["<b>SynOV 4</b><br>胰腺癌", 0]
+    - ["<b>SynOV<sub>BM</sub></b><br>多瘤种", 0]
+    - ["<b>SynOV<sub>multi</sub></b><br>多瘤种", 0]
+  pipeline_steps: ["前期研究", "药学研究", "药理研究", "临床申请", "临床I期", "临床II期", "临床III期"]
 </i18n>
 
 <template>
@@ -55,60 +73,16 @@ zh:
         <el-image :src="images[3]" style="max-width: 600px"></el-image>
       </div>
 
-      <h3>Pipelines</h3>
-      <el-steps :active="2" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV 1.1</b><br>{{ $i18n.locale === 'zh' ? '肝癌' : 'HCC' }}
-        </div>
-        <el-step v-for="i in 6" :key="i"></el-step><el-step title="　　　　"></el-step>
-      </el-steps>
-      <el-steps :active="1" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV 2</b><br>{{ $i18n.locale === 'zh' ? '肝癌' : 'HCC' }}
-        </div>
-        <el-step v-for="i in 6" :key="i"></el-step><el-step title="　　　　"></el-step>
-      </el-steps>
-      <el-steps :active="0" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV 3</b><br>{{ $i18n.locale === 'zh' ? '胃癌' : 'GC' }}
-        </div>
-        <el-step v-for="i in 6" :key="i"></el-step><el-step title="　　　　"></el-step>
-      </el-steps>
-      <el-steps :active="0" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV 4</b><br>{{ $i18n.locale === 'zh' ? '胰腺癌' : 'PC' }}
-        </div>
-        <el-step v-for="i in 6" :key="i"></el-step><el-step title="　　　　"></el-step>
-      </el-steps>
-      <el-steps :active="0" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV<sub>BM</sub></b><br>{{ $i18n.locale === 'zh' ? '多瘤种' : 'Multi' }}
-        </div>
-        <el-step v-for="i in 6" :key="i"></el-step><el-step title="　　　　"></el-step>
-      </el-steps>
-      <el-steps :active="0" process-status="process" finish-status="success">
-        <div style="min-width: 90px; margin-right: 10px; text-align: center">
-          <b>SynOV<sub>multi</sub></b><br>{{ $i18n.locale === 'zh' ? '多瘤种' : 'Multi' }}
-        </div>
-        <template v-if="$i18n.locale === 'zh'">
-          <el-step title="前期研究"></el-step>
-          <el-step title="药学研究"></el-step>
-          <el-step title="药理研究"></el-step>
-          <el-step title="临床申请"></el-step>
-          <el-step title="临床I期"></el-step>
-          <el-step title="临床II期"></el-step>
-          <el-step title="临床III期"></el-step>
-        </template>
-        <template v-else>
-          <el-step title="Pre-study"></el-step>
-          <el-step title=""></el-step>
-          <el-step title=""></el-step>
-          <el-step title="IND"></el-step>
-          <el-step title="Phase I"></el-step>
-          <el-step title="Phase II"></el-step>
-          <el-step title="Phase III"></el-step>
-        </template>
-      </el-steps>
+      <h3>{{ $t('pipelines') }}</h3>
+      <div>
+        <el-steps
+          v-for="(p, i) in $t('pipeline_prods')" :key="i" :active="p[1]"
+          process-status="process" finish-status="success"
+        >
+          <div v-html="p[0]"></div>
+          <el-step v-for="(s, i) in $t('pipeline_steps')" :key="i" :title="s"></el-step>
+        </el-steps>
+      </div>
 
       <Footer></Footer>
     </div>
@@ -148,3 +122,25 @@ export default {
   components: { Footer }
 }
 </script>
+
+<style lang="scss">
+#biopharma {
+  .el-steps {
+    & > div:first-child {
+      min-width: 90px;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    .el-step__title { visibility: hidden; }
+  }
+
+  .el-steps:last-child {
+    .el-step__title {
+      color: #303133;
+      font-weight: 500;
+      visibility: visible;
+    }
+  }
+}
+</style>

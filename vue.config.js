@@ -16,7 +16,7 @@ module.exports = {
       config.plugins.push(new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
         routes: [
-          '/', '/biopharma', '/research-service',
+          '/biopharma', '/research-service',
           '/about-us', '/management-team', '/our-investors', '/contact-us'
         ]
       }))

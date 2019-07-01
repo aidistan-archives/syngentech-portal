@@ -100,14 +100,14 @@ zh:
       <h2>{{ $t('_1.h') }}</h2>
       <p>{{ $t('_1.p') }}</p>
       <el-collapse>
-        <el-collapse-item v-for="x in $t('_1._')" :title="x.h" :key="x.h">
+        <el-collapse-item v-for="(x, i) in $t('_1._')" :key="i" :title="x.h" >
           <p>{{ x.p }}</p>
           <el-row>
-            <el-col v-for="y in x._" :key="y.h" :xs="24" :sm="12" :md="8">
+            <el-col v-for="(y, i) in x._" :key="i" :xs="24" :sm="12" :md="8">
               <el-card>
                 <h4>{{ y.h }}</h4>
                 <template v-if="y._">
-                  <div v-for="z in y._" :key="z">- {{ z }}</div>
+                  <div v-for="(z, i) in y._" :key="i">- {{ z }}</div>
                 </template>
               </el-card>
             </el-col>
