@@ -22,6 +22,7 @@ en:
             _:
               - Heterologous Gene Expression
               - Transcriptional Activation
+              - ""
       - h: "Virus Packaging"
         p: "Virus are highly efficient vector for cell transfection of genetic circuits. We apply the most advance virus packaging technology, covering three major viral vectors: lentivirus, adenovirus and adeno-associated virus, ensuring accountable stability, robustness and rapid response."
         _:
@@ -66,6 +67,7 @@ zh:
             _:
               - 外源表达
               - 转录激活
+              - ""
       - h: "病毒载体包装"
         p: "病毒载体可以极大效率提高基因线路感染宿主细胞成功率。我们采用最先进的病毒包装技术，产品涵盖慢病毒、腺病毒、腺相关病毒三大种类，确保提供具有良好稳定性、鲁棒性和快速响应性的病毒载体。"
         _:
@@ -99,20 +101,20 @@ zh:
 
       <h2>{{ $t('_1.h') }}</h2>
       <p>{{ $t('_1.p') }}</p>
-      <template v-for="(x, i) in $t('_1._')">
-        <h3 :key="i">{{ x.h }}</h3>
-        <p :key="i">{{ x.p }}</p>
-        <el-row :key="i">
+      <div v-for="(x, i) in $t('_1._')" :key="i">
+        <h3>{{ x.h }}</h3>
+        <p>{{ x.p }}</p>
+        <el-row>
           <el-col v-for="(y, i) in x._" :key="i" :xs="24" :sm="12" :md="8">
             <el-card>
               <div class="title"><b>{{ y.h }}</b></div>
               <template v-if="y._">
-                <div v-for="(z, i) in y._" :key="i">- {{ z }}</div>
+                <div v-for="(z, i) in y._" :key="i">{{ z ? '- ' + z : '' }}</div>
               </template>
             </el-card>
           </el-col>
         </el-row>
-      </template>
+      </div>
 
       <h2>{{ $t('_2.h') }}</h2>
       <p>{{ $t('_2.p1') }}</p>

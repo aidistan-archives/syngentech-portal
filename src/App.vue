@@ -13,7 +13,7 @@
           <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item>
           <el-menu-item index="biopharma">{{ $t('nav.biopharma') }}</el-menu-item>
           <el-menu-item index="research-service">{{ $t('nav.service') }}</el-menu-item>
-          <el-submenu index="more" :popper-class="navHome && 'home'">
+          <el-submenu index="more" :popper-class="navHome ? 'home' : ''">
             <template slot="title">{{ $t('nav.more.title' )}}</template>
             <el-menu-item index="about-us">{{ $t('nav.more.about') }}</el-menu-item>
             <el-menu-item index="management-team">{{ $t('nav.more.management') }}</el-menu-item>

@@ -46,7 +46,8 @@ const i18n = new VueI18n({
       copyright: '版权所有 © 北京合生基因科技有限公司 · 京ICP备14043945号',
       ...zhLocale
     }
-  }
+  },
+  silentFallbackWarn: true
 })
 
 Vue.use(Element, {
