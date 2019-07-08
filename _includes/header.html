@@ -4,25 +4,11 @@
       <a href="#" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.domain.assets }});">logo</a>
     </h1>
 
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-default am-show-sm-only" data-am-offcanvas="{target: '#offcanvas'}">
-      <span class="am-sr-only">导航切换</span>
-      <span class="am-icon-bars"></span>
-    </button>
-
     <div class="am-collapse am-topbar-collapse">
       <ul class="am-nav am-nav-pills am-topbar-nav" style="width: 100%;">
         <h1 class="am-topbar-brand">
           <a href="{{ '/' | prepend: site.domain.root }}" class="am-text-ir" style="background-image: url({{ '/images/logo-white.png' | prepend: site.domain.assets }});">logo</a>
         </h1>
-        <li class="am-dropdown">
-          <a href="javascript:;" class="am-dropdown-toggle">关于我们</a>
-          <ul class="am-dropdown-content">
-            <li><a href="{{ '/about' | prepend: site.domain.root }}">企业简介</a></li>
-            <li><a href="{{ '/hire' | prepend: site.domain.root }}">招贤纳士</a></li>
-            <li><a href="{{ '/cooperate' | prepend: site.domain.root }}">合作加盟</a></li>
-            <li><a href="{{ '/contact' | prepend: site.domain.root }}">联系我们</a></li>
-          </ul>
-        </li>
         <li class="am-dropdown">
           <a href="{{ '/service' | prepend: site.domain.root }}" class="am-dropdown-toggle">科研服务</a>
           <ul class="am-dropdown-content full-width">
@@ -75,8 +61,6 @@
             </div>
           </ul>
         </li>
-        <li><a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a></li>
-        <li><a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a></li>
       </ul>
     </div>
   </div>
@@ -90,16 +74,6 @@
         <li class="am-panel">
           <div class="am-padding-sm am-padding-horizontal">
             <a href="{{ '/' | prepend: site.domain.root }}">首页</a>
-          </div>
-        </li>
-        <li class="am-panel">
-          <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ '/biopharmaceutical_R_and_D/' | prepend: site.domain.root }}">新药研发</a>
-          </div>
-        </li>
-        <li class="am-panel">
-          <div class="am-padding-sm am-padding-horizontal">
-            <a href="{{ '/process_development/' | prepend: site.domain.root }}">工艺开发</a>
           </div>
         </li>
         <li class="am-panel">
@@ -176,18 +150,6 @@
                 <li><a href="{{ '/service/product/transgenic-mice/' | prepend: site.domain.root }}">基因工程鼠</a></li>
               </ul>
             </li>
-          </ul>
-        </li>
-        <li class="am-panel">
-          <div class="am-padding-sm am-padding-horizontal">
-            <a href="#">关于我们</a>
-            <i class="am-icon-caret-down am-fr" data-am-collapse="{parent: '#offcanvas-collapse', target: '#offcanvas-about'}"></i>
-          </div>
-          <ul class="am-list am-collapse" id="offcanvas-about">
-            <li><a href="{{ '/about' | prepend: site.domain.root }}">企业简介</a></li>
-            <li><a href="{{ '/hire' | prepend: site.domain.root }}">招贤纳士</a></li>
-            <li><a href="{{ '/cooperate' | prepend: site.domain.root }}">合作加盟</a></li>
-            <li><a href="{{ '/contact' | prepend: site.domain.root }}">联系我们</a></li>
           </ul>
         </li>
       </ul>
