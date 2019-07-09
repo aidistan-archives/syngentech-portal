@@ -49,22 +49,19 @@ zh:
       <h1>{{ $t('nav.biopharma') }}</h1>
       <p>{{ $t('_0') }}</p>
       <div style="text-align: center">
-        <el-image :src="images[0]" style="max-width: 600px"></el-image>
-        <div><small>(Kitada, Tasuku, et. al., Science, 2018)</small></div>
+        <el-image :src="images[0]" style="max-width: 450px"></el-image>
       </div>
 
       <h2>{{ $t('_1.h') }}</h2>
       <p>{{ $t('_1.p') }}</p>
       <div style="text-align: center">
-        <el-image :src="images[1]" style="max-width: 600px"></el-image>
-        <div><small>(Dunbar, Cynthia E., et. al., Science, 2018)</small></div>
+        <el-image :src="images[1]" style="max-width: 450px"></el-image>
       </div>
 
       <h2>{{ $t('_2.h') }}</h2>
       <p>{{ $t('_2.p') }}</p>
       <div style="text-align: center">
-        <el-image :src="images[2]" style="max-width: 600px"></el-image>
-        <div><small>(June, Carl H., et. al., Science, 2018)</small></div>
+        <el-image :src="images[2]" style="max-width: 450px"></el-image>
       </div>
 
       <h2>{{ $t('_3.h') }}</h2>
