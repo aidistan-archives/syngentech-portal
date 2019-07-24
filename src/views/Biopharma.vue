@@ -77,7 +77,10 @@ zh:
           process-status="process" finish-status="success"
         >
           <div v-html="p[0]"></div>
-          <el-step v-for="(s, i) in $t('pipeline_steps')" :key="i" :title="s"></el-step>
+          <template v-for="(s, i) in $t('pipeline_steps')">
+            <el-step v-if="i != p[1]" :key="i" :title="s"></el-step>
+            <el-step v-else :key="i" :title="s"  icon="el-icon-video-play"></el-step>
+          </template>
         </el-steps>
       </div>
 
@@ -129,6 +132,7 @@ export default {
       text-align: center;
     }
 
+    .el-step__icon.is-icon { width: auto; color: #409EFF; }
     .el-step__title { visibility: hidden; }
   }
 
