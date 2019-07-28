@@ -5,12 +5,12 @@ en:
     title: Chief Executive Officer
     details: >
       <ul>
-        <li>2018-2019, Head of Translational Sciences Asia (former Clinical Sciences China) in Bayer</li>
-        <li>2015-2018, Scientific Director & Early Development Scientific Leader of China Biologics Initiative in Janssen BioTherapeutics of Johnson & Johnson</li>
-        <li>2008-2015, Scientific Director of Global Clinical Pharmacology in Janssen R&D of Johnson & Johnson</li>
-        <li>2005-2008, Scientist and PKDM Lead in Amgen</li>
-        <li>2004-2005, Postdoctoral Fellow in College of Pharmacy at the Ohio State University</li>
-        <li>2000-2004, Master and Ph.D. in Biomedical Engineering at University of Nevada, Las Vegas</li>
+        <li>2018 - 2019, Head of Translational Sciences Asia (former Clinical Sciences China) in Bayer</li>
+        <li>2015 - 2018, Scientific Director & Early Development Scientific Leader of China Biologics Initiative in Janssen BioTherapeutics of Johnson & Johnson</li>
+        <li>2008 - 2015, Scientific Director of Global Clinical Pharmacology in Janssen R&D of Johnson & Johnson</li>
+        <li>2005 - 2008, Scientist and PKDM Lead in Amgen</li>
+        <li>2004 - 2005, Postdoctoral Fellow in College of Pharmacy at the Ohio State University</li>
+        <li>2000 - 2004, Master and Ph.D. in Biomedical Engineering at University of Nevada, Las Vegas</li>
       </ul>
   jy:
     name: Yun Jiang, MBA
@@ -24,8 +24,8 @@ en:
       <h3>CV Profile</h3>
       <ul>
         <li>Since 2014, Co-Founder, SyngenTech Co., Ltd.</li>
-        <li>2017-2019, UIBE-CTU MBA</li>
-        <li>2012-2014, National Laboratory of Information Science and Technology, Tsinghua University</li>
+        <li>2017 - 2019, UIBE-CTU MBA</li>
+        <li>2012 - 2014, National Laboratory of Information Science and Technology, Tsinghua University</li>
       </ul>
   xz:
     name: Zhen Xie, PhD
@@ -44,7 +44,7 @@ en:
         <li>Since 2012, Special Researcher, Technology of Center for Synthetic and Systems Biology of Automation, Tsinghua University</li>
         <li>2010 - 2012, Postdoctoral Fellow, Computer Science and Artificial Intelligence Laboratory, Department of Biological Engineering, Massachusetts Institute of Technology (MIT), USA</li>
         <li>2006 - 2010, Postdoctoral Fellow, FAS Center for Systems Biology, Harvard University, USA</li>
-        <li>2001- 2006, Doctor, University of Nevada, Las Vegas, USA</li>
+        <li>2001 - 2006, Doctor, University of Nevada, Las Vegas, USA</li>
       </ul>
   lyy:
     name: Yinying Lu, PhD
@@ -65,9 +65,9 @@ en:
       </ul>
       <h3>CV Profile</h3>
       <ul>
-        <li>2012-2013, Visiting Scholar, National Institutes of Health (NIH)</li>
-        <li>2010-2015, Deputy Director, Liver Cancer Diagnosis, Treatment and Research Center, 302 People's Liberation Army Hospital</li>
-        <li>2008-2010, Associate Chief Physician, 302 People's Liberation Army Hospital</li>
+        <li>2012 - 2013, Visiting Scholar, National Institutes of Health (NIH)</li>
+        <li>2010 - 2015, Deputy Director, Liver Cancer Diagnosis, Treatment and Research Center, 302 People's Liberation Army Hospital</li>
+        <li>2008 - 2010, Associate Chief Physician, 302 People's Liberation Army Hospital</li>
       </ul>
   zxg:
     name: Xuegong Zhang, PhD
@@ -87,10 +87,10 @@ en:
         <li>Since 2002, Deputy Director, the Key Laboratory of Bioinformatics, Ministry of Education, Tsinghua University</li>
         <li>From march to April 2007, Visiting Scholar, Department of Molecular and Computational Biology, University of Southern California</li>
         <li>From February to March 2006, visited scientists of public health, Harvard University</li>
-        <li>2001-2002, Senior Visiting Scholar, Department of Biostatistics of Public Health, Harvard University</li>
-        <li>1999-2007, Director, Information Processing Institute, Department of Automation, Tsinghua University</li>
-        <li>1996-2002, Associate Professor, Pattern Recognition Theory and Application, Department of Automation, Tsinghua University</li>
-        <li>1994-1996, Lecturer, Department of Automation, Tsinghua University</li>
+        <li>2001 - 2002, Senior Visiting Scholar, Department of Biostatistics of Public Health, Harvard University</li>
+        <li>1999 - 2007, Director, Information Processing Institute, Department of Automation, Tsinghua University</li>
+        <li>1996 - 2002, Associate Professor, Pattern Recognition Theory and Application, Department of Automation, Tsinghua University</li>
+        <li>1994 - 1996, Lecturer, Department of Automation, Tsinghua University</li>
       </ul>
   ls:
     name: Shao Li, PhD
@@ -104,9 +104,9 @@ en:
       <h3>CV Profile</h3>
       <ul>
         <li>February 2006, Deputy Director, Department of Bioinformatics, National Laboratory of Information Science and Technology, Tsinghua University</li>
-        <li>2004-2009, Associate Researcher, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua University</li>
-        <li>2003-2004, Lecture, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
-        <li>2001-2003, Postdoctoral, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
+        <li>2004 - 2009, Associate Researcher, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua University</li>
+        <li>2003 - 2004, Lecture, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
+        <li>2001 - 2003, Postdoctoral, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
       </ul>
   wxw:
     name: Xiaowo Wang, PhD
@@ -119,9 +119,9 @@ en:
       <h3>CV Profile</h3>
       <ul>
         <li>Since 2016, Associate Professor (Tenure, PI, Doctoral Supervisor), Department of Automation, Tsinghua University</li>
-        <li>2012-2013, Visiting Scholar of Tang, University of California, Berkeley</li>
-        <li>2011- 2015, Associate Professor, Department of Automation, Tsinghua University</li>
-        <li>2008-2011, Lecturer, Department of Automation, Tsinghua University</li>
+        <li>2012 - 2013, Visiting Scholar of Tang, University of California, Berkeley</li>
+        <li>2011 - 2015, Associate Professor, Department of Automation, Tsinghua University</li>
+        <li>2008 - 2011, Lecturer, Department of Automation, Tsinghua University</li>
       </ul>
   gj:
     name: Jin Gu, PhD
@@ -134,8 +134,8 @@ en:
       <h3>CV Profile</h3>
       <ul>
         <li>Since 2017, Associate Professor and Doctoral Supervisor, Tsinghua University</li>
-        <li>2016-2017, Assistant Professor and Doctoral Supervisor, Tsinghua University</li>
-        <li>2009-2015, Lecturer, Tsinghua University</li>
+        <li>2016 - 2017, Assistant Professor and Doctoral Supervisor, Tsinghua University</li>
+        <li>2009 - 2015, Lecturer, Tsinghua University</li>
       </ul>
 zh:
   cb:
@@ -167,7 +167,7 @@ zh:
       <h3>履历简介</h3>
       <ul>
         <li>2014年至今，北京合生基因科技有限公司，联合创始人</li>
-        <li>2017~2019年，UIBE-CTU MBA</li>
+        <li>2017年~2019年，UIBE-CTU MBA</li>
         <li>2012年~2014年，清华大学信息科学与技术国家实验室</li>
       </ul>
   xz:
@@ -194,7 +194,7 @@ zh:
     title: 首席医学官
     details: >
       <ul>
-        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副教授，副主任医师硕士生导师</li>
+        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副教授，副主任医师，硕士生导师</li>
         <li>美国国家肿瘤研究院，访问学者</li>
         <li>北京市肝病学会青委会，副主委</li>
         <li>清华大学合成与系统生物中心PI</li>
@@ -278,7 +278,7 @@ zh:
       <h3>履历简介</h3>
       <ul>
         <li>2017年至今，清华大学 副教授、博导</li>
-        <li>2016年~ 2017年，清华大学 助理教授、博导</li>
+        <li>2016年~2017年，清华大学 助理教授、博导</li>
         <li>2009年~2015年，清华大学 讲师</li>
       </ul>
 </i18n>

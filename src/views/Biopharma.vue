@@ -2,10 +2,10 @@
 en:
   _0: "Synthetic biology could construct gene circuit using bio-bricks to rewire and reprogram live organisms along with the development of biological and informatics technology. The de novo engineering of genetic circuits, biological modules and synthetic pathways has beginning to address disease problem. Through response to disease biomarkers, the synthetic gene circuit can regulate the dosage, timing and localization of gene expression and therapeutic activity providing new interventions for incurable or difficult-to-treat diseases like cancer."
   _1:
-    h: "Gene Therapies"
-    p: "Gene therapies is becoming a critical component of the therapeutic armamentarium for a variety of inherited and acquired human diseases. Genetically engineered viral vaccine and immune cells has been successfully used in cancer therapy. And the emerging genome editing technologies like CRISPR will further advance the scope and efficacy of gene therapy approaches."
+    h: "Gene Therapy"
+    p: "Gene therapy is becoming a critical component of the therapeutic armamentarium for a variety of inherited and acquired human diseases. Genetically engineered viral vaccine and immune cells has been successfully used in cancer therapy. And the emerging genome editing technologies like CRISPR will further advance the scope and efficacy of gene therapy approaches."
   _2:
-    h: "Cell Therapies"
+    h: "Cell Therapy"
     p: "Cell therapy is a new area of cancer immuno-therapy involving the infusion of lymphocytes to mediate antitumor effects. The field has rapidly advanced from a promising form of immuno-oncology in preclinical models to the recent commercial approvals of chimeric antigen receptor (CAR) T cells to treat leukemia and lymphoma. The emergence of synthetic biology approaches for cellular engineering is providing us with a broadly expanded set of tools for programming immune cells which can overcome the cell therapy challenges and create more robust, effective adaptive therapies that enable the specific targeting of cancer cells while sparing healthy cells."
   _3:
     h: "Technology Platform"
@@ -26,10 +26,10 @@ zh:
     p: "基因治疗正成为治疗各种遗传性和获得性人类疾病的重要手段。基因工程病毒疫苗和免疫细胞已成功地用于癌症治疗。而CRISPR等新兴的基因组编辑技术将进一步推进基因治疗方法的范围和有效性。"
   _2:
     h: "细胞治疗"
-    p: "细胞治疗是肿瘤免疫治疗的一个新领域，通过淋巴细胞输注介导抗肿瘤作用。该领域已迅速从临床前的种有希望免疫肿瘤学的模型发展到最近的已经被批准上市的治疗白血病和淋巴瘤嵌合抗原受体(CAR) T细胞。目前新兴的可以用于细胞工程的合成生物学方法为免疫细胞编程提供了一套广泛扩展的工具。合成生物学改造可以克服细胞治疗的现有挑战，创建更强大、更有效的自适应细胞疗法，提高针对癌细胞的靶向性和治疗效果。"
+    p: "细胞治疗是肿瘤免疫治疗的一个新领域，通过淋巴细胞输注介导抗肿瘤作用。该领域已迅速从临床前一种有希望的免疫肿瘤学研究模型发展到最近的已经被批准上市的治疗白血病和淋巴瘤嵌合抗原受体(CAR) T细胞。目前新兴的可以用于细胞工程的合成生物学方法为免疫细胞编程提供了一套广泛扩展的工具。合成生物学改造可以克服细胞治疗的现有挑战，创建更强大、更有效的自适应细胞疗法，提高针对癌细胞的靶向性和治疗效果。"
   _3:
     h: "技术平台"
-    p: "北京合生基因通过整合生物技术和信息技术，构建基因线路调控的合成生物系统靶向肿瘤治疗。合成生物系统可以有效提高肿瘤治疗效果和安全性为肿瘤患者提供更多生存机会。"
+    p: "北京合生基因通过整合生物技术和信息技术，构建基因线路调控的合成生物系统靶向肿瘤治疗。合成生物系统可以有效提高肿瘤治疗效果和安全性，为肿瘤患者提供更多生存机会。"
   pipelines: "研发管线"
   pipeline_prods:
     - ["<b>SynOV 1.1</b><br>肝癌", 2]
