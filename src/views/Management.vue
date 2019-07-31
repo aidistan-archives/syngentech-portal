@@ -17,8 +17,8 @@ en:
     title: Chief Operating Officer
     details: >
       <ul>
-        <li>Participate in the 4th Special Training Camp for CEO of Science and Technology Innovation, Ministry of Science and Technology Talent Center</li>
         <li>Deputy Secretary of APALD-HCC</li>
+        <li>Participate in the 4th Special Training Camp for CEO of Science and Technology Innovation, Ministry of Science and Technology Talent Center</li>
         <li>Participate in the 4th G20 Advanced Seminar of the Beijing Science and Technology Commission</li>
       </ul>
       <h3>CV Profile</h3>
@@ -51,7 +51,8 @@ en:
     title: Chief Medical Officer
     details: >
       <ul>
-        <li>Director, Associate Professor, Associate Chief Physician and Master Tutor of Liver Cancer Diagnosis, Treatment and Research Center in 302 People's Liberation Army Hospital</li>
+        <li>Associate Professor</li>
+        <li>Associate Chief Physician of Liver Cancer Diagnosis, Treatment and Research Center in 302 People's Liberation Army Hospital</li>
         <li>Visiting Scholar at the National Cancer Institute (NCI)</li>
         <li>Deputy Chairman of the Youth Committee in Beijing Hepatology Association</li>
         <li>PI of the Synthesis and Systems Biology Center in Tsinghua University</li>
@@ -160,8 +161,8 @@ zh:
     title: 首席运营官
     details: >
       <ul>
-        <li>科技部人才中心科技创新CEO特训营，第四期</li>
         <li>亚太肝病技术联盟肝癌专委会委员，副秘书长</li>
+        <li>科技部人才中心科技创新CEO特训营，第四期</li>
         <li>北京市科委G20高级研修班，第四期</li>
       </ul>
       <h3>履历简介</h3>
@@ -194,7 +195,8 @@ zh:
     title: 首席医学官
     details: >
       <ul>
-        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副教授，副主任医师，硕士生导师</li>
+        <li>副教授，硕士生导师</li>
+        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副主任医师</li>
         <li>美国国家肿瘤研究院，访问学者</li>
         <li>北京市肝病学会青委会，副主委</li>
         <li>清华大学合成与系统生物中心PI</li>
