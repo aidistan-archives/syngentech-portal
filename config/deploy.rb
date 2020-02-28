@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "~> 3.12.0"
 
 set :application, "portal"
 set :repo_url, 'git@github.com:syngentech/portal.git'
@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:syngentech/portal.git'
 before 'deploy:started', 'deploy:build' do
   run_locally do
     execute 'yarn run build'
-    execute 'cp -r _site/* dist/'
+    execute 'cp -r _site/* dist/' # copy /service part from v1
   end
 end
 
