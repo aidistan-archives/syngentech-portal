@@ -17,7 +17,7 @@ zh:
       <span>{{ $t('email') }}</span>
       <span>{{ $t('address') }}</span>
     </div>
-    <div>{{ $t('copyright') }}</div>
+    <div v-html="$t('copyright')"></div>
   </div>
 </template>
 
@@ -38,5 +38,6 @@ zh:
 
   div { padding: 1px; }
   span { margin: 5px; }
+  a { color: #888; }
 }
 </style>

@@ -17,7 +17,7 @@ zh:
     <div class="dimmer">
       <div class="title">{{ $t('_title') }}</div>
       <div class="subtitle">{{ $t('subtitle') }}</div>
-      <div class="footer">{{ $t('copyright') }}</div>
+      <div class="footer" v-html="$t('copyright')"></div>
     </div>
   </div>
 </template>
@@ -128,6 +128,7 @@ export default {
     padding: 0.5em;
 
     color: rgba(239, 239, 239, 0.618);
+    a { color: rgba(239, 239, 239, 0.618); }
   }
 }
 </style>

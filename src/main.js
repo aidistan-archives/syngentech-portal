@@ -26,7 +26,7 @@ const i18n = new VueI18n({
           contact: 'Contact Us'
         }
       },
-      copyright: 'All rights reserved © Beijing Syngentech Co., LTD.',
+      copyright: 'All rights reserved © Beijing Syngentech Co., LTD. · <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>',
       ...enLocale
     },
     zh: {
@@ -43,7 +43,7 @@ const i18n = new VueI18n({
           contact: '联系我们'
         }
       },
-      copyright: '版权所有 © 北京合生基因科技有限公司 · 京ICP备14043945号',
+      copyright: '版权所有 © 北京合生基因科技有限公司 · <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>',
       ...zhLocale
     }
   },
