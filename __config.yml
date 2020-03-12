@@ -1,4 +1,4 @@
-exclude: [Gemfile, Gemfile.lock, README.md, Rakefile]
+exclude: [Gemfile, Gemfile.lock, README.md, Rakefile, dist, log, node_modules]
 markdown: kramdown
 permalink: pretty
 
