@@ -4,7 +4,7 @@ node_modules
 /dist
 _site
 
-# local env files
+# Local env files
 .env.local
 .env.*.local
 
@@ -22,3 +22,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Files from v1
+.sass-cache
+_config.yml
