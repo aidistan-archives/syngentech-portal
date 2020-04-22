@@ -1,6 +1,6 @@
 <i18n>
 en:
-  _0: "Scientific Research Services department of Beijing Syngentech Co., LTD. is committed to providing the leading edge personalized synthetic biology technology services and research products to life science researchers and medical practitioner worldwide. We aim at the two major application scenarios: basic and clinical research, build a synthetic biology technology-driven platform, and provide customers with three core services and products: Genetic Circuits construction, viral vector packaging and gene function analysis."
+  _0: "Scientific Research Services department of Beijing Syngentech Co., LTD. is committed to providing personalized synthetic biology technology services and research products to life science researchers and medical practitioner worldwide. We aim at the two major application scenarios: basic and clinical research, build a synthetic biology technology-driven platform, and provide customers with three core services and products: Genetic Circuits construction, viral vector packaging and gene function analysis."
   _1:
     h: "Service for Basic Research"
     p: "Gene function is the cornerstone of life science research. A basic research needs to include genetic circuits design and construction, viral vector packaging, and gene function analysis. We provide a pack of synthetic biology services, including genetic circuits, vrius and cell function experiments, covered in a basic research workflow."
@@ -36,7 +36,7 @@ en:
               - h: ""
                 a: ""
       - h: "Virus Packaging"
-        p: "Virus are highly efficient vector for cell transfection of genetic circuits. We apply the most advance virus packaging technology, covering three major viral vectors: lentivirus, adenovirus and adeno-associated virus, ensuring accountable stability, robustness and rapid response."
+        p: "Virus are highly efficient vector for cell transfection of genetic circuits. We apply virus packaging technology, covering three major viral vectors: lentivirus, adenovirus and adeno-associated virus, ensuring accountable stability, robustness and rapid response."
         _:
           - h: Lentivirus
             a: "/service/product/LV/"
@@ -68,7 +68,7 @@ en:
     p1: "In 2015, about 90.5 million people had cancer. About 14.1 million new cases occur a year (not including skin cancer other than melanoma). It caused about 8.8 million deaths (15.7% of deaths). Therefore, oncology research is one of the major areas of current life science and medical research. We provide integrated service of clinical cancer research for different tumor models, including tumor cell clonality, proliferation, apoptosis, cell cycle, migration and invasion. Beijing Syngentech Co., LTD. has a complete research platform, which can fully support your personalized research."
     p2: "After determining the tumor type and interest gene, we provide you with integrated services of clinical cancer research, including cell clone formation ability, cycle, apoptosis, proliferation, migration, invasion and many other comprehensive experimental assays."
 zh:
-  _0: "合生基因科研服务部致力于为全球生命科学研究者和医务工作者提供世界一流的个性化合成生物学技术服务与科研产品。我们针对基础和临床科研两大应用场景，搭建合成生物学技术驱动型平台，为客户提供基因元件设计构建、病毒载体包装及基因功能分析验证三类核心服务和产品。"
+  _0: "合生基因科研服务部致力于为全球生命科学研究者和医务工作者提供个性化合成生物学技术服务与科研产品。我们针对基础和临床科研两大应用场景，搭建合成生物学技术驱动型平台，为客户提供基因元件设计构建、病毒载体包装及基因功能分析验证三类核心服务和产品。"
   _1:
     h: "基础科研服务"
     p: "基因功能研究是生命科学研究基石。基本的研究闭环需要包含基因元件组装设计及规划、病毒载体包装和基因功能的分析验证。我们为您提供基础科研过程中需要的基因载体、病毒及细胞功能实验在内的全套合成生物学服务。"
@@ -102,7 +102,7 @@ zh:
               - h: ""
                 a: ""
       - h: "病毒载体包装"
-        p: "病毒载体可以极大效率提高基因线路感染宿主细胞成功率。我们采用最先进的病毒包装技术，产品涵盖慢病毒、腺病毒、腺相关病毒三大种类，确保提供具有良好稳定性、鲁棒性和快速响应性的病毒载体。"
+        p: "病毒载体可以极大效率提高基因线路感染宿主细胞成功率。我们采用三质粒和四质粒病毒包装技术，产品涵盖慢病毒、腺病毒、腺相关病毒三大种类，确保提供具有良好稳定性、鲁棒性和快速响应性的病毒载体。"
         _:
           - h: 慢病毒
             a: "/service/product/LV/"
