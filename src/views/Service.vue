@@ -36,7 +36,7 @@ en:
               - h: ""
                 a: ""
       - h: "Virus Packaging"
-        p: "Virus are highly efficient vector for cell transfection of genetic circuits. We apply virus packaging technology, covering three major viral vectors: lentivirus, adenovirus and adeno-associated virus, ensuring accountable stability, robustness and rapid response."
+        p: "Virus are highly efficient vector for cell transfection of genetic circuits. We apply virus packaging technology, covering three major viral vectors: lentivirus, adenovirus and adeno-associated virus, providing accountable stability, robustness and rapid response."
         _:
           - h: Lentivirus
             a: "/service/product/LV/"
@@ -65,7 +65,7 @@ en:
             a: ""
   _2:
     h: "Integrated Service for Clinical Cancer Research"
-    p1: "In 2015, about 90.5 million people had cancer. About 14.1 million new cases occur a year (not including skin cancer other than melanoma). It caused about 8.8 million deaths (15.7% of deaths). Therefore, oncology research is one of the major areas of current life science and medical research. We provide integrated service of clinical cancer research for different tumor models, including tumor cell clonality, proliferation, apoptosis, cell cycle, migration and invasion. Beijing Syngentech Co., LTD. has a complete research platform, which can fully support your personalized research."
+    p1: "In 2015, about 90.5 million people had cancer. About 14.1 million new cases occur a year (not including skin cancer other than melanoma). It caused about 8.8 million deaths (15.7% of deaths). Therefore, oncology research is one of the major areas of current life science and medical research. We provide integrated service of clinical cancer research for different tumor models, including tumor cell clonality, proliferation, apoptosis, cell cycle, migration and invasion. Beijing Syngentech Co., LTD. has a powerful research platform, which could support your personalized research."
     p2: "After determining the tumor type and interest gene, we provide you with integrated services of clinical cancer research, including cell clone formation ability, cycle, apoptosis, proliferation, migration, invasion and many other comprehensive experimental assays."
 zh:
   _0: "合生基因科研服务部致力于为全球生命科学研究者和医务工作者提供个性化合成生物学技术服务与科研产品。我们针对基础和临床科研两大应用场景，搭建合成生物学技术驱动型平台，为客户提供基因元件设计构建、病毒载体包装及基因功能分析验证三类核心服务和产品。"
@@ -102,7 +102,7 @@ zh:
               - h: ""
                 a: ""
       - h: "病毒载体包装"
-        p: "病毒载体可以极大效率提高基因线路感染宿主细胞成功率。我们采用三质粒和四质粒病毒包装技术，产品涵盖慢病毒、腺病毒、腺相关病毒三大种类，确保提供具有良好稳定性、鲁棒性和快速响应性的病毒载体。"
+        p: "病毒载体可以极大效率提高基因线路感染宿主细胞成功率。我们采用三质粒和四质粒病毒包装技术，产品涵盖慢病毒、腺病毒、腺相关病毒三大种类，能够提供具有良好稳定性、鲁棒性和快速响应性的病毒载体。"
         _:
           - h: 慢病毒
             a: "/service/product/LV/"
@@ -131,7 +131,7 @@ zh:
             a: ""
   _2:
     h: "临床肿瘤学科研服务"
-    p1: "恶性肿瘤已成为危害人民健康和生命的主要疾病，居死亡病因中的首位，成为人类的主要杀手。因此肿瘤学研究是当前生物科学和医学研究的重点领域之一。我们为您提供不同肿瘤模型的基因功能研究，包括肿瘤细胞克隆形成能力、增殖、凋亡、周期、迁移及侵袭等多个方向。合生基因具有完备的生产平台，支持个性化服务，全面满足您的科研需求。"
+    p1: "恶性肿瘤已成为危害人民健康和生命的主要疾病，居死亡病因中的首位，成为人类的主要杀手。因此肿瘤学研究是当前生物科学和医学研究的重点领域之一。我们为您提供不同肿瘤模型的基因功能研究，包括肿瘤细胞克隆形成能力、增殖、凋亡、周期、迁移及侵袭等多个方向。合生基因具有较为完备的生产平台，支持个性化服务，极大程度上可以满足您的科研需求。"
     p2: "确定肿瘤类型和兴趣基因后，我们为您提供多样化的细胞水平检测，包括细胞克隆形成能力、周期、凋亡、增殖、迁移、侵袭等多项综合实验服务。"
 </i18n>
 
