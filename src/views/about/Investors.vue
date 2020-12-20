@@ -14,7 +14,7 @@ zh:
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
-      <h1>{{ $t('nav.more.investors') }}</h1>
+      <h1>{{ $t('nav.about.investors') }}</h1>
 
       <el-timeline>
         <el-timeline-item timestamp="2018" placement="top">
@@ -48,18 +48,20 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'investors',
   data () {
+    let requireAsset = (f) => require(`../../assets/${f}`)
+
     return {
-      banner: require('../assets/banner-3.jpg'),
+      banner: requireAsset('banner-3.jpg'),
       images: [
-        require('../assets/investor-0.png'),
-        require('../assets/investor-1.png'),
-        require('../assets/investor-2.png')
+        requireAsset('investor-0.png'),
+        requireAsset('investor-1.png'),
+        requireAsset('investor-2.png')
       ]
     }
   },
   computed: {
     title () {
-      return this.$t('nav.more.investors') + ' | ' + this.$t('title')
+      return this.$t('nav.about.investors') + ' | ' + this.$t('title')
     }
   },
   created () {

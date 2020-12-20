@@ -1,5 +1,7 @@
 <i18n>
 en:
+  team-management: Management Team
+  team-consulting: Consulting Team
   cb:
     name: Bin Chen, PhD
     title: Chief Executive Officer
@@ -139,6 +141,8 @@ en:
         <li>2009 - 2015, Lecturer, Tsinghua University</li>
       </ul>
 zh:
+  team-management: 管理团队
+  team-consulting: 咨询团队
   cb:
     name: 陈彬, PhD
     title: 首席执行官
@@ -286,17 +290,27 @@ zh:
 </i18n>
 
 <template>
-  <div id="management" class="page">
+  <div id="team" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
+
+      <h2>
+        {{ $t('team-management') }}
+      </h2>
+
       <el-row :gutter="20" type="flex" justify="space-around">
-        <el-col :xs="12" :sm="6" @click.native="setDialog('cb')">
+        <el-col :xs="8" :sm="6" @click.native="setDialog('cb')">
           <el-image :src="images['cb']"></el-image>
           <div class="name">{{ $t('cb.name') }}</div>
           <div class="title">{{ $t('cb.title') }}</div>
         </el-col>
-        <el-col :xs="12" :sm="6" @click.native="setDialog('jy')">
+        <el-col :xs="8" :sm="6" @click.native="setDialog('xz')">
+          <el-image :src="images['xz']"></el-image>
+          <div class="name">{{ $t('xz.name') }}</div>
+          <div class="title">{{ $t('xz.title') }}</div>
+        </el-col>
+        <el-col :xs="8" :sm="6" @click.native="setDialog('jy')">
           <el-image :src="images['jy']"></el-image>
           <div class="name">{{ $t('jy.name') }}</div>
           <div class="title">{{ $t('jy.title') }}</div>
@@ -304,11 +318,28 @@ zh:
       </el-row>
 
       <el-row :gutter="20" type="flex" justify="space-around">
-        <el-col :xs="12" :sm="6" @click.native="setDialog('xz')">
-          <el-image :src="images['xz']"></el-image>
-          <div class="name">{{ $t('xz.name') }}</div>
-          <div class="title">{{ $t('xz.title') }}</div>
+        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
+          <el-image :src="images['hyy']"></el-image>
+          <div class="name">{{ $t('hyy.name') }}</div>
+          <div class="title">{{ $t('hyy.title') }}</div>
         </el-col>
+        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
+          <el-image :src="images['lyq']"></el-image>
+          <div class="name">{{ $t('lyq.name') }}</div>
+          <div class="title">{{ $t('lyq.title') }}</div>
+        </el-col>
+        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
+          <el-image :src="images['psg']"></el-image>
+          <div class="name">{{ $t('psg.name') }}</div>
+          <div class="title">{{ $t('psg.title') }}</div>
+        </el-col>
+      </el-row>
+
+      <h2>
+        {{ $t('team-consulting') }}
+      </h2>
+
+      <el-row :gutter="20" type="flex" justify="space-around">
         <el-col :xs="12" :sm="6" @click.native="setDialog('lyy')">
           <el-image :src="images['lyy']"></el-image>
           <div class="name">{{ $t('lyy.name') }}</div>
@@ -357,31 +388,33 @@ zh:
 import Footer from '@/components/Footer.vue'
 
 export default {
-  name: 'management',
+  name: 'team',
   data () {
+    let requireAsset = (f) => require(`../../assets/${f}`)
+
     return {
-      banner: require('../assets/banner-3.jpg'),
+      banner: requireAsset('banner-3.jpg'),
       images: {
-        cb: require('../assets/高管-陈彬.png'),
-        jy: require('../assets/高管-蒋云.png'),
-        xz: require('../assets/高管-谢震.png'),
-        lyy: require('../assets/高管-陆荫英.png'),
-        zxg: require('../assets/顾问-张学工.png'),
-        ls: require('../assets/顾问-李梢.png'),
-        wxw: require('../assets/顾问-汪小我.png'),
-        gj: require('../assets/顾问-古槿.png')
+        cb: requireAsset('高管-陈彬.png'),
+        jy: requireAsset('高管-蒋云.png'),
+        xz: requireAsset('高管-谢震.png'),
+        lyy: requireAsset('高管-陆荫英.png'),
+        zxg: requireAsset('顾问-张学工.png'),
+        ls: requireAsset('顾问-李梢.png'),
+        wxw: requireAsset('顾问-汪小我.png'),
+        gj: requireAsset('顾问-古槿.png')
       },
       dialog: null
     }
   },
   computed: {
     title () {
-      return this.$t('nav.more.management') + ' | ' + this.$t('title')
+      return this.$t('nav.about.team') + ' | ' + this.$t('title')
     }
   },
   created () {
     document.title = this.title
-    this.$emit('nav-index', 'management-team')
+    this.$emit('nav-index', 'team')
   },
   watch: {
     '$i18n.locale' () {
@@ -397,7 +430,7 @@ export default {
 </script>
 
 <style lang="scss">
-#management .content {
+#team .content {
   .el-row {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -421,7 +454,7 @@ export default {
   }
 }
 
-#management .el-dialog {
+#team .el-dialog {
   .dialog-header {
     text-align: center;
     margin-bottom: 40px;

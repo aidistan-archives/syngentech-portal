@@ -1,10 +1,10 @@
 <i18n>
 en:
   _title: "Exploring the Power of Life"
-  subtitle: 'Enabling Biomedical Innovation with Information Technology'
+  subtitle: 'Enabling Biomedical Innovation with Synthetic Biological Technology'
 zh:
   _title: '探索生命的力量'
-  subtitle: '用信息技术赋能生物医药创新'
+  subtitle: '用合成生物学技术赋能生物医药创新'
 </i18n>
 
 <template>

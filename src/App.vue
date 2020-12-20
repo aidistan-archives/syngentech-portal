@@ -10,16 +10,24 @@
           mode="horizontal" menu-trigger="click"
           :default-active="navIndex" @select="onSelect"
         >
-          <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item>
-          <el-menu-item index="biopharma">{{ $t('nav.biopharma') }}</el-menu-item>
-          <el-menu-item index="research-service">{{ $t('nav.service') }}</el-menu-item>
-          <el-submenu index="more" :popper-class="navHome ? 'home' : ''">
-            <template slot="title">{{ $t('nav.more.title' )}}</template>
-            <el-menu-item index="about-us">{{ $t('nav.more.about') }}</el-menu-item>
-            <el-menu-item index="management-team">{{ $t('nav.more.management') }}</el-menu-item>
-            <el-menu-item index="our-investors">{{ $t('nav.more.investors') }}</el-menu-item>
-            <el-menu-item index="contact-us">{{ $t('nav.more.contact') }}</el-menu-item>
+          <!-- <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item> -->
+          <el-submenu index="about" :popper-class="navHome ? 'home' : ''">
+            <template slot="title">{{ $t('nav.about.title' )}}</template>
+            <el-menu-item index="about-us">{{ $t('nav.about.about') }}</el-menu-item>
+            <el-menu-item index="team">{{ $t('nav.about.team') }}</el-menu-item>
+            <el-menu-item index="our-investors">{{ $t('nav.about.investors') }}</el-menu-item>
+            <el-menu-item index="awards">{{ $t('nav.about.awards') }}</el-menu-item>
+            <el-menu-item index="contact-us">{{ $t('nav.about.contact') }}</el-menu-item>
           </el-submenu>
+          <el-menu-item index="news">{{ $t('nav.news') }}</el-menu-item>
+          <el-submenu index="biopharma" :popper-class="navHome ? 'home' : ''">
+            <template slot="title">{{ $t('nav.biopharma.title' )}}</template>
+            <el-menu-item index="synbio">{{ $t('nav.biopharma.synbio') }}</el-menu-item>
+            <el-menu-item index="science">{{ $t('nav.biopharma.science') }}</el-menu-item>
+            <el-menu-item index="pipeline">{{ $t('nav.biopharma.pipeline') }}</el-menu-item>
+          </el-submenu>
+          <el-menu-item index="clinical">{{ $t('nav.clinical') }}</el-menu-item>
+          <el-menu-item index="research-service">{{ $t('nav.service') }}</el-menu-item>
           <el-menu-item v-if="$i18n.locale === 'en'" index="zh">汉</el-menu-item>
           <el-menu-item v-else index="en">En</el-menu-item>
         </el-menu>

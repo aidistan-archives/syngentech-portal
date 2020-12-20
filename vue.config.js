@@ -17,7 +17,7 @@ module.exports = {
         staticDir: path.join(__dirname, 'dist'),
         routes: [
           '/biopharma', '/research-service',
-          '/about-us', '/management-team', '/our-investors', '/contact-us'
+          '/about-us', '/team', '/our-investors', '/contact-us'
         ]
       }))
     }

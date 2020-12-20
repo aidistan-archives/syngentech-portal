@@ -1,10 +1,9 @@
-
 <template>
   <div id="about" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
-      <h1>{{ $t('nav.more.about') }}</h1>
+      <h1>{{ $t('nav.about.about') }}</h1>
 
       <template v-if="$i18n.locale === 'zh'">
         <p>北京合生基因科技有限公司（以下简称“合生基因”）是致力于合成生物学在生物医药和生命健康领域应用的国家高新技术企业，专注于基于合成生物学技术的基因与细胞治疗药物研发及科研与临床服务。</p>
@@ -42,12 +41,12 @@ export default {
   name: 'about',
   data () {
     return {
-      banner: require('../assets/banner-3.jpg')
+      banner: require('../../assets/banner-3.jpg')
     }
   },
   computed: {
     title () {
-      return this.$t('nav.more.about') + ' | ' + this.$t('title')
+      return this.$t('nav.about.about') + ' | ' + this.$t('title')
     }
   },
   created () {
