@@ -1,75 +1,75 @@
 import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-import App from './App.vue'
-import router from './router'
+import Router from 'vue-router'
 import Element from 'element-ui'
-import enLocale from 'element-ui/lib/locale/lang/en'
-import zhLocale from 'element-ui/lib/locale/lang/zh-CN'
+import I18n from 'vue-i18n'
+import elementLocaleEn from 'element-ui/lib/locale/lang/en'
+import elementLocaleZh from 'element-ui/lib/locale/lang/zh-CN'
+import App from '@/App'
+import router from '@/router'
 import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(VueI18n)
-const i18n = new VueI18n({
-  // locale: 'zh', // only used for SPA prerender
+Vue.config.productionTip = false
+
+Vue.use(Router)
+Vue.use(I18n)
+Vue.use(Element, { i18n: (key, value) => i18n.t(key, value) })
+
+const i18n = new I18n({
   locale: /^zh/.test(navigator.language || navigator.userLanguage) ? 'zh' : 'en',
   messages: {
     en: {
       title: 'SyngenTech',
       nav: {
         home: 'Home',
-        about: {
-          title: 'About',
-          about: 'About Us',
-          team: 'Our Team',
-          investors: 'Our Investors',
-          awards: 'Awards',
-          contact: 'Contact Us'
-        },
-        news: 'News',
-        biopharma: {
-          title: 'Science & Pipeline',
-          synbio: 'Synthetic Biology',
-          science: 'Our Science',
-          pipeline: 'Product Pipeline'
-        },
+        //
+        about: 'Our Company',
+        overview: 'Overview',
+        teammates: 'Our Team',
+        investors: 'Our Investors',
+        awards: 'Our Awards',
+        contact: 'Contact Us',
+        //
+        news: 'Newsroom',
+        //
+        biopharma: 'Science & Pipeline',
+        synbio: 'Synthetic Biology',
+        science: 'Science Stories',
+        pipeline: 'Product Pipeline',
+        //
         clinical: 'Clinical Trials',
-        service: 'Service'
+        //
+        service: 'Services'
       },
-      copyright: 'All rights reserved © Beijing Syngentech Co., LTD. · <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>',
-      ...enLocale
+      ...elementLocaleEn
     },
     zh: {
       title: '合生基因',
       nav: {
         home: '首页',
-        about: {
-          title: '关于我们',
-          about: '公司简介',
-          team: '领导团队',
-          investors: '融资情况',
-          awards: '荣誉资质',
-          contact: '联系我们'
-        },
+        //
+        about: '关于我们',
+        overview: '公司简介',
+        teammates: '领导团队',
+        investors: '融资情况',
+        awards: '荣誉资质',
+        contact: '联系我们',
+        //
         news: '新闻资讯',
-        biopharma: {
-          title: '科学与产品管线',
-          synbio: '合成生物学背景',
-          science: '我们的科学',
-          pipeline: '产品管线'
-        },
+        //
+        biopharma: '科学与产品管线',
+        synbio: '合成生物学',
+        science: '药物研发',
+        pipeline: '产品管线',
+        //
         clinical: '临床研究',
+        //
         service: '科研服务'
       },
-      copyright: '版权所有 © 北京合生基因科技有限公司 · <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>',
-      ...zhLocale
+      ...elementLocaleZh
     }
   },
   silentFallbackWarn: true
 })
-
-Vue.use(Element, {
-  i18n: (key, value) => i18n.t(key, value)
-})
-Vue.config.productionTip = false
 
 new Vue({
   i18n,

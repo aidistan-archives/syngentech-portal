@@ -290,14 +290,11 @@ zh:
 </i18n>
 
 <template>
-  <div id="team" class="page">
+  <div id="teammates" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
-
-      <h2>
-        {{ $t('team-management') }}
-      </h2>
+      <h2>{{ $t('team-management') }}</h2>
 
       <el-row :gutter="20" type="flex" justify="space-around">
         <el-col :xs="8" :sm="6" @click.native="setDialog('cb')">
@@ -335,9 +332,7 @@ zh:
         </el-col>
       </el-row>
 
-      <h2>
-        {{ $t('team-consulting') }}
-      </h2>
+      <h2>{{ $t('team-consulting') }}</h2>
 
       <el-row :gutter="20" type="flex" justify="space-around">
         <el-col :xs="12" :sm="6" @click.native="setDialog('lyy')">
@@ -369,15 +364,13 @@ zh:
           <div class="title">{{ $t('gj.title') }}</div>
         </el-col>
       </el-row>
-
-      <Footer></Footer>
     </div>
 
     <el-dialog :visible="dialog !== null" :before-close="closeDialog">
       <div class="dialog-header">
         <el-image :src="images[dialog]"></el-image>
-        <h1>{{ $t(`${dialog}.name`) }}</h1>
-        <h2>{{ $t(`${dialog}.title`) }}</h2>
+        <h2>{{ $t(`${dialog}.name`) }}</h2>
+        <h3>{{ $t(`${dialog}.title`) }}</h3>
       </div>
       <div class="dialog-content" v-html="$t(`${dialog}.details`)"></div>
     </el-dialog>
@@ -385,12 +378,10 @@ zh:
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
-
 export default {
-  name: 'team',
+  name: 'teammates',
   data () {
-    let requireAsset = (f) => require(`../../assets/${f}`)
+    let requireAsset = (f) => require(`@/assets/${f}`)
 
     return {
       banner: requireAsset('banner-3.jpg'),
@@ -409,12 +400,12 @@ export default {
   },
   computed: {
     title () {
-      return this.$t('nav.about.team') + ' | ' + this.$t('title')
+      return this.$t('nav.teammates') + ' | ' + this.$t('title')
     }
   },
   created () {
     document.title = this.title
-    this.$emit('nav-index', 'team')
+    this.$emit('nav-index', 'teammates')
   },
   watch: {
     '$i18n.locale' () {
@@ -424,13 +415,14 @@ export default {
   methods: {
     setDialog (name) { this.dialog = name },
     closeDialog () { this.dialog = null }
-  },
-  components: { Footer }
+  }
 }
 </script>
 
 <style lang="scss">
-#team .content {
+@import '../utils.scss';
+
+#teammates .content {
   .el-row {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -438,7 +430,7 @@ export default {
 
   .el-image {
     margin: 30px;
-    @media screen and (max-width: 600px) { & { margin: 20px; } }
+    @include for-phone-only { margin: 20px; }
   }
 
   .name {
@@ -454,7 +446,11 @@ export default {
   }
 }
 
-#team .el-dialog {
+#teammates .el-dialog {
+  width: 80%;
+  @include for-tablet-up { width: 60%; }
+  @include for-desktop-up { width: 50%; }
+
   .dialog-header {
     text-align: center;
     margin-bottom: 40px;
@@ -468,7 +464,5 @@ export default {
       word-wrap: break-word;
     }
   }
-
-  @media screen and (max-width: 600px) { & { width: 80%; } }
 }
 </style>

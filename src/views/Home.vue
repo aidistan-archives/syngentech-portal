@@ -17,7 +17,6 @@ zh:
     <div class="dimmer">
       <div class="title">{{ $t('_title') }}</div>
       <div class="subtitle">{{ $t('subtitle') }}</div>
-      <div class="footer" v-html="$t('copyright')"></div>
     </div>
   </div>
 </template>
@@ -77,8 +76,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face { font-family: titleFont; src: url('../assets/title-font.ttf'); }
-
 #home {
   width: 100%;
   height: 100%;
@@ -101,34 +98,21 @@ export default {
 
   .title {
     padding-top: 1em;
-
+    color: #efefef;
+    font-size: 3.2rem;
     line-height: 1.1em;
-    font-size: 4rem;
-    font-family: titleFont;
     text-shadow: 0px 0px 5px #999;
   }
 
   .subtitle {
     padding-top: 0.5em;
-
-    font-size: 2rem;
-    font-family: titleFont;
-    opacity: 0.8;
+    color: #aaaaaa;
+    font-size: 1.6rem;
   }
 
   .title, .subtitle {
-    color: #efefef;
     text-align: center;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0.5em;
-
-    color: rgba(239, 239, 239, 0.618);
-    a { color: rgba(239, 239, 239, 0.618); }
+    font-family: titleFont;
   }
 }
 </style>

@@ -15,9 +15,14 @@ module.exports = {
     if (process.env.NODE_ENV === 'production') {
       config.plugins.push(new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
+        // HOW to update the routes here?
+        // 1. run the app in a browser with Vue.js devtools installed
+        // 2. select the root vue component and run following in the console:
+        //   console.log(JSON.stringify($vm.$router.options.routes.map(r => r.path)))
+        // 3. copy the output here and remove unneeded ones like '/' and '/blank'
         routes: [
-          '/biopharma', '/research-service',
-          '/about-us', '/team', '/our-investors', '/contact-us'
+          '/overview', '/our-team', '/our-investors', '/our-awards', '/contact-us',
+          '/news', '/synbio', '/science', '/pipeline', '/clinical'
         ]
       }))
     }

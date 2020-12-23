@@ -1,15 +1,16 @@
-import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/about/About.vue'
-import Awards from './views/about/Awards.vue'
-import Contact from './views/about/Contact.vue'
-import Investors from './views/about/Investors.vue'
-import Team from './views/about/Team.vue'
-import Biopharma from './views/Biopharma.vue'
-import Service from './views/Service.vue'
-
-Vue.use(Router)
+import Home from '@/views/Home.vue'
+import Blank from '@/views/Blank.vue'
+import Overview from '@/views/Overview.vue'
+import Teammates from '@/views/Teammates.vue'
+import Investors from '@/views/Investors.vue'
+// import Awards from '@/views/Awards.vue'
+import Contact from '@/views/Contact.vue'
+// import News from '@/views/News.vue'
+// import Synbio from '@/views/Synbio.vue'
+// import Science from '@/views/Science.vue'
+// import Pipeline from '@/views/Pipeline.vue'
+// import Clinical from '@/views/Clinical.vue'
 
 export default new Router({
   mode: 'history',
@@ -19,32 +20,48 @@ export default new Router({
     name: 'home',
     component: Home
   }, {
-    path: '/about-us',
-    name: 'about-us',
-    component: About
+    path: '/blank',
+    name: 'blank',
+    component: Blank
   }, {
-    path: '/team',
-    name: 'team',
-    component: Team
+    path: '/overview',
+    name: 'overview',
+    component: Overview
   }, {
-    path: '/our-investors',
-    name: 'our-investors',
+    path: '/teammates',
+    name: 'teammates',
+    component: Teammates
+  }, {
+    path: '/investors',
+    name: 'investors',
     component: Investors
   }, {
     path: '/awards',
     name: 'awards',
-    component: Awards
+    component: Blank // Awards
   }, {
-    path: '/contact-us',
-    name: 'contact-us',
+    path: '/contact',
+    name: 'contact',
     component: Contact
   }, {
-    path: '/biopharma',
-    name: 'biopharma',
-    component: Biopharma
+    path: '/news',
+    name: 'news',
+    component: Blank // News
   }, {
-    path: '/research-service',
-    name: 'research-service',
-    component: Service
+    path: '/synbio',
+    name: 'synbio',
+    component: Blank // Synbio
+  }, {
+    path: '/science',
+    name: 'science',
+    component: Blank // Science
+  }, {
+    path: '/pipeline',
+    name: 'pipeline',
+    component: Blank // Pipeline
+  }, {
+    path: '/clinical',
+    name: 'clinical',
+    component: Blank // Clinical
   }]
 })

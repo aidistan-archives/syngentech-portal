@@ -1,0 +1,18 @@
+/* Variables */
+
+$breakpoint-phone: 600px;
+$breakpoint-desktop: 900px;
+
+/* Mixins */
+
+@mixin for-phone-only {
+  @media screen and (max-width: $breakpoint-phone - 1) { @content; }
+}
+
+@mixin for-tablet-up {
+  @media screen and (min-width: $breakpoint-phone) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: $breakpoint-desktop) { @content; }
+}
