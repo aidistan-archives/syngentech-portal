@@ -21,5 +21,10 @@ module.exports = {
         ]
       }))
     }
+  },
+
+  devServer: {
+    // Open the default browser after server had been started
+    open: true
   }
 }
