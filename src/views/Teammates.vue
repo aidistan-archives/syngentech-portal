@@ -149,31 +149,17 @@ zh:
     details: >
       <ul>
         <li>曾任 德国拜耳公司 中国临床科学，主任</li>
-        <li>曾任 美国强生公司Janssen BioTherapeutics（JBIO），研发主任</li>
+        <li>曾任 美国强生公司 Janssen BioTherapeutics（JBIO），研发主任</li>
       </ul>
       <h3>履历简介</h3>
       <ul>
+        <li>2019年至今，北京合生基因科技有限公司，首席执行官</li>
         <li>2018年~2019年，德国拜耳公司的中国临床科学中心，主任</li>
-        <li>2015年~2018年，美国强生公司JBIO研发主任，中国区负责人</li>
+        <li>2015年~2018年，美国强生公司 JBIO 研发主任，中国区负责人</li>
         <li>2008年~2015年，强生药物研发部，总监/副总监 兼 临床药理带头人</li>
         <li>2005年~2008年，美国安进公司药物研发部，科学带头人</li>
         <li>2004年~2005年，俄亥俄州立大学药学院，博士后</li>
         <li>2000年~2004年，内华达大学拉斯维加斯分校生物医学工程，博士</li>
-      </ul>
-  jy:
-    name: 蒋云, MBA
-    title: 首席运营官
-    details: >
-      <ul>
-        <li>亚太肝病技术联盟肝癌专委会委员，副秘书长</li>
-        <li>科技部人才中心科技创新CEO特训营，第四期</li>
-        <li>北京市科委G20高级研修班，第四期</li>
-      </ul>
-      <h3>履历简介</h3>
-      <ul>
-        <li>2014年至今，北京合生基因科技有限公司，联合创始人</li>
-        <li>2017年~2019年，UIBE-CTU MBA</li>
-        <li>2012年~2014年，清华大学信息科学与技术国家实验室</li>
       </ul>
   xz:
     name: 谢震, PhD
@@ -185,37 +171,105 @@ zh:
         <li>清华大学北京信息科学与技术国家研究中心，研究员</li>
         <li>清华大学合成与系统生物学中心，研究员</li>
         <li>农业部农业转基因生物安全委员会，委员</li>
-        <li>麻省理工学院（MIT）TR35中国科技青年英雄榜评审委员会，委员</li>
+        <li>麻省理工学院 TR35 中国科技青年英雄榜评审委员会，委员</li>
       </ul>
       <h3>履历简介</h3>
       <ul>
-        <li>2012年至今 ，清华大学北京信息科学与技术国家研究中心，特别研究员</li>
-        <li>2010年~2012年 ，美国麻省理工学院（MIT）生物工程系计算机科学与人工智能实验室，博士后</li>
-        <li>2006年~2010年，美国哈佛大学FAS系统生物学中心，博士后</li>
-        <li>2001年~2006年，美国内华达大学拉斯维加斯分校, 博士</li>
+        <li>2014年至今，北京合生基因科技有限公司，首席科学家</li>
+        <li>2012年至今，清华大学北京信息科学与技术国家研究中心，特别研究员</li>
+        <li>2010年~2012年，美国麻省理工学院生物工程系计算机科学与人工智能实验室，博士后</li>
+        <li>2006年~2010年，美国哈佛大学 FAS 系统生物学中心，博士后</li>
+        <li>2001年~2006年，美国内华达大学拉斯维加斯分校，博士</li>
       </ul>
-  lyy:
-    name: 陆荫英, PhD
-    title: 首席医学官
+  jy:
+    name: 蒋云, MBA
+    title: 首席运营官
     details: >
       <ul>
-        <li>副教授，硕士生导师</li>
-        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副主任医师</li>
-        <li>美国国家肿瘤研究院，访问学者</li>
-        <li>北京市肝病学会青委会，副主委</li>
-        <li>清华大学合成与系统生物中心PI</li>
-        <li>亚太肝病技术联盟肝癌学术委员会，主委</li>
-        <li>中国研究型医院协会/分子诊断专委会，副主委</li>
-        <li>北京市健康促进会/肝胆胰肿瘤分会，副主委</li>
-        <li>欧美同学会/医师协会青委会，秘书长</li>
-        <li>欧美同学会/NIH中国学者联谊会，副秘书长</li>
-        <li>CSCO 肝癌分会/肿瘤免疫学分会，学术委员</li>
+        <li>亚太肝病技术联盟肝癌专委会委员，副秘书长</li>
+        <li>科技部人才中心科技创新 CEO 特训营，第四期</li>
+        <li>北京市科委 G20 高级研修班，第四期</li>
       </ul>
       <h3>履历简介</h3>
       <ul>
-        <li>2012年~2013年，美国国立卫生研究院，访问学者</li>
-        <li>2010年~2015年，解放军第302医院肝脏肿瘤诊疗与研究中心，副主任</li>
-        <li>2008年~2010年，解放军第302医院，副主任医师</li>
+        <li>2014年至今，北京合生基因科技有限公司，联合创始人</li>
+        <li>2017年~2019年，UIBE-CTU MBA</li>
+        <li>2012年~2014年，清华大学信息科学与技术国家实验室</li>
+      </ul>
+  hhy:
+    name: 黄慧雅, PhD
+    title: 新药研发部执行总监
+    details: >
+      <ul>
+        <li>清华大学自动化系控制科学与工程，博士</li>
+        <li>负责 SynOV 平台的早期开发、药学研究、临床前研究和中、美 IND 申报工作</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2019年至今，北京合生基因科技有限公司，新药研发部执行总监</li>
+        <li>2015年~2019年，北京合生基因科技有限公司，新药研发部总监</li>
+        <li>2013年~2019年，清华大学自动化系控制科学与工程，博士</li>
+        <li>2008年~2012年，中国科学院植物研究所，硕士</li>
+      </ul>
+  lyq:
+    name: 刘乙齐, PhD
+    title: 新药研发部副总监
+    details: >
+      <ul>
+        <li>浙江大学医学院免疫学系，博士</li>
+        <li>负责参与 SynOV 平台的早期开发、药学研究和中、美 IND 申报工作</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2015年至今，北京合生基因科技有限公司，新药研发部副总监</li>
+        <li>2009年~2015年，第二军医大学免疫学研究所国家免疫学重点实验室 / 浙江大学医学院免疫学系，博士</li>
+      </ul>
+  psg:
+    name: 彭曙光
+    title: 转化医学部总监
+    details: >
+      <ul>
+        <li>负责参与 SynOV 平台的临床前研究和中、美 IND 申报工作</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2017年至今，北京合生基因科技有限公司，转化医学部总监</li>
+        <li>2015年~2018年，清华大学自动化系，硕士</li>
+      </ul>
+  ron:
+    name: Ron Weiss, PhD
+    title: 顾问
+    details: >
+      <ul>
+        <li>麻省理工学院合成生物学中心，主任</li>
+        <li>合成生物学先驱</li>
+        <li>研究领域涉及生物物理学、计算建模、微生物系统、合成生物学、系统生物学、组织工程</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2009年至今，麻省理工学院，生物工程系 / 电气工程与计算机科学系，教授</li>
+        <li>2001年~2009年，普林斯顿大学，教授</li>
+        <li>1996年~2001年，麻省理工学院，博士</li>
+      </ul>
+  hugh:
+    name: Hugh Davis, PhD
+    title: 顾问
+    details: >
+      <ul>
+        <li>博奥信首席运营官，兼博奥信美国分公司总裁</li>
+        <li>曾任 方达医药 首席商务官</li>
+        <li>曾任 强生公司 副总裁，兼杨森生物制剂部生物制剂开发 科研主管</li>
+        <li>曾任 强生公司 副总裁，兼生物制剂临床 药理主管</li>
+        <li>曾任 葛兰素史克临床药理学部 药效学和探索性研究实验室 负责人</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2020年至今，博奥信首席运营官 ，兼博奥信美国分公司总裁</li>
+        <li>2018年~2020年，方达控股公司，商务总监</li>
+        <li>2001年~2018年，美国强生公司 JBIO</li>
+        <li>1996年~2001年，葛兰素史克临床药理学部</li>
+        <li>1984年起，美国维拉诺瓦大学化学系，兼职教工</li>
+        <li>1983年~1985年，美国维拉诺瓦大学化学系，博士学位</li>
       </ul>
   zxg:
     name: 张学工, PhD
@@ -241,6 +295,77 @@ zh:
         <li>1996年~2002年，清华大学自动化系 模式识别理论及应用，副教授</li>
         <li>1994年~1996年，清华大学自动化系，讲师</li>
       </ul>
+  lj:
+    name: 刘建, PhD
+    title: 顾问
+    details: >
+      <ul>
+        <li>前任强生全球药物开发PDMS中国区总负责人</li>
+        <li>曾在加拿大女王大学获得博士学位</li>
+        <li>曾在美国哈佛大学医学院完成博士后研究</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2018年至今，百济神州，高级副总裁</li>
+      </ul>
+  zht:
+    name: 赵海涛, PhD
+    title: 顾问
+    details: >
+      <ul>
+        <li>北京协和医院肝脏外科，主任</li>
+        <li>中国医科院优秀青年科技工作者</li>
+        <li>教育部新世纪优秀人才</li>
+        <li>科技部中青年科技创新领军人才</li>
+        <li>欧美同学会医师协会肝胆分会秘书长兼副会长</li>
+        <li>HBSN（SCI收录）杂志副主编</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2015年，获卫计委主任医师资格</li>
+        <li>2009年，美国芝加哥大学及哈佛大学医学院，访问学者</li>
+        <li>2007年~2010年，北京协和医学院，外科博士</li>
+        <li>1989年~1994年，北京大学医学部，医学学士</li>
+        <li>1997年~2001年，北京大学医学部，外科硕士</li>
+      </ul>
+  lyy:
+    name: 陆荫英, PhD
+    title: 首席医学官？？？
+    details: >
+      <ul>
+        <li>副教授，硕士生导师</li>
+        <li>解放军302医院肝脏肿瘤诊疗与研究中心主任，副主任医师</li>
+        <li>美国国家肿瘤研究院，访问学者</li>
+        <li>北京市肝病学会青委会，副主委</li>
+        <li>清华大学合成与系统生物中心PI</li>
+        <li>亚太肝病技术联盟肝癌学术委员会，主委</li>
+        <li>中国研究型医院协会/分子诊断专委会，副主委</li>
+        <li>北京市健康促进会/肝胆胰肿瘤分会，副主委</li>
+        <li>欧美同学会/医师协会青委会，秘书长</li>
+        <li>欧美同学会/NIH中国学者联谊会，副秘书长</li>
+        <li>CSCO 肝癌分会/肿瘤免疫学分会，学术委员</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2012年~2013年，美国国立卫生研究院，访问学者</li>
+        <li>2010年~2015年，解放军第302医院肝脏肿瘤诊疗与研究中心，副主任</li>
+        <li>2008年~2010年，解放军第302医院，副主任医师</li>
+      </ul>
+  wxw:
+    name: 汪小我, PhD
+    title: 顾问
+    details: >
+      <ul>
+        <li>副教授，博士生导师</li>
+        <li>清华大学信息科学与技术国家实验室生物信息学部</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2016年至今，清华大学，自动化系，长聘副教授（Tenure，PI，博士生导师）</li>
+        <li>2012年~2013年，美国加州大学伯克利分校，唐氏访问学者</li>
+        <li>2011年~2015年，清华大学，自动化系，副教授</li>
+        <li>2008年~2011年，清华大学，自动化系，讲师</li>
+      </ul>
   ls:
     name: 李梢, PhD
     title: 顾问
@@ -257,21 +382,6 @@ zh:
         <li>2004年~2009年，清华大学自动化系、生物信息学教育部重点实验室副，研究员</li>
         <li>2003年~2004年，清华大学自动化系、生物信息学教育部重点实验室，讲师 </li>
         <li>2001年~2003年，清华大学自动化系、生物信息学教育部重点实验室，博士后</li>
-      </ul>
-  wxw:
-    name: 汪小我, PhD
-    title: 顾问
-    details: >
-      <ul>
-        <li>副教授，博士生导师</li>
-        <li>清华大学信息科学与技术国家实验室生物信息学部</li>
-      </ul>
-      <h3>履历简介</h3>
-      <ul>
-        <li>2016年至今，清华大学，自动化系，长聘副教授（Tenure，PI，博士生导师）</li>
-        <li>2012年~2013年，美国加州大学伯克利分校，唐氏访问学者</li>
-        <li>2011年~2015年，清华大学，自动化系，副教授</li>
-        <li>2008年~2011年，清华大学，自动化系，讲师</li>
       </ul>
   gj:
     name: 古槿, PhD
@@ -294,85 +404,38 @@ zh:
     <el-image :src="banner" fit="cover"></el-image>
 
     <div class="content">
+      <h1>{{ $t('nav.teammates') }}</h1>
+
       <h2>{{ $t('team-management') }}</h2>
-
-      <el-row :gutter="20" type="flex" justify="space-around">
-        <el-col :xs="8" :sm="6" @click.native="setDialog('cb')">
-          <el-image :src="images['cb']"></el-image>
-          <div class="name">{{ $t('cb.name') }}</div>
-          <div class="title">{{ $t('cb.title') }}</div>
-        </el-col>
-        <el-col :xs="8" :sm="6" @click.native="setDialog('xz')">
-          <el-image :src="images['xz']"></el-image>
-          <div class="name">{{ $t('xz.name') }}</div>
-          <div class="title">{{ $t('xz.title') }}</div>
-        </el-col>
-        <el-col :xs="8" :sm="6" @click.native="setDialog('jy')">
-          <el-image :src="images['jy']"></el-image>
-          <div class="name">{{ $t('jy.name') }}</div>
-          <div class="title">{{ $t('jy.title') }}</div>
-        </el-col>
-      </el-row>
-
-      <el-row :gutter="20" type="flex" justify="space-around">
-        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
-          <el-image :src="images['hyy']"></el-image>
-          <div class="name">{{ $t('hyy.name') }}</div>
-          <div class="title">{{ $t('hyy.title') }}</div>
-        </el-col>
-        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
-          <el-image :src="images['lyq']"></el-image>
-          <div class="name">{{ $t('lyq.name') }}</div>
-          <div class="title">{{ $t('lyq.title') }}</div>
-        </el-col>
-        <el-col :xs="8" :sm="6" @click.native="setDialog('lyy')">
-          <el-image :src="images['psg']"></el-image>
-          <div class="name">{{ $t('psg.name') }}</div>
-          <div class="title">{{ $t('psg.title') }}</div>
+      <el-row v-for="(a, i) in leaders" :key="i"
+        :gutter="20" type="flex" justify="space-around">
+        <el-col v-for="(p, i) in a" :key="i"
+          :xs="8" :sm="6" @click.native="setDialog(p)">
+          <el-image :src="portraits[p]"></el-image>
+          <div class="name">{{ $t(`${p}.name`) }}</div>
+          <div class="title">{{ $t(`${p}.title`) }}</div>
         </el-col>
       </el-row>
 
       <h2>{{ $t('team-consulting') }}</h2>
-
-      <el-row :gutter="20" type="flex" justify="space-around">
-        <el-col :xs="12" :sm="6" @click.native="setDialog('lyy')">
-          <el-image :src="images['lyy']"></el-image>
-          <div class="name">{{ $t('lyy.name') }}</div>
-          <div class="title">{{ $t('lyy.title') }}</div>
-        </el-col>
-      </el-row>
-
-      <el-row :gutter="10">
-        <el-col :xs="12" :sm="6" @click.native="setDialog('zxg')">
-          <el-image :src="images['zxg']"></el-image>
-          <div class="name">{{ $t('zxg.name') }}</div>
-          <div class="title">{{ $t('zxg.title') }}</div>
-        </el-col>
-        <el-col :xs="12" :sm="6" @click.native="setDialog('ls')">
-          <el-image :src="images['ls']"></el-image>
-          <div class="name">{{ $t('ls.name') }}</div>
-          <div class="title">{{ $t('ls.title') }}</div>
-        </el-col>
-        <el-col :xs="12" :sm="6" @click.native="setDialog('wxw')">
-          <el-image :src="images['wxw']"></el-image>
-          <div class="name">{{ $t('wxw.name') }}</div>
-          <div class="title">{{ $t('wxw.title') }}</div>
-        </el-col>
-        <el-col :xs="12" :sm="6" @click.native="setDialog('gj')">
-          <el-image :src="images['gj']"></el-image>
-          <div class="name">{{ $t('gj.name') }}</div>
-          <div class="title">{{ $t('gj.title') }}</div>
+      <el-row v-for="(a, i) in consultors" :key="i"
+        :gutter="20" type="flex" justify="space-around">
+        <el-col v-for="(p, i) in a" :key="i"
+          :xs="8" :sm="6" @click.native="setDialog(p)">
+          <el-image :src="portraits[p]"></el-image>
+          <div class="name">{{ $t(`${p}.name`) }}</div>
+          <div class="title">{{ $t(`${p}.title`) }}</div>
         </el-col>
       </el-row>
     </div>
 
-    <el-dialog :visible="dialog !== null" :before-close="closeDialog">
+    <el-dialog :visible.sync="dialog" @closed="unsetDialog">
       <div class="dialog-header">
-        <el-image :src="images[dialog]"></el-image>
-        <h2>{{ $t(`${dialog}.name`) }}</h2>
-        <h3>{{ $t(`${dialog}.title`) }}</h3>
+        <el-image :src="portraits[focus]"></el-image>
+        <h2>{{ $t(`${focus}.name`) }}</h2>
+        <h3>{{ $t(`${focus}.title`) }}</h3>
       </div>
-      <div class="dialog-content" v-html="$t(`${dialog}.details`)"></div>
+      <div class="dialog-content" v-html="$t(`${focus}.details`)"></div>
     </el-dialog>
   </div>
 </template>
@@ -381,21 +444,32 @@ zh:
 export default {
   name: 'teammates',
   data () {
-    let requireAsset = (f) => require(`@/assets/${f}`)
+    let portrait = (name) => require(`@/assets/portraits/${name}`)
 
     return {
-      banner: requireAsset('banner-3.jpg'),
-      images: {
-        cb: requireAsset('高管-陈彬.png'),
-        jy: requireAsset('高管-蒋云.png'),
-        xz: requireAsset('高管-谢震.png'),
-        lyy: requireAsset('高管-陆荫英.png'),
-        zxg: requireAsset('顾问-张学工.png'),
-        ls: requireAsset('顾问-李梢.png'),
-        wxw: requireAsset('顾问-汪小我.png'),
-        gj: requireAsset('顾问-古槿.png')
+      banner: require('@/assets/banner-3.jpg'),
+      leaders: [['cb', 'xz', 'jy'], ['hhy', 'lyq', 'psg']],
+      consultors: [['ron', 'hugh', 'zxg'], ['lj', 'zht', 'lyy'], ['wxw', 'ls', 'gj']],
+      portraits: {
+        cb: portrait('陈彬.png'),
+        xz: portrait('谢震.png'),
+        jy: portrait('蒋云.png'),
+        hhy: portrait('黄慧雅.png'),
+        lyq: portrait('刘乙齐.png'),
+        psg: portrait('彭曙光.png'),
+
+        ron: portrait('Ron_Weiss.png'),
+        hugh: portrait('Hugh_Davis.png'),
+        zxg: portrait('张学工.png'),
+        lj: portrait('刘建.png'),
+        zht: portrait('赵海涛.png'),
+        lyy: portrait('陆荫英.png'),
+        wxw: portrait('汪小我.png'),
+        ls: portrait('李梢.png'),
+        gj: portrait('古槿.png')
       },
-      dialog: null
+      dialog: false,
+      focus: null
     }
   },
   computed: {
@@ -413,8 +487,13 @@ export default {
     }
   },
   methods: {
-    setDialog (name) { this.dialog = name },
-    closeDialog () { this.dialog = null }
+    setDialog (person) {
+      this.focus = person
+      this.dialog = true
+    },
+    unsetDialog () {
+      this.focus = null
+    }
   }
 }
 </script>

@@ -4,9 +4,9 @@ en:
   2017: "Series A Funding: LOTUS LAKE VENTURES, GOZAP VENTURES"
   2016: "Angel Round"
 zh:
-  2018: "PreB轮：君岳共享"
+  2018: "Pre B 轮：君岳共享"
   2017: >
-    A轮：荷塘创投<small>（前启迪创投）</small>，格致璞
+    A 轮：荷塘创投<small>（前启迪创投）</small>，格致璞
   2016: "天使轮"
 </i18n>
 

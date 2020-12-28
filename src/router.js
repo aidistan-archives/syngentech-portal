@@ -4,7 +4,7 @@ import Blank from '@/views/Blank.vue'
 import Overview from '@/views/Overview.vue'
 import Teammates from '@/views/Teammates.vue'
 import Investors from '@/views/Investors.vue'
-// import Awards from '@/views/Awards.vue'
+import Awards from '@/views/Awards.vue'
 import Contact from '@/views/Contact.vue'
 // import News from '@/views/News.vue'
 // import Synbio from '@/views/Synbio.vue'
@@ -38,7 +38,7 @@ export default new Router({
   }, {
     path: '/awards',
     name: 'awards',
-    component: Blank // Awards
+    component: Awards
   }, {
     path: '/contact',
     name: 'contact',

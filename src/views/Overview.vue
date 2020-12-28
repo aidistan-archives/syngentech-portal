@@ -2,7 +2,7 @@
   <div id="overview" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div class="content">
+    <div :class="['content', $i18n.locale]">
       <h1>{{ $t('nav.overview') }}</h1>
 
       <template v-if="$i18n.locale === 'zh'">

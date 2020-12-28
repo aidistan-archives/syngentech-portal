@@ -88,6 +88,8 @@ body {
     line-height: 1.5em;
   }
 
-  p.zh { text-indent: 2em; }
+  &.zh p {
+    text-indent: 2em;
+  }
 }
 </style>
