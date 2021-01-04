@@ -6,7 +6,7 @@ import Teammates from '@/views/Teammates.vue'
 import Investors from '@/views/Investors.vue'
 import Awards from '@/views/Awards.vue'
 import Contact from '@/views/Contact.vue'
-// import News from '@/views/News.vue'
+import News from '@/views/News.vue'
 // import Synbio from '@/views/Synbio.vue'
 // import Science from '@/views/Science.vue'
 // import Pipeline from '@/views/Pipeline.vue'
@@ -46,7 +46,7 @@ export default new Router({
   }, {
     path: '/news',
     name: 'news',
-    component: Blank // News
+    component: News
   }, {
     path: '/synbio',
     name: 'synbio',

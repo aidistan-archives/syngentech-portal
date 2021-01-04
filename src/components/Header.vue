@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../utils.scss";
+@import "@/utils.scss";
 
 .header {
   width: 100%;

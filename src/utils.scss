@@ -16,3 +16,10 @@ $breakpoint-desktop: 900px;
 @mixin for-desktop-up {
   @media screen and (min-width: $breakpoint-desktop) { @content; }
 }
+
+@mixin line-clamp($line_number) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line_number;
+  overflow: hidden;
+}

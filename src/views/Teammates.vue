@@ -499,7 +499,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../utils.scss';
+@import '@/utils.scss';
 
 #teammates .content {
   .el-row {
