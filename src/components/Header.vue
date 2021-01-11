@@ -24,9 +24,9 @@
           <template slot="title">{{ $t('nav.biopharma' )}}</template>
           <el-menu-item index="synbio">{{ $t('nav.synbio') }}</el-menu-item>
           <el-menu-item index="science">{{ $t('nav.science') }}</el-menu-item>
-          <el-menu-item index="pipeline">{{ $t('nav.pipeline') }}</el-menu-item>
         </el-submenu>
-        <el-menu-item index="clinical">{{ $t('nav.clinical') }}</el-menu-item>
+        <el-menu-item index="pipeline">{{ $t('nav.pipeline') }}</el-menu-item>
+        <!-- <el-menu-item index="clinical">{{ $t('nav.clinical') }}</el-menu-item> -->
         <el-menu-item index="service">
           <a href="/service">{{ $t('nav.service') }}</a>
         </el-menu-item>

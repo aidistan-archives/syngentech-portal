@@ -81,8 +81,8 @@ body {
   h2 { border-left: solid #39b9e6 5px; }
   h3 { border-left: solid #999999 5px; }
 
-  * + h1 { margin-top: 60px; }
-  * + h2 { margin-top: 40px; }
+  * + h1,
+  * + h2 { margin-top: 1em; }
 
   p, li {
     line-height: 1.5em;

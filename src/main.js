@@ -31,10 +31,11 @@ const i18n = new I18n({
         //
         news: 'Newsroom',
         //
-        biopharma: 'Science & Pipeline',
+        biopharma: 'Science',
         synbio: 'Synthetic Biology',
-        science: 'Science Stories',
-        pipeline: 'Product Pipeline',
+        science: 'Our Science',
+        //
+        pipeline: 'Pipeline',
         //
         clinical: 'Clinical Trials',
         //
@@ -56,9 +57,10 @@ const i18n = new I18n({
         //
         news: '新闻资讯',
         //
-        biopharma: '科学与产品管线',
+        biopharma: '科学与研发',
         synbio: '合成生物学',
         science: '药物研发',
+        //
         pipeline: '产品管线',
         //
         clinical: '临床研究',

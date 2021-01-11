@@ -108,10 +108,9 @@ export default {
   }
 
   .news.content {
-    max-width: 600px;
-
     img {
       width: 100%;
+      max-width: 600px;
     }
 
     .el-button {

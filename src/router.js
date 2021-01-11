@@ -7,9 +7,9 @@ import Investors from '@/views/Investors.vue'
 import Awards from '@/views/Awards.vue'
 import Contact from '@/views/Contact.vue'
 import News from '@/views/News.vue'
-// import Synbio from '@/views/Synbio.vue'
-// import Science from '@/views/Science.vue'
-// import Pipeline from '@/views/Pipeline.vue'
+import Synbio from '@/views/Synbio.vue'
+import Science from '@/views/Science.vue'
+import Pipeline from '@/views/Pipeline.vue'
 // import Clinical from '@/views/Clinical.vue'
 
 export default new Router({
@@ -50,15 +50,15 @@ export default new Router({
   }, {
     path: '/synbio',
     name: 'synbio',
-    component: Blank // Synbio
+    component: Synbio
   }, {
     path: '/science',
     name: 'science',
-    component: Blank // Science
+    component: Science
   }, {
     path: '/pipeline',
     name: 'pipeline',
-    component: Blank // Pipeline
+    component: Pipeline
   }, {
     path: '/clinical',
     name: 'clinical',
