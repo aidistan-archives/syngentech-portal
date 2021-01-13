@@ -48,9 +48,13 @@ en:
         <li>2006 - 2010, Postdoctoral Fellow, FAS Center for Systems Biology, Harvard University, USA</li>
         <li>2001 - 2006, Doctor, University of Nevada, Las Vegas, USA</li>
       </ul>
+  zht:
+    name: Haitao Zhao, PhD
+    title: Advisor
+    details:
   lyy:
     name: Yinying Lu, PhD
-    title: Chief Medical Officer
+    title: Advisor
     details: >
       <ul>
         <li>Associate Professor</li>
@@ -72,6 +76,14 @@ en:
         <li>2010 - 2015, Deputy Director, Liver Cancer Diagnosis, Treatment and Research Center, 302 People's Liberation Army Hospital</li>
         <li>2008 - 2010, Associate Chief Physician, 302 People's Liberation Army Hospital</li>
       </ul>
+  ron:
+    name: Ron Weiss, PhD
+    title: Advisor
+    details:
+  hugh:
+    name: Hugh Davis, PhD
+    title: Advisor
+    details:
   zxg:
     name: Xuegong Zhang, PhD
     title: Advisor
@@ -330,7 +342,7 @@ zh:
       </ul>
   lyy:
     name: 陆荫英, PhD
-    title: 首席医学官？？？
+    title: 顾问
     details: >
       <ul>
         <li>副教授，硕士生导师</li>
@@ -448,8 +460,8 @@ export default {
 
     return {
       banner: require('@/assets/banner-3.jpg'),
-      leaders: [['cb', 'xz', 'jy'], ['hhy', 'lyq', 'psg']],
-      consultors: [['ron', 'hugh', 'zxg'], ['lj', 'zht', 'lyy'], ['wxw', 'ls', 'gj']],
+      leaders: [['cb', 'xz', 'jy']],
+      consultors: [['ron', 'hugh', 'zxg'], ['zht', 'lyy'], ['wxw', 'ls', 'gj']],
       portraits: {
         cb: portrait('陈彬.png'),
         xz: portrait('谢震.png'),
