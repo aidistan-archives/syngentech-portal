@@ -1,11 +1,18 @@
+<i18n>
+en:
+  return: Return to Newsroom
+zh:
+  return: 返回新闻列表
+</i18n>
+
 <template>
   <div id="news" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
     <div v-if="date" :class="['news', 'content', $i18n.locale]">
-      <h2>{{ news[date].title }}</h2>
-      <div v-html="news[date].content"></div>
-      <el-button icon="el-icon-back" round @click="close">返回新闻列表</el-button>
+      <h2>{{ news[date][$i18n.locale].title }}</h2>
+      <div v-html="news[date][$i18n.locale].content"></div>
+      <el-button icon="el-icon-back" round @click="close">{{ $t('return') }}</el-button>
     </div>
 
     <div v-else :class="['list', 'content', $i18n.locale]">
@@ -15,11 +22,11 @@
         :gutter="20" @click.native="open(date)"
       >
         <el-col :xs="24" :sm="{span: 12, push: (index % 2) ? 12 : 0}">
-          <el-image :src="news[date].cover" fit="cover"></el-image>
+          <el-image :src="news[date][$i18n.locale].cover" fit="cover"></el-image>
         </el-col>
         <el-col :xs="24" :sm="{span: 12, pull: (index % 2) ? 12 : 0}">
-          <div class="title">{{ news[date].title }}</div>
-          <div class="abstract">{{ news[date].abstract }}</div>
+          <div class="title">{{ news[date][$i18n.locale].title }}</div>
+          <div class="abstract">{{ news[date][$i18n.locale].abstract }}</div>
         </el-col>
       </el-row>
     </div>

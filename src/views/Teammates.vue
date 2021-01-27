@@ -7,12 +7,18 @@ en:
     title: Chief Executive Officer
     details: >
       <ul>
-        <li>2018 - 2019, Head of Translational Sciences Asia (former Clinical Sciences China) in Bayer</li>
+        <li>Former Head of Translational Sciences Asia (former Clinical Sciences in China) at Bayer</li>
+        <li>Former Scientific Director & Early Development Scientific Leader of China Biologics Initiative in Janssen BioTherapeutics of Johnson & Johnson</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2019, Beijing SyngenTech Co., Ltd., CEO</li>
+        <li>2018 - 2019, Head of Translational Sciences Asia (former Clinical Sciences in China) at Bayer</li>
         <li>2015 - 2018, Scientific Director & Early Development Scientific Leader of China Biologics Initiative in Janssen BioTherapeutics of Johnson & Johnson</li>
         <li>2008 - 2015, Scientific Director of Global Clinical Pharmacology in Janssen R&D of Johnson & Johnson</li>
-        <li>2005 - 2008, Scientist and PKDM Lead in Amgen</li>
+        <li>2005 - 2008, Scientist and PKDM Leader in Amgen</li>
         <li>2004 - 2005, Postdoctoral Fellow in College of Pharmacy at the Ohio State University</li>
-        <li>2000 - 2004, Master and Ph.D. in Biomedical Engineering at University of Nevada, Las Vegas</li>
+        <li>2000 - 2004, Ph.D. in Biomedical Engineering at University of Nevada, Las Vegas</li>
       </ul>
   jy:
     name: Yun Jiang, MBA
@@ -23,7 +29,7 @@ en:
         <li>Participate in the 4th Special Training Camp for CEO of Science and Technology Innovation, Ministry of Science and Technology Talent Center</li>
         <li>Participate in the 4th G20 Advanced Seminar of the Beijing Science and Technology Commission</li>
       </ul>
-      <h3>CV Profile</h3>
+      <h3>Experiences</h3>
       <ul>
         <li>Since 2014, Co-Founder, SyngenTech Co., Ltd.</li>
         <li>2017 - 2019, UIBE-CTU MBA</li>
@@ -34,24 +40,152 @@ en:
     title: Chief Science Officer
     details: >
       <ul>
-        <li>National Special Advisor</li>
+        <li>National Distinguished Expert</li>
         <li>High-End Leading Talents of Zhongguancun</li>
-        <li>Principle Investigator of Tsinghua Beijing National Research Center for Information Science and Technology of Center for Synthetic and Systems Biology of Automation in Tsinghua university</li>
+        <li>Principle Researcherof Bei jing National Research Center for Information Science and Technology of Center for Synthetic and Systems Biology of Automation , Tsinghua university</li>
         <li>Member of Agricultural GMO Safety Committee in Ministry of Agriculture</li>
-        <li>Member of TR35 China science and Technology Young Heroes’ List committee in Massachusetts Institute of Technology (MIT)</li>
+        <li>Member of f the TR35 China Science and Technology Young Heroes Review Committee in Massachusetts Institute of Technology (MIT)</li>
       </ul>
-      <h3>CV Profile</h3>
+      <h3>Experiences</h3>
       <ul>
-        <li>Since 2012, Special Researcher, Tsinghua Beijing National Research Center for Information Science, Tsinghua University</li>
+        <li>Since 2014, Chief Scientist Officer, Beijing SyngenTech Co., Ltd.</li>
+        <li>Since 2012, Special Researcher,  Beijing National Research Center for Information Science, Tsinghua University</li>
         <li>Since 2012, Special Researcher, Technology of Center for Synthetic and Systems Biology of Automation, Tsinghua University</li>
         <li>2010 - 2012, Postdoctoral Fellow, Computer Science and Artificial Intelligence Laboratory, Department of Biological Engineering, Massachusetts Institute of Technology (MIT), USA</li>
         <li>2006 - 2010, Postdoctoral Fellow, FAS Center for Systems Biology, Harvard University, USA</li>
-        <li>2001 - 2006, Doctor, University of Nevada, Las Vegas, USA</li>
+        <li>2001 - 2006, Ph.D, University of Nevada, Las Vegas, USA</li>
+      </ul>
+  hhy:
+    name: Huiya Huang, PhD
+    title: Executive Director of New Drug R&D Department
+    details: >
+      <ul>
+        <li>PhD, Control Science and Engineering, Department of Automation, Tsinghua University</li>
+        <li>Responsible for the early development of the SynOV platform, pharmaceutical research, preclinical research and Sino-US IND application</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2019,  Executive Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>2015-2019, Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>2013-2019, PhD,  Control Science and Engineering, Department of Automation, Tsinghua University</li>
+        <li>2008-2012, Master, Institute of Botany, Chinese Academy of Sciences</li>
+      </ul>
+  lyq:
+    name: Yiqi Liu , PhD
+    title: Deputy Director of New Drug R&D Department
+    details: >
+      <ul>
+        <li>PhD, Department of Immunology, Medical College, Zhejiang University</li>
+        <li>Responsible for participating in the early development of the SynOV platform, pharmaceutical research, and China and the United States IND application work</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2015,  Deputy Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>2009-2015, National Key Laboratory of Immunology, Institute of Immunology, Second Military Medical University /Ph.D, Department of Immunology, Medical College, Zhejiang University</li>
+      </ul>
+  psg:
+    name: Shuguang Peng
+    title: Director of Translational Medicine Department
+    details: >
+      <ul>
+        <li>Responsible for participating in the preclinical research of the SynOV platform and the IND application for China and the United States</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2017, Director of Translational Medicine Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>2015-2018, Master, Department of Automation, Tsinghua University</li>
+      </ul>
+  ron:
+    name: Ron Weiss, PhD
+    title: Advisor
+    details: >
+      <ul>
+        <li>Director, Center for Synthetic Biology, Massachusetts Institute of Technology</li>
+        <li>Pioneer of Synthetic Biology</li>
+        <li>Research fields involve biophysics, computational modeling, microbial systems, synthetic biology, systems biology, tissue engineering</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2009, Massachusetts Institute of Technology, Department of Biological Engineering / Department of Electrical Engineering and Computer Science, Professor</li>
+        <li>2001-2009, Princeton University, Professor</li>
+        <li>1996-2001, Massachusetts Institute of Technology, PhD</li>
+      </ul>
+  hugh:
+    name: Hugh Davis, PhD
+    title: Advisor
+    details: >
+      <ul>
+        <li>Chief Operating Officer of Boaoxin and President of Boaoxin US Branch</li>
+        <li>Former Chief Commercial Officer of Fangda Pharmaceutical</li>
+        <li>Served as Vice President of Johnson & Johnson, and Research Director of Biologics Development of Janssen Biologics Department</li>
+        <li>Served as Vice President of Johnson & Johnson and Head of Clinical Pharmacology of Biologics</li>
+        <li>Former head of the pharmacodynamics and exploratory research laboratory of GlaxoSmithKline Department of Clinical Pharmacology</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2020, Boaoxin Chief Operating Officer and President of Boaoxin US Branch</li>
+        <li>2018- 2020, Fonda Holdings, Commercial Director</li>
+        <li>2001-2018, JBIO, Johnson & Johnson</li>
+        <li>1996-2001, Department of Clinical Pharmacology, GlaxoSmithKline</li>
+        <li>Since 1984, Department of Chemistry, Villanova University, USA, part-time faculty</li>
+        <li>1983-1985, Ph.D., Department of Chemistry, Villanova University, USA</li>
+      </ul>
+  zxg:
+    name: Xuegong Zhang, PhD
+    title: Advisor
+    details: >
+      <ul>
+        <li>Director of Bioinformatics Department, National Laboratory of Information Science and Technology in Tsinghua University</li>
+        <li>Executive Director, Professor, Doctoral Supervisor of Synthesis and Systems Biology Center in Tsinghua University</li>
+        <li>The Unique Scientist in China of the Human Cell Atlas Project</li>
+        <li>Winner of the National Fund for Outstanding Youth</li>
+        <li>Chief Scientist of Bioinformatics 973</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2003, Director of Bioinformatics Department, National Laboratory of Information Science and Technology, Tsinghua University</li>
+        <li>Since 2002, Professor of Pattern Recognition and Bioinformatics, Department of Automation, Tsinghua University</li>
+        <li>Since 2002, Deputy Director, the Key Laboratory of Bioinformatics, Ministry of Education, Tsinghua University</li>
+        <li>From march to April 2007, Visiting Scholar, Department of Molecular and Computational Biology, University of Southern California</li>
+        <li>From February to March 2006, visited scientists of public health, Harvard University</li>
+        <li>2001 - 2002, Senior Visiting Scholar, Department of Biostatistics of Public Health, Harvard University</li>
+        <li>1999 - 2007, Director, Information Processing Institute, Department of Automation, Tsinghua University</li>
+        <li>1996 - 2002, Associate Professor, Pattern Recognition Theory and Application, Department of Automation, Tsinghua University</li>
+        <li>1994 - 1996, Lecturer, Department of Automation, Tsinghua University</li>
+      </ul>
+  lj:
+    name: Jian Liu, PhD
+    title: Advisor
+    details: >
+      <ul>
+        <li>Former Head of PDMS China for Johnson & Johnson Global Drug Development</li>
+        <li>PhD degree from Queen's University in Canada</li>
+        <li>Harvard Medical School completed postdoctoral research</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>Since 2018,  Senior Vice President, BeiGene</li>
       </ul>
   zht:
     name: Haitao Zhao, PhD
     title: Advisor
-    details:
+    details: >
+      <ul>
+        <li>Director, Department of Liver Surgery, Peking Union Medical College Hospital</li>
+        <li>Outstanding young scientific and technological worker of Chinese Academy of Medical Sciences</li>
+        <li>New Century Outstanding Talents of the Ministry of Education</li>
+        <li>Young and middle-aged science and technology innovation leaders</li>
+        <li>Secretary-General and Vice President of Hepatobiliary Branch of Physician Association of European and American Alumni Association</li>
+        <li>Associate Editor of HBSN (SCI Indexed) Magazine</li>
+      </ul>
+      <h3>Experiences</h3>
+      <ul>
+        <li>In 2015, obtained the qualification of chief physician of the Health and Family Planning Commission</li>
+        <li>In 2009, the University of Chicago and Harvard Medical School, visiting scholar</li>
+        <li>2007-2010, Peking Union Medical College, Doctor of Surgery</li>
+        <li>1989-1994, Peking University School of Medicine, Bachelor of Medicine</li>
+        <li>1997-2001, Peking University School of Medicine, Master of Surgery</li>
+      </ul>
   lyy:
     name: Yinying Lu, PhD
     title: Advisor
@@ -76,36 +210,20 @@ en:
         <li>2010 - 2015, Deputy Director, Liver Cancer Diagnosis, Treatment and Research Center, 302 People's Liberation Army Hospital</li>
         <li>2008 - 2010, Associate Chief Physician, 302 People's Liberation Army Hospital</li>
       </ul>
-  ron:
-    name: Ron Weiss, PhD
-    title: Advisor
-    details:
-  hugh:
-    name: Hugh Davis, PhD
-    title: Advisor
-    details:
-  zxg:
-    name: Xuegong Zhang, PhD
+  wxw:
+    name: Xiaowo Wang, PhD
     title: Advisor
     details: >
       <ul>
-        <li>Director of Bioinformatics Department, National Laboratory of Information Science and Technology in Tsinghua University</li>
-        <li>Executive Director, Professor, Doctoral Supervisor of Synthesis and Systems Biology Center in Tsinghua University</li>
-        <li>The Unique Scientist in China of the Human Cell Atlas Project</li>
-        <li>Winner of the National Fund for Outstanding Youth</li>
-        <li>Chief Scientist of Bioinformatics 973</li>
+        <li>Associate Professor, Doctoral Supervisor</li>
+        <li>Department of Bioinformatics, National Laboratory of Information Science and Technology in Tsinghua University</li>
       </ul>
       <h3>CV Profile</h3>
       <ul>
-        <li>Since 2003, Director of Bioinformatics Department, National Laboratory of Information Science and Technology, Tsinghua University</li>
-        <li>Since 2002, Professor of Pattern Recognition and Bioinformatics, Department of Automation, Tsinghua University</li>
-        <li>Since 2002, Deputy Director, the Key Laboratory of Bioinformatics, Ministry of Education, Tsinghua University</li>
-        <li>From march to April 2007, Visiting Scholar, Department of Molecular and Computational Biology, University of Southern California</li>
-        <li>From February to March 2006, visited scientists of public health, Harvard University</li>
-        <li>2001 - 2002, Senior Visiting Scholar, Department of Biostatistics of Public Health, Harvard University</li>
-        <li>1999 - 2007, Director, Information Processing Institute, Department of Automation, Tsinghua University</li>
-        <li>1996 - 2002, Associate Professor, Pattern Recognition Theory and Application, Department of Automation, Tsinghua University</li>
-        <li>1994 - 1996, Lecturer, Department of Automation, Tsinghua University</li>
+        <li>Since 2016, Associate Professor (Tenure, PI, Doctoral Supervisor), Department of Automation, Tsinghua University</li>
+        <li>2012 - 2013, Visiting Scholar of Tang, University of California, Berkeley</li>
+        <li>2011 - 2015, Associate Professor, Department of Automation, Tsinghua University</li>
+        <li>2008 - 2011, Lecturer, Department of Automation, Tsinghua University</li>
       </ul>
   ls:
     name: Shao Li, PhD
@@ -122,21 +240,6 @@ en:
         <li>2004 - 2009, Associate Researcher, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua University</li>
         <li>2003 - 2004, Lecture, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
         <li>2001 - 2003, Postdoctoral, Key Laboratory of Bioinformatics (Ministry of Education), Department of Automation, Tsinghua</li>
-      </ul>
-  wxw:
-    name: Xiaowo Wang, PhD
-    title: Advisor
-    details: >
-      <ul>
-        <li>Associate Professor, Doctoral Supervisor</li>
-        <li>Department of Bioinformatics, National Laboratory of Information Science and Technology in Tsinghua University</li>
-      </ul>
-      <h3>CV Profile</h3>
-      <ul>
-        <li>Since 2016, Associate Professor (Tenure, PI, Doctoral Supervisor), Department of Automation, Tsinghua University</li>
-        <li>2012 - 2013, Visiting Scholar of Tang, University of California, Berkeley</li>
-        <li>2011 - 2015, Associate Professor, Department of Automation, Tsinghua University</li>
-        <li>2008 - 2011, Lecturer, Department of Automation, Tsinghua University</li>
       </ul>
   gj:
     name: Jin Gu, PhD
