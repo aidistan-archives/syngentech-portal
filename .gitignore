@@ -25,4 +25,5 @@ yarn-error.log*
 
 # Files from v1
 .sass-cache
+.jekyll-cache
 _config.yml
