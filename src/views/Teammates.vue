@@ -66,9 +66,9 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2019,  Executive Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
-        <li>2015-2019, Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
-        <li>2013-2019, PhD,  Control Science and Engineering, Department of Automation, Tsinghua University</li>
-        <li>2008-2012, Master, Institute of Botany, Chinese Academy of Sciences</li>
+        <li>2015 - 2019, Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>2013 - 2019, PhD,  Control Science and Engineering, Department of Automation, Tsinghua University</li>
+        <li>2008 - 2012, Master, Institute of Botany, Chinese Academy of Sciences</li>
       </ul>
   lyq:
     name: Yiqi Liu , PhD
@@ -81,7 +81,7 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2015,  Deputy Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
-        <li>2009-2015, National Key Laboratory of Immunology, Institute of Immunology, Second Military Medical University /Ph.D, Department of Immunology, Medical College, Zhejiang University</li>
+        <li>2009 - 2015, National Key Laboratory of Immunology, Institute of Immunology, Second Military Medical University /Ph.D, Department of Immunology, Medical College, Zhejiang University</li>
       </ul>
   psg:
     name: Shuguang Peng
@@ -93,7 +93,7 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2017, Director of Translational Medicine Department, Beijing SyngenTech Co., Ltd.</li>
-        <li>2015-2018, Master, Department of Automation, Tsinghua University</li>
+        <li>2015 - 2018, Master, Department of Automation, Tsinghua University</li>
       </ul>
   ron:
     name: Ron Weiss, PhD
@@ -107,8 +107,8 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2009, Massachusetts Institute of Technology, Department of Biological Engineering / Department of Electrical Engineering and Computer Science, Professor</li>
-        <li>2001-2009, Princeton University, Professor</li>
-        <li>1996-2001, Massachusetts Institute of Technology, PhD</li>
+        <li>2001 - 2009, Princeton University, Professor</li>
+        <li>1996 - 2001, Massachusetts Institute of Technology, PhD</li>
       </ul>
   hugh:
     name: Hugh Davis, PhD
@@ -124,11 +124,11 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2020, Boaoxin Chief Operating Officer and President of Boaoxin US Branch</li>
-        <li>2018- 2020, Frontage Holdings, Chief Business Officer</li>
-        <li>2001-2018, JBIO, Johnson & Johnson</li>
-        <li>1996-2001, Department of Clinical Pharmacology, GlaxoSmithKline</li>
+        <li>2018 - 2020, Frontage Holdings, Chief Business Officer</li>
+        <li>2001 - 2018, JBIO, Johnson & Johnson</li>
+        <li>1996 - 2001, Department of Clinical Pharmacology, GlaxoSmithKline</li>
         <li>Since 1984, Department of Chemistry, Villanova University, USA, part-time faculty</li>
-        <li>1983-1985, Ph.D., Department of Chemistry, Villanova University, USA</li>
+        <li>1983 - 1985, Ph.D., Department of Chemistry, Villanova University, USA</li>
       </ul>
   zxg:
     name: Xuegong Zhang, PhD
@@ -182,9 +182,9 @@ en:
       <ul>
         <li>In 2015, obtained the qualification of chief physician of the Health and Family Planning Commission</li>
         <li>In 2009, the University of Chicago and Harvard Medical School, visiting scholar</li>
-        <li>2007-2010, Peking Union Medical College, Doctor of Surgery</li>
-        <li>1989-1994, Peking University School of Medicine, Bachelor of Medicine</li>
-        <li>1997-2001, Peking University School of Medicine, Master of Surgery</li>
+        <li>2007 - 2010, Peking Union Medical College, Doctor of Surgery</li>
+        <li>1989 - 1994, Peking University School of Medicine, Bachelor of Medicine</li>
+        <li>1997 - 2001, Peking University School of Medicine, Master of Surgery</li>
       </ul>
   lyy:
     name: Yinying Lu, PhD
