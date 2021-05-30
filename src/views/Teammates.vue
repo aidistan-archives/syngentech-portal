@@ -124,7 +124,7 @@ en:
       <h3>Experiences</h3>
       <ul>
         <li>Since 2020, Boaoxin Chief Operating Officer and President of Boaoxin US Branch</li>
-        <li>2018- 2020, Fonda Holdings, Commercial Director</li>
+        <li>2018- 2020, Frontage Holdings, Chief Business Officer</li>
         <li>2001-2018, JBIO, Johnson & Johnson</li>
         <li>1996-2001, Department of Clinical Pharmacology, GlaxoSmithKline</li>
         <li>Since 1984, Department of Chemistry, Villanova University, USA, part-time faculty</li>
