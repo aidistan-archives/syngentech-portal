@@ -40,11 +40,20 @@ export default {
   name: 'news',
   data () {
     return {
-      banner: require('@/assets/banner-3.jpg'),
-      news
+      banner: require('@/assets/banner-3.jpg')
     }
   },
   computed: {
+    news () {
+      let filteredNews = {}
+
+      for (let date of Object.keys(news)) {
+        if (news[date][this.$i18n.locale] === undefined) continue
+        filteredNews[date] = news[date]
+      }
+
+      return filteredNews
+    },
     title () {
       return this.$t('nav.news') + ' | ' + this.$t('title')
     },
