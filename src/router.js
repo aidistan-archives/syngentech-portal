@@ -6,6 +6,7 @@ import Teammates from '@/views/Teammates.vue'
 import Investors from '@/views/Investors.vue'
 import Awards from '@/views/Awards.vue'
 import Contact from '@/views/Contact.vue'
+import Join from '@/views/Join.vue'
 import News from '@/views/News.vue'
 import Synbio from '@/views/Synbio.vue'
 import Science from '@/views/Science.vue'
@@ -43,6 +44,10 @@ export default new Router({
     path: '/contact',
     name: 'contact',
     component: Contact
+  }, {
+    path: '/join',
+    name: 'join',
+    component: Join
   }, {
     path: '/news',
     name: 'news',

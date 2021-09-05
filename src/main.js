@@ -29,6 +29,8 @@ const i18n = new I18n({
         awards: 'Our Awards',
         contact: 'Contact Us',
         //
+        join: 'Join Us',
+        //
         news: 'Newsroom',
         //
         biopharma: 'Science',
@@ -54,6 +56,8 @@ const i18n = new I18n({
         investors: '融资情况',
         awards: '荣誉资质',
         contact: '联系我们',
+        //
+        join: '加入我们',
         //
         news: '新闻资讯',
         //

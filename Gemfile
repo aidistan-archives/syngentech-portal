@@ -1,8 +1,6 @@
 # frozen_string_literal: true
-source "https://gems.ruby-china.com"
-
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+source 'https://gems.ruby-china.com'
 
 group :development do
-  gem "capistrano", "~> 3.16", require: false
+  gem 'capistrano', '~> 3.16', require: false
 end
