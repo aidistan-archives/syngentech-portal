@@ -19,6 +19,11 @@ export default {
       navIndex: this.$route.name
     }
   },
+  created () {
+    if (this.$route.query.locale) {
+      this.$i18n.locale = this.$route.query.locale
+    }
+  },
   mounted () {
     document.getElementById('preloader').remove()
   },

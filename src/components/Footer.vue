@@ -47,6 +47,7 @@ export default {
     setLocale (locale) {
       this.$parent.$i18n.locale = locale
       document.getElementsByClassName('header')[0].scrollIntoView()
+      this.$router.replace({ path: this.$route.path, query: Object.assign({}, this.$route.query, { locale })})
     }
   }
 }
