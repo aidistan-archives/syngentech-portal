@@ -2,7 +2,7 @@
   <div id="join" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div :class="['content', $i18n.locale]">
+    <div class="content">
       <h1>{{ $t('nav.join') }}</h1>
       <table v-for="pos in positions" :key="pos.name">
         <tr>
@@ -215,11 +215,6 @@ export default {
     },
     onWindowResize () {
       this.dialogWidth = window.innerWidth <= 540 / 0.9 ? '90%' : '540px'
-    }
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
     }
   }
 }

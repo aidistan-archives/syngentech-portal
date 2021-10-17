@@ -25,11 +25,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'blank')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   }
 }
 </script>

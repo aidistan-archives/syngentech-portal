@@ -14,7 +14,7 @@ end
 before 'deploy:publishing', 'deploy:copy' do
   on roles(:web) do
     within release_path do
-      upload! 'dist', '_site', recursive: true
+      upload! 'dist', 'dist', recursive: true
     end
   end
 end

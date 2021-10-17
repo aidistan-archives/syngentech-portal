@@ -53,7 +53,7 @@ zh:
   <div id="awards" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div :class="['content', $i18n.locale]">
+    <div class="content">
       <h1>{{ $t('nav.awards') }}</h1>
 
       <el-timeline reverse>
@@ -109,11 +109,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'awards')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   }
 }
 </script>

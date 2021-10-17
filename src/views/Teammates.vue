@@ -522,7 +522,7 @@ zh:
       <h1>{{ $t('nav.teammates') }}</h1>
 
       <h2>{{ $t('team-management') }}</h2>
-      <el-row v-for="(a, i) in leaders" :key="i"
+      <el-row v-for="(a, i) in leaders" :key="`m${i}`"
         :gutter="20" type="flex" justify="space-around">
         <el-col v-for="(p, i) in a" :key="i"
           :xs="8" :sm="6" @click.native="setDialog(p)">
@@ -533,7 +533,7 @@ zh:
       </el-row>
 
       <h2>{{ $t('team-consulting') }}</h2>
-      <el-row v-for="(a, i) in consultors" :key="i"
+      <el-row v-for="(a, i) in consultors" :key="`c${i}`"
         :gutter="20" type="flex" justify="space-around">
         <el-col v-for="(p, i) in a" :key="i"
           :xs="8" :sm="6" @click.native="setDialog(p)">
@@ -584,7 +584,7 @@ export default {
         gj: portrait('古槿.png')
       },
       dialog: false,
-      focus: null
+      focus: 'xz'
     }
   },
   computed: {
@@ -595,11 +595,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'teammates')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   },
   methods: {
     setDialog (person) {

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="[$i18n.locale]">
     <Header :index.sync="navIndex" />
     <transition name="fade">
       <router-view @nav-index="navIndex = $event"/>
@@ -20,8 +20,8 @@ export default {
     }
   },
   created () {
-    if (this.$route.query.locale) {
-      this.$i18n.locale = this.$route.query.locale
+    if (this.$route.params.locale) {
+      this.$i18n.locale = this.$route.params.locale
     }
   },
   mounted () {
@@ -92,9 +92,9 @@ body {
   p, li {
     line-height: 1.5em;
   }
+}
 
-  &.zh p {
-    text-indent: 2em;
-  }
+#app.zh .content {
+  p { text-indent: 2em; }
 }
 </style>

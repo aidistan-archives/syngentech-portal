@@ -27,7 +27,7 @@ zh:
   <div id="pipeline" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div :class="['content', $i18n.locale]">
+    <div class="content">
       <h1>{{ $t('nav.pipeline') }}</h1>
 
       <div>
@@ -62,11 +62,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'pipeline')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   }
 }
 </script>

@@ -68,5 +68,13 @@ export default new Router({
     path: '/clinical',
     name: 'clinical',
     component: Blank // Clinical
-  }]
+  }, {
+    path: '/*',
+    name: '404',
+    beforeEnter: (to, _, next) => {
+      window.location = to.params.pathMatch !== '404.html'
+        ? '/404.html' // redirect to 404 page handled by Nginx
+        : '/' // 404 not works, redirected to homepage
+    }
+  }].map((route) => Object.assign(route, { path: '/:locale(en|zh)?' + route.path }))
 })

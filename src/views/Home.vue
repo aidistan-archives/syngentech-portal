@@ -48,11 +48,6 @@ export default {
       .addEventListener('canplay', () => this.onResize())
     window.addEventListener('resize', () => this.onResize())
   },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
-  },
   methods: {
     onResize () {
       let ratio = 596 / 336 // resolution ratio of the video

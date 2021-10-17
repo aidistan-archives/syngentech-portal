@@ -2,7 +2,7 @@
   <div id="contact" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div :class="['content', $i18n.locale]">
+    <div class="content">
       <h1>{{ $t('nav.contact') }}</h1>
 
       <template v-if="$i18n.locale === 'zh'">
@@ -75,11 +75,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'contact')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   }
 }
 </script>

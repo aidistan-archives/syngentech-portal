@@ -9,13 +9,13 @@ zh:
   <div id="news" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div v-if="date" :class="['news', 'content', $i18n.locale]">
+    <div v-if="date" class="news content">
       <h2>{{ news[date][$i18n.locale].title }}</h2>
       <div v-html="news[date][$i18n.locale].content"></div>
       <el-button icon="el-icon-back" round @click="close">{{ $t('return') }}</el-button>
     </div>
 
-    <div v-else :class="['list', 'content', $i18n.locale]">
+    <div v-else class="list content">
       <h1>{{ $t('nav.news') }}</h1>
       <el-row
         v-for="(date, index) in Object.keys(news).reverse()" :key="date"
@@ -71,11 +71,6 @@ export default {
     },
     close () {
       this.$router.push({ name: 'news' })
-    }
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
     }
   }
 }

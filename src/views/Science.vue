@@ -17,7 +17,7 @@ zh:
   <div id="science" class="page">
     <el-image :src="banner" fit="cover"></el-image>
 
-    <div :class="['content', $i18n.locale]">
+    <div class="content">
       <h1>{{ $t('nav.science') }}</h1>
       <p>{{ $t('p1') }}</p>
       <div style="margin-top: 30px; text-align: center">
@@ -64,11 +64,6 @@ export default {
   created () {
     document.title = this.title
     this.$emit('nav-index', 'science')
-  },
-  watch: {
-    '$i18n.locale' () {
-      document.title = this.title
-    }
   }
 }
 </script>
