@@ -1,1 +1,1 @@
-server 'root@mike.server.syngentech.org', roles: %w(web)
+server 'root@mike.server.syngen.tech', roles: %w(web)
