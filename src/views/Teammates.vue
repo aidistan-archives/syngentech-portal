@@ -4,7 +4,7 @@ en:
   team-consulting: Consulting Team
   cb:
     name: Bin Chen, PhD
-    title: Chief Executive Officer
+    title: Advisor
     details: >
       <ul>
         <li>Former Head of Translational Sciences Asia (former Clinical Sciences in China) at Bayer</li>
@@ -12,7 +12,8 @@ en:
       </ul>
       <h3>Experiences</h3>
       <ul>
-        <li>Since 2019, Beijing SyngenTech Co., Ltd., CEO</li>
+        <li>Since 2021, Huahui Health Ltd., CEO</li>
+        <li>2019 - 2021, Beijing SyngenTech Co., Ltd., CEO</li>
         <li>2018 - 2019, Head of Translational Sciences Asia (former Clinical Sciences in China) at Bayer</li>
         <li>2015 - 2018, Scientific Director & Early Development Scientific Leader of China Biologics Initiative in Janssen BioTherapeutics of Johnson & Johnson</li>
         <li>2008 - 2015, Scientific Director of Global Clinical Pharmacology in Janssen R&D of Johnson & Johnson</li>
@@ -37,35 +38,34 @@ en:
       </ul>
   xz:
     name: Zhen Xie, PhD
-    title: Chief Science Officer
+    title: Chief Scientist
     details: >
       <ul>
         <li>National Distinguished Expert</li>
         <li>High-End Leading Talents of Zhongguancun</li>
-        <li>Principle Researcherof Bei jing National Research Center for Information Science and Technology of Center for Synthetic and Systems Biology of Automation , Tsinghua university</li>
-        <li>Member of Agricultural GMO Safety Committee in Ministry of Agriculture</li>
-        <li>Member of f the TR35 China Science and Technology Young Heroes Review Committee in Massachusetts Institute of Technology (MIT)</li>
+        <li>Associate professor of Department of Automation, Tsinghua University</li>
+        <li>Associate professor of Beijing National Research Center for Information Science, Tsinghua University</li>
+        <li>Associate professor of Center for Synthetic and Systems Biology, Tsinghua University</li>
       </ul>
       <h3>Experiences</h3>
       <ul>
         <li>Since 2014, Chief Scientist Officer, Beijing SyngenTech Co., Ltd.</li>
-        <li>Since 2012, Special Researcher,  Beijing National Research Center for Information Science, Tsinghua University</li>
-        <li>Since 2012, Special Researcher, Technology of Center for Synthetic and Systems Biology of Automation, Tsinghua University</li>
+        <li>2012 - 2019, Special Researcher, Beijing National Research Center for Information Science, Tsinghua University</li>
         <li>2010 - 2012, Postdoctoral Fellow, Computer Science and Artificial Intelligence Laboratory, Department of Biological Engineering, Massachusetts Institute of Technology (MIT), USA</li>
         <li>2006 - 2010, Postdoctoral Fellow, FAS Center for Systems Biology, Harvard University, USA</li>
         <li>2001 - 2006, Ph.D, University of Nevada, Las Vegas, USA</li>
       </ul>
   hhy:
     name: Huiya Huang, PhD
-    title: Executive Director of New Drug R&D Department
+    title: Chief Executive Officer
     details: >
       <ul>
         <li>PhD, Control Science and Engineering, Department of Automation, Tsinghua University</li>
-        <li>Responsible for the early development of the SynOV platform, pharmaceutical research, preclinical research and Sino-US IND application</li>
       </ul>
       <h3>Experiences</h3>
       <ul>
-        <li>Since 2019,  Executive Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
+        <li>Since 2021, Chief Executive Officer, Beijing SyngenTech Co., Ltd.</li>
+        <li>2019 - 2021, Executive Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
         <li>2015 - 2019, Director of New Drug R&D Department, Beijing SyngenTech Co., Ltd.</li>
         <li>2013 - 2019, PhD,  Control Science and Engineering, Department of Automation, Tsinghua University</li>
         <li>2008 - 2012, Master, Institute of Botany, Chinese Academy of Sciences</li>
@@ -94,6 +94,22 @@ en:
       <ul>
         <li>Since 2017, Director of Translational Medicine Department, Beijing SyngenTech Co., Ltd.</li>
         <li>2015 - 2018, Master, Department of Automation, Tsinghua University</li>
+      </ul>
+  lqh:
+    name: Qinghua Liu
+    title: Chief Financial Officer
+    details: >
+      <ul>
+        <li>美国注册会计师, 美国特许金融分析师</li>
+        <li>加拿大康卡迪亚大学，会计学学士</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2022年至今，北京合生基因科技有限公司，首席财务官</li>
+        <li>2015年~2022年，安永（中国）企业咨询有限公司，</li>
+        <li>2014年~2015年，毕马威会计师事务所，税务高级分析师  </li>
+        <li>2008年~2014年，S.Gordon 会计师事务所，财税经理</li>
+        <li>2006年~2008年， IMCAD Canada， 会计</li>
       </ul>
   ron:
     name: Ron Weiss, PhD
@@ -260,7 +276,7 @@ zh:
   team-consulting: 咨询团队
   cb:
     name: 陈彬, PhD
-    title: 首席执行官
+    title: 顾问
     details: >
       <ul>
         <li>曾任 德国拜耳公司 中国临床科学，主任</li>
@@ -268,7 +284,8 @@ zh:
       </ul>
       <h3>履历简介</h3>
       <ul>
-        <li>2019年至今，北京合生基因科技有限公司，首席执行官</li>
+        <li>2021年至今，华辉安健（北京）生物科技有限公司，首席执行官</li>
+        <li>2019年-2021年，北京合生基因科技有限公司，首席执行官</li>
         <li>2018年~2019年，德国拜耳公司的中国临床科学中心，主任</li>
         <li>2015年~2018年，美国强生公司 JBIO 研发主任，中国区负责人</li>
         <li>2008年~2015年，强生药物研发部，总监/副总监 兼 临床药理带头人</li>
@@ -283,15 +300,14 @@ zh:
       <ul>
         <li>国家特聘专家</li>
         <li>中关村高端领军人才</li>
-        <li>清华大学北京信息科学与技术国家研究中心，研究员</li>
-        <li>清华大学合成与系统生物学中心，研究员</li>
-        <li>农业部农业转基因生物安全委员会，委员</li>
-        <li>麻省理工学院 TR35 中国科技青年英雄榜评审委员会，委员</li>
+        <li>清华大学自动化系，副教授</li>
+        <li>清华大学北京信息科学与技术国家研究中心，副教授</li>
+        <li>清华大学合成与系统生物学中心，副教授</li>
       </ul>
       <h3>履历简介</h3>
       <ul>
         <li>2014年至今，北京合生基因科技有限公司，首席科学家</li>
-        <li>2012年至今，清华大学北京信息科学与技术国家研究中心，特别研究员</li>
+        <li>2012年~2019，清华大学北京信息科学与技术国家研究中心，特别研究员</li>
         <li>2010年~2012年，美国麻省理工学院生物工程系计算机科学与人工智能实验室，博士后</li>
         <li>2006年~2010年，美国哈佛大学 FAS 系统生物学中心，博士后</li>
         <li>2001年~2006年，美国内华达大学拉斯维加斯分校，博士</li>
@@ -313,15 +329,16 @@ zh:
       </ul>
   hhy:
     name: 黄慧雅, PhD
-    title: 新药研发部执行总监
+    title: 首席执行官
     details: >
       <ul>
         <li>清华大学自动化系控制科学与工程，博士</li>
-        <li>负责 SynOV 平台的早期开发、药学研究、临床前研究和中、美 IND 申报工作</li>
+        <li>全面负责公司研发管线的推进及公司运营工作</li>
       </ul>
       <h3>履历简介</h3>
       <ul>
-        <li>2019年至今，北京合生基因科技有限公司，新药研发部执行总监</li>
+        <li>2021年7月至今，北京合生基因科技有限公司，首席执行官</li>
+        <li>2019年11月~2021年6月，北京合生基因科技有限公司，新药研发部执行总监</li>
         <li>2015年~2019年，北京合生基因科技有限公司，新药研发部总监</li>
         <li>2013年~2019年，清华大学自动化系控制科学与工程，博士</li>
         <li>2008年~2012年，中国科学院植物研究所，硕士</li>
@@ -350,6 +367,22 @@ zh:
       <ul>
         <li>2017年至今，北京合生基因科技有限公司，转化医学部总监</li>
         <li>2015年~2018年，清华大学自动化系，硕士</li>
+      </ul>
+  lqh:
+    name: 刘庆华
+    title: 首席财务官
+    details: >
+      <ul>
+        <li>美国注册会计师, 美国特许金融分析师</li>
+        <li>加拿大康卡迪亚大学，会计学学士</li>
+      </ul>
+      <h3>履历简介</h3>
+      <ul>
+        <li>2022年至今，北京合生基因科技有限公司，首席财务官</li>
+        <li>2015年~2022年，安永（中国）企业咨询有限公司，</li>
+        <li>2014年~2015年，毕马威会计师事务所，税务高级分析师  </li>
+        <li>2008年~2014年，S.Gordon 会计师事务所，财税经理</li>
+        <li>2006年~2008年， IMCAD Canada， 会计</li>
       </ul>
   ron:
     name: Ron Weiss, PhD
@@ -563,8 +596,8 @@ export default {
 
     return {
       banner: require('@/assets/banner-3.jpg'),
-      leaders: [['cb', 'xz', 'jy']],
-      consultors: [['ron', 'hugh', 'zxg'], ['zht', 'lyy'], ['wxw', 'ls', 'gj']],
+      leaders: [['xz', 'hhy', 'lqh']],
+      consultors: [['zxg', 'ron', 'hugh'], ['lj', 'zht', 'lyy'], ['wxw', 'cb']],
       portraits: {
         cb: portrait('陈彬.png'),
         xz: portrait('谢震.png'),
@@ -572,6 +605,7 @@ export default {
         hhy: portrait('黄慧雅.png'),
         lyq: portrait('刘乙齐.png'),
         psg: portrait('彭曙光.png'),
+        lqh: portrait('刘庆华.png'),
 
         ron: portrait('Ron_Weiss.png'),
         hugh: portrait('Hugh_Davis.png'),
