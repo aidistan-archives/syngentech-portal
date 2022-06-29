@@ -28,9 +28,6 @@
         </el-submenu>
         <el-menu-item index="pipeline">{{ $t('nav.pipeline') }}</el-menu-item>
         <!-- <el-menu-item index="clinical">{{ $t('nav.clinical') }}</el-menu-item> -->
-        <el-menu-item index="service">
-          <a href="/service">{{ $t('nav.service') }}</a>
-        </el-menu-item>
       </el-menu-wrapper>
     </div>
   </div>

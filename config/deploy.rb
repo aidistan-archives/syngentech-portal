@@ -7,7 +7,6 @@ set :repo_url, 'git@github.com:syngentech/portal.git'
 before 'deploy:started', 'deploy:build' do
   run_locally do
     execute 'yarn run build'
-    execute 'cp -r _site/* dist/' # copy /service part from v1
   end
 end
 
