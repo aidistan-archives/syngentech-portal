@@ -8,7 +8,7 @@
       <el-menu-wrapper
         mode="horizontal" :default-active="index"
         :text-color="textColor" :active-text-color="activeTextColor"
-        menu-trigger="click" unique-opened router
+        menu-trigger="click" unique-opened @select="select"
       >
         <!-- <el-menu-item index="home">{{ $t('nav.home') }}</el-menu-item> -->
         <el-submenu index="about" :popper-class="mode">
@@ -53,6 +53,11 @@ export default {
     },
     activeTextColor () {
       return ({ dark: '#39b9e6', light: '#90268e' })[this.mode]
+    }
+  },
+  methods: {
+    select (index) {
+      this.$router.push({ name: index })
     }
   },
   components: {
