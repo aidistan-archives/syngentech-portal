@@ -15,7 +15,7 @@
           <template slot="title">{{ $t('nav.about' )}}</template>
           <el-menu-item index="overview">{{ $t('nav.overview') }}</el-menu-item>
           <el-menu-item index="teammates">{{ $t('nav.teammates') }}</el-menu-item>
-          <el-menu-item index="investors">{{ $t('nav.investors') }}</el-menu-item>
+          <!-- <el-menu-item index="investors">{{ $t('nav.investors') }}</el-menu-item> -->
           <el-menu-item index="awards">{{ $t('nav.awards') }}</el-menu-item>
           <el-menu-item index="contact">{{ $t('nav.contact') }}</el-menu-item>
         </el-submenu>

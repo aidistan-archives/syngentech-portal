@@ -1,26 +1,18 @@
 <i18n>
 en:
   pipeline_prods:
-    - ["<b>SynOV 1.1</b><br>HCC", 4]
-    - ["<b>SynOV 1.2</b><br>HCC", 1]
-    - ["<b>SynOV 1.3</b><br>HCC", 1]
-    - ["<b>SynOV 2</b><br>GC", 0]
-    - ["<b>SynOV 3</b><br>PAC", 0]
-    - ["<b>SynOV 4</b><br>BRCA", 0]
-    - ["<b>SynCAR-M</b><br>HCC", 0]
-    - ["<b>SynSCAd</b><br>(Platform)", 0]
+    - ["<b>SynOV 1.1</b><br>HCC/GC", 4]
+    - ["<b>Syn001 (mRNA)</b><br>Vaccine for swine", 1]
+    - ["<b>Syn002 (mRNA)</b><br>Vaccine for pet", 1]
+    - ["<b>Syn005 (circRNA)</b><br>Solid tumor", 1]
   pipeline_steps: ["Pre-study", "CMC", "PK/PD", "IND", "Phase I", "Phase II", "Phase III"]
 zh:
   pipeline_prods:
-    - ["<b>SynOV 1.1</b><br>肝癌", 4]
-    - ["<b>SynOV 1.2</b><br>肝癌", 1]
-    - ["<b>SynOV 1.3</b><br>肝癌", 1]
-    - ["<b>SynOV 2</b><br>胃癌", 0]
-    - ["<b>SynOV 3</b><br>胰腺癌", 0]
-    - ["<b>SynOV 4</b><br>乳腺癌", 0]
-    - ["<b>SynCAR-M</b><br>肝癌", 0]
-    - ["<b>SynSCAd</b><br>(平台)", 0]
-  pipeline_steps: ["前期研究", "药学研究", "药理研究", "临床申请", "临床I期", "临床II期", "临床III期"]
+    - ["<b>SynOV 1.1</b><br>肝癌/胃癌", 4]
+    - ["<b>Syn001 (mRNA)</b><br>猪疫苗", 1]
+    - ["<b>Syn002 (mRNA)</b><br>宠物疫苗", 1]
+    - ["<b>Syn005 (circRNA)</b><br>实体瘤", 1]
+  pipeline_steps: ["前期开发", "药效研究", "药学/毒理", "临床申请", "临床I期", "临床II期", "临床III期"]
 </i18n>
 
 <template>
@@ -70,9 +62,9 @@ export default {
 #pipeline {
   .el-steps {
     & > div:first-child {
-      min-width: 90px;
+      min-width: 135px;
       margin-right: 10px;
-      text-align: center;
+      text-align: right;
     }
 
     .el-step__icon.is-icon { width: auto; color: #409EFF; }

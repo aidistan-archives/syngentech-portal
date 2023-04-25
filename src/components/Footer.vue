@@ -1,15 +1,15 @@
 <i18n>
 en:
-  phone: 010-80767807, 400-680-3200
+  phone: 010-80767988
   email: service@syngen.tech
-  address: Region 7, Building 8, No. 20 Life Science Park Road, Huilongguan, Changping District, Beijing
+  address: Room 601, Building 1, No. 9 Medical Science Road, Life Science Park, Changping District, Beijing
   copyright: >
     All rights reserved © Beijing Syngentech Co., LTD. ·
     <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>
 zh:
-  phone: 010-80767807, 400-680-3200
+  phone: 010-80767988
   email: service@syngen.tech
-  address: 北京市昌平区回龙观镇生命园路20号院8幢7号区域
+  address: 北京市昌平区生命科学园医科路9号院1号楼601室
   copyright: >
     版权所有 © 北京合生基因科技有限公司 ·
     <a href="http://beian.miit.gov.cn" target="_blank">京ICP备14043945号-1</a>
