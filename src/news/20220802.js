@@ -1,6 +1,16 @@
 import image1 from '@/assets/news/20220802_1.jpg'
 
 export default {
+  en: {
+    title: 'SynOV1.1 was administered to the first patient in the Phase I clinical trial in China',
+    abstract: 'On August 2, 2022, SyngenTech announced that SynOV1.1 was administered to the first patient in the Phase I clinical trial in China.',
+    cover: image1,
+    content: `
+  <div style="text-align:center"><img src="${image1}"></img></div>
+  <p>On August 2, 2022, SyngenTech Co., LTD. (Hereinafter referred to as SyngenTech) announced that SynOV1.1, the company's first oncolytic virus gene therapy product for the treatment of advanced liver cancer, was administered to the first patient in the Phase I clinical trial in China. The core technology of SynOV1.1 product is derived from the long-term close cooperation between SyngenTech and Tsinghua University. It is the first oncolytic virus engineered by using synthetic gene circuits in the world. This phase I clinical trial aims to evaluate the safety, tolerability and antitumor activity of SynOV1.1 single agent intra-tumoral injection in patients with advanced liver cancer.</p>
+  <p>The principal investigators of the clinical trial, Professor Lu Guoye and Professor Ding Yanhua of the First Hospital of Jilin University, pointed out that: "SynOV1.1 uses synthetic gene circuit to identify multiple biomarkers in liver cancer cells, including alpha-fetoprotein promoter and microRNAs, which can accurately identify tumor cells and improve the killing effect. Compared with other products under research, there are certain potential advantages. We expect SynOV1.1 to demonstrate its antitumor efficacy in clinical trial and provide new treatment options for cancer patients."</p>
+    `
+  },
   zh: {
     title: 'SynOV 1.1 中国一期临床研究完成首例受试者给药',
     abstract: '2022年8月2日，合生基因第一款用于治疗晚期肝癌的溶瘤病毒产品 SynOV1.1 腺病毒注射液，完成了中国一期临床研究的首例受试者给药',

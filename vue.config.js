@@ -21,7 +21,7 @@ module.exports = {
         //   console.log(JSON.stringify($vm.$router.options.routes.map(r => r.path)))
         // 3. copy the output here and remove unneeded ones like '/' and '/blank'
         routes: [
-          '/overview', '/teammates', '/investors', '/awards', '/contact', '/join',
+          '/overview', '/teammates', '/awards', '/contact',
           '/news', '/synbio', '/science', '/pipeline', '/clinical'
         ]
       }))

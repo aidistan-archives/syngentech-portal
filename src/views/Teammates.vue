@@ -100,16 +100,16 @@ en:
     title: Chief Financial Officer
     details: >
       <ul>
-        <li>美国注册会计师, 美国特许金融分析师</li>
-        <li>加拿大康卡迪亚大学，会计学学士</li>
+        <li>American Institute of Certified Public Accountants, Chartered Financial Analyst</li>
+        <li>Bachelor, Accounting , Concordia University, Canada</li>
       </ul>
-      <h3>履历简介</h3>
+      <h3>Experiences</h3>
       <ul>
-        <li>2022年至今，北京合生基因科技有限公司，首席财务官</li>
-        <li>2015年~2022年，安永（中国）企业咨询有限公司，</li>
-        <li>2014年~2015年，毕马威会计师事务所，税务高级分析师  </li>
-        <li>2008年~2014年，S.Gordon 会计师事务所，财税经理</li>
-        <li>2006年~2008年， IMCAD Canada， 会计</li>
+        <li>Since 2022,Chief Financial Officer, Beijing SyngenTech Co., Ltd.</li>
+        <li>2015~2022 ,Senior Manager, Ernst & Young (China) Advisory Limited</li>
+        <li>2014~2015 ,Senior, Federal Tax , KPMG LLC</li>
+        <li>2008~2014, Finance and Taxation Manager ,S.Gordon Corporation</li>
+        <li>2006~2008, Accountant, IMCAD Canada</li>
       </ul>
   ron:
     name: Ron Weiss, PhD

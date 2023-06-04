@@ -2,14 +2,12 @@
 en:
   pipeline_prods:
     - ["<b>SynOV 1.1</b><br>HCC/GC", 4]
-    - ["<b>Syn001 (mRNA)</b><br>Vaccine for swine", 1]
     - ["<b>Syn002 (mRNA)</b><br>Vaccine for pet", 1]
     - ["<b>Syn005 (circRNA)</b><br>Solid tumor", 1]
-  pipeline_steps: ["Pre-study", "CMC", "PK/PD", "IND", "Phase I", "Phase II", "Phase III"]
+  pipeline_steps: ["Pre-clinical", "CMC", "PK/PD", "IND", "Phase I", "Phase II", "Phase III"]
 zh:
   pipeline_prods:
     - ["<b>SynOV 1.1</b><br>肝癌/胃癌", 4]
-    - ["<b>Syn001 (mRNA)</b><br>猪疫苗", 1]
     - ["<b>Syn002 (mRNA)</b><br>宠物疫苗", 1]
     - ["<b>Syn005 (circRNA)</b><br>实体瘤", 1]
   pipeline_steps: ["前期开发", "药效研究", "药学/毒理", "临床申请", "临床I期", "临床II期", "临床III期"]

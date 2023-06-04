@@ -16,17 +16,18 @@
             <li>服务：service@syngen.tech</li>
             <li>招聘：hr@syngen.tech</li>
           </ul></li>
+          <li><el-row type="flex">
+            微信公众号：
+            <el-image style="width: 100px; height: 100px" :src="weixin"></el-image>
+          </el-row></li>
         </ul>
       </template>
 
       <template v-else-if="$i18n.locale === 'en'">
         <p>
-          Beijing SyngenTech Co., LTD. (Hereinafter referred to as SyngenTech)
-          is a domestic leading national high-tech enterprise, which is dedicated
-          to the application of synthetic biology in the fields of biomedicine
-          and life health. SyngenTech is focuses on the research and development
-          process of gene and cell therapeutics based on synthetic biology, as
-          well as scientific research and clinical services.
+          Beijing SyngenTech Co., LTD. is a biotech company to drive innovations
+          in synthetic biology to develop novel nucleic acid drugs for cancer
+          and infectious diseases.
         </p>
         <ul>
           <li>Website: <a href="https://syngen.tech">https://syngen.tech</a></li>
@@ -37,6 +38,10 @@
             <li>Customer Service: service@syngen.tech</li>
             <li>Recruitment Call: hr@syngen.tech</li>
           </ul></li>
+          <li><el-row type="flex">
+            WeChat Media Platform：
+            <el-image style="width: 100px; height: 100px" :src="weixin"></el-image>
+          </el-row></li>
         </ul>
       </template>
     </div>
@@ -48,7 +53,8 @@ export default {
   name: 'contact',
   data () {
     return {
-      banner: require('@/assets/banner-3.jpg')
+      banner: require('@/assets/banner-3.jpg'),
+      weixin: require('@/assets/contact-weixin.jpg')
     }
   },
   computed: {

@@ -19,7 +19,7 @@
           <el-menu-item index="awards">{{ $t('nav.awards') }}</el-menu-item>
           <el-menu-item index="contact">{{ $t('nav.contact') }}</el-menu-item>
         </el-submenu>
-        <el-menu-item index="join">{{ $t('nav.join') }}</el-menu-item>
+        <!-- <el-menu-item index="join">{{ $t('nav.join') }}</el-menu-item> -->
         <el-menu-item index="news">{{ $t('nav.news') }}</el-menu-item>
         <el-submenu index="biopharma" :popper-class="mode">
           <template slot="title">{{ $t('nav.biopharma' )}}</template>
