@@ -1,12 +1,12 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.17.0"
+lock "~> 3.18.0"
 
 set :application, "portal"
 set :repo_url, 'git@github.com:syngentech/portal.git'
 
 before 'deploy:started', 'deploy:build' do
   run_locally do
-    execute 'NODE_OPTIONS=--openssl-legacy-provider npm run build'
+    execute 'npm run build'
   end
 end
 
