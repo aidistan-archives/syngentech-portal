@@ -2,11 +2,11 @@
 lock "~> 3.18.0"
 
 set :application, "portal"
-set :repo_url, 'git@github.com:syngentech/portal.git'
+set :repo_url, 'https://github.com/syngentech/portal.git'
 
 before 'deploy:started', 'deploy:build' do
   run_locally do
-    execute 'npm run build'
+    execute 'nvm use && npm run build'
   end
 end
 
